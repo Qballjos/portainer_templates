@@ -27,17 +27,9 @@
         "description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.[",
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/jacket-icon.png",
         "image": "linuxserver/jackett:latest",
-        "category": [
-            "Downloaders:",
-            "Tools:"
-        ],
-        "ports": [
-            "9117/tcp"
-        ],
-        "volumes": [
-            "/config",
-            "/downloads"
-        ],
+        "category": ["Downloaders:","Tools:"],
+        "ports": ["9117/tcp"],
+        "volumes": [{ "container": "/config"}, { "container": "/downloads"}],
         "env": [
             {
                 "name": "PUID",
@@ -57,21 +49,9 @@
         "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/booksonic.png",
         "image": "linuxserver/booksonic:latest",
-        "category": [
-            "MediaApp:Books",
-            "MediaApp:Other",
-            "MediaServer:Books",
-            "MediaServer:Other",
-            "Status:Stable"
-        ],
-        "ports": [
-            "4040/tcp"
-        ],
-        "volumes": [
-            "/books",
-            "/podcast",
-            "/config"
-        ],
+        "category": ["MediaApp:Books","MediaApp:Other","MediaServer:Books","MediaServer:Other","Status:Stable"],
+        "ports": ["4040/tcp"],
+        "volumes": [{ "container": "/books"},{ "container": "/podcast"},{ "container": "/config"}],
         "env": [
             {
                 "name": "PUID",
