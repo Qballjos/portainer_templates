@@ -1,4 +1,4 @@
-# :exclamation: This is a work in progress not working yet :exclamation:
+# This is a work in progress not working yet!
 
 # Portainer Template for linuxserver.io
 
