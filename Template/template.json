@@ -606,9 +606,9 @@
             "8081/tcp"
         ],
         "volumes": [
-            "/config",
-            "/tv",
-            "/downloads"
+            { "container": "/config" },
+            { "container": "/tv" },
+            { "container": "/downloads" }
         ],
         "env": [
             {
