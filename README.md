@@ -1,8 +1,7 @@
-# This is a work in progress not working yet!
 
 # Portainer Template for linuxserver.io
 
-This will be a rewriten template that will be working with the latest portainer version
+This is a rewriten template that will be working with the latest portainer version
 
 ### Prerequisites
 
