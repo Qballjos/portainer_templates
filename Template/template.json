@@ -34,8 +34,8 @@
             "9117/tcp"
         ],
         "volumes": [
-            { "container": "/config"},
-            { "container": "/downloads"}
+            { "container": "/config" },
+            { "container": "/downloads" }
         ],
         "env": [
             {
@@ -61,9 +61,9 @@
             "4040/tcp"
         ],
         "volumes": [
-            { "container": "/books"},
-            { "container": "/podcast"},
-            { "container": "/config"}
+            { "container": "/books" },
+            { "container": "/podcast" },
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -94,8 +94,8 @@
             "80/tcp"
         ],
         "volumes": [
-            { "container": "/config"},
-            { "container":"/data"}
+            { "container": "/config" },
+            { "container":"/data" }
         ],
         "env": [
             {
@@ -149,8 +149,8 @@
         "image": "linuxserver/webgrabplus:latest",
         "category": ["Downloaders:"],
         "volumes": [
-            { "container": "/config"},
-            { "container":"/data"}
+            { "container": "/config" },
+            { "container":"/data" }
         ],
         "env": [
             {
@@ -177,7 +177,7 @@
             "6144/tcp",
             "8080/tcp"
         ],
-        "volumes": [{ "container": "/config"}],
+        "volumes": [{ "container": "/config" }],
         "env": [
             {
                 "name": "PUID",
@@ -203,9 +203,9 @@
             "51413/tcp"
         ],
         "volumes": [
-            { "container": "/config"},
-            { "container": "/downloads"},
-            { "container": "/watch"}
+            { "container": "/config" },
+            { "container": "/downloads" },
+            { "container": "/watch" }
         ],
         "env": [
             {
@@ -235,11 +235,11 @@
             "4040/tcp"
         ],
         "volumes": [
-            { "container": "/music"},
-            { "container": "/playlists"},
-            { "container": "/podcasts"},
-            { "container": "/media"},
-            { "container": "/config"}
+            { "container": "/music" },
+            { "container": "/playlists" },
+            { "container": "/podcasts" },
+            { "container": "/media" },
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -273,9 +273,9 @@
             "8081/tcp"
         ],
         "volumes": [
-            { "container": "/config"},
-            { "container": "/downloads"},
-            { "container": "/tv"}
+            { "container": "/config" },
+            { "container": "/downloads" },
+            { "container": "/tv" }
         ],
         "env": [
             {
@@ -305,8 +305,8 @@
             "5000/tcp"
         ],
         "volumes": [
-            { "container": "/config"},
-            { "container": "/data"}
+            { "container": "/config" },
+            { "container": "/data" }
         ],
         "env": [
             {
@@ -339,7 +339,7 @@
             "4242/tcp"
         ],
         "volumes": [
-            { "container": "/config"}
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -367,9 +367,9 @@
             "80/tcp"
         ],
         "volumes": [
-           { "container": "/Pictures"},
-           { "container": "/Thumbs"},
-           { "container": "/config"}
+           { "container": "/Pictures" },
+           { "container": "/Thumbs" },
+           { "container": "/config" }
         ],
         "env": [
             {
@@ -399,8 +399,8 @@
             "/"
         ],
         "volumes": [
-            { "container": "/config"},
-            { "container": "/music"}
+            { "container": "/config" },
+            { "container": "/music" }
         ],
         "env": [
             {
@@ -427,9 +427,9 @@
             "Tools:"
         ],
         "volumes": [
-            { "container": "/config"},
-            { "container": "/comics"},
-            { "container": "/mylar"}
+            { "container": "/config" },
+            { "container": "/comics" },
+            { "container": "/mylar" }
         ],
         "env": [
             {
@@ -457,7 +457,7 @@
             "80/tcp"
         ],
         "volumes": [
-            { "container": "/config"}
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -486,7 +486,7 @@
             "10000/tcp"
         ],
         "volumes": [
-            { "container": "/config"}
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -515,7 +515,7 @@
             "9777/udp"
         ],
         "volumes": [
-           { "container": "/config/.kodi"}
+           { "container": "/config/.kodi" }
         ],
         "env": [
             {
@@ -640,7 +640,7 @@
             "443/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -673,8 +673,8 @@
             "22000/tcp"
         ],
         "volumes": [
-            "/config",
-            "/sync"
+            { "container": "/config" },
+            { "container": "/sync" }
         ],
         "env": [
             {
@@ -705,7 +705,7 @@
             "80/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -733,9 +733,9 @@
             "8337/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads",
-            "/music"
+            { "container": "/config" },
+            { "container": "/downloads" },
+            { "container": "/music" }
         ],
         "env": [
             {
@@ -767,7 +767,7 @@
             "/"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -803,7 +803,7 @@
             "3306/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -836,7 +836,7 @@
             "6501/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -866,8 +866,8 @@
             "80/tcp"
         ],
         "volumes": [
-            "/books",
-            "/config"
+            { "container": "/books" },
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -895,7 +895,7 @@
             "9000/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -923,8 +923,8 @@
             "6789/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads"
+            { "container": "/config" },
+            { "container": "/downloads" }
         ],
         "env": [
             {
@@ -955,7 +955,7 @@
             "3579/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -987,8 +987,8 @@
             "80/tcp"
         ],
         "volumes": [
-            "/config",
-            "/pictures"
+            { "container": "/config" },
+            { "container": "/pictures" }
         ],
         "env": [
             {
@@ -1013,8 +1013,8 @@
             "Downloaders:"
         ],
         "volumes": [
-            "/config",
-            "/downloads"
+            { "container": "/config" },
+            { "container": "/downloads" }
         ],
         "env": [
             {
@@ -1049,7 +1049,7 @@
             "443/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1079,9 +1079,9 @@
             "8686/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads",
-            "/music"
+            { "container": "/config" },
+            { "container": "/downloads" },
+            { "container": "/music" }
         ],
         "env": [
             {
@@ -1144,7 +1144,7 @@
             "8880/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1174,8 +1174,8 @@
             "8083/tcp"
         ],
         "volumes": [
-            "/books",
-            "/config"
+            { "container": "/books" },
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1202,7 +1202,7 @@
             "MediaServer:Photos"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1237,8 +1237,8 @@
             "5075/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads"
+            { "container": "/config" },
+            { "container": "/downloads" }
         ],
         "env": [
             {
@@ -1266,9 +1266,9 @@
             "8181/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads",
-            "/music"
+            { "container": "/config" },
+            { "container": "/downloads" },
+            { "container": "/music" }
         ],
         "env": [
             {
@@ -1298,8 +1298,8 @@
             "8080/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads"
+            { "container": "/config" },
+            { "container": "/downloads" }
         ],
         "env": [
             {
@@ -1328,9 +1328,9 @@
             "5050/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads",
-            "/movies"
+            { "container": "/config" },
+            { "container": "/downloads" },
+            { "container": "/movies" }
         ],
         "env": [
             {
@@ -1360,8 +1360,8 @@
             "8080/tcp"
         ],
         "volumes": [
-            "/config",
-            "/download"
+            { "container": "/config" },
+            { "container": "/download" }
         ],
         "env": [
             {
@@ -1389,7 +1389,7 @@
             "80/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1418,7 +1418,7 @@
             "80/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1448,7 +1448,7 @@
             "25565/tcp"
         ],
         "volumes": [
-            "/minecraft"
+            { "container":  "/minecraft" }
         ],
         "env": [
             {
@@ -1478,7 +1478,7 @@
             "1194/udp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1512,9 +1512,9 @@
             "8090/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads",
-            "/comics"
+            { "container": "/config" },
+            { "container": "/downloads" },
+            { "container": "/comics" }
         ],
         "env": [
             {
@@ -1544,8 +1544,8 @@
             "5076/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads"
+            { "container": "/config" },
+            { "container": "/downloads" }
         ],
         "env": [
             {
@@ -1577,8 +1577,8 @@
             "80/tcp"
         ],
         "volumes": [
-            "/data",
-            "/config"
+            { "container": "/data" },
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1607,7 +1607,7 @@
             "30000/udp"
         ],
         "volumes": [
-            "/config/.minetest"
+            { "container": "/config/.minetest" }
         ],
         "env": [
             {
@@ -1637,8 +1637,8 @@
             "9982/tcp"
         ],
         "volumes": [
-            "/config",
-            "/recordings"
+            { "container": "/config" },
+            { "container": "/recordings" }
         ],
         "env": [
             {
@@ -1670,10 +1670,10 @@
             "8200/tcp"
         ],
         "volumes": [
-            "/config",
-            "/tmp",
-            "/backups",
-            "/source"
+            { "container": "/config" },
+            { "container": "/tmp" },
+            { "container": "/backups" },
+            { "container": "/source" }
         ],
         "env": [
             {
@@ -1705,9 +1705,9 @@
             "55555/tcp"
         ],
         "volumes": [
-            "/config",
-            "/sync",
-            "/downloads"
+            { "container": "/config" },
+            { "container": "/sync" },
+            { "container": "/downloads" }
         ],
         "env": [
             {
@@ -1737,9 +1737,9 @@
             "7878/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads",
-            "/movies"
+            { "container": "/config" },
+            { "container": "/downloads" },
+            { "container": "/movies" }
         ],
         "env": [
             {
@@ -1767,7 +1767,7 @@
             "80/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1798,9 +1798,9 @@
             "2203/tcp"
         ],
         "volumes": [
-            "/books",
-            "/comics",
-            "/config"
+            { "container": "/books" },
+            { "container": "/comics" },
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1833,9 +1833,9 @@
             "5299/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads",
-            "/books"
+            { "container": "/config" },
+            { "container": "/downloads" },
+            { "container": "/books }"
         ],
         "env": [
             {
@@ -1865,11 +1865,11 @@
             "4040/tcp"
         ],
         "volumes": [
-            "/music",
-            "/playlists",
-            "/podcasts",
-            "/media",
-            "/config"
+            { "container": "/music" },
+            { "container": "/playlists" },
+            { "container": "/podcasts" },
+            { "container": "/media" },
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1910,7 +1910,7 @@
             "443/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -1974,10 +1974,10 @@
             "8989/tcp"
         ],
         "volumes": [
-            "/config",
-            "/dev/rtc",
-            "/tv",
-            "/downloads"
+            { "container": "/config" },
+            { "container": "/dev/rtc" },
+            { "container": "/tv" },
+            { "container": "/downloads" }
         ],
         "env": [
             {
@@ -2006,8 +2006,8 @@
             "8181/tcp"
         ],
         "volumes": [
-            "/logs",
-            "/config"
+            { "container": "/logs" },
+            { "container": "/config" }
         ],
         "env": [
             {
@@ -2037,8 +2037,8 @@
             "6881/udp"
         ],
         "volumes": [
-            "/config",
-            "/downloads"
+            { "container": "/config" },
+            { "container": "/downloads" }
         ],
         "env": [
             {
@@ -2071,8 +2071,8 @@
             "443/tcp"
         ],
         "volumes": [
-            "/config",
-            "/data"
+            { "container": "/config" },
+            { "container": "/data" }
         ],
         "env": [
             {
