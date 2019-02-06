@@ -6,9 +6,9 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/htpcmanager-icon.png",
     "image": "linuxserver/htpcmanager:latest",
     "category": [  
-      "MediaApp:Video",
-      "MediaApp:Music",
-      "MediaApp:Other"
+      "Video",
+      "Music",
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -16,7 +16,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -39,8 +39,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/jacket-icon.png",
     "image": "linuxserver/jackett:latest",
     "category": [  
-      "Downloaders:",
-      "Tools:"
+      "Downloaders",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -48,10 +48,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       }
     ],
     "env": [  
@@ -74,11 +74,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/booksonic.png",
     "image": "linuxserver/booksonic:latest",
     "category": [  
-      "MediaApp:Books",
-      "MediaApp:Other",
-      "MediaServer:Books",
-      "MediaServer:Other",
-      "Status:Stable"
+      "Books",
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -86,13 +83,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/books"
+        "container": "/books"
       },
       {  
-        "container":"/podcast"
+        "container": "/podcast"
       },
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -120,7 +117,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/smokeping-icon.png",
     "image": "linuxserver/smokeping:latest",
     "category": [  
-      "Network:Management"
+      "Management"
     ],
     "platform": "linux",
     "ports": [  
@@ -128,10 +125,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/data"
+        "container": "/data"
       }
     ],
     "env": [  
@@ -154,8 +151,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/duckdns.png",
     "image": "linuxserver/duckdns:latest",
     "category": [  
-      "Network:DNS",
-      "Tools:"
+      "DNS",
+      "Tools"
     ],
     "platform": "linux",
     "volumes": [  
@@ -191,15 +188,15 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/webgrabplus.png",
     "image": "linuxserver/webgrabplus:latest",
     "category": [  
-      "Downloaders:"
+      "Downloaders"
     ],
     "platform": "linux",
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/data"
+        "container": "/data"
       }
     ],
     "env": [  
@@ -223,7 +220,7 @@
     "image": "linuxserver/domoticz:latest",
     "category": [  
       "HomeAutomation:",
-      "Network:Management"
+      "Management"
     ],
     "platform": "linux",
     "ports": [  
@@ -233,7 +230,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -256,7 +253,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/transmission-icon.png",
     "image": "linuxserver/transmission:latest",
     "category": [  
-      "Downloaders:"
+      "Downloaders"
     ],
     "platform": "linux",
     "ports": [  
@@ -265,13 +262,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       },
       {  
-        "container":"/watch"
+        "container": "/watch"
       }
     ],
     "env": [  
@@ -294,9 +291,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/libresonic.png",
     "image": "linuxserver/libresonic:latest",
     "category": [  
-      "MediaApp:Music",
-      "MediaServer:Music",
-      "Status:Stable"
+      "Music"
     ],
     "platform": "linux",
     "ports": [  
@@ -304,19 +299,19 @@
     ],
     "volumes": [  
       {  
-        "container":"/music"
+        "container": "/music"
       },
       {  
-        "container":"/playlists"
+        "container": "/playlists"
       },
       {  
-        "container":"/podcasts"
+        "container": "/podcasts"
       },
       {  
-        "container":"/media"
+        "container": "/media"
       },
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -344,8 +339,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sickrage-icon.png",
     "image": "linuxserver/sickrage:latest",
     "category": [  
-      "Downloaders:",
-      "MediaApp:Video"
+      "Downloaders",
+      "Video"
     ],
     "platform": "linux",
     "ports": [  
@@ -353,13 +348,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       },
       {  
-        "container":"/tv"
+        "container": "/tv"
       }
     ],
     "env": [  
@@ -382,9 +377,9 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/musicbrainz-icon.png",
     "image": "linuxserver/musicbrainz:latest",
     "category": [  
-      "MediaApp:Music",
-      "Other:",
-      "Tools:"
+      "Music",
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -392,10 +387,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/data"
+        "container": "/data"
       }
     ],
     "env": [  
@@ -423,7 +418,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/quassel-core-icon.png",
     "image": "linuxserver/quassel-core:latest",
     "category": [  
-      "Network:Messenger"
+      "Messenger"
     ],
     "platform": "linux",
     "ports": [  
@@ -431,7 +426,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -454,7 +449,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/photoshow-icon.png",
     "image": "linuxserver/photoshow:latest",
     "category": [  
-      "MediaServer:Photos"
+      "Photos"
     ],
     "platform": "linux",
     "ports": [  
@@ -462,13 +457,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/Pictures"
+        "container": "/Pictures"
       },
       {  
-        "container":"/Thumbs"
+        "container": "/Thumbs"
       },
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -491,8 +486,7 @@
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
     "image": "linuxserver/daapd:latest",
     "category": [  
-      "MediaApp:Music",
-      "MediaServer:Music"
+      "Music"
     ],
     "platform": "linux",
     "ports": [  
@@ -501,10 +495,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/music"
+        "container": "/music"
       }
     ],
     "env": [  
@@ -527,20 +521,20 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/gazee-logo.png",
     "image": "linuxserver/gazee:latest",
     "category": [  
-      "Network:Web",
-      "MediaServer:Books",
-      "Tools:"
+      "Web",
+      "Books",
+      "Tools"
     ],
     "platform": "linux",
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/comics"
+        "container": "/comics"
       },
       {  
-        "container":"/mylar"
+        "container": "/mylar"
       }
     ],
     "env": [  
@@ -571,7 +565,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -594,7 +588,7 @@
     "logo": "http://i.imgur.com/8LadrLg.png",
     "image": "linuxserver/oscam:latest",
     "category": [  
-      "MediaServer:Other"
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -603,7 +597,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -626,7 +620,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/kodi-icon.png",
     "image": "linuxserver/kodi-headless:latest",
     "category": [  
-      "MediaServer:Video"
+      "Video"
     ],
     "platform": "linux",
     "ports": [  
@@ -635,7 +629,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config/.kodi"
+        "container": "/config/.kodi"
       }
     ],
     "env": [  
@@ -658,8 +652,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/pydio-icon.png",
     "image": "linuxserver/pydio:latest",
     "category": [  
-      "Cloud:",
-      "Network:Other"
+      "Cloud",
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -667,10 +661,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/data"
+        "container": "/data"
       }
     ],
     "env": [  
@@ -693,7 +687,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sabnzbd-icon.png",
     "image": "linuxserver/sabnzbd:latest",
     "category": [  
-      "Downloaders:"
+      "Downloaders"
     ],
     "platform": "linux",
     "ports": [  
@@ -702,13 +696,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       },
       {  
-        "container":"/incomplete-downloads"
+        "container": "/incomplete-downloads"
       }
     ],
     "env": [  
@@ -731,9 +725,9 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/medusa-icon.png",
     "image": "linuxserver/medusa:latest",
     "category": [  
-      "Downloaders:",
-      "MediaApp:Video",
-      "Status:Stable"
+      "Downloaders",
+      "Video",
+      "Stable"
     ],
     "platform": "linux",
     "ports": [  
@@ -741,13 +735,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/tv"
+        "container": "/tv"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       }
     ],
     "env": [  
@@ -770,10 +764,9 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/heimdall-icon.png",
     "image": "linuxserver/heimdall:latest",
     "category": [  
-      "Tools:",
-      "Network:Web",
-      "Network:Other",
-      "Status:Stable"
+      "Tools",
+      "Web",
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -782,7 +775,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -806,9 +799,9 @@
     "image": "linuxserver/syncthing:latest",
     "category": [  
       "Backup:",
-      "Cloud:",
-      "Network:Other",
-      "Tools:"
+      "Cloud",
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -818,10 +811,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/sync"
+        "container": "/sync"
       }
     ],
     "env": [  
@@ -844,10 +837,10 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/muximux-icon.png",
     "image": "linuxserver/muximux:latest",
     "category": [  
-      "Network:Web",
-      "Network:Proxy",
-      "Network:Other",
-      "Tools:"
+      "Web",
+      "Proxy",
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -855,7 +848,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -878,7 +871,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/beets-icon.png",
     "image": "linuxserver/beets:latest",
     "category": [  
-      "MediaApp:Music"
+      "Music"
     ],
     "platform": "linux",
     "ports": [  
@@ -886,13 +879,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       },
       {  
-        "container":"/music"
+        "container": "/music"
       }
     ],
     "env": [  
@@ -915,10 +908,10 @@
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
     "image": "linuxserver/plexrequests:latest",
     "category": [  
-      "Downloaders:",
-      "Network:Other",
-      "MediaApp:Video",
-      "Tools:"
+      "Downloaders",
+      "Other",
+      "Video",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -927,7 +920,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -955,10 +948,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mariadb-icon.png",
     "image": "linuxserver/mariadb:latest",
     "category": [  
-      "Network:Other",
-      "MediaApp:Other",
-      "Other:",
-      "Tools:"
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -966,7 +957,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -994,7 +985,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/znc-icon.png",
     "image": "linuxserver/znc:latest",
     "category": [  
-      "Network:Messenger"
+      "Messenger"
     ],
     "platform": "linux",
     "ports": [  
@@ -1002,7 +993,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1025,9 +1016,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/cops-icon.png",
     "image": "linuxserver/cops:latest",
     "category": [  
-      "Cloud:",
-      "MediaApp:Books",
-      "MediaServer:Books"
+      "Cloud",
+      "Books"
     ],
     "platform": "linux",
     "ports": [  
@@ -1035,10 +1025,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/books"
+        "container": "/books"
       },
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1061,7 +1051,7 @@
     "logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
     "image": "linuxserver/thelounge:latest",
     "category": [  
-      "Network:Messenger"
+      "Messenger"
     ],
     "platform": "linux",
     "ports": [  
@@ -1069,7 +1059,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1092,7 +1082,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nzbget-icon.png",
     "image": "linuxserver/nzbget:latest",
     "category": [  
-      "Downloaders:"
+      "Downloaders"
     ],
     "platform": "linux",
     "ports": [  
@@ -1100,10 +1090,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       }
     ],
     "env": [  
@@ -1126,10 +1116,10 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ombi.png",
     "image": "linuxserver/ombi:latest",
     "category": [  
-      "Downloaders:",
-      "Network:Other",
-      "MediaApp:Video",
-      "Tools:"
+      "Downloaders",
+      "Other",
+      "Video",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -1137,7 +1127,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1160,11 +1150,10 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lychee-icon.png",
     "image": "linuxserver/lychee:latest",
     "category": [  
-      "Cloud:",
-      "Network:Web",
-      "Network:Management",
-      "MediaApp:Photos",
-      "MediaServer:Photos"
+      "Cloud",
+      "Web",
+      "Management",
+      "Photos"
     ],
     "platform": "linux",
     "ports": [  
@@ -1172,10 +1161,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/pictures"
+        "container": "/pictures"
       }
     ],
     "env": [  
@@ -1198,15 +1187,15 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/deluge-icon.png",
     "image": "linuxserver/deluge:latest",
     "category": [  
-      "Downloaders:"
+      "Downloaders"
     ],
     "platform": "linux",
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       }
     ],
     "env": [  
@@ -1234,8 +1223,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nginx-icon.png",
     "image": "linuxserver/nginx:latest",
     "category": [  
-      "Network:Web",
-      "Network:Proxy"
+      "Web",
+      "Proxy"
     ],
     "platform": "linux",
     "ports": [  
@@ -1244,7 +1233,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1267,9 +1256,9 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lidarr.png",
     "image": "linuxserver/lidarr:latest",
     "category": [  
-      "Downloaders:",
-      "MediaApp:Music",
-      "Status:Beta"
+      "Downloaders",
+      "Music",
+      "Beta"
     ],
     "platform": "linux",
     "ports": [  
@@ -1277,13 +1266,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       },
       {  
-        "container":"/music"
+        "container": "/music"
       }
     ],
     "env": [  
@@ -1306,7 +1295,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/cardigann.png",
     "image": "linuxserver/cardigann:latest",
     "category": [  
-      "Downloaders:"
+      "Downloaders"
     ],
     "platform": "linux",
     "ports": [  
@@ -1335,8 +1324,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/unifi-icon.png",
     "image": "linuxserver/unifi:latest",
     "category": [  
-      "Network:Management",
-      "Tools:"
+      "Management",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -1350,7 +1339,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1373,9 +1362,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/calibre-web-icon.png",
     "image": "linuxserver/calibre-web:latest",
     "category": [  
-      "Cloud:",
-      "MediaApp:Books",
-      "MediaServer:Books"
+      "Cloud",
+      "Books"
     ],
     "platform": "linux",
     "ports": [  
@@ -1383,10 +1371,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/books"
+        "container": "/books"
       },
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1409,14 +1397,14 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/plex-icon.png",
     "image": "linuxserver/plex:latest",
     "category": [  
-      "MediaServer:Video",
-      "MediaServer:Music",
-      "MediaServer:Photos"
+      "Video",
+      "Music",
+      "Photos"
     ],
     "platform": "linux",
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1444,9 +1432,9 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/hydra-icon.png",
     "image": "linuxserver/hydra:latest",
     "category": [  
-      "Downloaders:",
-      "MediaApp:Other",
-      "Tools:"
+      "Downloaders",
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -1454,10 +1442,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       }
     ],
     "env": [  
@@ -1480,7 +1468,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/headphones-icon.png",
     "image": "linuxserver/headphones:latest",
     "category": [  
-      "MediaServer:Music"
+      "Music"
     ],
     "platform": "linux",
     "ports": [  
@@ -1488,13 +1476,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       },
       {  
-        "container":"/music"
+        "container": "/music"
       }
     ],
     "env": [  
@@ -1517,7 +1505,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/qbittorrent-icon.png",
     "image": "linuxserver/qbittorrent:latest",
     "category": [  
-      "Downloaders:"
+      "Downloaders"
     ],
     "platform": "linux",
     "ports": [  
@@ -1527,10 +1515,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       }
     ],
     "env": [  
@@ -1553,8 +1541,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/couchpotato-icon.png",
     "image": "linuxserver/couchpotato:latest",
     "category": [  
-      "Downloaders:",
-      "MediaApp:Video"
+      "Downloaders",
+      "Video"
     ],
     "platform": "linux",
     "ports": [  
@@ -1562,13 +1550,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       },
       {  
-        "container":"/movies"
+        "container": "/movies"
       }
     ],
     "env": [  
@@ -1591,9 +1579,9 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/davos.png",
     "image": "linuxserver/davos:latest",
     "category": [  
-      "Network:FTP",
-      "Network:Other",
-      "Tools:"
+      "FTP",
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -1601,10 +1589,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/download"
+        "container": "/download"
       }
     ],
     "env": [  
@@ -1627,7 +1615,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/tt-rss-icon.png",
     "image": "linuxserver/tt-rss:latest",
     "category": [  
-      "Network:Other"
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -1635,7 +1623,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1658,8 +1646,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/freshrss-icon.png",
     "image": "linuxserver/freshrss:latest",
     "category": [  
-      "Network:Other",
-      "Other:"
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -1667,7 +1654,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1690,8 +1677,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mcmyadmin-icon.png",
     "image": "linuxserver/mcmyadmin2:latest",
     "category": [  
-      "Network:Other",
-      "Other:"
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -1700,7 +1686,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/minecraft"
+        "container": "/minecraft"
       }
     ],
     "env": [  
@@ -1723,7 +1709,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/openvpn-as-icon.png",
     "image": "linuxserver/openvpn-as:latest",
     "category": [  
-      "Network:Other"
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -1733,7 +1719,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1761,8 +1747,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mylar-icon.png",
     "image": "linuxserver/mylar:latest",
     "category": [  
-      "Downloaders:",
-      "MediaApp:Books"
+      "Downloaders",
+      "Books"
     ],
     "platform": "linux",
     "ports": [  
@@ -1770,13 +1756,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       },
       {  
-        "container":"/comics"
+        "container": "/comics"
       }
     ],
     "env": [  
@@ -1799,9 +1785,9 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/hydra-icon.png",
     "image": "linuxserver/hydra2:latest",
     "category": [  
-      "Downloaders:",
-      "MediaApp:Other",
-      "Tools:"
+      "Downloaders",
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -1809,10 +1795,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       }
     ],
     "env": [  
@@ -1835,11 +1821,10 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/projectsend-logo.png",
     "image": "linuxserver/projectsend:latest",
     "category": [  
-      "Cloud:",
-      "Productivity:",
-      "Tools:",
-      "Network:Other",
-      "Status:Stable"
+      "Cloud",
+      "Productivity",
+      "Tools",
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -1847,10 +1832,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/data"
+        "container": "/data"
       },
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -1873,8 +1858,7 @@
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
     "image": "linuxserver/minetest:latest",
     "category": [  
-      "Network:Other",
-      "Other:"
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -1882,7 +1866,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config/.minetest"
+        "container": "/config/.minetest"
       }
     ],
     "env": [  
@@ -1905,8 +1889,8 @@
     "logo": "http://i.imgur.com/zGSUAT4.png",
     "image": "linuxserver/tvheadend:latest",
     "category": [  
-      "MediaServer:Video",
-      "MediaServer:Other"
+      "Video",
+      "Other"
     ],
     "platform": "linux",
     "ports": [  
@@ -1915,10 +1899,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/recordings"
+        "container": "/recordings"
       }
     ],
     "env": [  
@@ -1942,10 +1926,10 @@
     "image": "linuxserver/duplicati:latest",
     "category": [  
       "Backup:",
-      "Cloud:",
-      "Network:Other",
-      "Productivity:",
-      "Tools:"
+      "Cloud",
+      "Other",
+      "Productivity",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -1953,16 +1937,16 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/tmp"
+        "container": "/tmp"
       },
       {  
-        "container":"/backups"
+        "container": "/backups"
       },
       {  
-        "container":"/source"
+        "container": "/source"
       }
     ],
     "env": [  
@@ -1986,9 +1970,9 @@
     "image": "linuxserver/resilio-sync:latest",
     "category": [  
       "Backup:",
-      "Cloud:",
-      "Network:Other",
-      "Tools:"
+      "Cloud",
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -1997,13 +1981,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/sync"
+        "container": "/sync"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       }
     ],
     "env": [  
@@ -2026,9 +2010,9 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/radarr.png",
     "image": "linuxserver/radarr:latest",
     "category": [  
-      "Downloaders:",
-      "MediaApp:Video",
-      "Status:Beta"
+      "Downloaders",
+      "Video",
+      "Beta"
     ],
     "platform": "linux",
     "ports": [  
@@ -2036,13 +2020,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       },
       {  
-        "container":"/movies"
+        "container": "/movies"
       }
     ],
     "env": [  
@@ -2065,7 +2049,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/piwigo-icon.png",
     "image": "linuxserver/piwigo:latest",
     "category": [  
-      "MediaServer:Photos"
+      "Photos"
     ],
     "platform": "linux",
     "ports": [  
@@ -2073,7 +2057,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -2096,9 +2080,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ubooquity-icon.png",
     "image": "linuxserver/ubooquity:latest",
     "category": [  
-      "Cloud:",
-      "MediaApp:Books",
-      "MediaServer:Books"
+      "Cloud",
+      "Books"
     ],
     "platform": "linux",
     "ports": [  
@@ -2107,13 +2090,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/books"
+        "container": "/books"
       },
       {  
-        "container":"/comics"
+        "container": "/comics"
       },
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -2141,7 +2124,7 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lazylibrarian-icon.png",
     "image": "linuxserver/lazylibrarian:latest",
     "category": [  
-      "MediaApp:Books"
+      "Books"
     ],
     "platform": "linux",
     "ports": [  
@@ -2149,13 +2132,13 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       },
       {  
-        "container":"/books "
+        "container": "/books "
       }
     ],
     "env": [  
@@ -2178,9 +2161,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/airsonic-logo.png",
     "image": "linuxserver/airsonic:latest",
     "category": [  
-      "MediaApp:Music",
-      "MediaServer:Music",
-      "Status:Stable"
+      "Music",
+      "Stable"
     ],
     "platform": "linux",
     "ports": [  
@@ -2188,19 +2170,19 @@
     ],
     "volumes": [  
       {  
-        "container":"/music"
+        "container": "/music"
       },
       {  
-        "container":"/playlists"
+        "container": "/playlists"
       },
       {  
-        "container":"/podcasts"
+        "container": "/podcasts"
       },
       {  
-        "container":"/media"
+        "container": "/media"
       },
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -2233,9 +2215,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/letsencrypt.png",
     "image": "linuxserver/letsencrypt:latest",
     "category": [  
-      "Tools:",
-      "Network:Web",
-      "Status:Stable"
+      "Tools",
+      "Web"
     ],
     "platform": "linux",
     "ports": [  
@@ -2244,7 +2225,7 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -2302,8 +2283,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sonarr-icon.png",
     "image": "linuxserver/sonarr:latest",
     "category": [  
-      "Downloaders:",
-      "MediaApp:Video"
+      "Downloaders",
+      "Video"
     ],
     "platform": "linux",
     "ports": [  
@@ -2311,16 +2292,16 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/dev/rtc"
+        "container": "/dev/rtc"
       },
       {  
-        "container":"/tv"
+        "container": "/tv"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       }
     ],
     "env": [  
@@ -2343,8 +2324,8 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/tautulli-icon.png",
     "image": "linuxserver/tautulli:latest",
     "category": [  
-      "MediaServer:Other",
-      "Tools:"
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
@@ -2352,10 +2333,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/logs"
+        "container": "/logs"
       },
       {  
-        "container":"/config"
+        "container": "/config"
       }
     ],
     "env": [  
@@ -2378,7 +2359,7 @@
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
     "image": "linuxserver/rutorrent:latest",
     "category": [  
-      "Downloaders:"
+      "Downloaders"
     ],
     "platform": "linux",
     "ports": [  
@@ -2388,10 +2369,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/downloads"
+        "container": "/downloads"
       }
     ],
     "env": [  
@@ -2412,14 +2393,13 @@
     "title": "nextcloud",
     "description": "Nextcloud is an open source, self-hosted file sync and communication app platform. Access and sync your files, contacts, calendars and communicate and collaborate across your devices. You decide what happens with your data, where it is and who can access it!",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nextcloud-icon.png",
-    "image": "linuxserver/nextcloud:latest",
+    "image": "linuxserver/nextCloudlatest",
     "category": [  
-      "Cloud:",
-      "Productivity:",
-      "Tools:",
-      "MediaServer:Other",
-      "Network:Web",
-      "Status:Stable"
+      "Cloud",
+      "Productivity",
+      "Tools",
+      "Other",
+      "Web"
     ],
     "platform": "linux",
     "ports": [  
@@ -2427,10 +2407,10 @@
     ],
     "volumes": [  
       {  
-        "container":"/config"
+        "container": "/config"
       },
       {  
-        "container":"/data"
+        "container": "/data"
       }
     ],
     "env": [  
@@ -2453,10 +2433,9 @@
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/minisatip-icon.png",
     "image": "linuxserver/minisatip:latest",
     "category": [  
-      "MediaServer:Video",
-      "MediaServer:Other",
-      "Other:",
-      "Tools:"
+      "Video",
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "ports": [  
