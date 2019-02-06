@@ -1997,7 +1997,7 @@
       },
       {  
         "name":"CHEVERETO_DB_NAME",
-        "label":"CHEVERETO_DB_USERNAME",
+        "label":"CHEVERETO_DB_NAME",
         "set":""
       },
       {  
