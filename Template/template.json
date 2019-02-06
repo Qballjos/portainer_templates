@@ -1968,7 +1968,7 @@
     "ports": [  
       "80/tcp"
     ],
-    "volumes": [{"container": "//var/www/html/images</"}],
+    "volumes": [{"container": "/var/www/html/images/"}],
     "env": [  
       {  
         "name":"PUID",
@@ -1983,27 +1983,27 @@
       {  
         "name":"CHEVERETO_DB_HOST",
         "label":"CHEVERETO_DB_HOST",
-        "set":"db"
+        "set":""
       },
       {  
         "name":"CHEVERETO_DB_USERNAME",
         "label":"CHEVERETO_DB_USERNAME",
-        "set":"chevereto"
+        "set":""
       },
       {  
         "name":"CHEVERETO_DB_PASSWORD",
         "label":"CHEVERETO_DB_PASSWORD",
-        "set":"chevereto"
+        "set":""
       },
       {  
         "name":"CHEVERETO_DB_NAME",
         "label":"CHEVERETO_DB_USERNAME",
-        "set":"chevereto"
+        "set":""
       },
       {  
         "name":"CHEVERETO_DB_PREFIX",
         "label":"CHEVERETO_DB_PREFIX",
-        "set":"chv_"
+        "set":""
       }
     ]
   }
