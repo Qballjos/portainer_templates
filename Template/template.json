@@ -1883,7 +1883,7 @@
     "title": "nextcloud",
     "description": "Nextcloud is an open source, self-hosted file sync and communication app platform. Access and sync your files, contacts, calendars and communicate and collaborate across your devices. You decide what happens with your data, where it is and who can access it!",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nextcloud-icon.png",
-    "image": "linuxserver/nextCloudlatest",
+    "image": "linuxserver/nextCloud:latest",
     "category": ["Cloud", "Productivity", "Tools", "Other", "Web"],
     "platform": "linux",
     "ports": [  
@@ -1935,7 +1935,7 @@
   {  
     "type": 1,
     "title": "Organizr v2",
-    "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.\n  ",
+    "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/organizr-icon.png",
     "image": "organizrtools/organizr-v2:latest",
     "category": ["Other", "Tools"],
