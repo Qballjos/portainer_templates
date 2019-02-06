@@ -6,7 +6,9 @@
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/htpcmanager-icon.png",
         "image": "linuxserver/htpcmanager:latest",
         "category": ["MediaApp:Video","MediaApp:Music","MediaApp:Other"],
-        "ports": ["8085/tcp"],
+        "ports": [
+            "8085/tcp"
+        ],
         "volumes": [{ "container": "/config"}],
         "env": [
             {
@@ -28,8 +30,13 @@
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/jacket-icon.png",
         "image": "linuxserver/jackett:latest",
         "category": ["Downloaders:","Tools:"],
-        "ports": ["9117/tcp"],
-        "volumes": [{ "container": "/config"}, { "container": "/downloads"}],
+        "ports": [
+            "9117/tcp"
+        ],
+        "volumes": [
+            { "container": "/config"},
+            { "container": "/downloads"}
+        ],
         "env": [
             {
                 "name": "PUID",
@@ -50,8 +57,14 @@
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/booksonic.png",
         "image": "linuxserver/booksonic:latest",
         "category": ["MediaApp:Books","MediaApp:Other","MediaServer:Books","MediaServer:Other","Status:Stable"],
-        "ports": ["4040/tcp"],
-        "volumes": [{ "container": "/books"},{ "container": "/podcast"},{ "container": "/config"}],
+        "ports": [
+            "4040/tcp"
+        ],
+        "volumes": [
+            { "container": "/books"},
+            { "container": "/podcast"},
+            { "container": "/config"}
+        ],
         "env": [
             {
                 "name": "PUID",
@@ -76,15 +89,13 @@
         "description": null,
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/smokeping-icon.png",
         "image": "linuxserver/smokeping:latest",
-        "category": [
-            "Network:Management"
-        ],
+        "category": ["Network:Management"],
         "ports": [
             "80/tcp"
         ],
         "volumes": [
-            "/config",
-            "/data"
+            { "container": "/config"},
+            { "container":"/data"}
         ],
         "env": [
             {
@@ -105,10 +116,7 @@
         "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/duckdns.png",
         "image": "linuxserver/duckdns:latest",
-        "category": [
-            "Network:DNS",
-            "Tools:"
-        ],
+        "category": ["Network:DNS","Tools:"],
         "volumes": [],
         "env": [
             {
@@ -139,12 +147,10 @@
         "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's configuration.[br][br]\r\n\t\t[b]/data[/b] : This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/webgrabplus.png",
         "image": "linuxserver/webgrabplus:latest",
-        "category": [
-            "Downloaders:"
-        ],
+        "category": ["Downloaders:"],
         "volumes": [
-            "/config",
-            "/data"
+            { "container": "/config"},
+            { "container":"/data"}
         ],
         "env": [
             {
@@ -165,18 +171,13 @@
         "description": "Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device",
         "logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
         "image": "linuxserver/domoticz:latest",
-        "category": [
-            "HomeAutomation:",
-            "Network:Management"
-        ],
+        "category": ["HomeAutomation:","Network:Management"],
         "ports": [
             "1443/tcp",
             "6144/tcp",
             "8080/tcp"
         ],
-        "volumes": [
-            "/config"
-        ],
+        "volumes": [{ "container": "/config"}],
         "env": [
             {
                 "name": "PUID",
@@ -196,17 +197,15 @@
         "description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, \u00b5TP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/transmission-icon.png",
         "image": "linuxserver/transmission:latest",
-        "category": [
-            "Downloaders:"
-        ],
+        "category": ["Downloaders:"],
         "ports": [
             "9091/tcp",
             "51413/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads",
-            "/watch"
+            { "container": "/config"},
+            { "container": "/downloads"},
+            { "container": "/watch"}
         ],
         "env": [
             {
@@ -236,11 +235,11 @@
             "4040/tcp"
         ],
         "volumes": [
-            "/music",
-            "/playlists",
-            "/podcasts",
-            "/media",
-            "/config"
+            { "container": "/music"},
+            { "container": "/playlists"},
+            { "container": "/podcasts"},
+            { "container": "/media"},
+            { "container": "/config"}
         ],
         "env": [
             {
@@ -274,9 +273,9 @@
             "8081/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads",
-            "/tv"
+            { "container": "/config"},
+            { "container": "/downloads"},
+            { "container": "/tv"}
         ],
         "env": [
             {
@@ -306,8 +305,8 @@
             "5000/tcp"
         ],
         "volumes": [
-            "/config",
-            "/data"
+            { "container": "/config"},
+            { "container": "/data"}
         ],
         "env": [
             {
@@ -340,7 +339,7 @@
             "4242/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config"}
         ],
         "env": [
             {
@@ -368,9 +367,9 @@
             "80/tcp"
         ],
         "volumes": [
-            "/Pictures",
-            "/Thumbs",
-            "/config"
+           { "container": "/Pictures"},
+           { "container": "/Thumbs"},
+           { "container": "/config"}
         ],
         "env": [
             {
@@ -400,8 +399,8 @@
             "/"
         ],
         "volumes": [
-            "/config",
-            "/music"
+            { "container": "/config"},
+            { "container": "/music"}
         ],
         "env": [
             {
@@ -428,9 +427,9 @@
             "Tools:"
         ],
         "volumes": [
-            "/config",
-            "/comics",
-            "/mylar"
+            { "container": "/config"},
+            { "container": "/comics"},
+            { "container": "/mylar"}
         ],
         "env": [
             {
@@ -458,7 +457,7 @@
             "80/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config"}
         ],
         "env": [
             {
@@ -487,7 +486,7 @@
             "10000/tcp"
         ],
         "volumes": [
-            "/config"
+            { "container": "/config"}
         ],
         "env": [
             {
@@ -516,7 +515,7 @@
             "9777/udp"
         ],
         "volumes": [
-            "/config/.kodi"
+           { "container": "/config/.kodi"}
         ],
         "env": [
             {
@@ -545,8 +544,8 @@
             "443/tcp"
         ],
         "volumes": [
-            "/config",
-            "/data"
+            { "container":"/config" },
+            { "container": "/data" }
         ],
         "env": [
             {
@@ -575,9 +574,9 @@
             "9090/tcp"
         ],
         "volumes": [
-            "/config",
-            "/downloads",
-            "/incomplete-downloads"
+            { "container": "/config" },
+            { "container": "/downloads" },
+            { "container": "/incomplete-downloads" }
         ],
         "env": [
             {
