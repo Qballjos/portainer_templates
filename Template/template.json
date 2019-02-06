@@ -6,10 +6,12 @@
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/htpcmanager-icon.png",
         "image": "linuxserver/htpcmanager:latest",
         "category": ["MediaApp:Video","MediaApp:Music","MediaApp:Other"],
+        "platform": "linux",
         "ports": [
             "8085/tcp"
         ],
-        "volumes": [{ "container": "/config"}],
+        "volumes": [{ "container": "/config" }
+        ],
         "env": [
             {
                 "name": "PGID",
@@ -30,6 +32,7 @@
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/jacket-icon.png",
         "image": "linuxserver/jackett:latest",
         "category": ["Downloaders:","Tools:"],
+        "platform": "linux",
         "ports": [
             "9117/tcp"
         ],
@@ -57,6 +60,7 @@
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/booksonic.png",
         "image": "linuxserver/booksonic:latest",
         "category": ["MediaApp:Books","MediaApp:Other","MediaServer:Books","MediaServer:Other","Status:Stable"],
+        "platform": "linux",
         "ports": [
             "4040/tcp"
         ],
@@ -90,6 +94,7 @@
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/smokeping-icon.png",
         "image": "linuxserver/smokeping:latest",
         "category": ["Network:Management"],
+        "platform": "linux",
         "ports": [
             "80/tcp"
         ],
@@ -117,6 +122,7 @@
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/duckdns.png",
         "image": "linuxserver/duckdns:latest",
         "category": ["Network:DNS","Tools:"],
+        "platform": "linux",
         "volumes": [],
         "env": [
             {
@@ -148,6 +154,7 @@
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/webgrabplus.png",
         "image": "linuxserver/webgrabplus:latest",
         "category": ["Downloaders:"],
+        "platform": "linux",
         "volumes": [
             { "container": "/config" },
             { "container":"/data" }
@@ -172,6 +179,7 @@
         "logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
         "image": "linuxserver/domoticz:latest",
         "category": ["HomeAutomation:","Network:Management"],
+        "platform": "linux",
         "ports": [
             "1443/tcp",
             "6144/tcp",
@@ -198,6 +206,7 @@
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/transmission-icon.png",
         "image": "linuxserver/transmission:latest",
         "category": ["Downloaders:"],
+        "platform": "linux",
         "ports": [
             "9091/tcp",
             "51413/tcp"
@@ -231,6 +240,7 @@
             "MediaServer:Music",
             "Status:Stable"
         ],
+        "platform": "linux",
         "ports": [
             "4040/tcp"
         ],
@@ -269,6 +279,7 @@
             "Downloaders:",
             "MediaApp:Video"
         ],
+        "platform": "linux",
         "ports": [
             "8081/tcp"
         ],
@@ -301,6 +312,7 @@
             "Other:",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "5000/tcp"
         ],
@@ -335,6 +347,7 @@
         "category": [
             "Network:Messenger"
         ],
+        "platform": "linux",
         "ports": [
             "4242/tcp"
         ],
@@ -363,6 +376,7 @@
         "category": [
             "MediaServer:Photos"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp"
         ],
@@ -394,6 +408,7 @@
             "MediaApp:Music",
             "MediaServer:Music"
         ],
+        "platform": "linux",
         "ports": [
             "/",
             "/"
@@ -426,6 +441,7 @@
             "MediaServer:Books",
             "Tools:"
         ],
+        "platform": "linux",
         "volumes": [
             { "container": "/config" },
             { "container": "/comics" },
@@ -453,6 +469,7 @@
         "category": [
             "Productivity"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp"
         ],
@@ -481,6 +498,7 @@
         "category": [
             "MediaServer:Other"
         ],
+        "platform": "linux",
         "ports": [
             "8888/tcp",
             "10000/tcp"
@@ -510,6 +528,7 @@
         "category": [
             "MediaServer:Video"
         ],
+        "platform": "linux",
         "ports": [
             "8080/tcp",
             "9777/udp"
@@ -540,6 +559,7 @@
             "Cloud:",
             "Network:Other"
         ],
+        "platform": "linux",
         "ports": [
             "443/tcp"
         ],
@@ -569,6 +589,7 @@
         "category": [
             "Downloaders:"
         ],
+        "platform": "linux",
         "ports": [
             "8080/tcp",
             "9090/tcp"
@@ -602,6 +623,7 @@
             "MediaApp:Video",
             "Status:Stable"
         ],
+        "platform": "linux",
         "ports": [
             "8081/tcp"
         ],
@@ -635,6 +657,7 @@
             "Network:Other",
             "Status:Stable"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp",
             "443/tcp"
@@ -667,6 +690,7 @@
             "Network:Other",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "8384/tcp",
             "21027/udp",
@@ -701,6 +725,7 @@
             "Network:Other",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp"
         ],
@@ -729,6 +754,7 @@
         "category": [
             "MediaApp:Music"
         ],
+        "platform": "linux",
         "ports": [
             "8337/tcp"
         ],
@@ -762,6 +788,7 @@
             "MediaApp:Video",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "3000/tcp",
             "/"
@@ -799,6 +826,7 @@
             "Other:",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "3306/tcp"
         ],
@@ -832,6 +860,7 @@
         "category": [
             "Network:Messenger"
         ],
+        "platform": "linux",
         "ports": [
             "6501/tcp"
         ],
@@ -862,6 +891,7 @@
             "MediaApp:Books",
             "MediaServer:Books"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp"
         ],
@@ -891,6 +921,7 @@
         "category": [
             "Network:Messenger"
         ],
+        "platform": "linux",
         "ports": [
             "9000/tcp"
         ],
@@ -919,6 +950,7 @@
         "category": [
             "Downloaders:"
         ],
+        "platform": "linux",
         "ports": [
             "6789/tcp"
         ],
@@ -951,6 +983,7 @@
             "MediaApp:Video",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "3579/tcp"
         ],
@@ -983,6 +1016,7 @@
             "MediaApp:Photos",
             "MediaServer:Photos"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp"
         ],
@@ -1012,6 +1046,7 @@
         "category": [
             "Downloaders:"
         ],
+        "platform": "linux",
         "volumes": [
             { "container": "/config" },
             { "container": "/downloads" }
@@ -1044,6 +1079,7 @@
             "Network:Web",
             "Network:Proxy"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp",
             "443/tcp"
@@ -1075,6 +1111,7 @@
             "MediaApp:Music",
             "Status:Beta"
         ],
+        "platform": "linux",
         "ports": [
             "8686/tcp"
         ],
@@ -1105,6 +1142,7 @@
         "category": [
             "Downloaders:"
         ],
+        "platform": "linux",
         "ports": [
             "5060/tcp"
         ],
@@ -1134,6 +1172,7 @@
             "Network:Management",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "3478/udp",
             "10001/udp",
@@ -1170,6 +1209,7 @@
             "MediaApp:Books",
             "MediaServer:Books"
         ],
+        "platform": "linux",
         "ports": [
             "8083/tcp"
         ],
@@ -1201,6 +1241,7 @@
             "MediaServer:Music",
             "MediaServer:Photos"
         ],
+        "platform": "linux",
         "volumes": [
             { "container": "/config" }
         ],
@@ -1233,6 +1274,7 @@
             "MediaApp:Other",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "5075/tcp"
         ],
@@ -1262,6 +1304,7 @@
         "category": [
             "MediaServer:Music"
         ],
+        "platform": "linux",
         "ports": [
             "8181/tcp"
         ],
@@ -1292,6 +1335,7 @@
         "category": [
             "Downloaders:"
         ],
+        "platform": "linux",
         "ports": [
             "6881/tcp",
             "6881/udp",
@@ -1324,6 +1368,7 @@
             "Downloaders:",
             "MediaApp:Video"
         ],
+        "platform": "linux",
         "ports": [
             "5050/tcp"
         ],
@@ -1356,6 +1401,7 @@
             "Network:Other",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "8080/tcp"
         ],
@@ -1385,6 +1431,7 @@
         "category": [
             "Network:Other"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp"
         ],
@@ -1414,6 +1461,7 @@
             "Network:Other",
             "Other:"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp"
         ],
@@ -1443,6 +1491,7 @@
             "Network:Other",
             "Other:"
         ],
+        "platform": "linux",
         "ports": [
             "8080/tcp",
             "25565/tcp"
@@ -1472,6 +1521,7 @@
         "category": [
             "Network:Other"
         ],
+        "platform": "linux",
         "ports": [
             "943/tcp",
             "9443/tcp",
@@ -1508,6 +1558,7 @@
             "Downloaders:",
             "MediaApp:Books"
         ],
+        "platform": "linux",
         "ports": [
             "8090/tcp"
         ],
@@ -1540,6 +1591,7 @@
             "MediaApp:Other",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "5076/tcp"
         ],
@@ -1573,6 +1625,7 @@
             "Network:Other",
             "Status:Stable"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp"
         ],
@@ -1603,6 +1656,7 @@
             "Network:Other",
             "Other:"
         ],
+        "platform": "linux",
         "ports": [
             "30000/udp"
         ],
@@ -1632,6 +1686,7 @@
             "MediaServer:Video",
             "MediaServer:Other"
         ],
+        "platform": "linux",
         "ports": [
             "9981/tcp",
             "9982/tcp"
@@ -1666,6 +1721,7 @@
             "Productivity:",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "8200/tcp"
         ],
@@ -1700,6 +1756,7 @@
             "Network:Other",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "8888/tcp",
             "55555/tcp"
@@ -1733,6 +1790,7 @@
             "MediaApp:Video",
             "Status:Beta"
         ],
+        "platform": "linux",
         "ports": [
             "7878/tcp"
         ],
@@ -1763,6 +1821,7 @@
         "category": [
             "MediaServer:Photos"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp"
         ],
@@ -1793,6 +1852,7 @@
             "MediaApp:Books",
             "MediaServer:Books"
         ],
+        "platform": "linux",
         "ports": [
             "2202/tcp",
             "2203/tcp"
@@ -1829,13 +1889,14 @@
         "category": [
             "MediaApp:Books"
         ],
+        "platform": "linux",
         "ports": [
             "5299/tcp"
         ],
         "volumes": [
             { "container": "/config" },
             { "container": "/downloads" },
-            { "container": "/books }"
+            { "container": "/books "}
         ],
         "env": [
             {
@@ -1861,6 +1922,7 @@
             "MediaServer:Music",
             "Status:Stable"
         ],
+        "platform": "linux",
         "ports": [
             "4040/tcp"
         ],
@@ -1905,6 +1967,7 @@
             "Network:Web",
             "Status:Stable"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp",
             "443/tcp"
@@ -1970,6 +2033,7 @@
             "Downloaders:",
             "MediaApp:Video"
         ],
+        "platform": "linux",
         "ports": [
             "8989/tcp"
         ],
@@ -2002,6 +2066,7 @@
             "MediaServer:Other",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "8181/tcp"
         ],
@@ -2031,6 +2096,7 @@
         "category": [
             "Downloaders:"
         ],
+        "platform": "linux",
         "ports": [
             "80/tcp",
             "51413/tcp",
@@ -2067,6 +2133,7 @@
             "Network:Web",
             "Status:Stable"
         ],
+        "platform": "linux",
         "ports": [
             "443/tcp"
         ],
@@ -2099,6 +2166,7 @@
             "Other:",
             "Tools:"
         ],
+        "platform": "linux",
         "ports": [
             "8875/tcp",
             "554/tcp",
