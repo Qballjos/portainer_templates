@@ -1968,7 +1968,7 @@
     "ports": [  
       "80/tcp"
     ],
-    "volumes": [{"container": "/var/www/html/images/"}],
+    "volumes": [{"container": "/var/www/html/images"}],
     "env": [  
       {  
         "name":"PUID",
