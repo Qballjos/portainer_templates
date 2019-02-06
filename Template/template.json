@@ -1957,4 +1957,54 @@
       }
     ]
   }
+  {  
+    "type": 1,
+    "title": "Chevereto",
+    "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
+    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/Chevereto.png",
+    "image": "nmtan/chevereto:latest",
+    "category": ["Other", "Tools", "Photo"],
+    "platform": "linux",
+    "ports": [  
+      "80/tcp"
+    ],
+    "volumes": [{"container": "//var/www/html/images</"}],
+    "env": [  
+      {  
+        "name":"PUID",
+        "label":"PUID",
+        "set":""
+      },
+      {  
+        "name":"PGID",
+        "label":"PGID",
+        "set":""
+      },
+      {  
+        "name":"CHEVERETO_DB_HOST",
+        "label":"CHEVERETO_DB_HOST",
+        "set":"db"
+      },
+      {  
+        "name":"CHEVERETO_DB_USERNAME",
+        "label":"CHEVERETO_DB_USERNAME",
+        "set":"chevereto"
+      },
+      {  
+        "name":"CHEVERETO_DB_PASSWORD",
+        "label":"CHEVERETO_DB_PASSWORD",
+        "set":"chevereto"
+      },
+      {  
+        "name":"CHEVERETO_DB_NAME",
+        "label":"CHEVERETO_DB_USERNAME",
+        "set":"chevereto"
+      },
+      {  
+        "name":"CHEVERETO_DB_PREFIX",
+        "label":"CHEVERETO_DB_PREFIX",
+        "set":"chv_"
+      }
+    ]
+  }
 ]
