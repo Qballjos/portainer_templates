@@ -1883,7 +1883,7 @@
     "title": "nextcloud",
     "description": "Nextcloud is an open source, self-hosted file sync and communication app platform. Access and sync your files, contacts, calendars and communicate and collaborate across your devices. You decide what happens with your data, where it is and who can access it!",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nextcloud-icon.png",
-    "image": "linuxserver/nextCloud:latest",
+    "image": "linuxserver/nextcloud:latest",
     "category": ["Cloud", "Productivity", "Tools", "Other", "Web"],
     "platform": "linux",
     "ports": [  
