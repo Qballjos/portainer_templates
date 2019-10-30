@@ -1038,7 +1038,7 @@
     "title": "unifi",
     "description": null,
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/unifi-icon.png",
-    "image": "linuxserver/unifi:latest",
+    "image": "linuxserver/unifi-controller:latest",
     "category": ["Management", "Tools"],
     "platform": "linux",
     "ports": [  
@@ -1048,7 +1048,8 @@
       "8081/tcp",
       "8443/tcp",
       "8843/tcp",
-      "8880/tcp"
+      "8880/tcp",
+      "6789/tcp"
     ],
     "volumes": [{"container": "/config"}],
     "env": [  
