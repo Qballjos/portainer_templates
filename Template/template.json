@@ -5,7 +5,7 @@
     "description": "Htpcmanager, a front end for many htpc related applications. Hellowlol version.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/htpcmanager-icon.png",
     "image": "linuxserver/htpcmanager:latest",
-    "category": ["Video", "Music", "Other"],
+    "categories": ["Video", "Music", "Other"],
     "platform": "linux",
     "ports": [  
       "8085/tcp"
@@ -30,7 +30,7 @@
     "description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.[",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/jacket-icon.png",
     "image": "linuxserver/jackett:latest",
-    "category": ["Downloaders", "Tools"],
+    "categories": ["Downloaders", "Tools"],
     "platform": "linux",
     "ports": [  
       "9117/tcp"
@@ -58,7 +58,7 @@
     "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/booksonic.png",
     "image": "linuxserver/booksonic:latest",
-    "category": ["Books", "Other"],
+    "categories": ["Books", "Other"],
     "platform": "linux",
     "ports": [  
       "4040/tcp"
@@ -92,7 +92,7 @@
     "description": null,
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/smokeping-icon.png",
     "image": "linuxserver/smokeping:latest",
-    "category": ["Management"],
+    "categories": ["Management"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -120,7 +120,7 @@
     "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/duckdns.png",
     "image": "linuxserver/duckdns:latest",
-    "category": ["DNS", "Tools"],
+    "categories": ["DNS", "Tools"],
     "platform": "linux",
     "env": [  
       {  
@@ -151,7 +151,7 @@
     "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's configuration.[br][br]\r\n\t\t[b]/data[/b] : This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/webgrabplus.png",
     "image": "linuxserver/webgrabplus:latest",
-    "category": ["Downloaders"],
+    "categories": ["Downloaders"],
     "platform": "linux",
     "volumes": [  
       {"container": "/config"},
@@ -176,7 +176,7 @@
     "description": "Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device",
     "logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
     "image": "linuxserver/domoticz:latest",
-    "category": ["HomeAutomation:", "Management"],
+    "categories": ["HomeAutomation:", "Management"],
     "platform": "linux",
     "ports": [  
       "1443/tcp",
@@ -203,7 +203,7 @@
     "description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, \u00b5TP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/transmission-icon.png",
     "image": "linuxserver/transmission:latest",
-    "category": ["Downloaders"],
+    "categories": ["Downloaders"],
     "platform": "linux",
     "ports": [  
       "9091/tcp",
@@ -233,7 +233,7 @@
     "description": "Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.\r\n\r\n/music - Location of music.\r\n/media - Location of other media.\r\n/podcasts - Location of podcasts.\r\n/playlists - Location for playlists storage.\r\nCONTEXT_PATH for setting url-base in reverse proxy setups - (optional)\r\n\r\nDefault user/pass is admin/admin",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/libresonic.png",
     "image": "linuxserver/libresonic:latest",
-    "category": ["Music"],
+    "categories": ["Music"],
     "platform": "linux",
     "ports": [  
       "4040/tcp"
@@ -269,7 +269,7 @@
     "description": "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sickrage-icon.png",
     "image": "linuxserver/sickrage:latest",
-    "category": ["Downloaders","Video"],
+    "categories": ["Downloaders","Video"],
     "platform": "linux",
     "ports": [  
       "8081/tcp"
@@ -298,7 +298,7 @@
     "description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/musicbrainz-icon.png",
     "image": "linuxserver/musicbrainz:latest",
-    "category": ["Music", "Other", "Tools"],
+    "categories": ["Music", "Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "5000/tcp"
@@ -331,7 +331,7 @@
     "description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core -- much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/quassel-core-icon.png",
     "image": "linuxserver/quassel-core:latest",
-    "category": ["Messenger"],
+    "categories": ["Messenger"],
     "platform": "linux",
     "ports": [  
       "4242/tcp"
@@ -356,7 +356,7 @@
     "description": "A simple, easy way to turn a photo album into a webgallery",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/photoshow-icon.png",
     "image": "linuxserver/photoshow:latest",
-    "category": ["Photos"],
+    "categories": ["Photos"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -385,7 +385,7 @@
     "description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
     "image": "linuxserver/daapd:latest",
-    "category": ["Music"],
+    "categories": ["Music"],
     "platform": "linux",
     "volumes": [  
       {"container": "/config"},
@@ -410,7 +410,7 @@
     "description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/gazee-logo.png",
     "image": "linuxserver/gazee:latest",
-    "category": ["Web", "Books", "Tools"],
+    "categories": ["Web", "Books", "Tools"],
     "platform": "linux",
     "volumes": [  
       {"container": "/config"},
@@ -436,7 +436,7 @@
     "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/codiad-icon.png",
     "image": "linuxserver/codiad:latest",
-    "category": ["Productivity"],
+    "categories": ["Productivity"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -461,7 +461,7 @@
     "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
     "logo": "http://i.imgur.com/8LadrLg.png",
     "image": "linuxserver/oscam:latest",
-    "category": ["Other"],
+    "categories": ["Other"],
     "platform": "linux",
     "ports": [  
       "8888/tcp",
@@ -487,7 +487,7 @@
     "description": "Headless installation of Kodi\u2122 (formerly known as XBMC\u2122), to enable library updates.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/kodi-icon.png",
     "image": "linuxserver/kodi-headless:latest",
-    "category": ["Video"],
+    "categories": ["Video"],
     "platform": "linux",
     "ports": [  
       "8080/tcp",
@@ -513,7 +513,7 @@
     "description": "Pydio (formerly AjaXplorer) is a mature open source software solution for file sharing and synchronization. With intuitive user interfaces (web / mobile / desktop), Pydio provides enterprise-grade features to gain back control and privacy of your data: user directory connectors, legacy filesystems drivers, comprehensive admin interface, and much more.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/pydio-icon.png",
     "image": "linuxserver/pydio:latest",
-    "category": ["Cloud", "Other"],
+    "categories": ["Cloud", "Other"],
     "platform": "linux",
     "ports": [  
       "443/tcp"
@@ -541,7 +541,7 @@
     "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sabnzbd-icon.png",
     "image": "linuxserver/sabnzbd:latest",
-    "category": ["Downloaders"],
+    "categories": ["Downloaders"],
     "platform": "linux",
     "ports": [  
       "8080/tcp",
@@ -571,7 +571,7 @@
     "description": "Medusa, automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/medusa-icon.png",
     "image": "linuxserver/medusa:latest",
-    "category": ["Downloaders", "Video"],
+    "categories": ["Downloaders", "Video"],
     "platform": "linux",
     "ports": [  
       "8081/tcp"
@@ -600,7 +600,7 @@
     "description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/heimdall-icon.png",
     "image": "linuxserver/heimdall:latest",
-    "category": ["Tools", "Web", "Other"],
+    "categories": ["Tools", "Web", "Other"],
     "platform": "linux",
     "ports": [  
       "80/tcp",
@@ -626,7 +626,7 @@
     "description": null,
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/syncthing-icon.png",
     "image": "linuxserver/syncthing:latest",
-    "category": ["Backup:", "Cloud", "Other", "Tools"],
+    "categories": ["Backup:", "Cloud", "Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "8384/tcp",
@@ -656,7 +656,7 @@
     "description": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/muximux-icon.png",
     "image": "linuxserver/muximux:latest",
-    "category": ["Web", "Proxy", "Other", "Tools"],
+    "categories": ["Web", "Proxy", "Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -681,7 +681,7 @@
     "description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the MusicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/beets-icon.png",
     "image": "linuxserver/beets:latest",
-    "category": ["Music"],
+    "categories": ["Music"],
     "platform": "linux",
     "ports": [  
       "8337/tcp"
@@ -710,7 +710,7 @@
     "description": "Simple automated way for users to request new content for Plex.",
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
     "image": "linuxserver/plexrequests:latest",
-    "category": ["Downloaders", "Other", "Video", "Tools"],
+    "categories": ["Downloaders", "Other", "Video", "Tools"],
     "platform": "linux",
     "ports": [  
       "3000/tcp"
@@ -740,7 +740,7 @@
     "description": "An Enhanced drop in replacement for Mysql",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mariadb-icon.png",
     "image": "linuxserver/mariadb:latest",
-    "category": ["Other", "Tools"],
+    "categories": ["Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "3306/tcp"
@@ -770,7 +770,7 @@
     "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/znc-icon.png",
     "image": "linuxserver/znc:latest",
-    "category": ["Messenger"],
+    "categories": ["Messenger"],
     "platform": "linux",
     "ports": [  
       "6501/tcp"
@@ -795,7 +795,7 @@
     "description": "COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/cops-icon.png",
     "image": "linuxserver/cops:latest",
-    "category": ["Cloud", "Books"],
+    "categories": ["Cloud", "Books"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -823,7 +823,7 @@
     "description": "A self-hosted web IRC client",
     "logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
     "image": "linuxserver/thelounge:latest",
-    "category": ["Messenger"],
+    "categories": ["Messenger"],
     "platform": "linux",
     "ports": [  
       "9000/tcp"
@@ -848,7 +848,7 @@
     "description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nzbget-icon.png",
     "image": "linuxserver/nzbget:latest",
-    "category": ["Downloaders"],
+    "categories": ["Downloaders"],
     "platform": "linux",
     "ports": [  
       "6789/tcp"
@@ -876,7 +876,7 @@
     "description": "Ombi allows you to host your own Plex Request and user management system. ",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ombi.png",
     "image": "linuxserver/ombi:latest",
-    "category": ["Downloaders", "Other", "Video", "Tools"],
+    "categories": ["Downloaders", "Other", "Video", "Tools"],
     "platform": "linux",
     "ports": [  
       "3579/tcp"
@@ -901,7 +901,7 @@
     "description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lychee-icon.png",
     "image": "linuxserver/lychee:latest",
-    "category": ["Cloud", "Web", "Management", "Photos"],
+    "categories": ["Cloud", "Web", "Management", "Photos"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -929,7 +929,7 @@
     "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/deluge-icon.png",
     "image": "linuxserver/deluge:latest",
-    "category": ["Downloaders"],
+    "categories": ["Downloaders"],
     "platform": "linux",
     "volumes": [  
       {"container": "/config"},
@@ -959,7 +959,7 @@
     "description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nginx-icon.png",
     "image": "linuxserver/nginx:latest",
-    "category": ["Web", "Proxy"],
+    "categories": ["Web", "Proxy"],
     "platform": "linux",
     "ports": [  
       "80/tcp",
@@ -985,7 +985,7 @@
     "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lidarr.png",
     "image": "linuxserver/lidarr:latest",
-    "category": ["Downloaders","Music"],
+    "categories": ["Downloaders","Music"],
     "platform": "linux",
     "ports": [  
       "8686/tcp"
@@ -1014,7 +1014,7 @@
     "description": "Cardigann, a server for adding extra indexers to Sonarr, SickRage and CouchPotato via Torznab and TorrentPotato proxies. Behind the scenes Cardigann logs in and runs searches and then transforms the results into a compatible format.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/cardigann.png",
     "image": "linuxserver/cardigann:latest",
-    "category": ["Downloaders"],
+    "categories": ["Downloaders"],
     "platform": "linux",
     "ports": [  
       "5060/tcp"
@@ -1039,7 +1039,7 @@
     "description": null,
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/unifi-icon.png",
     "image": "linuxserver/unifi-controller:latest",
-    "category": ["Management", "Tools"],
+    "categories": ["Management", "Tools"],
     "platform": "linux",
     "ports": [  
       "3478/udp",
@@ -1071,7 +1071,7 @@
     "description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/calibre-web-icon.png",
     "image": "linuxserver/calibre-web:latest",
-    "category": ["Cloud", "Books"],
+    "categories": ["Cloud", "Books"],
     "platform": "linux",
     "ports": [  
       "8083/tcp"
@@ -1099,7 +1099,7 @@
     "description": null,
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/plex-icon.png",
     "image": "linuxserver/plex:latest",
-    "category": ["Video", "Music", "Photos"],
+    "categories": ["Video", "Music", "Photos"],
     "platform": "linux",
     "volumes": [{"container": "/config"}],
     "env": [  
@@ -1126,7 +1126,7 @@
     "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/hydra-icon.png",
     "image": "linuxserver/hydra:latest",
-    "category": ["Downloaders", "Other", "Tools"],
+    "categories": ["Downloaders", "Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "5075/tcp"
@@ -1154,7 +1154,7 @@
     "description": null,
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/headphones-icon.png",
     "image": "linuxserver/headphones:latest",
-    "category": ["Music"],
+    "categories": ["Music"],
     "platform": "linux",
     "ports": [  
       "8181/tcp"
@@ -1183,7 +1183,7 @@
     "description": "The qBittorrent project aims to provide an open-source software alternative to \u00b5Torrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/qbittorrent-icon.png",
     "image": "linuxserver/qbittorrent:latest",
-    "category": ["Downloaders"],
+    "categories": ["Downloaders"],
     "platform": "linux",
     "ports": [  
       "6881/tcp",
@@ -1213,7 +1213,7 @@
     "description": "CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a \"movies I want\"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/couchpotato-icon.png",
     "image": "linuxserver/couchpotato:latest",
-    "category": ["Downloaders", "Video"],
+    "categories": ["Downloaders", "Video"],
     "platform": "linux",
     "ports": [  
       "5050/tcp"
@@ -1242,7 +1242,7 @@
     "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.\r\n\r\n/config : AppData Location\r\n/download : File Download Location",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/davos.png",
     "image": "linuxserver/davos:latest",
-    "category": ["FTP", "Other", "Tools"],
+    "categories": ["FTP", "Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "8080/tcp"
@@ -1270,7 +1270,7 @@
     "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/tt-rss-icon.png",
     "image": "linuxserver/tt-rss:latest",
-    "category": ["Other"],
+    "categories": ["Other"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -1295,7 +1295,7 @@
     "description": "A free, self-hostable rss aggregator\u2026",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/freshrss-icon.png",
     "image": "linuxserver/freshrss:latest",
-    "category": ["Other"],
+    "categories": ["Other"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -1320,7 +1320,7 @@
     "description": null,
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mcmyadmin-icon.png",
     "image": "linuxserver/mcmyadmin2:latest",
-    "category": ["Other"],
+    "categories": ["Other"],
     "platform": "linux",
     "ports": [  
       "8080/tcp",
@@ -1346,7 +1346,7 @@
     "description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/openvpn-as-icon.png",
     "image": "linuxserver/openvpn-as:latest",
-    "category": ["Other"],
+    "categories": ["Other"],
     "platform": "linux",
     "ports": [  
       "943/tcp",
@@ -1378,7 +1378,7 @@
     "description": "An automated Comic Book downloader (cbr/cbz) for use with SABnzbd, NZBGet and torrents.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mylar-icon.png",
     "image": "linuxserver/mylar:latest",
-    "category": ["Downloaders", "Books"],
+    "categories": ["Downloaders", "Books"],
     "platform": "linux",
     "ports": [  
       "8090/tcp"
@@ -1407,7 +1407,7 @@
     "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/hydra-icon.png",
     "image": "linuxserver/hydra2:latest",
-    "category": ["Downloaders", "Other", "Tools"],
+    "categories": ["Downloaders", "Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "5076/tcp"
@@ -1435,7 +1435,7 @@
     "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  ",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/projectsend-logo.png",
     "image": "linuxserver/projectsend:latest",
-    "category": ["Cloud", "Productivity", "Tools", "Other"],
+    "categories": ["Cloud", "Productivity", "Tools", "Other"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -1463,7 +1463,7 @@
     "description": "Server version of minetest, a free, open source alternative to minecraft.",
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
     "image": "linuxserver/minetest:latest",
-    "category": ["Other"],
+    "categories": ["Other"],
     "platform": "linux",
     "ports": [  
       "30000/udp"
@@ -1488,7 +1488,7 @@
     "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&gt;IP and HDHomeRun as input sources.\r\nTvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&gt;IP streaming.\r\nMultiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
     "logo": "http://i.imgur.com/zGSUAT4.png",
     "image": "linuxserver/tvheadend:latest",
-    "category": ["Video", "Other"],
+    "categories": ["Video", "Other"],
     "platform": "linux",
     "ports": [  
       "9981/tcp",
@@ -1517,7 +1517,7 @@
     "description": "Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/duplicati-icon.png",
     "image": "linuxserver/duplicati:latest",
-    "category": ["Backup:", "Cloud", "Other", "Productivity", "Tools"],
+    "categories": ["Backup:", "Cloud", "Other", "Productivity", "Tools"],
     "platform": "linux",
     "ports": [  
       "8200/tcp"
@@ -1547,7 +1547,7 @@
     "description": "Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/resilio.png",
     "image": "linuxserver/resilio-sync:latest",
-    "category": ["Backup:", "Cloud", "Other", "Tools"],
+    "categories": ["Backup:", "Cloud", "Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "8888/tcp",
@@ -1577,7 +1577,7 @@
     "description": "Radarr - A fork of Sonarr to work with movies \u00e0 la Couchpotato.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/radarr.png",
     "image": "linuxserver/radarr:latest",
-    "category": ["Downloaders", "Video"],
+    "categories": ["Downloaders", "Video"],
     "platform": "linux",
     "ports": [  
       "7878/tcp"
@@ -1606,7 +1606,7 @@
     "description": "Piwigo is photo gallery software for the web, built by an active community of users and developers.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/piwigo-icon.png",
     "image": "linuxserver/piwigo:latest",
-    "category": ["Photos"],
+    "categories": ["Photos"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -1631,7 +1631,7 @@
     "description": "Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ubooquity-icon.png",
     "image": "linuxserver/ubooquity:latest",
-    "category": ["Cloud", "Books"],
+    "categories": ["Cloud", "Books"],
     "platform": "linux",
     "ports": [  
       "2202/tcp",
@@ -1666,7 +1666,7 @@
     "description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lazylibrarian-icon.png",
     "image": "linuxserver/lazylibrarian:latest",
-    "category": ["Books"],
+    "categories": ["Books"],
     "platform": "linux",
     "ports": [  
       "5299/tcp"
@@ -1695,7 +1695,7 @@
     "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/airsonic-logo.png",
     "image": "linuxserver/airsonic:latest",
-    "category": ["Music"],
+    "categories": ["Music"],
     "platform": "linux",
     "ports": [  
       "4040/tcp"
@@ -1736,7 +1736,7 @@
     "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd &lt;username&gt;",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/letsencrypt.png",
     "image": "linuxserver/letsencrypt:latest",
-    "category": ["Tools", "Web"],
+    "categories": ["Tools", "Web"],
     "platform": "linux",
     "ports": [  
       "80/tcp",
@@ -1797,7 +1797,7 @@
     "description": "Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sonarr-icon.png",
     "image": "linuxserver/sonarr:latest",
-    "category": ["Downloaders","Video"],
+    "categories": ["Downloaders","Video"],
     "platform": "linux",
     "ports": [  
       "8989/tcp"
@@ -1827,7 +1827,7 @@
     "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.[br][br]\r\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\r\n  [b]8181[/b] The webui for Tautulli's webui [br]\r\n  [b]/config[/b] Storing Configuration and the Tautulli database[br]\r\n[b]/logs[/b] Map to you plex logs (required for IP logging)[br]\r\n\r\n",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/tautulli-icon.png",
     "image": "linuxserver/tautulli:latest",
-    "category": ["Other", "Tools"],
+    "categories": ["Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "8181/tcp"
@@ -1855,7 +1855,7 @@
     "description": "Popular torrent client with a webui for ease of use.",
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
     "image": "linuxserver/rutorrent:latest",
-    "category": ["Downloaders"],
+    "categories": ["Downloaders"],
     "platform": "linux",
     "ports": [  
       "80/tcp",
@@ -1885,7 +1885,7 @@
     "description": "Nextcloud is an open source, self-hosted file sync and communication app platform. Access and sync your files, contacts, calendars and communicate and collaborate across your devices. You decide what happens with your data, where it is and who can access it!",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/nextcloud-icon.png",
     "image": "linuxserver/nextcloud:latest",
-    "category": ["Cloud", "Productivity", "Tools", "Other", "Web"],
+    "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
     "platform": "linux",
     "ports": [  
       "443/tcp"
@@ -1913,7 +1913,7 @@
     "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.\n  ",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/minisatip-icon.png",
     "image": "linuxserver/minisatip:latest",
-    "category": ["Video", "Other", "Tools"],
+    "categories": ["Video", "Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "8875/tcp",
@@ -1939,7 +1939,7 @@
     "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/organizr-icon.png",
     "image": "organizrtools/organizr-v2:latest",
-    "category": ["Other", "Tools"],
+    "categories": ["Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
@@ -1964,7 +1964,7 @@
     "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/Chevereto.png",
     "image": "nmtan/chevereto:latest",
-    "category": ["Other", "Tools", "Photo"],
+    "categories": ["Other", "Tools", "Photo"],
     "platform": "linux",
     "ports": [  
       "80/tcp"
