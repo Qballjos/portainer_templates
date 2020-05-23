@@ -1122,34 +1122,6 @@
   },
   {  
     "type": 1,
-    "title": "hydra",
-    "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
-    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/hydra-icon.png",
-    "image": "linuxserver/hydra:latest",
-    "categories": ["Downloaders", "Other", "Tools"],
-    "platform": "linux",
-    "ports": [  
-      "5075/tcp"
-    ],
-    "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"}
-    ],
-    "env": [  
-      {  
-        "name":"PUID",
-        "label":"PUID",
-        "set":""
-      },
-      {  
-        "name":"PGID",
-        "label":"PGID",
-        "set":""
-      }
-    ]
-  },
-  {  
-    "type": 1,
     "title": "headphones",
     "description": null,
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/headphones-icon.png",
@@ -1387,34 +1359,6 @@
       {"container": "/config"},
       {"container": "/downloads"},
       {"container": "/comics"}
-    ],
-    "env": [  
-      {  
-        "name":"PUID",
-        "label":"PUID",
-        "set":""
-      },
-      {  
-        "name":"PGID",
-        "label":"PGID",
-        "set":""
-      }
-    ]
-  },
-  {  
-    "type": 1,
-    "title": "hydra2",
-    "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
-    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/hydra-icon.png",
-    "image": "linuxserver/hydra2:latest",
-    "categories": ["Downloaders", "Other", "Tools"],
-    "platform": "linux",
-    "ports": [  
-      "5076/tcp"
-    ],
-    "volumes": [  
-      {"container": "/config" },
-      {"container": "/downloads"}
     ],
     "env": [  
       {  
