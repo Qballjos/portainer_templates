@@ -1431,6 +1431,34 @@
   },
   {  
     "type": 1,
+    "title": "nzbhydra2",
+    "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
+    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/hydra-icon.png",
+    "image": "linuxserver/nzbhydra2:latest",
+    "categories": ["Downloaders", "Other", "Tools"],
+    "platform": "linux",
+    "ports": [  
+      "5076/tcp"
+    ],
+    "volumes": [  
+      {"container": "/config" },
+      {"container": "/downloads"}
+    ],
+    "env": [  
+      {  
+        "name":"PUID",
+        "label":"PUID",
+        "set":""
+      },
+      {  
+        "name":"PGID",
+        "label":"PGID",
+        "set":""
+      }
+    ]
+  },
+  {  
+    "type": 1,
     "title": "projectsend",
     "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  ",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/projectsend-logo.png",
