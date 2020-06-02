@@ -1637,7 +1637,8 @@
     "image": "linuxserver/resilio-sync:latest",
     "categories": ["Backup:", "Cloud", "Other", "Tools"],
     "platform": "linux",
-    ""volumes": [{"container": "/dashmachine/dashmachine/user_data"}] {"container": "/config"},
+    "volumes":[
+      {"container": "/config"},
       {"container": "/sync"},
       {"container": "/downloads"}
     ],
@@ -2123,7 +2124,7 @@
     "type": 1,
     "title": "DashMachine",
     "description": "Another application bookmark dashboard, with fun features.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
     "image": "rmountjoy/dashmachine:latest",
     "categories": ["Other", "Tools"],
     "platform": "linux",
