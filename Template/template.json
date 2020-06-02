@@ -2209,8 +2209,8 @@
       {"container": "/config",
         "bind": "/srv/dev-disk-by-label-media/Files/AppData/Nextcloud"
       },
-      {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/Data/Nextcloud"
+      {"container": "/data",
+        "bind": "/srv/dev-disk-by-label-media/Files/Nextcloud-data"
       }
     ],
     "env": [  
