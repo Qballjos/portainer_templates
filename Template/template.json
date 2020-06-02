@@ -2132,8 +2132,8 @@
       "5000:5000/tcp"
     ],
     "volumes": [
-      {"container": "/config",
-        "bind": "/dashmachine/dashmachine/user_data"
+      {"container": "/dashmachine/dashmachine/user_data",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Dashmachine"
       }
     ]
   }
