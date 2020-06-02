@@ -77,7 +77,7 @@
     ],
     "volumes": [  
       {"container": "/books",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Jackett"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Booksonic"
       },
       {"container": "/podcast",
         "bind": "/srv/dev-disk-by-label-media/Files/Podcasts"
