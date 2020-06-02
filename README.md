@@ -1,12 +1,22 @@
 
-# Portainer Template for linuxserver.io
+# Portainer Templates for Selfhosted Projects/Homelabs
 
 This is a rewriten template that will be working with the latest portainer version
 
 ### Prerequisites
 
-1. A Server or NAS running Docker
-2. A Portainer setup.
+1. A Server running OMV (This will be changed in the future to allow bypassing this requirement)
+2. The following folders:
+  * Files (required)
+  * Downloads
+  * TV
+  * Movies
+  * Music
+  * Books
+  * Comics
+  * Podcasts
+  * Logs
+3. A Portainer setup.
 
 ### Installing
 
