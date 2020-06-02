@@ -2,7 +2,7 @@
   {  
     "type": 1,
     "title": "htpcmanager",
-    "description": "Htpcmanager, a front end for many htpc related applications. Hellowlol version.",
+    "description": "Htpcmanager, a front end for many htpc related applications. Hellowlol version. this is a test",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/htpcmanager-icon.png",
     "image": "linuxserver/htpcmanager:latest",
     "categories": ["Video", "Music", "Other"],
