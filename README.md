@@ -5,7 +5,7 @@ This is a rewriten template that will be working with the latest portainer versi
 
 ### Prerequisites
 
-1. A Server running OMV (This will be changed in the future to allow bypassing this requirement)
+1. A Server running OMV (Not 100% required but folders will be created in /srv/dev-disk-by-label-media if not installed)
 2. The following folders:
   * Files (required)
   * Downloads
