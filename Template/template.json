@@ -33,22 +33,26 @@
     "categories": ["Downloaders", "Tools"],
     "platform": "linux",
     "ports": [  
-      "9117/tcp"
+      "9117:9117/tcp"
     ],
     "volumes": [
-      {"container": "/config"},
-      {"container": "/downloads"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/AppData/HTPC"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      }
     ],
     "env": [  
       {  
         "name":"PUID",
         "label":"PUID",
-        "set":""
+        "set":"1000"
       },
       {  
         "name":"PGID",
         "label":"PGID",
-        "set":""
+        "set":"100"
       }
     ]
   },
