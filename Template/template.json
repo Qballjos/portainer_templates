@@ -76,9 +76,15 @@
       "4040/tcp"
     ],
     "volumes": [  
-      {"container": "/books"},
-      {"container": "/podcast"},
-      {"container": "/config"}
+      {"container": "/books",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Booksonic"
+      },
+      {"container": "/podcast",
+        "bind": "/srv/dev-disk-by-label-media/Files/Podcasts"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Booksonic"
+      }
     ],
     "env": [  
       {  
@@ -96,7 +102,7 @@
       {  
         "name":"CONTEXT_PATH",
         "label":"CONTEXT_PATH",
-        "set":"booksonic"
+        "default":"booksonic"
       }
     ]
   },
@@ -112,8 +118,12 @@
       "80/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/data"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Smokeping"
+      },
+      {"container": "/data",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Smokeping-Data"
+      }
     ],
     "env": [  
       {  
@@ -172,8 +182,12 @@
     "categories": ["Downloaders"],
     "platform": "linux",
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/data"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/WebGrabPlus"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/WebGrabPlus-Data"
+      }
     ],
     "env": [  
       {  
@@ -203,7 +217,10 @@
       "6144/tcp",
       "8080/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Domoticz"
+    }
+  ],
     "env": [  
       {  
         "name":"PUID",
@@ -232,8 +249,12 @@
       "51413/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"},
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Transmission"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Files/Downloads"
+      },
       {"container": "/watch"}
     ],
     "env": [  
@@ -263,11 +284,21 @@
       "4040/tcp"
     ],
     "volumes": [  
-      {"container": "/music"},
-      {"container": "/playlists"},
-      {"container": "/podcasts"},
-      {"container": "/media"},
-      {"container": "/config"}
+      {"container": "/music",
+        "bind": "/srv/dev-disk-by-label-media/Music"
+      },
+      {"container": "/playlists",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Libresonic-Playlists"
+      },
+      {"container": "/podcasts",
+        "bind": "/srv/dev-disk-by-label-media/Podcasts"
+      },
+      {"container": "/media",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Libresonic-Media"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Libresonic"
+      }
     ],
     "env": [  
       {  
@@ -301,9 +332,15 @@
       "8081/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"},
-      {"container": "/tv"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/SickRage"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      },
+      {"container": "/tv",
+        "bind": "/srv/dev-disk-by-label-media/TV"
+      }
     ],
     "env": [  
       {  
@@ -332,8 +369,12 @@
       "5000/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/data"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/MusicBrainz"
+      },
+      {"container": "/data",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/MusicBrainz-data"
+      }
     ],
     "env": [  
       {  
@@ -366,7 +407,9 @@
     "ports": [  
       "4242/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Quassel-core"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -394,9 +437,15 @@
       "80/tcp"
     ],
     "volumes": [  
-      {"container": "/Pictures"},
-      {"container": "/Thumbs"},
-      {"container": "/config"}
+      {"container": "/Pictures",
+        "bind": "/srv/dev-disk-by-label-media/Pictures"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Photoshow-Thumbs"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/PhotoShow"
+      }
     ],
     "env": [  
       {  
@@ -422,8 +471,12 @@
     "categories": ["Music"],
     "platform": "linux",
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/music"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Daapd"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Music"
+      }
     ],
     "env": [  
       {  
@@ -449,9 +502,15 @@
     "categories": ["Web", "Books", "Tools"],
     "platform": "linux",
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/comics"},
-      {"container": "/mylar"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Gazee"
+      },
+      {"container": "/comics",
+        "bind": "/srv/dev-disk-by-label-media/Comics"
+      },
+      {"container": "/mylar",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Gazee-Mylar"
+      }
     ],
     "env": [  
       {  
@@ -479,7 +538,9 @@
     "ports": [  
       "80/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Codiad"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -507,7 +568,9 @@
       "8888/tcp",
       "10000/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/OScam"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -535,7 +598,9 @@
       "8080/tcp",
       "9777/udp"
     ],
-    "volumes": [{"container": "/config/.kodi"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Kodi"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -563,8 +628,12 @@
       "443/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/data"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Pydio"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Pydio-data"
+      }
     ],
     "env": [  
       {  
@@ -594,9 +663,15 @@
       "9090/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"},
-      {"container": "/incomplete-downloads"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Sabnzbd"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      },
+      {"container": "/incomplete-downloads",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Downloads/incomplete"
+      }
     ],
     "env": [  
       {  
@@ -625,9 +700,15 @@
       "8081/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/tv"},
-      {"container": "/downloads"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Medusa"
+      },
+      {"container": "/tv",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/TV"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      }
     ],
     "env": [  
       {  
@@ -656,7 +737,9 @@
       "80/tcp",
       "443/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Heimdall"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -686,7 +769,9 @@
       "22000/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Syncthing"
+      },
       {"container": "/sync"}
     ],
     "env": [  
@@ -715,7 +800,9 @@
     "ports": [  
       "80/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Muximux"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -743,9 +830,15 @@
       "8337/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"},
-      {"container": "/music"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Beets"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Music"
+      }
     ],
     "env": [  
       {  
@@ -773,7 +866,9 @@
     "ports": [  
       "3000/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/PlexRequests"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -805,7 +900,9 @@
     "ports": [  
       "3306/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Mariadb"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -837,7 +934,9 @@
     "ports": [  
       "6501/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/ZNC"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -865,8 +964,12 @@
       "80/tcp"
     ],
     "volumes": [  
-      {"container": "/books"},
-      {"container": "/config"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Books"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Cops"
+      }
     ],
     "env": [  
       {  
@@ -894,7 +997,9 @@
     "ports": [  
       "9000/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/TheLounge"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -922,8 +1027,12 @@
       "6789/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Nzbget"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      }
     ],
     "env": [  
       {  
@@ -951,7 +1060,9 @@
     "ports": [  
       "3579/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Ombi"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -979,8 +1090,12 @@
       "80/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/pictures"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Lychee"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Pictures"
+      }
     ],
     "env": [  
       {  
@@ -1006,8 +1121,12 @@
     "categories": ["Downloaders"],
     "platform": "linux",
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Deluge"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      }
     ],
     "env": [  
       {  
@@ -1041,7 +1160,9 @@
       "80/tcp",
       "443/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Nginx"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -1069,9 +1190,15 @@
       "8686/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"},
-      {"container": "/music"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Lidarr"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      },
+      {"container": "/music",
+        "bind": "/srv/dev-disk-by-label-media/Music"
+      }
     ],
     "env": [  
       {  
@@ -1099,7 +1226,9 @@
     "ports": [  
       "5060/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Cardigann"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -1133,7 +1262,9 @@
       "8880/tcp",
       "6789/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Unifi"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -1161,8 +1292,12 @@
       "8083/tcp"
     ],
     "volumes": [  
-      {"container": "/books"},
-      {"container": "/config"}
+      {"container": "/books",
+        "bind": "/srv/dev-disk-by-label-media/Books"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Calibre-web"
+      }
     ],
     "env": [  
       {  
@@ -1187,7 +1322,9 @@
     "image": "linuxserver/plex:latest",
     "categories": ["Video", "Music", "Photos"],
     "platform": "linux",
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Plex"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -1220,9 +1357,15 @@
       "8181/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"},
-      {"container": "/music"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Headphones"
+      },
+      {"container": "/Downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Music"
+      }
     ],
     "env": [  
       {  
@@ -1253,8 +1396,12 @@
       "8080/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/qBittorrent"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      }
     ],
     "env": [  
       {  
@@ -1283,9 +1430,15 @@
       "5050/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"},
-      {"container": "/movies"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Couchpotato"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      },
+      {"container": "/movies",
+        "bind": "/srv/dev-disk-by-label-media/Movies"
+      }
     ],
     "env": [  
       {  
@@ -1314,8 +1467,12 @@
       "8080/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/download"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Davos"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      }
     ],
     "env": [  
       {  
@@ -1343,7 +1500,9 @@
     "ports": [  
       "80/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/tt-rss"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -1370,7 +1529,9 @@
     "ports": [  
       "80/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/freshrss"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -1427,7 +1588,9 @@
       "9443/tcp",
       "1194/udp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/OpenVPN-AS"
+    }],
     "env": [  
       {  
         "name":"INTERFACE",
@@ -1460,9 +1623,15 @@
       "8090/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"},
-      {"container": "/comics"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Mylar"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      },
+      {"container": "/comics",
+        "bind": "/srv/dev-disk-by-label-media/Comics"
+      }
     ],
     "env": [  
       {  
@@ -1491,8 +1660,12 @@
       "5076/tcp"
     ],
     "volumes": [  
-      {"container": "/config" },
-      {"container": "/downloads"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Nzbhydra2"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      }
     ],
     "env": [  
       {  
@@ -1521,8 +1694,12 @@
       "80/tcp"
     ],
     "volumes": [  
-      {"container": "/data"},
-      {"container": "/config"}
+      {"container": "/data",
+        "bind": "/srv/dev-disk-by-label-media/Data/ProjectSend"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/ProjectSend"
+      }
     ],
     "env": [  
       {  
@@ -1579,7 +1756,9 @@
       "9982/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/TVHeadend"
+      },
       {"container": "/recordings"}
     ],
     "env": [  
@@ -1609,7 +1788,9 @@
       "8200/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Duplicati"
+      },
       {"container": "/tmp"},
       {"container": "/backups"},
       {"container": "/source"}
@@ -1638,9 +1819,13 @@
     "categories": ["Backup:", "Cloud", "Other", "Tools"],
     "platform": "linux",
     "volumes":[
-      {"container": "/config"},
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Resilio-Sync"
+      },
       {"container": "/sync"},
-      {"container": "/downloads"}
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      }
     ],
     "env": [  
       {  
@@ -1669,9 +1854,15 @@
       "7878/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"},
-      {"container": "/movies"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Radarr"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      },
+      {"container": "/movies",
+        "bind": "/srv/dev-disk-by-label-media/Movies"
+      }
     ],
     "env": [  
       {  
@@ -1699,7 +1890,9 @@
     "ports": [  
       "80/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/PiWigo"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -1838,7 +2031,9 @@
       "80/tcp",
       "443/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/LetsEncrypt"
+    }],
     "env": [  
       {  
         "name":"EMAIL",
@@ -1901,10 +2096,18 @@
       "8989/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/dev/rtc"},
-      {"container": "/tv"},
-      {"container": "/downloads"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Sonarr"
+      },
+      {"container": "/dev/rtc",
+        "bind": "/dev/rtc"
+      },
+      {"container": "/tv",
+        "bind": "/srv/dev-disk-by-label-media/TV"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      }
     ],
     "env": [  
       {  
@@ -1933,8 +2136,12 @@
       "8181/tcp"
     ],
     "volumes": [  
-      {"container": "/logs"},
-      {"container": "/config"}
+      {"container": "/logs",
+        "bind": "/srv/dev-disk-by-label-media/Logs"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Tautulli"
+      }
     ],
     "env": [  
       {  
@@ -1965,8 +2172,12 @@
       "6881/udp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/downloads"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/ruTorrent"
+      },
+      {"container": "/downloads",
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
+      }
     ],
     "env": [  
       {  
@@ -1995,8 +2206,12 @@
       "443/tcp"
     ],
     "volumes": [  
-      {"container": "/config"},
-      {"container": "/data"}
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Nextcloud"
+      },
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/Data/Nextcloud"
+      }
     ],
     "env": [  
       {  
@@ -2052,7 +2267,9 @@
     "ports": [  
       "80/tcp"
     ],
-    "volumes": [{"container": "/config"}],
+    "volumes": [{"container": "/config",
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Organizr"
+    }],
     "env": [  
       {  
         "name":"PUID",
@@ -2124,7 +2341,7 @@
     "type": 1,
     "title": "DashMachine",
     "description": "Another application bookmark dashboard, with fun features.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
     "image": "rmountjoy/dashmachine:latest",
     "categories": ["Other", "Tools"],
     "platform": "linux",
@@ -2132,8 +2349,8 @@
       "5000:5000/tcp"
     ],
     "volumes": [
-      {"container": "/config",
-        "bind": "/dashmachine/dashmachine/user_data"
+      {"container": "/dashmachine/dashmachine/user_data",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Dashmachine"
       }
     ]
   }
