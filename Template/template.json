@@ -2124,7 +2124,7 @@
     "type": 1,
     "title": "DashMachine",
     "description": "Another application bookmark dashboard, with fun features.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
     "image": "rmountjoy/dashmachine:latest",
     "categories": ["Other", "Tools"],
     "platform": "linux",
