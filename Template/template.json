@@ -2,7 +2,7 @@
   {  
     "type": 1,
     "title": "htpcmanager",
-    "description": "Htpcmanager, a front end for many htpc related applications. Hellowlol version.",
+    "description": "Htpcmanager, a front end for many htpc related applications. Hellowlol version. this is a test",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/htpcmanager-icon.png",
     "image": "linuxserver/htpcmanager:latest",
     "categories": ["Video", "Music", "Other"],
@@ -2123,5 +2123,19 @@
         "set":""
       }
     ]
+  },
+  {  
+    "type": 1,
+    "title": "DashMachine",
+    "description": "Another application bookmark dashboard, with fun features.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
+    "image": "rmountjoy/dashmachine:latest",
+    "categories": ["Other", "Tools"],
+    "platform": "linux",
+    "ports": [  
+      "5000:5000/tcp"
+    ],
+    "volumes": [{"container": "/dashmachine/dashmachine/user_data"}]
+
   }
 ]
