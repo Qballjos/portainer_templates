@@ -12,7 +12,7 @@
     ],
     "volumes": [
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/AppData/HTPCmanager"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/HTPCmanager"
       }
     ],
     "env": [  
@@ -43,7 +43,7 @@
     ],
     "volumes": [
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/AppData/Jackett"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Jackett"
       },
       {"container": "/downloads",
         "bind": "/srv/dev-disk-by-label-media/Downloads"
@@ -1637,12 +1637,7 @@
     "image": "linuxserver/resilio-sync:latest",
     "categories": ["Backup:", "Cloud", "Other", "Tools"],
     "platform": "linux",
-    "ports": [  
-      "8888/tcp",
-      "55555/tcp"
-    ],
-    "volumes": [  
-      {"container": "/config"},
+    ""volumes": [{"container": "/dashmachine/dashmachine/user_data"}] {"container": "/config"},
       {"container": "/sync"},
       {"container": "/downloads"}
     ],
@@ -2128,14 +2123,17 @@
     "type": 1,
     "title": "DashMachine",
     "description": "Another application bookmark dashboard, with fun features.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
     "image": "rmountjoy/dashmachine:latest",
     "categories": ["Other", "Tools"],
     "platform": "linux",
     "ports": [  
       "5000:5000/tcp"
     ],
-    "volumes": [{"container": "/dashmachine/dashmachine/user_data"}]
-
+    "volumes": [
+      {"container": "/config",
+        "bind": "/dashmachine/dashmachine/user_data"
+      }
+    ]
   }
 ]
