@@ -10,10 +10,11 @@
     "ports": [  
       "8085/tcp"
     ],
-    "volumes":
-    {"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/AppData/HTPC"
-    },
+    "volumes": [
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/AppData/HTPCmanager"
+      }
+    ],
     "env": [  
       {  
         "name":"PUID",
