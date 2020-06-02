@@ -10,7 +10,7 @@ This is a rewriten template that will be working with the latest portainer versi
 
 ### Installing
 
-Login to your portainer setup go to settings -> enable Use external templates -> add the url: https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Template/template.json
+Login to your portainer setup go to settings -> enable Use external templates -> add the url: https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/template.json
 
 ## Contributing
 
