@@ -7,6 +7,7 @@
     "image": "linuxserver/htpcmanager:latest",
     "categories": ["Video", "Music", "Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8085/tcp"
     ],
@@ -38,6 +39,7 @@
     "image": "linuxserver/jackett:latest",
     "categories": ["Downloaders", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "9117/tcp"
     ],
@@ -72,6 +74,7 @@
     "image": "linuxserver/booksonic:latest",
     "categories": ["Books", "Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "4040/tcp"
     ],
@@ -114,6 +117,7 @@
     "image": "linuxserver/smokeping:latest",
     "categories": ["Management"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -148,6 +152,7 @@
     "image": "linuxserver/duckdns:latest",
     "categories": ["DNS", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "env": [  
       {  
         "name":"SUBDOMAINS",
@@ -181,6 +186,7 @@
     "image": "linuxserver/webgrabplus:latest",
     "categories": ["Downloaders"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "volumes": [  
       {"container": "/config",
         "bind": "/portainer/Files/AppData/Config/WebGrabPlus"
@@ -212,6 +218,7 @@
     "image": "linuxserver/domoticz:latest",
     "categories": ["HomeAutomation:", "Management"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "1443/tcp",
       "6144/tcp",
@@ -244,6 +251,7 @@
     "image": "linuxserver/transmission:latest",
     "categories": ["Downloaders"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "9091/tcp",
       "51413/tcp"
@@ -280,6 +288,7 @@
     "image": "linuxserver/libresonic:latest",
     "categories": ["Music"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "4040/tcp"
     ],
@@ -328,6 +337,7 @@
     "image": "linuxserver/sickrage:latest",
     "categories": ["Downloaders","Video"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8081/tcp"
     ],
@@ -365,6 +375,7 @@
     "image": "linuxserver/musicbrainz:latest",
     "categories": ["Music", "Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "5000/tcp"
     ],
@@ -404,6 +415,7 @@
     "image": "linuxserver/quassel-core:latest",
     "categories": ["Messenger"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "4242/tcp"
     ],
@@ -433,6 +445,7 @@
     "image": "linuxserver/photoshow:latest",
     "categories": ["Photos"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -470,6 +483,7 @@
     "image": "linuxserver/daapd:latest",
     "categories": ["Music"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "volumes": [  
       {"container": "/config",
         "bind": "/portainer/Files/AppData/Config/Daapd"
@@ -501,6 +515,7 @@
     "image": "linuxserver/gazee:latest",
     "categories": ["Web", "Books", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "volumes": [  
       {"container": "/config",
         "bind": "/portainer/Files/AppData/Config/Gazee"
@@ -535,6 +550,7 @@
     "image": "linuxserver/codiad:latest",
     "categories": ["Productivity"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -564,6 +580,7 @@
     "image": "linuxserver/oscam:latest",
     "categories": ["Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8888/tcp",
       "10000/tcp"
@@ -594,6 +611,7 @@
     "image": "linuxserver/kodi-headless:latest",
     "categories": ["Video"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8080/tcp",
       "9777/udp"
@@ -624,6 +642,7 @@
     "image": "linuxserver/pydio:latest",
     "categories": ["Cloud", "Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "443/tcp"
     ],
@@ -658,6 +677,7 @@
     "image": "linuxserver/sabnzbd:latest",
     "categories": ["Downloaders"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8080/tcp",
       "9090/tcp"
@@ -696,6 +716,7 @@
     "image": "linuxserver/medusa:latest",
     "categories": ["Downloaders", "Video"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8081/tcp"
     ],
@@ -733,6 +754,7 @@
     "image": "linuxserver/heimdall:latest",
     "categories": ["Tools", "Web", "Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp",
       "443/tcp"
@@ -763,6 +785,7 @@
     "image": "linuxserver/syncthing:latest",
     "categories": ["Backup:", "Cloud", "Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8384/tcp",
       "21027/udp",
@@ -797,6 +820,7 @@
     "image": "linuxserver/muximux:latest",
     "categories": ["Web", "Proxy", "Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -826,6 +850,7 @@
     "image": "linuxserver/beets:latest",
     "categories": ["Music"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8337/tcp"
     ],
@@ -863,6 +888,7 @@
     "image": "linuxserver/plexrequests:latest",
     "categories": ["Downloaders", "Other", "Video", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "3000/tcp"
     ],
@@ -897,6 +923,7 @@
     "image": "linuxserver/mariadb:latest",
     "categories": ["Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "3306/tcp"
     ],
@@ -931,6 +958,7 @@
     "image": "linuxserver/znc:latest",
     "categories": ["Messenger"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "6501/tcp"
     ],
@@ -960,6 +988,7 @@
     "image": "linuxserver/cops:latest",
     "categories": ["Cloud", "Books"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -994,6 +1023,7 @@
     "image": "linuxserver/thelounge:latest",
     "categories": ["Messenger"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "9000/tcp"
     ],
@@ -1023,6 +1053,7 @@
     "image": "linuxserver/nzbget:latest",
     "categories": ["Downloaders"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "6789/tcp"
     ],
@@ -1057,6 +1088,7 @@
     "image": "linuxserver/ombi:latest",
     "categories": ["Downloaders", "Other", "Video", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "3579/tcp"
     ],
@@ -1086,6 +1118,7 @@
     "image": "linuxserver/lychee:latest",
     "categories": ["Cloud", "Web", "Management", "Photos"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -1120,6 +1153,7 @@
     "image": "linuxserver/deluge:latest",
     "categories": ["Downloaders"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "volumes": [  
       {"container": "/config",
         "bind": "/portainer/Files/AppData/Config/Deluge"
@@ -1156,6 +1190,7 @@
     "image": "linuxserver/nginx:latest",
     "categories": ["Web", "Proxy"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp",
       "443/tcp"
@@ -1186,6 +1221,7 @@
     "image": "linuxserver/lidarr:latest",
     "categories": ["Downloaders","Music"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8686/tcp"
     ],
@@ -1223,6 +1259,7 @@
     "image": "linuxserver/cardigann:latest",
     "categories": ["Downloaders"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "5060/tcp"
     ],
@@ -1252,6 +1289,7 @@
     "image": "linuxserver/unifi-controller:latest",
     "categories": ["Management", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "3478/udp",
       "10001/udp",
@@ -1288,6 +1326,7 @@
     "image": "linuxserver/calibre-web:latest",
     "categories": ["Cloud", "Books"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8083/tcp"
     ],
@@ -1322,6 +1361,7 @@
     "image": "linuxserver/plex:latest",
     "categories": ["Video", "Music", "Photos"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "network": "host",
     "volumes": [{"container": "/config",
       "bind": "/portainer/Files/AppData/Config/Plex"
@@ -1354,6 +1394,7 @@
     "image": "linuxserver/headphones:latest",
     "categories": ["Music"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8181/tcp"
     ],
@@ -1391,6 +1432,7 @@
     "image": "linuxserver/qbittorrent:latest",
     "categories": ["Downloaders"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "6881/tcp",
       "6881/udp",
@@ -1427,6 +1469,7 @@
     "image": "linuxserver/couchpotato:latest",
     "categories": ["Downloaders", "Video"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "5050/tcp"
     ],
@@ -1464,6 +1507,7 @@
     "image": "linuxserver/davos:latest",
     "categories": ["FTP", "Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8080/tcp"
     ],
@@ -1498,6 +1542,7 @@
     "image": "linuxserver/tt-rss:latest",
     "categories": ["Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -1527,6 +1572,7 @@
     "image": "linuxserver/freshrss:latest",
     "categories": ["Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -1556,6 +1602,7 @@
     "image": "linuxserver/mcmyadmin2:latest",
     "categories": ["Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8080/tcp",
       "25565/tcp"
@@ -1584,6 +1631,7 @@
     "image": "linuxserver/openvpn-as:latest",
     "categories": ["Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "943/tcp",
       "9443/tcp",
@@ -1620,6 +1668,7 @@
     "image": "linuxserver/mylar:latest",
     "categories": ["Downloaders", "Books"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8090/tcp"
     ],
@@ -1657,6 +1706,7 @@
     "image": "linuxserver/nzbhydra2:latest",
     "categories": ["Downloaders", "Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "5076/tcp"
     ],
@@ -1691,6 +1741,7 @@
     "image": "linuxserver/projectsend:latest",
     "categories": ["Cloud", "Productivity", "Tools", "Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -1725,6 +1776,7 @@
     "image": "linuxserver/minetest:latest",
     "categories": ["Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "30000/udp"
     ],
@@ -1752,6 +1804,7 @@
     "image": "linuxserver/tvheadend:latest",
     "categories": ["Video", "Other"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "9981/tcp",
       "9982/tcp"
@@ -1785,6 +1838,7 @@
     "image": "linuxserver/duplicati:latest",
     "categories": ["Backup:", "Cloud", "Other", "Productivity", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8200/tcp"
     ],
@@ -1819,6 +1873,7 @@
     "image": "linuxserver/resilio-sync:latest",
     "categories": ["Backup:", "Cloud", "Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "volumes":[
       {"container": "/config",
         "bind": "/portainer/Files/AppData/Config/Resilio-Sync"
@@ -1851,6 +1906,7 @@
     "image": "linuxserver/radarr:latest",
     "categories": ["Downloaders", "Video"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "7878/tcp"
     ],
@@ -1888,6 +1944,7 @@
     "image": "linuxserver/piwigo:latest",
     "categories": ["Photos"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -1917,6 +1974,7 @@
     "image": "linuxserver/ubooquity:latest",
     "categories": ["Cloud", "Books"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "2202/tcp",
       "2203/tcp"
@@ -1954,6 +2012,7 @@
     "image": "linuxserver/lazylibrarian:latest",
     "categories": ["Books"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "5299/tcp"
     ],
@@ -1985,6 +2044,7 @@
     "image": "linuxserver/airsonic:latest",
     "categories": ["Music"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "4040/tcp"
     ],
@@ -2028,6 +2088,7 @@
     "image": "linuxserver/letsencrypt:latest",
     "categories": ["Tools", "Web"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp",
       "443/tcp"
@@ -2093,6 +2154,7 @@
     "image": "linuxserver/sonarr:latest",
     "categories": ["Downloaders","Video"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8989/tcp"
     ],
@@ -2133,6 +2195,7 @@
     "image": "linuxserver/tautulli:latest",
     "categories": ["Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8181/tcp"
     ],
@@ -2167,6 +2230,7 @@
     "image": "linuxserver/rutorrent:latest",
     "categories": ["Downloaders"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp",
       "51413/tcp",
@@ -2203,6 +2267,7 @@
     "image": "linuxserver/nextcloud:latest",
     "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "443/tcp"
     ],
@@ -2237,6 +2302,7 @@
     "image": "linuxserver/minisatip:latest",
     "categories": ["Video", "Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8875/tcp",
       "554/tcp",
@@ -2265,6 +2331,7 @@
     "image": "organizrtools/organizr-v2:latest",
     "categories": ["Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -2294,6 +2361,7 @@
     "image": "nmtan/chevereto:latest",
     "categories": ["Other", "Tools", "Photo"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80/tcp"
     ],
@@ -2346,6 +2414,7 @@
     "image": "rmountjoy/dashmachine:latest",
     "categories": ["Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "5000:5000/tcp"
     ],
@@ -2363,6 +2432,7 @@
     "image": "mazzolino/tiddlywiki:latest",
     "categories": ["Other", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "8080:8080/tcp"
     ],
@@ -2380,6 +2450,7 @@
     "image": "jlesage/nginx-proxy-manager",
     "categories": ["Proxy", "Tools"],
     "platform": "linux",
+    "restart_policy": "unless-stopped",
     "ports": [  
       "80:8080/tcp",
       "81:8181/tcp",
