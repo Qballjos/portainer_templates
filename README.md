@@ -1,7 +1,7 @@
 
 # Portainer Templates for Selfhosted Projects/Homelabs
 
-This is a rewriten template that will be working with the latest portainer version
+This is a template focused on helping people spin up selfhosted services using Portainer.
 
 ### Prerequisites
 
@@ -15,7 +15,6 @@ This is a rewriten template that will be working with the latest portainer versi
   * Books
   * Comics
   * Podcasts
-  * Logs
 3. A Portainer setup.
 
 ### Installing
@@ -24,13 +23,14 @@ Login to your portainer setup go to settings -> enable Use external templates ->
 
 ## Contributing
 
-If you wish to contribute contact me by email.
+If you wish to contribute make a pull request, create an issue, or email me.
 
 ## Authors
-
+* **NASHosted** - *Current Work*
+* **SelfhostedPro** - *Current Work*
 * **Jos Visser** - *Initial work* - [Qballjos](https://github.com/Qballjos)
 
-See also the list of [contributors](https://github.com/Qballjos/portainer_templates/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/SelfhostedPro/selfhosted_templates/contributors) who participated in this project.
 
 ## Acknowledgments
 
