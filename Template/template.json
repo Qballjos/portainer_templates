@@ -25,7 +25,7 @@
     "type": 1,
     "title": "DeeMix",
     "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
     "image": "rmountjoy/dashmachine:latest",
     "categories": ["Other", "Tools"],
     "platform": "linux",
