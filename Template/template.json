@@ -223,18 +223,18 @@
       {
         "name": "OPENVPN_PROVIDER",
         "label": "OPENVPN_PROVIDER",
-        "description": "Supported Providers https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
+        "description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
         "default": "MULLVAD"
       },
       {
         "name": "OPENVPN_USERNAME",
         "label": "OPENVPN_USERNAME",
-        "default": "username"
+        "default": ""
       },
       {
         "name": "OPENVPN_PASSWORD",
         "label": "OPENVPN_PASSWORD",
-        "default": "password"
+        "default": ""
       },
       {
         "name": "LOCAL_NETWORK",
