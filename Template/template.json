@@ -1322,6 +1322,7 @@
     "image": "linuxserver/plex:latest",
     "categories": ["Video", "Music", "Photos"],
     "platform": "linux",
+    "network": "host",
     "volumes": [{"container": "/config",
       "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Plex"
     }],
