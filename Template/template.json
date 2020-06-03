@@ -1,67 +1,6 @@
 [
   {
     "type": 1,
-    "title": "Chevereto",
-    "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Chevereto.png",
-    "image": "nmtan/chevereto:latest",
-    "categories": [
-      "Other",
-      "Tools",
-      "Photo"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "80/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/var/www/html/images"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      },
-      {
-        "name": "CHEVERETO_DB_HOST",
-        "label": "CHEVERETO_DB_HOST",
-        "set": ""
-      },
-      {
-        "name": "CHEVERETO_DB_USERNAME",
-        "label": "CHEVERETO_DB_USERNAME",
-        "set": ""
-      },
-      {
-        "name": "CHEVERETO_DB_PASSWORD",
-        "label": "CHEVERETO_DB_PASSWORD",
-        "set": ""
-      },
-      {
-        "name": "CHEVERETO_DB_NAME",
-        "label": "CHEVERETO_DB_NAME",
-        "set": ""
-      },
-      {
-        "name": "CHEVERETO_DB_PREFIX",
-        "label": "CHEVERETO_DB_PREFIX",
-        "set": ""
-      }
-    ]
-  },
-  {
-    "type": 1,
     "title": "DashMachine",
     "description": "Another application bookmark dashboard, with fun features.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
@@ -384,6 +323,67 @@
         "label": "PGID",
         "default": "100",
         "preset": true
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Chevereto",
+    "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Chevereto.png",
+    "image": "nmtan/chevereto:latest",
+    "categories": [
+      "Other",
+      "Tools",
+      "Photo"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/var/www/html/images"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "CHEVERETO_DB_HOST",
+        "label": "CHEVERETO_DB_HOST",
+        "set": ""
+      },
+      {
+        "name": "CHEVERETO_DB_USERNAME",
+        "label": "CHEVERETO_DB_USERNAME",
+        "set": ""
+      },
+      {
+        "name": "CHEVERETO_DB_PASSWORD",
+        "label": "CHEVERETO_DB_PASSWORD",
+        "set": ""
+      },
+      {
+        "name": "CHEVERETO_DB_NAME",
+        "label": "CHEVERETO_DB_NAME",
+        "set": ""
+      },
+      {
+        "name": "CHEVERETO_DB_PREFIX",
+        "label": "CHEVERETO_DB_PREFIX",
+        "set": ""
       }
     ]
   },
