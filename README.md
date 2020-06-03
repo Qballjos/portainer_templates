@@ -5,7 +5,7 @@ This is a template focused on helping people spin up selfhosted services using P
 
 ### Prerequisites
 
-1. A Server running OMV (Not 100% required but folders will be created in /srv/dev-disk-by-label-media if not installed)
+1. A Server running OMV with a drive labeled media (Not 100% required but folders will be created in /srv/dev-disk-by-label-media if not installed)
 2. The following folders:
   * Files (required)
   * Downloads
