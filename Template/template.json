@@ -38,7 +38,7 @@
         "bind": "/portainer/Files/AppData/Config/DeeMix"
       },
       {"container": "/downloads",
-        "bind": "/path/to/music"
+        "bind": "/portainer/Downloads"
       }
     ]   
   },
