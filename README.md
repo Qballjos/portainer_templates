@@ -6,7 +6,7 @@ This is a template focused on helping people spin up selfhosted services using P
 ### Prerequisites
 
 1. A Server running OMV with a drive labeled media (Not 100% required but folders will be created in /srv/dev-disk-by-label-media if not installed)
-2. The following folders:
+2. The following shared folders:
   * Files (required)
   * Downloads
   * TV
@@ -16,6 +16,8 @@ This is a template focused on helping people spin up selfhosted services using P
   * Comics
   * Podcasts
 3. A Portainer setup.
+
+*Want something we don't have? Make an issue and we'll work on adding it*
 
 ### Installing
 
