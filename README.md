@@ -3,19 +3,12 @@
 
 This is a template focused on helping people spin up selfhosted services using Portainer.
 
+*for the OMV5 version use the OMV5 branch*
+
 ### Prerequisites
 
-1. A Server running OMV with a drive labeled media (Not 100% required but folders will be created in /srv/dev-disk-by-label-media if not installed)
-2. The following shared folders:
-  * Files (required)
-  * Downloads
-  * TV
-  * Movies
-  * Music
-  * Books
-  * Comics
-  * Podcasts
-3. A Portainer setup.
+1. A server/NAS with docker installed
+2. A Portainer setup.
 
 *Want something we don't have? Make an issue and we'll work on adding it*
 
@@ -26,7 +19,7 @@ This is a template focused on helping people spin up selfhosted services using P
 3. Add the url: `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/template.json` then go to app templates and hit refresh at the top.
 
 ### Information
-All templates are already configured to bind mount to various places on your drive. The initial build is for use with OpenMediaVault v5. The following folders are all created in /srv/dev-disk-by-label-media/
+All templates are already configured to bind mount to various places on your drive. This branch works without the need for OMV. The following folders are all created in /portainer/
 
 * **Files** - General file storage.
   * **AppData** - Subfolder where application data (unrelated to served data) is stored.
