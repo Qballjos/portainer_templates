@@ -2029,6 +2029,14 @@
       {
         "container": "/config",
         "bind": "/portainer/Files/AppData/Config/Plex"
+      },
+      {
+        "container": "/tv",
+        "bind": "/portainer/TV"
+      },
+      {
+        "container": "/movies",
+        "bind": "/portainer/Movies"
       }
     ],
     "env": [
