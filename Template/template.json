@@ -47,7 +47,7 @@
     "type": 1,
     "title": "LibreSpeed",
     "description": "Another application bookmark dashboard, with fun features.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtestpng",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
     "image": "linuxserver/librespeed:latest",
     "categories": [
       "Other",
