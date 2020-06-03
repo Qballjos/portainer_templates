@@ -187,6 +187,7 @@
     "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
     "image": "haugene/transmission-openvpn:latest",
+    "note" : "List of supported providers available here: https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
     "categories": [
       "Other",
       "VPN",
