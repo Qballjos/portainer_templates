@@ -23,6 +23,76 @@
   },
   {
     "type": 1,
+    "title": "Reactive-Resume",
+    "description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/reactiveresume.png",
+    "image": "amruthpillai/reactive-resume:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/usr/src/app",
+        "bind": "/portainer/Files/AppData/Config/ReactiveResume"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "LibreSpeed",
+    "description": "Another application bookmark dashboard, with fun features.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtestpng",
+    "image": "linuxserver/librespeed:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/LibreSpeed"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "DeeMix",
+    "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
+    "image": "bocki/deemix:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "9666:9666/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/DeeMix"
+      },
+      {
+        "container": "/downloads",
+        "bind": "/portainer/Downloads"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Nginx Proxy Manager",
     "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/proxy_mgr.png",
