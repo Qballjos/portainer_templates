@@ -2,7 +2,7 @@
   {  
     "type": 1,
     "title": "htpcmanager",
-    "description": "Htpcmanager, a front end for many htpc related applications. Hellowlol version. this is a test",
+    "description": "Htpcmanager, a front end for many htpc related applications. Hellowlol version.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/htpcmanager-icon.png",
     "image": "linuxserver/htpcmanager:latest",
     "categories": ["Video", "Music", "Other"],
@@ -2353,6 +2353,23 @@
         "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Dashmachine"
       }
     ]
+  },
+  {  
+    "type": 1,
+    "title": "TiddlyWiki",
+    "description": "A unique, non-linear notebook wiki.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tiddlywiki.png",
+    "image": "mazzolino/tiddlywiki:latest",
+    "categories": ["Other", "Tools"],
+    "platform": "linux",
+    "ports": [  
+      "8080:8080/tcp"
+    ],
+    "volumes": [
+      {"container": "/var/lib/tiddlywiki",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/TiddlyWiki"
+      }
+    ] 
   },
   {  
     "type": 1,
