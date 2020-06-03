@@ -46,4 +46,4 @@ See also the list of [contributors](https://github.com/SelfhostedPro/selfhosted_
 ## Acknowledgments
 
 * LinuxServer.io for the old Template
-* Inspiration being to lazy to create each container template manualy
+* Inspiration being too lazy to create each container template manualy
