@@ -12,7 +12,7 @@
     ],
     "volumes": [
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/HTPCmanager"
+        "bind": "/portainer/Files/AppData/Config/HTPCmanager"
       }
     ],
     "env": [  
@@ -43,10 +43,10 @@
     ],
     "volumes": [
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Jackett"
+        "bind": "/portainer/Files/AppData/Config/Jackett"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [  
@@ -77,13 +77,13 @@
     ],
     "volumes": [  
       {"container": "/books",
-        "bind": "/srv/dev-disk-by-label-media/Books"
+        "bind": "/portainer/Books"
       },
       {"container": "/podcast",
-        "bind": "/srv/dev-disk-by-label-media/Files/Podcasts"
+        "bind": "/portainer/Files/Podcasts"
       },
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Booksonic"
+        "bind": "/portainer/Files/AppData/Config/Booksonic"
       }
     ],
     "env": [  
@@ -119,10 +119,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Smokeping"
+        "bind": "/portainer/Files/AppData/Config/Smokeping"
       },
       {"container": "/data",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Smokeping"
+        "bind": "/portainer/Files/AppData/Smokeping"
       }
     ],
     "env": [  
@@ -183,10 +183,10 @@
     "platform": "linux",
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/WebGrabPlus"
+        "bind": "/portainer/Files/AppData/Config/WebGrabPlus"
       },
       {"container": "/data",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/WebGrabPlus"
+        "bind": "/portainer/Files/AppData/WebGrabPlus"
       }
     ],
     "env": [  
@@ -218,7 +218,7 @@
       "8080/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Domoticz"
+      "bind": "/portainer/Files/AppData/Config/Domoticz"
     }
   ],
     "env": [  
@@ -250,10 +250,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Transmission"
+        "bind": "/portainer/Files/AppData/Config/Transmission"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Files/Downloads"
+        "bind": "/portainer/Files/Downloads"
       },
       {"container": "/watch"}
     ],
@@ -285,19 +285,19 @@
     ],
     "volumes": [  
       {"container": "/music",
-        "bind": "/srv/dev-disk-by-label-media/Music"
+        "bind": "/portainer/Music"
       },
       {"container": "/playlists",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Libresonic/Playlists"
+        "bind": "/portainer/Files/AppData/Libresonic/Playlists"
       },
       {"container": "/podcasts",
-        "bind": "/srv/dev-disk-by-label-media/Podcasts"
+        "bind": "/portainer/Podcasts"
       },
       {"container": "/media",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Libresonic/Media"
+        "bind": "/portainer/Files/AppData/Libresonic/Media"
       },
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Libresonic"
+        "bind": "/portainer/Files/AppData/Config/Libresonic"
       }
     ],
     "env": [  
@@ -333,13 +333,13 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/SickRage"
+        "bind": "/portainer/Files/AppData/Config/SickRage"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       },
       {"container": "/tv",
-        "bind": "/srv/dev-disk-by-label-media/TV"
+        "bind": "/portainer/TV"
       }
     ],
     "env": [  
@@ -370,10 +370,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/MusicBrainz"
+        "bind": "/portainer/Files/AppData/Config/MusicBrainz"
       },
       {"container": "/data",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/MusicBrainz"
+        "bind": "/portainer/Files/AppData/MusicBrainz"
       }
     ],
     "env": [  
@@ -408,7 +408,7 @@
       "4242/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Quassel-core"
+      "bind": "/portainer/Files/AppData/Config/Quassel-core"
     }],
     "env": [  
       {  
@@ -438,13 +438,13 @@
     ],
     "volumes": [  
       {"container": "/Pictures",
-        "bind": "/srv/dev-disk-by-label-media/Pictures"
+        "bind": "/portainer/Pictures"
       },
       {"container": "/Thumbs",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Photoshow/Thumbs"
+        "bind": "/portainer/Files/AppData/Photoshow/Thumbs"
       },
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/PhotoShow"
+        "bind": "/portainer/Files/AppData/Config/PhotoShow"
       }
     ],
     "env": [  
@@ -472,10 +472,10 @@
     "platform": "linux",
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Daapd"
+        "bind": "/portainer/Files/AppData/Config/Daapd"
       },
       {"container": "/music",
-        "bind": "/srv/dev-disk-by-label-media/Music"
+        "bind": "/portainer/Music"
       }
     ],
     "env": [  
@@ -503,13 +503,13 @@
     "platform": "linux",
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Gazee"
+        "bind": "/portainer/Files/AppData/Config/Gazee"
       },
       {"container": "/comics",
-        "bind": "/srv/dev-disk-by-label-media/Comics"
+        "bind": "/portainer/Comics"
       },
       {"container": "/mylar",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Gazee"
+        "bind": "/portainer/Files/AppData/Gazee"
       }
     ],
     "env": [  
@@ -539,7 +539,7 @@
       "80/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Codiad"
+      "bind": "/portainer/Files/AppData/Config/Codiad"
     }],
     "env": [  
       {  
@@ -569,7 +569,7 @@
       "10000/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/OScam"
+      "bind": "/portainer/Files/AppData/Config/OScam"
     }],
     "env": [  
       {  
@@ -599,7 +599,7 @@
       "9777/udp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Kodi"
+      "bind": "/portainer/Files/AppData/Config/Kodi"
     }],
     "env": [  
       {  
@@ -629,10 +629,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Pydio"
+        "bind": "/portainer/Files/AppData/Config/Pydio"
       },
       {"container": "/data",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Pydio"
+        "bind": "/portainer/Files/AppData/Pydio"
       }
     ],
     "env": [  
@@ -664,13 +664,13 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Sabnzbd"
+        "bind": "/portainer/Files/AppData/Config/Sabnzbd"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       },
       {"container": "/incomplete-downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads/incomplete"
+        "bind": "/portainer/Downloads/incomplete"
       }
     ],
     "env": [  
@@ -701,13 +701,13 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Medusa"
+        "bind": "/portainer/Files/AppData/Config/Medusa"
       },
       {"container": "/tv",
-        "bind": "/srv/dev-disk-by-label-media/TV"
+        "bind": "/portainer/TV"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [  
@@ -738,7 +738,7 @@
       "443/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Heimdall"
+      "bind": "/portainer/Files/AppData/Config/Heimdall"
     }],
     "env": [  
       {  
@@ -770,7 +770,7 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Syncthing"
+        "bind": "/portainer/Files/AppData/Config/Syncthing"
       },
       {"container": "/sync"}
     ],
@@ -801,7 +801,7 @@
       "80/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Muximux"
+      "bind": "/portainer/Files/AppData/Config/Muximux"
     }],
     "env": [  
       {  
@@ -831,13 +831,13 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Beets"
+        "bind": "/portainer/Files/AppData/Config/Beets"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       },
       {"container": "/music",
-        "bind": "/srv/dev-disk-by-label-media/Music"
+        "bind": "/portainer/Music"
       }
     ],
     "env": [  
@@ -867,7 +867,7 @@
       "3000/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/PlexRequests"
+      "bind": "/portainer/Files/AppData/Config/PlexRequests"
     }],
     "env": [  
       {  
@@ -901,7 +901,7 @@
       "3306/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Mariadb"
+      "bind": "/portainer/Files/AppData/Config/Mariadb"
     }],
     "env": [  
       {  
@@ -935,7 +935,7 @@
       "6501/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/ZNC"
+      "bind": "/portainer/Files/AppData/Config/ZNC"
     }],
     "env": [  
       {  
@@ -965,10 +965,10 @@
     ],
     "volumes": [  
       {"container": "/books",
-        "bind": "/srv/dev-disk-by-label-media/Books"
+        "bind": "/portainer/Books"
       },
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Cops"
+        "bind": "/portainer/Files/AppData/Config/Cops"
       }
     ],
     "env": [  
@@ -998,7 +998,7 @@
       "9000/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/TheLounge"
+      "bind": "/portainer/Files/AppData/Config/TheLounge"
     }],
     "env": [  
       {  
@@ -1028,10 +1028,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Nzbget"
+        "bind": "/portainer/Files/AppData/Config/Nzbget"
       },
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [  
@@ -1061,7 +1061,7 @@
       "3579/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Ombi"
+      "bind": "/portainer/Files/AppData/Config/Ombi"
     }],
     "env": [  
       {  
@@ -1091,10 +1091,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Lychee"
+        "bind": "/portainer/Files/AppData/Config/Lychee"
       },
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Pictures"
+        "bind": "/portainer/Pictures"
       }
     ],
     "env": [  
@@ -1122,10 +1122,10 @@
     "platform": "linux",
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Deluge"
+        "bind": "/portainer/Files/AppData/Config/Deluge"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [  
@@ -1161,7 +1161,7 @@
       "443/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Nginx"
+      "bind": "/portainer/Files/AppData/Config/Nginx"
     }],
     "env": [  
       {  
@@ -1191,13 +1191,13 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Lidarr"
+        "bind": "/portainer/Files/AppData/Config/Lidarr"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       },
       {"container": "/music",
-        "bind": "/srv/dev-disk-by-label-media/Music"
+        "bind": "/portainer/Music"
       }
     ],
     "env": [  
@@ -1227,7 +1227,7 @@
       "5060/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Cardigann"
+      "bind": "/portainer/Files/AppData/Config/Cardigann"
     }],
     "env": [  
       {  
@@ -1263,7 +1263,7 @@
       "6789/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Unifi"
+      "bind": "/portainer/Files/AppData/Config/Unifi"
     }],
     "env": [  
       {  
@@ -1293,10 +1293,10 @@
     ],
     "volumes": [  
       {"container": "/books",
-        "bind": "/srv/dev-disk-by-label-media/Books"
+        "bind": "/portainer/Books"
       },
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Calibre-web"
+        "bind": "/portainer/Files/AppData/Config/Calibre-web"
       }
     ],
     "env": [  
@@ -1324,7 +1324,7 @@
     "platform": "linux",
     "network": "host",
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Plex"
+      "bind": "/portainer/Files/AppData/Config/Plex"
     }],
     "env": [  
       {  
@@ -1359,13 +1359,13 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Headphones"
+        "bind": "/portainer/Files/AppData/Config/Headphones"
       },
       {"container": "/Downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       },
       {"container": "/music",
-        "bind": "/srv/dev-disk-by-label-media/Music"
+        "bind": "/portainer/Music"
       }
     ],
     "env": [  
@@ -1398,10 +1398,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/qBittorrent"
+        "bind": "/portainer/Files/AppData/Config/qBittorrent"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [  
@@ -1432,13 +1432,13 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Couchpotato"
+        "bind": "/portainer/Files/AppData/Config/Couchpotato"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       },
       {"container": "/movies",
-        "bind": "/srv/dev-disk-by-label-media/Movies"
+        "bind": "/portainer/Movies"
       }
     ],
     "env": [  
@@ -1469,10 +1469,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Davos"
+        "bind": "/portainer/Files/AppData/Config/Davos"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [  
@@ -1502,7 +1502,7 @@
       "80/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/tt-rss"
+      "bind": "/portainer/Files/AppData/Config/tt-rss"
     }],
     "env": [  
       {  
@@ -1531,7 +1531,7 @@
       "80/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/freshrss"
+      "bind": "/portainer/Files/AppData/Config/freshrss"
     }],
     "env": [  
       {  
@@ -1590,7 +1590,7 @@
       "1194/udp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/OpenVPN-AS"
+      "bind": "/portainer/Files/AppData/Config/OpenVPN-AS"
     }],
     "env": [  
       {  
@@ -1625,13 +1625,13 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Mylar"
+        "bind": "/portainer/Files/AppData/Config/Mylar"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       },
       {"container": "/comics",
-        "bind": "/srv/dev-disk-by-label-media/Comics"
+        "bind": "/portainer/Comics"
       }
     ],
     "env": [  
@@ -1662,10 +1662,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Nzbhydra2"
+        "bind": "/portainer/Files/AppData/Config/Nzbhydra2"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [  
@@ -1696,10 +1696,10 @@
     ],
     "volumes": [  
       {"container": "/data",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/ProjectSend"
+        "bind": "/portainer/Files/AppData/ProjectSend"
       },
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/ProjectSend"
+        "bind": "/portainer/Files/AppData/Config/ProjectSend"
       }
     ],
     "env": [  
@@ -1758,7 +1758,7 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/TVHeadend"
+        "bind": "/portainer/Files/AppData/Config/TVHeadend"
       },
       {"container": "/recordings"}
     ],
@@ -1790,7 +1790,7 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Duplicati"
+        "bind": "/portainer/Files/AppData/Config/Duplicati"
       },
       {"container": "/tmp"},
       {"container": "/backups"},
@@ -1821,11 +1821,11 @@
     "platform": "linux",
     "volumes":[
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Resilio-Sync"
+        "bind": "/portainer/Files/AppData/Config/Resilio-Sync"
       },
       {"container": "/sync"},
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [  
@@ -1856,13 +1856,13 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Radarr"
+        "bind": "/portainer/Files/AppData/Config/Radarr"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       },
       {"container": "/movies",
-        "bind": "/srv/dev-disk-by-label-media/Movies"
+        "bind": "/portainer/Movies"
       }
     ],
     "env": [  
@@ -1892,7 +1892,7 @@
       "80/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/PiWigo"
+      "bind": "/portainer/Files/AppData/Config/PiWigo"
     }],
     "env": [  
       {  
@@ -2033,7 +2033,7 @@
       "443/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/LetsEncrypt"
+      "bind": "/portainer/Files/AppData/Config/LetsEncrypt"
     }],
     "env": [  
       {  
@@ -2098,16 +2098,16 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Sonarr"
+        "bind": "/portainer/Files/AppData/Config/Sonarr"
       },
       {"container": "/dev/rtc",
         "bind": "/dev/rtc"
       },
       {"container": "/tv",
-        "bind": "/srv/dev-disk-by-label-media/TV"
+        "bind": "/portainer/TV"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [  
@@ -2138,10 +2138,10 @@
     ],
     "volumes": [  
       {"container": "/logs",
-        "bind": "/srv/dev-disk-by-label-media/Logs"
+        "bind": "/portainer/Logs"
       },
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Tautulli"
+        "bind": "/portainer/Files/AppData/Config/Tautulli"
       }
     ],
     "env": [  
@@ -2174,10 +2174,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/ruTorrent"
+        "bind": "/portainer/Files/AppData/Config/ruTorrent"
       },
       {"container": "/downloads",
-        "bind": "/srv/dev-disk-by-label-media/Downloads"
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [  
@@ -2208,10 +2208,10 @@
     ],
     "volumes": [  
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Nextcloud"
+        "bind": "/portainer/Files/AppData/Config/Nextcloud"
       },
       {"container": "/data",
-        "bind": "/srv/dev-disk-by-label-media/Files/Nextcloud-data"
+        "bind": "/portainer/Files/Nextcloud-data"
       }
     ],
     "env": [  
@@ -2269,7 +2269,7 @@
       "80/tcp"
     ],
     "volumes": [{"container": "/config",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Organizr"
+      "bind": "/portainer/Files/AppData/Config/Organizr"
     }],
     "env": [  
       {  
@@ -2351,7 +2351,7 @@
     ],
     "volumes": [
       {"container": "/dashmachine/dashmachine/user_data",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Dashmachine"
+        "bind": "/portainer/Files/AppData/Config/Dashmachine"
       }
     ]
   },
@@ -2368,7 +2368,7 @@
     ],
     "volumes": [
       {"container": "/var/lib/tiddlywiki",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/TiddlyWiki"
+        "bind": "/portainer/Files/AppData/Config/TiddlyWiki"
       }
     ] 
   },
@@ -2387,7 +2387,7 @@
     ],
     "volumes": [
       {"container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Nginx-Proxy"
+        "bind": "/portainer/Files/AppData/Config/Nginx-Proxy"
       }
     ]
   }
