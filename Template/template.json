@@ -21,6 +21,27 @@
       }
     ]
   },
+  {  
+    "type": 1,
+    "title": "DeeMix",
+    "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
+    "image": "rmountjoy/dashmachine:latest",
+    "categories": ["Other", "Tools"],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [  
+      "9666:9666/tcp"
+    ],
+    "volumes": [  
+      {"container": "/config",
+        "bind": "/portainer/Files/AppData/Config/DeeMix"
+      },
+      {"container": "/downloads",
+        "bind": "/path/to/music"
+      }
+    ]   
+  },
   {
     "type": 1,
     "title": "Nginx Proxy Manager",
