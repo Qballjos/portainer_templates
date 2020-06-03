@@ -21,26 +21,75 @@
       }
     ]
   },
-  {  
+  {
+    "type": 1,
+    "title": "Reactive-Resume",
+    "description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/reactiveresume.png",
+    "image": "amruthpillai/reactive-resume:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/usr/src/app",
+        "bind": "/portainer/Files/AppData/Config/ReactiveResume"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "LibreSpeed",
+    "description": "Another application bookmark dashboard, with fun features.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtestpng",
+    "image": "linuxserver/librespeed:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/LibreSpeed"
+      }
+    ]
+  },
+  {
     "type": 1,
     "title": "DeeMix",
     "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
     "image": "rmountjoy/dashmachine:latest",
-    "categories": ["Other", "Tools"],
+    "categories": [
+      "Other",
+      "Tools"
+    ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
-    "ports": [  
+    "ports": [
       "9666:9666/tcp"
     ],
-    "volumes": [  
-      {"container": "/config",
+    "volumes": [
+      {
+        "container": "/config",
         "bind": "/portainer/Files/AppData/Config/DeeMix"
       },
-      {"container": "/downloads",
+      {
+        "container": "/downloads",
         "bind": "/portainer/Downloads"
       }
-    ]   
+    ]
   },
   {
     "type": 1,
