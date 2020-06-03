@@ -39,7 +39,7 @@
     "categories": ["Downloaders", "Tools"],
     "platform": "linux",
     "ports": [  
-      "9117:9117/tcp"
+      "9117/tcp"
     ],
     "volumes": [
       {"container": "/config",
@@ -2351,6 +2351,25 @@
     "volumes": [
       {"container": "/dashmachine/dashmachine/user_data",
         "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Dashmachine"
+      }
+    ]
+  },
+  {  
+    "type": 1,
+    "title": "Nginx Proxy Manager",
+    "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/proxy_mgr.png",
+    "image": "jlesage/nginx-proxy-manager",
+    "categories": ["Proxy", "Tools"],
+    "platform": "linux",
+    "ports": [  
+      "80:8080/tcp",
+      "81:8181/tcp",
+      "443:4443/tcp"
+    ],
+    "volumes": [
+      {"container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Nginx-Proxy"
       }
     ]
   }
