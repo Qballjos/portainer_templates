@@ -1,10 +1,87 @@
 [
   {
     "type": 1,
+    "title": "Guacamole",
+    "name": "Guacamole",
+    "description": "A clientless remote desktop gateway.",
+    "note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/guacamole.png",
+    "image": "oznu/guacamole:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8901:8080/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Guacamole"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Pi-Hole",
+    "name": "Pi-Hole",
+    "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
+    "image": "pihole/pihole:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "53:53/tcp",
+      "81:53/udp",
+      "67:67/udp",
+      "80:80/tcp",
+      "443:443/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/etc/pihole",
+        "bind": "/portainer/Files/AppData/Config/PiHole"
+      },
+      {
+        "container": "/etc/dnsmasq.d",
+        "bind": "/portainer/Files/AppData/Config/PiHole/DNS"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Whoogle",
+    "name": "Whoogle",
+    "description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/whoogle.png",
+    "image": "benbusby/whoogle-search:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "5001:5000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Whoogle"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "FileBrowser",
     "name": "Filebrowser",
     "description": "Web File Browser which can be used as a middleware or standalone app.",
-    "note": "Default username and password is admin/admin. The default file directory allows you to browse your Docker config files but feel free to change that.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
     "image": "80x86/filebrowser:latest",
     "categories": [
@@ -25,7 +102,8 @@
         "container": "/myfiles",
         "bind": "/portainer/Files/AppData/Config"
       }
-    ]
+    ],
+    "note": "Default username and password is admin/admin. The default file directory allows you to browse your Docker config files but feel free to change that."
   },
   {
     "type": 1,
@@ -105,7 +183,7 @@
     "image": "bocki/deemix:latest",
     "categories": [
       "Other",
-      "Tools"
+      "Music"
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
@@ -121,7 +199,8 @@
         "container": "/downloads",
         "bind": "/portainer/Downloads"
       }
-    ]
+    ],
+    "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken for userToken details."
   },
   {
     "type": 1,
