@@ -1,10 +1,32 @@
 [
   {
     "type": 1,
+    "title": "Whoogle",
+    "name": "Whoogle",
+    "description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/whoogle.png",
+    "image": "benbusby/whoogle-search:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "5001:5000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Whoogle"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "FileBrowser",
     "name": "Filebrowser",
     "description": "Web File Browser which can be used as a middleware or standalone app.",
-    "note": "Default username and password is admin/admin. The default file directory allows you to browse your Docker config files but feel free to change that.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
     "image": "80x86/filebrowser:latest",
     "categories": [
@@ -25,7 +47,8 @@
         "container": "/myfiles",
         "bind": "/portainer/Files/AppData/Config"
       }
-    ]
+    ],
+    "note": "Default username and password is admin/admin. The default file directory allows you to browse your Docker config files but feel free to change that."
   },
   {
     "type": 1,
@@ -205,70 +228,6 @@
       {
         "container": "/var/lib/tiddlywiki",
         "bind": "/portainer/Files/AppData/Config/TiddlyWiki"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Transmission-OpenVPN",
-    "name": "transmission-openvpn",
-    "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
-    "image": "haugene/transmission-openvpn:latest",
-    "note" : "List of supported providers available <a href=\"https://haugene.github.io/docker-transmission-openvpn/supported-providers\"/>here</a>.",
-    "categories": [
-      "Other",
-      "VPN",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "8080:8080/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/data",
-        "bind": "/portainer/Downloads"
-      },
-      {
-        "container": "/etc/localtime",
-        "bind": "/etc/localtime"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      },
-      {
-        "name": "OPENVPN_PROVIDER",
-        "label": "OPENVPN_PROVIDER",
-        "description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
-        "default": "MULLVAD"
-      },
-      {
-        "name": "OPENVPN_USERNAME",
-        "label": "OPENVPN_USERNAME",
-        "default": ""
-      },
-      {
-        "name": "OPENVPN_PASSWORD",
-        "label": "OPENVPN_PASSWORD",
-        "default": ""
-      },
-      {
-        "name": "LOCAL_NETWORK",
-        "label": "LOCAL_NETWORK",
-        "default": "192.168.0.0/24"
       }
     ]
   },
