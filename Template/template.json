@@ -1,6 +1,37 @@
 [
   {
     "type": 1,
+    "title": "Pi-Hole",
+    "name": "Pi-Hole",
+    "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
+    "image": "pihole/pihole:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "53:53/tcp",
+      "81:53/udp",
+      "67:67/udp",
+      "80:80/tcp",
+      "443:443/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/etc/pihole",
+        "bind": "/portainer/Files/AppData/Config/PiHole"
+      },
+      {
+        "container": "/etc/dnsmasq.d",
+        "bind": "/portainer/Files/AppData/Config/PiHole/DNS"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Whoogle",
     "name": "Whoogle",
     "description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
@@ -124,7 +155,6 @@
     "title": "DeeMix",
     "name": "DeeMix",
     "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
-    "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken for userToken details.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
     "image": "bocki/deemix:latest",
     "categories": [
@@ -145,7 +175,8 @@
         "container": "/downloads",
         "bind": "/portainer/Downloads"
       }
-    ]
+    ],
+    "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken for userToken details."
   },
   {
     "type": 1,
