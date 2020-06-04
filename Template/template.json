@@ -4,7 +4,7 @@
     "title": "Guacamole",
     "name": "Guacamole",
     "description": "A clientless remote desktop gateway.",
-    "note": "The default login will be guacadmin/guacadmin.",
+    "note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/guacamole.png",
     "image": "oznu/guacamole:latest",
     "categories": [
