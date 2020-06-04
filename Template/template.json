@@ -1,6 +1,29 @@
 [
   {
     "type": 1,
+    "title": "Guacamole",
+    "name": "Guacamole",
+    "description": "A clientless remote desktop gateway.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/guacamole.png",
+    "image": "oznu/guacamole:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8901:8080/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Guacamole"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Pi-Hole",
     "name": "Pi-Hole",
     "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
