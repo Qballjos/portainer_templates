@@ -289,12 +289,34 @@
   },
   {
     "type": 1,
+    "title": "Watchtower",
+    "name": "Watchtower",
+    "description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/watchtower.png",
+    "image": "containrrr/watchtower:latest",
+    "note": "It is recommended to manually update your containers but we're including this for those of you that don't care",
+    "categories": [
+      "Other",
+      "Tools",
+      "Maintenance"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "volumes": [
+      {
+        "container": "/var/run/docker.sock",
+        "bind": "/var/run/docker.sock"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Transmission-OpenVPN",
     "name": "transmission-openvpn",
     "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
     "image": "haugene/transmission-openvpn:latest",
-    "note" : "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
+    "note": "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
     "categories": [
       "Other",
       "VPN",
