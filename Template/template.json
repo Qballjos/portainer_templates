@@ -289,6 +289,70 @@
   },
   {
     "type": 1,
+    "title": "Transmission-OpenVPN",
+    "name": "transmission-openvpn",
+    "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
+    "image": "haugene/transmission-openvpn:latest",
+    "note" : "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
+    "categories": [
+      "Other",
+      "VPN",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8080:8080/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/data",
+        "bind": "/portainer/Downloads"
+      },
+      {
+        "container": "/etc/localtime",
+        "bind": "/etc/localtime"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "OPENVPN_PROVIDER",
+        "label": "OPENVPN_PROVIDER",
+        "description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
+        "default": "MULLVAD"
+      },
+      {
+        "name": "OPENVPN_USERNAME",
+        "label": "OPENVPN_USERNAME",
+        "default": ""
+      },
+      {
+        "name": "OPENVPN_PASSWORD",
+        "label": "OPENVPN_PASSWORD",
+        "default": ""
+      },
+      {
+        "name": "LOCAL_NETWORK",
+        "label": "LOCAL_NETWORK",
+        "default": "192.168.0.0/24"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "airsonic",
     "name": "airsonic",
     "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
