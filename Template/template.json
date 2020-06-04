@@ -183,7 +183,7 @@
     "image": "bocki/deemix:latest",
     "categories": [
       "Other",
-      "Tools"
+      "Music"
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
