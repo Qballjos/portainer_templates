@@ -4,6 +4,7 @@
     "title": "FileBrowser",
     "name": "Filebrowser",
     "description": "Web File Browser which can be used as a middleware or standalone app.",
+    "note": "Default username and password is admin/admin. The default file directory allows you to browse your Docker config files but feel free to change that.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
     "image": "80x86/filebrowser:latest",
     "categories": [
