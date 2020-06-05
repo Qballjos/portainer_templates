@@ -3236,6 +3236,10 @@
       "Wiki"
     ],
     "platform": "linux",
+    "repository": {
+      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "stackfile": "Template/Stack/bookstack.yml"
+    },
     "env": [
       {
         "name": "PUID",
