@@ -109,7 +109,7 @@
     "title": "FileBrowser",
     "name": "Filebrowser",
     "description": "Web File Browser which can be used as a middleware or standalone app.",
-    "note": "<b>The default username and password is admin/admin</b>",
+    "note": "The default user and password is admin/admin.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
     "image": "80x86/filebrowser:latest",
     "categories": [
@@ -129,6 +129,45 @@
       {
         "container": "/myfiles",
         "bind": "/portainer/Files/AppData/Config"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "YouTubeDL-Material",
+    "name": "YouTubeDL-Material",
+    "description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ytdlm.png",
+    "image": "tzahi12345/youtubedl-material:latest",
+    "categories": [
+      "Other",
+      "Downloaders"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "17442:17442/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/app/appdata",
+        "bind": "/portainer/Files/AppData/Config/YTDLM"
+      },
+      {
+        "container": "/app/video",
+        "bind": "/portainer/Files/AppData/Youtube/Video"
+      },
+      {
+        "container": "/app/subscriptions",
+        "bind": "/portainer/Files/AppData/Youteube/Subscriptions"
+      },
+      {
+        "container": "/app/users",
+        "bind": "/portainer/Files/AppData/Youteube/Users"
+      },
+      {
+        "container": "/app/audio",
+        "bind": "/portainer/Files/AppData/Youteube/Audio"
       }
     ]
   },
