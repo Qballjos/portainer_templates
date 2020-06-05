@@ -159,7 +159,7 @@
       },
       {
         "container": "/app/subscriptions",
-        "bind": "/portainer/Files/AppData/Youteube/Subscriptions"
+        "bind": "/portainer/Files/AppData/Youtube/Subscriptions"
       },
       {
         "container": "/app/users",
