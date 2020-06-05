@@ -9,12 +9,12 @@ services:
       - PGID=${PGID}
       - DB_HOST=bookstack_db
       - DB_USER=bookstack
-      - DB_PASS=${Database_Password}
+      - DB_PASS=${DATABASE_PASSWORD}
       - DB_DATABASE=bookstackapp
     volumes:
       - /portainer/Files/AppData/Bookstack/Data:/config
     ports:
-      - 6875:80
+      - ${PORT}:80
     restart: unless-stopped
     depends_on:
       - bookstack_db
@@ -28,7 +28,7 @@ services:
       - TZ=${Timezone}
       - MYSQL_DATABASE=bookstackapp
       - MYSQL_USER=bookstack
-      - MYSQL_PASSWORD=${Database_Password}
+      - MYSQL_PASSWORD=${DATABASE_PASSWORD}
     volumes:
       - /portainer/Files/AppData/Bookstack/DB:/config
     restart: unless-stopped

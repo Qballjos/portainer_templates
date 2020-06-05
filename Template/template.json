@@ -3293,9 +3293,8 @@
     ]
   },
   {
-    "type": 2,
+    "type": 3,
     "title": "bookstack",
-    "name": "bookstack",
     "description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
     "categories": [
@@ -3320,12 +3319,16 @@
         "preset": true
       },
       {
-        "name": "Database_Password",
-        "label": "Database Password"
+        "name": "DATABASE_PASSWORD",
+        "label": "DATABASE_PASSWORD"
       },
       {
         "name": "MYSQL_ROOT_PASSWORD",
         "label": "MYSQL_ROOT_PASSWORD"
+      },
+      {
+        "name": "PORT",
+        "label": "PORT"
       }
     ]
   }
