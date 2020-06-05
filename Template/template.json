@@ -79,9 +79,37 @@
   },
   {
     "type": 1,
+    "title": "Mstream",
+    "name": "Mstream",
+    "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
+    "image": "linuxserver/mstream:latest",
+    "categories": [
+      "Other",
+      "Music"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "3000:3000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Mstream"
+      },
+      {
+        "container": "/music",
+        "bind": "/portainer/Downloads"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "FileBrowser",
     "name": "Filebrowser",
     "description": "Web File Browser which can be used as a middleware or standalone app.",
+    "note": "The default user and password is admin/admin.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
     "image": "80x86/filebrowser:latest",
     "categories": [
@@ -102,8 +130,46 @@
         "container": "/myfiles",
         "bind": "/portainer/Files/AppData/Config"
       }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "YouTubeDL-Material",
+    "name": "YouTubeDL-Material",
+    "description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ytdlm.png",
+    "image": "tzahi12345/youtubedl-material:latest",
+    "categories": [
+      "Other",
+      "Downloaders"
     ],
-    "note": "Default username and password is admin/admin. The default file directory allows you to browse your Docker config files but feel free to change that."
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "17442:17442/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/app/appdata",
+        "bind": "/portainer/Files/AppData/Config/YTDLM"
+      },
+      {
+        "container": "/app/video",
+        "bind": "/portainer/Files/AppData/Youtube/Video"
+      },
+      {
+        "container": "/app/subscriptions",
+        "bind": "/portainer/Files/AppData/Youtube/Subscriptions"
+      },
+      {
+        "container": "/app/users",
+        "bind": "/portainer/Files/AppData/Youtube/Users"
+      },
+      {
+        "container": "/app/audio",
+        "bind": "/portainer/Files/AppData/Youtube/Audio"
+      }
+    ]
   },
   {
     "type": 1,
@@ -200,7 +266,7 @@
         "bind": "/portainer/Downloads"
       }
     ],
-    "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken for userToken details."
+    "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details."
   },
   {
     "type": 1,
