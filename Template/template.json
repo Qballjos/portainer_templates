@@ -82,7 +82,7 @@
     "title": "Mstream",
     "name": "Mstream",
     "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
     "image": "linuxserver/mstream:latest",
     "categories": [
       "Other",
@@ -102,14 +102,14 @@
         "container": "/music",
         "bind": "/portainer/Downloads"
       }
-    ],
-    "note": ""
+    ]
   },
   {
     "type": 1,
     "title": "FileBrowser",
     "name": "Filebrowser",
     "description": "Web File Browser which can be used as a middleware or standalone app.",
+    "note": "<b>The default username and password is admin/admin</b>",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
     "image": "80x86/filebrowser:latest",
     "categories": [
@@ -130,8 +130,7 @@
         "container": "/myfiles",
         "bind": "/portainer/Files/AppData/Config"
       }
-    ],
-    "note": "Default username and password is admin/admin. The default file directory allows you to browse your Docker config files but feel free to change that."
+    ]
   },
   {
     "type": 1,
@@ -228,7 +227,7 @@
         "bind": "/portainer/Downloads"
       }
     ],
-    "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken for userToken details."
+    "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details."
   },
   {
     "type": 1,
