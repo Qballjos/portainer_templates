@@ -82,7 +82,7 @@
     "title": "Mstream",
     "name": "Mstream",
     "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
     "image": "linuxserver/mstream:latest",
     "categories": [
       "Other",
