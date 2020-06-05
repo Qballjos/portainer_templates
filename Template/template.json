@@ -163,11 +163,11 @@
       },
       {
         "container": "/app/users",
-        "bind": "/portainer/Files/AppData/Youteube/Users"
+        "bind": "/portainer/Files/AppData/Youtube/Users"
       },
       {
         "container": "/app/audio",
-        "bind": "/portainer/Files/AppData/Youteube/Audio"
+        "bind": "/portainer/Files/AppData/Youtube/Audio"
       }
     ]
   },
