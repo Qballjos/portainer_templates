@@ -2061,7 +2061,7 @@
         "bind": "/portainer/Files/AppData/Config/Nzbget"
       },
       {
-        "container": "/config",
+        "container": "/downloads",
         "bind": "/portainer/Downloads"
       }
     ],
@@ -3300,6 +3300,7 @@
     "categories": [
       "Wiki"
     ],
+    "note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
     "platform": "linux",
     "repository": {
       "url": "https://github.com/SelfhostedPro/selfhosted_templates",
@@ -3317,6 +3318,10 @@
         "label": "PGID",
         "default": "100",
         "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
       },
       {
         "name": "DATABASE_PASSWORD",
