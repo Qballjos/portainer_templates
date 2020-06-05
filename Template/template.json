@@ -3253,12 +3253,16 @@
         "preset": true
       },
       {
-        "name": "Database_Password",
-        "label": "Database Password"
+        "name": "DATABASE_PASSWORD",
+        "label": "DATABASE_PASSWORD"
       },
       {
         "name": "MYSQL_ROOT_PASSWORD",
         "label": "MYSQL_ROOT_PASSWORD"
+      },
+      {
+        "name": "PORT",
+        "label": "PORT"
       }
     ]
   }

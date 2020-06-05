@@ -14,7 +14,7 @@ services:
     volumes:
       - /portainer/Files/AppData/Bookstack/Data:/config
     ports:
-      - 6875:80
+      - ${PORT}:80
     restart: unless-stopped
     depends_on:
       - bookstack_db
