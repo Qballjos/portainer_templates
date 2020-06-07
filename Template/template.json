@@ -25,6 +25,30 @@
   },
   {
     "type": 1,
+    "title": "Bitwarden_rs",
+    "name": "Bitwarden_rs",
+    "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+    "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
+    "image": "bitwardenrs/server:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      ":80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Bitwarden-rs"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Pi-Hole",
     "name": "Pi-Hole",
     "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
