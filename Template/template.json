@@ -296,7 +296,7 @@
     "type": 1,
     "title": "LibreSpeed",
     "name": "LibreSpeed",
-    "description": "Another application bookmark dashboard, with fun features.",
+    "description": "A Free and Open Source Speedtest for HTML5 and more.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
     "image": "linuxserver/librespeed:latest",
     "categories": [
