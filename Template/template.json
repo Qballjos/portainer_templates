@@ -544,6 +544,61 @@
   },
   {
     "type": 1,
+    "title": "Murmur",
+    "name": "murmur",
+    "description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Mumble-logo.png",
+    "image": "haugene/transmission-openvpn:latest",
+    "categories": [
+      "Other",
+      "Voice",
+      "Chat"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "64738:64738/tcp",
+      "64738:64738/udp"
+    ],
+    "volumes": [
+      {
+        "container": "/etc/localtime",
+        "bind": "/etc/localtime:ro"
+      },
+      {
+        "container": "/opt/murmur/config",
+        "bind": "/portainer/Files/Config/Murmur"
+      },
+      {
+        "container": "/opt/murmur/data",
+        "bind": "/portainer/Files/Murmur/data"
+      },
+      {
+        "container": "/opt/murmur/log",
+        "bind": "/portainer/Files/Murmur/log"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "airsonic",
     "name": "airsonic",
     "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
