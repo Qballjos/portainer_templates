@@ -2,7 +2,7 @@
   {
     "type": 1,
     "title": "Guacamole",
-    "name": "Guacamole",
+    "name": "guacamole",
     "description": "A clientless remote desktop gateway.",
     "note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/guacamole.png",
@@ -26,7 +26,7 @@
   {
     "type": 1,
     "title": "Homer",
-    "name": "Homer",
+    "name": "homer",
     "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
     "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
@@ -54,7 +54,7 @@
   {
     "type": 1,
     "title": "Jellyfin",
-    "name": "Jellyfin",
+    "name": "jellyfin",
     "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jellyfin.png",
     "image": "linuxserver/jellyfin:latest",
@@ -104,8 +104,8 @@
   },
   {
     "type": 1,
-    "title": "Bitwarden_rs",
-    "name": "Bitwarden_rs",
+    "title": "Bitwarden RS",
+    "name": "bitwardenrs",
     "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
     "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
@@ -129,7 +129,7 @@
   {
     "type": 1,
     "title": "Pi-Hole",
-    "name": "Pi-Hole",
+    "name": "pihole",
     "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
     "image": "pihole/pihole:latest",
@@ -160,7 +160,7 @@
   {
     "type": 1,
     "title": "Whoogle",
-    "name": "Whoogle",
+    "name": "whoogle",
     "description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/whoogle.png",
     "image": "benbusby/whoogle-search:latest",
@@ -183,7 +183,7 @@
   {
     "type": 1,
     "title": "Mstream",
-    "name": "Mstream",
+    "name": "mstream",
     "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
     "image": "linuxserver/mstream:latest",
@@ -210,7 +210,7 @@
   {
     "type": 1,
     "title": "FileBrowser",
-    "name": "Filebrowser",
+    "name": "filebrowser",
     "description": "Web File Browser which can be used as a middleware or standalone app.",
     "note": "The default user and password is admin/admin.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
@@ -238,7 +238,7 @@
   {
     "type": 1,
     "title": "YouTubeDL-Material",
-    "name": "YouTubeDL-Material",
+    "name": "youtubedl-material",
     "description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ytdlm.png",
     "image": "tzahi12345/youtubedl-material:latest",
@@ -277,7 +277,7 @@
   {
     "type": 1,
     "title": "DashMachine",
-    "name": "DashMachine",
+    "name": "dashmachine",
     "description": "Another application bookmark dashboard, with fun features.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
     "image": "rmountjoy/dashmachine:latest",
@@ -300,7 +300,7 @@
   {
     "type": 1,
     "title": "Reactive-Resume",
-    "name": "Reactive-Resume",
+    "name": "reactive-resume",
     "description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/reactiveresume.png",
     "image": "amruthpillai/reactive-resume:latest",
@@ -323,7 +323,7 @@
   {
     "type": 1,
     "title": "LibreSpeed",
-    "name": "LibreSpeed",
+    "name": "librespeed",
     "description": "A Free and Open Source Speedtest for HTML5 and more.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
     "image": "linuxserver/librespeed:latest",
@@ -346,7 +346,7 @@
   {
     "type": 1,
     "title": "DeeMix",
-    "name": "DeeMix",
+    "name": "deemix",
     "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
     "image": "bocki/deemix:latest",
@@ -374,7 +374,7 @@
   {
     "type": 1,
     "title": "Nginx Proxy Manager",
-    "name": "NginxProxyManager",
+    "name": "nginx-proxy-manager",
     "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/proxy_mgr.png",
     "image": "jlesage/nginx-proxy-manager",
@@ -399,7 +399,7 @@
   {
     "type": 1,
     "title": "Organizr v2",
-    "name": "Organizr v2",
+    "name": "organizr-v2",
     "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
     "image": "organizrtools/organizr-v2:latest",
@@ -436,7 +436,7 @@
   {
     "type": 1,
     "title": "Authelia",
-    "name": "Authelia",
+    "name": "authelia",
     "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/authelia.png",
     "image": "authelia/authelia:latest",
@@ -467,7 +467,7 @@
   {
     "type": 1,
     "title": "TiddlyWiki",
-    "name": "TiddlyWiki",
+    "name": "tiddlywiki",
     "description": "A unique, non-linear notebook wiki.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tiddlywiki.png",
     "image": "mazzolino/tiddlywiki:latest",
@@ -490,7 +490,7 @@
   {
     "type": 1,
     "title": "Watchtower",
-    "name": "Watchtower",
+    "name": "watchtower",
     "description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/watchtower.png",
     "image": "containrrr/watchtower:latest",
