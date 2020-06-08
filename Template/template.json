@@ -41,8 +41,12 @@
     ],
     "volumes": [
       {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Homer"
+        "container": "/www/assets",
+        "bind": "/portainer/Files/AppData/Config/Homer/assets"
+      },
+      {
+        "container": "/www/config.yml",
+        "bind": "/portainer/Files/AppData/Config/Homer/config.yaml"
       }
     ]
   },
