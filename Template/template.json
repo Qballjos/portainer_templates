@@ -28,7 +28,7 @@
     "title": "Homer",
     "name": "Homer",
     "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
-    "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer"
+    "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
     "image": "b4bz/homer:latest",
     "categories": [
