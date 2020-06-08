@@ -182,7 +182,7 @@
     "title": "Pi-Hole",
     "name": "Pi-Hole",
     "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
-    "note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin.",
+    "note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
     "image": "pihole/pihole:latest",
     "categories": [
