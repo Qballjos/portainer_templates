@@ -3525,5 +3525,50 @@
         "label": "PORT"
       }
     ]
+  },
+  {
+    "type": 1,
+    "title": "SickGear",
+    "name": "sickgear",
+    "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickgear-icon.png",
+    "image": "linuxserver/sickgear:latest",
+    "categories": [
+      "Downloaders",
+      "Video"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8081/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/SickGear"
+      },
+      {
+        "container": "/tv",
+        "bind": "/portainer/TV"
+      },
+      {
+        "container": "/downloads",
+        "bind": "/portainer/Downloads"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      }
+    ]
   }
 ]
