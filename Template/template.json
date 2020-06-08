@@ -3154,7 +3154,7 @@
     "name": "tt-rss",
     "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tt-rss-icon.png",
-    "image": "linuxserver/tt-rss:latest",
+    "image": "lunik1/tt-rss:latest",
     "categories": [
       "Other"
     ],
