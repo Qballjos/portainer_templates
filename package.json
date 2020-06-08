@@ -4,11 +4,11 @@
   "description": "Portainer Templates for Selfhosted Projects/Homelabs.",
   "private": true,
   "devDependencies": {
-    "valid-json-cli": "^1.4.1",
+    "jsonlint": "^1.6.3",
     "yaml-validator": "^3.0.0"
   },
   "scripts": {
-    "pretest": "validjson Template/template.json",
+    "pretest": "jsonlint Template/template.json --quiet",
     "test": "yaml-validator Template/Stack/*"
   },
   "repository": {
