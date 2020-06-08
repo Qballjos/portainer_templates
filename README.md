@@ -31,6 +31,94 @@ All templates are already configured to bind mount to various places on your dri
 * **Books** - Where books are stored/moved to after downloaded.
 * **Comics** - Where comics are stored/moved to after downloaded.
 * **Podcasts** - Where podcasts are stored/moved to after downloaded.
+## App List
+
+- Guacamole
+- Homer
+- Jellyfin
+- Bitwarden_rs
+- Pi-Hole
+- Whoogle
+- Mstream
+- Filebrowser
+- YouTubeDL-Material
+- DashMachine
+- Reactive-Resume
+- LibreSpeed
+- DeeMix
+- Nginx Proxy Manager
+- Organizrv2
+- TiddlyWiki
+- Watchtower
+- transmission-openvpn
+- airsonic
+- beets
+- booksonic
+- bookstack
+- calibre-web
+- cardigann
+- Chevereto
+- codiad
+- cops
+- couchpotato
+- daapd
+- davos
+- deluge
+- domoticz
+- duckdns
+- duplicati
+- freshrss
+- gazee
+- headphones
+- heimdall
+- htpcmanager
+- jackett
+- kodi-headless
+- lazylibrarian
+- letsencrypt
+- libresonic
+- lidarr
+- lychee
+- mariadb
+- mcmyadmin
+- medusa
+- minetest
+- minisatip
+- musicbrainz
+- muximux
+- mylar
+- nextcloud
+- nginx
+- nzbget
+- nzbhydra
+- ombi
+- openvpn-as
+- oscam
+- photoshow
+- piwigo
+- plex
+- plexrequests
+- projectsend
+- pydio
+- qbittorrent
+- quassel-core
+- radarr
+- resilio-sync
+- rutorrent
+- sabnzbd
+- sickrage
+- smokeping
+- sonarr
+- syncthing
+- tautulli
+- thelounge
+- transmission
+- tt-rss
+- tvheadend
+- ubooquity
+- unifi
+- webgrabplus
+- znc
 
 ## Contributing
 
