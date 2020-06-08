@@ -435,6 +435,37 @@
   },
   {
     "type": 1,
+    "title": "Authelia",
+    "name": "Authelia",
+    "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
+    "image": "authelia/authelia:latest",
+    "note": "Requires a configuration.yml file in order to work. Documentation is Available <a href='https://docs.authelia.com/deployment/deployment-ha'>here</a>.",
+    "categories": [
+      "Other",
+      "Tools",
+      "Authentication"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "9091:9091/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/etc/authelia/",
+        "bind": "/portainer/Files/AppData/Config/Authelia"
+      }
+    ],
+    "env": [
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "TiddlyWiki",
     "name": "TiddlyWiki",
     "description": "A unique, non-linear notebook wiki.",
@@ -548,7 +579,7 @@
     "name": "murmur",
     "description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Mumble-logo.png",
-    "image": "haugene/transmission-openvpn:latest",
+    "image": "goofball222/murmur:latest",
     "categories": [
       "Other",
       "Voice",
