@@ -1681,63 +1681,6 @@
   },
   {
     "type": 1,
-    "title": "libresonic",
-    "name": "libresonic",
-    "description": "Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.\r\n\r\n/music - Location of music.\r\n/media - Location of other media.\r\n/podcasts - Location of podcasts.\r\n/playlists - Location for playlists storage.\r\nCONTEXT_PATH for setting url-base in reverse proxy setups - (optional)\r\n\r\nDefault user/pass is admin/admin",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/libresonic.png",
-    "image": "linuxserver/libresonic:latest",
-    "categories": [
-      "Music"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "4040/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/music",
-        "bind": "/portainer/Music"
-      },
-      {
-        "container": "/playlists",
-        "bind": "/portainer/Files/AppData/Libresonic/Playlists"
-      },
-      {
-        "container": "/podcasts",
-        "bind": "/portainer/Podcasts"
-      },
-      {
-        "container": "/media",
-        "bind": "/portainer/Files/AppData/Libresonic/Media"
-      },
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Libresonic"
-      }
-    ],
-    "env": [
-      {
-        "name": "CONTEXT_PATH",
-        "label": "CONTEXT_PATH",
-        "set": ""
-      },
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      }
-    ]
-  },
-  {
-    "type": 1,
     "title": "lidarr",
     "name": "lidarr",
     "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
