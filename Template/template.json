@@ -2541,7 +2541,6 @@
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
-    "interactive" : "true",
     "ports": [
       "143/tcp",
       "25/tcp"
