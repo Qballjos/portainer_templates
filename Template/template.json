@@ -27,8 +27,7 @@
     "type": 1,
     "title": "Wikijs",
     "name": "Wikijs",
-    "description": "A clientless remote desktop gateway.",
-    "note": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS..",
+    "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
     "image": "linuxserver/wikijs:latest",
     "categories": [
