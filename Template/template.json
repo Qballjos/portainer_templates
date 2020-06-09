@@ -2527,6 +2527,34 @@
   },
   {
     "type": 1,
+    "title": "ProtonMail Bridge",
+    "name": "protonmail-bridge",
+    "description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
+    "note": "Please refer to the documentation <a href='https://hub.docker.com/r/shenxn/protonmail-bridge'/>here</a> to set this up.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/protonmail-bridge.png",
+    "image": "shenxn/protonmail-bridge:latest",
+    "categories": [
+      "Email",
+      "Productivity",
+      "Tools",
+      "Other"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "interactive" : "true",
+    "ports": [
+      "143/tcp",
+      "25/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/root",
+        "bind": "/portainer/Files/AppData/ProtonMail-Bridge"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Pydio",
     "name": "pydio",
     "description": "Pydio (formerly AjaXplorer) is a mature open source software solution for file sharing and synchronization. With intuitive user interfaces (web / mobile / desktop), Pydio provides enterprise-grade features to gain back control and privacy of your data: user directory connectors, legacy filesystems drivers, comprehensive admin interface, and much more.",
