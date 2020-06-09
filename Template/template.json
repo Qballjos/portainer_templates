@@ -510,6 +510,60 @@
   },
   {
     "type": 1,
+    "title": "Code Server",
+    "name": "code-server",
+    "description": "Code-server is VS Code running on a remote server, accessible through the browser.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/code-server.png",
+    "image": "linuxserver/code-server:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8443:8443/tcp"
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "GUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      },
+      {
+        "name": "PASSWORD",
+        "label": "PASSWORD"
+      },
+      {
+        "name": "SUDO_PASSWORD",
+        "label": "SUDO_PASSWORD"
+      },
+      {
+        "name": "PROXY_DOMAIN",
+        "label": "PROXY_DOMAIN",
+        "default": "example.my.domain"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Code-Server"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Codiad",
     "name": "codiad",
     "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
