@@ -12,7 +12,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "4040/tcp"
+      "4040:4040/tcp"
     ],
     "volumes": [
       {
@@ -155,7 +155,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8337/tcp"
+      "8337:8337/tcp"
     ],
     "volumes": [
       {
@@ -224,7 +224,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "4040/tcp"
+      "4040:4040/tcp"
     ],
     "volumes": [
       {
@@ -360,7 +360,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8083/tcp"
+      "8083:8083/tcp"
     ],
     "volumes": [
       {
@@ -400,7 +400,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5060/tcp"
+      "5060:5060/tcp"
     ],
     "volumes": [
       {
@@ -558,7 +558,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5050/tcp"
+      "5050:5050/tcp"
     ],
     "volumes": [
       {
@@ -775,9 +775,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "1443/tcp",
-      "6144/tcp",
-      "8080/tcp"
+      "1443:1443/tcp",
+      "6144:6144/tcp",
+      "8080:8080/tcp"
     ],
     "volumes": [
       {
@@ -855,7 +855,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8200/tcp"
+      "8200:8200/tcp"
     ],
     "volumes": [
       {
@@ -1060,7 +1060,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8901:8080/tcp"
+      "8080:8080/tcp"
     ],
     "volumes": [
       {
@@ -1126,7 +1126,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8085/tcp"
+      "8085:8085/tcp"
     ],
     "volumes": [
       {
@@ -1162,7 +1162,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8181/tcp"
+      "8181:8181/tcp"
     ],
     "volumes": [
       {
@@ -1274,7 +1274,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9117/tcp"
+      "9117:9117/tcp"
     ],
     "volumes": [
       {
@@ -1402,7 +1402,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5299/tcp"
+      "5299:5299/tcp"
     ],
     "volumes": [
       {
@@ -1583,7 +1583,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3306/tcp"
+      "3306:3306/tcp"
     ],
     "volumes": [
       {
@@ -1624,8 +1624,8 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8080/tcp",
-      "25565/tcp"
+      "8080:8080/tcp",
+      "25565:25565/tcp"
     ],
     "volumes": [
       {
@@ -1661,7 +1661,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8081/tcp"
+      "8081:8081/tcp"
     ],
     "volumes": [
       {
@@ -1705,7 +1705,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "30000/udp"
+      "30000:30000/udp"
     ],
     "volumes": [
       {
@@ -1742,9 +1742,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8875/tcp",
-      "554/tcp",
-      "1900/udp"
+      "8875:8875/tcp",
+      "554:554/tcp",
+      "1900:1900/udp"
     ],
     "env": [
       {
@@ -1858,7 +1858,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5000/tcp"
+      "5000:5000/tcp"
     ],
     "volumes": [
       {
@@ -1943,7 +1943,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8090/tcp"
+      "8090:8090/tcp"
     ],
     "volumes": [
       {
@@ -1987,7 +1987,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "6789/tcp"
+      "6789:6789/tcp"
     ],
     "volumes": [
       {
@@ -2029,7 +2029,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5076/tcp"
+      "5076:5076/tcp"
     ],
     "volumes": [
       {
@@ -2182,8 +2182,8 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8888/tcp",
-      "10000/tcp"
+      "8888:8888/tcp",
+      "10000:10000/tcp"
     ],
     "volumes": [
       {
@@ -2222,7 +2222,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3579/tcp"
+      "3579:3579/tcp"
     ],
     "volumes": [
       {
@@ -2258,9 +2258,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "943/tcp",
-      "9443/tcp",
-      "1194/udp"
+      "943:943/tcp",
+      "9443:9443/tcp",
+      "1194:1194/udp"
     ],
     "volumes": [
       {
@@ -2502,7 +2502,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3000/tcp"
+      "3000:3000/tcp"
     ],
     "volumes": [
       {
@@ -2654,7 +2654,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "4242/tcp"
+      "4242:4242/tcp"
     ],
     "volumes": [
       {
@@ -2691,7 +2691,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "7878/tcp"
+      "7878:7878/tcp"
     ],
     "volumes": [
       {
@@ -2801,8 +2801,8 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8080/tcp",
-      "9090/tcp"
+      "8080:8080/tcp",
+      "9090:9090/tcp"
     ],
     "volumes": [
       {
@@ -2847,7 +2847,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8081/tcp"
+      "8081:8081/tcp"
     ],
     "volumes": [
       {
@@ -2892,7 +2892,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8081/tcp"
+      "8081:8081/tcp"
     ],
     "volumes": [
       {
@@ -2977,7 +2977,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8989/tcp"
+      "8989:8989/tcp"
     ],
     "volumes": [
       {
@@ -3028,9 +3028,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8384/tcp",
-      "21027/udp",
-      "22000/tcp"
+      "8384:8384/tcp",
+      "21027:21027/udp",
+      "22000:22000/tcp"
     ],
     "volumes": [
       {
@@ -3070,7 +3070,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8181/tcp"
+      "8181:8181/tcp"
     ],
     "volumes": [
       {
@@ -3110,7 +3110,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9000/tcp"
+      "9000:9000/tcp"
     ],
     "volumes": [
       {
@@ -3205,8 +3205,8 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9091/tcp",
-      "51413/tcp"
+      "9091:9091/tcp",
+      "51413:51413/tcp"
     ],
     "volumes": [
       {
@@ -3314,8 +3314,8 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9981/tcp",
-      "9982/tcp"
+      "9981:9981/tcp",
+      "9982:9982/tcp"
     ],
     "volumes": [
       {
@@ -3355,8 +3355,8 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "2202/tcp",
-      "2203/tcp"
+      "2202:2202/tcp",
+      "2203:2203/tcp"
     ],
     "volumes": [
       {
@@ -3403,14 +3403,14 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3478/udp",
-      "10001/udp",
-      "8080/tcp",
-      "8081/tcp",
-      "8443/tcp",
-      "8843/tcp",
-      "8880/tcp",
-      "6789/tcp"
+      "3478:3478/udp",
+      "10001:10001/udp",
+      "8080:8080/tcp",
+      "8081:8081/tcp",
+      "8443:8443/tcp",
+      "8843:8843/tcp",
+      "8880:8880/tcp",
+      "6789:6789/tcp"
     ],
     "volumes": [
       {
@@ -3594,7 +3594,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "6501/tcp"
+      "6501:6501/tcp"
     ],
     "volumes": [
       {
@@ -3631,7 +3631,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8686/tcp"
+      "8686:8686/tcp"
     ],
     "volumes": [
       {
@@ -3675,9 +3675,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "6881/tcp",
-      "6881/udp",
-      "8080/tcp"
+      "6881:6881/tcp",
+      "6881:6881/udp",
+      "8080:8080/tcp"
     ],
     "volumes": [
       {
@@ -3718,8 +3718,8 @@
     "restart_policy": "unless-stopped",
     "ports": [
       "80/tcp",
-      "51413/tcp",
-      "6881/udp"
+      "51413:51413/tcp",
+      "6881:6881/udp"
     ],
     "volumes": [
       {
