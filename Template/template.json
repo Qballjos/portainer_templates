@@ -1,787 +1,6 @@
 [
   {
     "type": 1,
-    "title": "Guacamole",
-    "name": "guacamole",
-    "description": "A clientless remote desktop gateway.",
-    "note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/guacamole.png",
-    "image": "oznu/guacamole:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "8901:8080/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Guacamole"
-      }
-    ]
-  },
-  {
-    "type": 1,
-
-    "title": "Chowdown",
-    "name": "Chowdown",
-    "description": "ave recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/chowdown.png",
-    "image": "gregyankovoy/chowdown:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "4000:4000/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Chowdown"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Wikijs",
-    "name": "Wikijs",
-    "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
-    "image": "linuxserver/wikijs:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "3100:3000/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Wikijs"
-      },
-      {
-        "container": "/data",
-        "bind": "/portainer/Files/AppData/Config/Wikijs/data"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Emby",
-    "name": "Emby",
-    "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/emby.png",
-    "image": "linuxserver/emby:latest",
-    "categories": [
-      "Video",
-      "Music",
-      "Photos"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "8096:8096/tcp",
-      "8920:8920/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Emby"
-      },
-      {
-        "container": "/data/tvshows",
-        "bind": "/portainer/TV"
-      },
-      {
-        "container": "/data/movies",
-        "bind": "/portainer/Movies"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      },
-      {
-        "name": "TZ",
-        "label": "TZ"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Bazarr",
-    "name": "Bazarr",
-    "description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bazarr.png",
-    "image": "linuxserver/bazarr:latest",
-    "categories": [
-      "Video",
-      "Music"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "6767:6767/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Bazarr"
-      },
-      {
-        "container": "/tv",
-        "bind": "/portainer/TV"
-      },
-      {
-        "container": "/movies",
-        "bind": "/portainer/Movies"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      },
-      {
-        "name": "TZ",
-        "label": "TZ"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Jellyfin",
-    "name": "jellyfin",
-    "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jellyfin.png",
-    "image": "linuxserver/jellyfin:latest",
-    "categories": [
-      "Video",
-      "Music",
-      "Photos"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "8096:8096/tcp",
-      "8920:8920/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Jelllyfin"
-      },
-      {
-        "container": "/data/tvshows",
-        "bind": "/portainer/TV"
-      },
-      {
-        "container": "/data/movies",
-        "bind": "/portainer/Movies"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      },
-      {
-        "name": "TZ",
-        "label": "TZ"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Bitwarden RS",
-    "name": "bitwardenrs",
-    "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
-    "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
-    "image": "bitwardenrs/server:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      ":80/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Bitwarden-rs"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Pi-Hole",
-    "name": "pihole",
-    "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
-    "image": "pihole/pihole:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "53:53/tcp",
-      "53:53/udp",
-      "67:67/udp",
-      "1010:80/tcp",
-      "4443:443/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/etc/pihole",
-        "bind": "/portainer/Files/AppData/Config/PiHole"
-      },
-      {
-        "container": "/etc/dnsmasq.d",
-        "bind": "/portainer/Files/AppData/Config/PiHole/DNS"
-      }
-    ],
-    "note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53."
-  },
-  {
-    "type": 1,
-    "title": "Whoogle",
-    "name": "whoogle",
-    "description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/whoogle.png",
-    "image": "benbusby/whoogle-search:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "5001:5000/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Whoogle"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Mstream",
-    "name": "mstream",
-    "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
-    "image": "linuxserver/mstream:latest",
-    "categories": [
-      "Other",
-      "Music"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "3000:3000/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Mstream"
-      },
-      {
-        "container": "/music",
-        "bind": "/portainer/Downloads"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "FileBrowser",
-    "name": "filebrowser",
-    "description": "Web File Browser which can be used as a middleware or standalone app.",
-    "note": "The default user and password is admin/admin.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
-    "image": "80x86/filebrowser:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "8082:8082/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/FileBrowser"
-      },
-      {
-        "container": "/myfiles",
-        "bind": "/portainer/Files/AppData/Config"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "YouTubeDL-Material",
-    "name": "youtubedl-material",
-    "description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ytdlm.png",
-    "image": "tzahi12345/youtubedl-material:latest",
-    "categories": [
-      "Other",
-      "Downloaders"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "17442:17442/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/app/appdata",
-        "bind": "/portainer/Files/AppData/Config/YTDLM"
-      },
-      {
-        "container": "/app/video",
-        "bind": "/portainer/Files/AppData/Youtube/Video"
-      },
-      {
-        "container": "/app/subscriptions",
-        "bind": "/portainer/Files/AppData/Youtube/Subscriptions"
-      },
-      {
-        "container": "/app/users",
-        "bind": "/portainer/Files/AppData/Youtube/Users"
-      },
-      {
-        "container": "/app/audio",
-        "bind": "/portainer/Files/AppData/Youtube/Audio"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "DashMachine",
-    "name": "dashmachine",
-    "description": "Another application bookmark dashboard, with fun features.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
-    "image": "rmountjoy/dashmachine:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "5000:5000/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/dashmachine/dashmachine/user_data",
-        "bind": "/portainer/Files/AppData/Config/Dashmachine"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Reactive-Resume",
-    "name": "reactive-resume",
-    "description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/reactiveresume.png",
-    "image": "amruthpillai/reactive-resume:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "80/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/usr/src/app",
-        "bind": "/portainer/Files/AppData/Config/ReactiveResume"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "LibreSpeed",
-    "name": "librespeed",
-    "description": "A Free and Open Source Speedtest for HTML5 and more.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
-    "image": "linuxserver/librespeed:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "80/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/LibreSpeed"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "DeeMix",
-    "name": "deemix",
-    "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
-    "image": "bocki/deemix:latest",
-    "categories": [
-      "Other",
-      "Music"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "9666:9666/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/DeeMix"
-      },
-      {
-        "container": "/downloads",
-        "bind": "/portainer/Downloads"
-      }
-    ],
-    "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details."
-  },
-  {
-    "type": 1,
-    "title": "Nginx Proxy Manager",
-    "name": "nginx-proxy-manager",
-    "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/proxy_mgr.png",
-    "image": "jlesage/nginx-proxy-manager",
-    "categories": [
-      "Proxy",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "80:8080/tcp",
-      "81:8181/tcp",
-      "443:4443/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Nginx-Proxy"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Organizr v2",
-    "name": "organizr-v2",
-    "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
-    "image": "organizrtools/organizr-v2:php-fpm",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "80/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Organizr"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Authelia",
-    "name": "authelia",
-    "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/authelia.png",
-    "image": "authelia/authelia:latest",
-    "note": "Requires a configuration.yml file in order to work. Documentation is Available <a href='https://docs.authelia.com/deployment/deployment-ha'>here</a>.",
-    "categories": [
-      "Other",
-      "Tools",
-      "Authentication"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "9091:9091/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/etc/authelia/",
-        "bind": "/portainer/Files/AppData/Config/Authelia"
-      }
-    ],
-    "env": [
-      {
-        "name": "TZ",
-        "label": "TZ"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "TiddlyWiki",
-    "name": "tiddlywiki",
-    "description": "A unique, non-linear notebook wiki.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tiddlywiki.png",
-    "image": "mazzolino/tiddlywiki:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "8080:8080/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/var/lib/tiddlywiki",
-        "bind": "/portainer/Files/AppData/Config/TiddlyWiki"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Watchtower",
-    "name": "watchtower",
-    "description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/watchtower.png",
-    "image": "containrrr/watchtower:latest",
-    "note": "It is recommended to manually update your containers but we're including this for those of you that don't care",
-    "categories": [
-      "Other",
-      "Tools",
-      "Maintenance"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "volumes": [
-      {
-        "container": "/var/run/docker.sock",
-        "bind": "/var/run/docker.sock"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Transmission-OpenVPN",
-    "name": "transmission-openvpn",
-    "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
-    "image": "haugene/transmission-openvpn:latest",
-    "note": "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
-    "categories": [
-      "Other",
-      "VPN",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "8080:8080/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/data",
-        "bind": "/portainer/Downloads"
-      },
-      {
-        "container": "/etc/localtime",
-        "bind": "/etc/localtime"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      },
-      {
-        "name": "OPENVPN_PROVIDER",
-        "label": "OPENVPN_PROVIDER",
-        "description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
-        "default": "MULLVAD"
-      },
-      {
-        "name": "OPENVPN_USERNAME",
-        "label": "OPENVPN_USERNAME",
-        "default": ""
-      },
-      {
-        "name": "OPENVPN_PASSWORD",
-        "label": "OPENVPN_PASSWORD",
-        "default": ""
-      },
-      {
-        "name": "LOCAL_NETWORK",
-        "label": "LOCAL_NETWORK",
-        "default": "192.168.0.0/24"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Murmur",
-    "name": "murmur",
-    "description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Mumble-logo.png",
-    "image": "goofball222/murmur:latest",
-    "categories": [
-      "Other",
-      "Voice",
-      "Chat"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "64738:64738/tcp",
-      "64738:64738/udp"
-    ],
-    "volumes": [
-      {
-        "container": "/etc/localtime",
-        "bind": "/etc/localtime:ro"
-      },
-      {
-        "container": "/opt/murmur/config",
-        "bind": "/portainer/Files/Config/Murmur"
-      },
-      {
-        "container": "/opt/murmur/data",
-        "bind": "/portainer/Files/Murmur/data"
-      },
-      {
-        "container": "/opt/murmur/log",
-        "bind": "/portainer/Files/Murmur/log"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      },
-      {
-        "name": "TZ",
-        "label": "TZ"
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Homer",
-    "name": "homer",
-    "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
-    "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
-    "image": "b4bz/homer:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "8902:8080/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/www/assets",
-        "bind": "/portainer/Files/AppData/Config/Homer/assets"
-      },
-      {
-        "container": "/www/config.yml",
-        "bind": "/portainer/Files/AppData/Config/Homer"
-      }
-    ]
-  },
-  {
-    "type": 1,
     "title": "Airsonic",
     "name": "airsonic",
     "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
@@ -839,6 +58,86 @@
   },
   {
     "type": 1,
+    "title": "Authelia",
+    "name": "authelia",
+    "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/authelia.png",
+    "image": "authelia/authelia:latest",
+    "note": "Requires a configuration.yml file in order to work. Documentation is Available <a href='https://docs.authelia.com/deployment/deployment-ha'>here</a>.",
+    "categories": [
+      "Other",
+      "Tools",
+      "Authentication"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "9091:9091/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/etc/authelia/",
+        "bind": "/portainer/Files/AppData/Config/Authelia"
+      }
+    ],
+    "env": [
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Bazarr",
+    "name": "Bazarr",
+    "description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bazarr.png",
+    "image": "linuxserver/bazarr:latest",
+    "categories": [
+      "Video",
+      "Music"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "6767:6767/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Bazarr"
+      },
+      {
+        "container": "/tv",
+        "bind": "/portainer/TV"
+      },
+      {
+        "container": "/movies",
+        "bind": "/portainer/Movies"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Beets",
     "name": "beets",
     "description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the MusicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
@@ -878,6 +177,30 @@
         "label": "PGID",
         "default": "100",
         "preset": true
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Bitwarden RS",
+    "name": "bitwardenrs",
+    "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+    "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
+    "image": "bitwardenrs/server:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      ":80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Bitwarden-rs"
       }
     ]
   },
@@ -928,6 +251,92 @@
         "name": "CONTEXT_PATH",
         "label": "CONTEXT_PATH",
         "default": "booksonic"
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "title": "Bookstack",
+    "description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
+    "categories": [
+      "Wiki"
+    ],
+    "note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "stackfile": "Template/Stack/bookstack.yml"
+    },
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      },
+      {
+        "name": "DATABASE_PASSWORD",
+        "label": "DATABASE_PASSWORD"
+      },
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "MYSQL_ROOT_PASSWORD"
+      },
+      {
+        "name": "PORT",
+        "label": "PORT"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "COPS",
+    "name": "cops",
+    "description": "COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cops-icon.png",
+    "image": "linuxserver/cops:latest",
+    "categories": [
+      "Cloud",
+      "Books"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/books",
+        "bind": "/portainer/Books"
+      },
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Cops"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
       }
     ]
   },
@@ -1072,6 +481,29 @@
   },
   {
     "type": 1,
+    "title": "Chowdown",
+    "name": "Chowdown",
+    "description": "ave recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/chowdown.png",
+    "image": "gregyankovoy/chowdown:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "4000:4000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Chowdown"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Codiad",
     "name": "codiad",
     "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
@@ -1089,47 +521,6 @@
       {
         "container": "/config",
         "bind": "/portainer/Files/AppData/Config/Codiad"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "COPS",
-    "name": "cops",
-    "description": "COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cops-icon.png",
-    "image": "linuxserver/cops:latest",
-    "categories": [
-      "Cloud",
-      "Books"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "80/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/books",
-        "bind": "/portainer/Books"
-      },
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Cops"
       }
     ],
     "env": [
@@ -1231,6 +622,29 @@
   },
   {
     "type": 1,
+    "title": "DashMachine",
+    "name": "dashmachine",
+    "description": "Another application bookmark dashboard, with fun features.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dashmachine_logo.png",
+    "image": "rmountjoy/dashmachine:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "5000:5000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/dashmachine/dashmachine/user_data",
+        "bind": "/portainer/Files/AppData/Config/Dashmachine"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Davos",
     "name": "davos",
     "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.\r\n\r\n/config : AppData Location\r\n/download : File Download Location",
@@ -1270,6 +684,34 @@
         "preset": true
       }
     ]
+  },
+  {
+    "type": 1,
+    "title": "DeeMix",
+    "name": "deemix",
+    "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
+    "image": "bocki/deemix:latest",
+    "categories": [
+      "Other",
+      "Music"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "9666:9666/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/DeeMix"
+      },
+      {
+        "container": "/downloads",
+        "bind": "/portainer/Downloads"
+      }
+    ],
+    "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details."
   },
   {
     "type": 1,
@@ -1441,6 +883,85 @@
   },
   {
     "type": 1,
+    "title": "Emby",
+    "name": "Emby",
+    "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/emby.png",
+    "image": "linuxserver/emby:latest",
+    "categories": [
+      "Video",
+      "Music",
+      "Photos"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8096:8096/tcp",
+      "8920:8920/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Emby"
+      },
+      {
+        "container": "/data/tvshows",
+        "bind": "/portainer/TV"
+      },
+      {
+        "container": "/data/movies",
+        "bind": "/portainer/Movies"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "FileBrowser",
+    "name": "filebrowser",
+    "description": "Web File Browser which can be used as a middleware or standalone app.",
+    "note": "The default user and password is admin/admin.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filebrowser.png",
+    "image": "80x86/filebrowser:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8082:8082/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/FileBrowser"
+      },
+      {
+        "container": "/myfiles",
+        "bind": "/portainer/Files/AppData/Config"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "FreshRSS",
     "name": "freshrss",
     "description": "A free, self-hostable rss aggregator…",
@@ -1501,6 +1022,68 @@
       {
         "container": "/mylar",
         "bind": "/portainer/Files/AppData/Gazee"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Guacamole",
+    "name": "guacamole",
+    "description": "A clientless remote desktop gateway.",
+    "note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/guacamole.png",
+    "image": "oznu/guacamole:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8901:8080/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Guacamole"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "HTPC Manager",
+    "name": "htpcmanager",
+    "description": "HTPC Manaager, a front end for many htpc related applications. Hellowlol version.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/htpcmanager-icon.png",
+    "image": "linuxserver/htpcmanager:latest",
+    "categories": [
+      "Video",
+      "Music",
+      "Other"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8085/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/HTPCmanager"
       }
     ],
     "env": [
@@ -1603,39 +1186,29 @@
   },
   {
     "type": 1,
-    "title": "HTPC Manager",
-    "name": "htpcmanager",
-    "description": "HTPC Manaager, a front end for many htpc related applications. Hellowlol version.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/htpcmanager-icon.png",
-    "image": "linuxserver/htpcmanager:latest",
+    "title": "Homer",
+    "name": "homer",
+    "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
+    "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
+    "image": "b4bz/homer:latest",
     "categories": [
-      "Video",
-      "Music",
-      "Other"
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8085/tcp"
+      "8902:8080/tcp"
     ],
     "volumes": [
       {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/HTPCmanager"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
+        "container": "/www/assets",
+        "bind": "/portainer/Files/AppData/Config/Homer/assets"
       },
       {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
+        "container": "/www/config.yml",
+        "bind": "/portainer/Files/AppData/Config/Homer"
       }
     ]
   },
@@ -1677,6 +1250,57 @@
         "label": "PGID",
         "default": "100",
         "preset": true
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Jellyfin",
+    "name": "jellyfin",
+    "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jellyfin.png",
+    "image": "linuxserver/jellyfin:latest",
+    "categories": [
+      "Video",
+      "Music",
+      "Photos"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8096:8096/tcp",
+      "8920:8920/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Jelllyfin"
+      },
+      {
+        "container": "/data/tvshows",
+        "bind": "/portainer/TV"
+      },
+      {
+        "container": "/data/movies",
+        "bind": "/portainer/Movies"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
       }
     ]
   },
@@ -1833,46 +1457,24 @@
   },
   {
     "type": 1,
-    "title": "lidarr",
-    "name": "lidarr",
-    "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lidarr.png",
-    "image": "linuxserver/lidarr:latest",
+    "title": "LibreSpeed",
+    "name": "librespeed",
+    "description": "A Free and Open Source Speedtest for HTML5 and more.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
+    "image": "linuxserver/librespeed:latest",
     "categories": [
-      "Downloaders",
-      "Music"
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8686/tcp"
+      "80/tcp"
     ],
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Lidarr"
-      },
-      {
-        "container": "/downloads",
-        "bind": "/portainer/Downloads"
-      },
-      {
-        "container": "/music",
-        "bind": "/portainer/Music"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
+        "bind": "/portainer/Files/AppData/Config/LibreSpeed"
       }
     ]
   },
@@ -2113,6 +1715,88 @@
   },
   {
     "type": 1,
+    "title": "Mstream",
+    "name": "mstream",
+    "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
+    "image": "linuxserver/mstream:latest",
+    "categories": [
+      "Other",
+      "Music"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "3000:3000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Mstream"
+      },
+      {
+        "container": "/music",
+        "bind": "/portainer/Downloads"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Murmur",
+    "name": "murmur",
+    "description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Mumble-logo.png",
+    "image": "goofball222/murmur:latest",
+    "categories": [
+      "Other",
+      "Voice",
+      "Chat"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "64738:64738/tcp",
+      "64738:64738/udp"
+    ],
+    "volumes": [
+      {
+        "container": "/etc/localtime",
+        "bind": "/etc/localtime:ro"
+      },
+      {
+        "container": "/opt/murmur/config",
+        "bind": "/portainer/Files/Config/Murmur"
+      },
+      {
+        "container": "/opt/murmur/data",
+        "bind": "/portainer/Files/Murmur/data"
+      },
+      {
+        "container": "/opt/murmur/log",
+        "bind": "/portainer/Files/Murmur/log"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "MusicBrainz",
     "name": "musicbrainz",
     "description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
@@ -2244,44 +1928,6 @@
   },
   {
     "type": 1,
-    "title": "Nginx",
-    "name": "nginx",
-    "description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nginx-icon.png",
-    "image": "linuxserver/nginx:latest",
-    "categories": [
-      "Web",
-      "Proxy"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "80/tcp",
-      "443/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Nginx"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      }
-    ]
-  },
-  {
-    "type": 1,
     "title": "NZBGet",
     "name": "nzbget",
     "description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players",
@@ -2345,6 +1991,156 @@
       {
         "container": "/downloads",
         "bind": "/portainer/Downloads"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "title": "Nextcloud",
+    "name": "nextcloud",
+    "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
+    "categories": [
+      "Cloud",
+      "Productivity",
+      "Tools",
+      "Other",
+      "Web"
+    ],
+    "note": "The database user is nextcloud and the database is nextcloud_db",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "stackfile": "Template/Stack/nextcloud.yml"
+    },
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      },
+      {
+        "name": "DATABASE_PASSWORD",
+        "label": "DATABASE_PASSWORD"
+      },
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "MYSQL_ROOT_PASSWORD"
+      },
+      {
+        "name": "PORT",
+        "label": "PORT"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Nginx",
+    "name": "nginx",
+    "description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nginx-icon.png",
+    "image": "linuxserver/nginx:latest",
+    "categories": [
+      "Web",
+      "Proxy"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp",
+      "443/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Nginx"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Nginx Proxy Manager",
+    "name": "nginx-proxy-manager",
+    "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/proxy_mgr.png",
+    "image": "jlesage/nginx-proxy-manager",
+    "categories": [
+      "Proxy",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80:8080/tcp",
+      "81:8181/tcp",
+      "443:4443/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Nginx-Proxy"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "OScam",
+    "name": "oscam",
+    "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
+    "logo": "http://i.imgur.com/8LadrLg.png",
+    "image": "linuxserver/oscam:latest",
+    "categories": [
+      "Other"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8888/tcp",
+      "10000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/OScam"
       }
     ],
     "env": [
@@ -2446,24 +2242,24 @@
   },
   {
     "type": 1,
-    "title": "OScam",
-    "name": "oscam",
-    "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
-    "logo": "http://i.imgur.com/8LadrLg.png",
-    "image": "linuxserver/oscam:latest",
+    "title": "Organizr v2",
+    "name": "organizr-v2",
+    "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
+    "image": "organizrtools/organizr-v2:php-fpm",
     "categories": [
-      "Other"
+      "Other",
+      "Tools"
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8888/tcp",
-      "10000/tcp"
+      "80/tcp"
     ],
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/OScam"
+        "bind": "/portainer/Files/AppData/Config/Organizr"
       }
     ],
     "env": [
@@ -2524,6 +2320,38 @@
         "preset": true
       }
     ]
+  },
+  {
+    "type": 1,
+    "title": "Pi-Hole",
+    "name": "pihole",
+    "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
+    "image": "pihole/pihole:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "53:53/tcp",
+      "53:53/udp",
+      "67:67/udp",
+      "1010:80/tcp",
+      "4443:443/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/etc/pihole",
+        "bind": "/portainer/Files/AppData/Config/PiHole"
+      },
+      {
+        "container": "/etc/dnsmasq.d",
+        "bind": "/portainer/Files/AppData/Config/PiHole/DNS"
+      }
+    ],
+    "note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53."
   },
   {
     "type": 1,
@@ -2740,48 +2568,6 @@
   },
   {
     "type": 1,
-    "title": "qBittorrent",
-    "name": "qbittorrent",
-    "description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/qbittorrent-icon.png",
-    "image": "linuxserver/qbittorrent:latest",
-    "categories": [
-      "Downloaders"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "6881/tcp",
-      "6881/udp",
-      "8080/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/qBittorrent"
-      },
-      {
-        "container": "/downloads",
-        "bind": "/portainer/Downloads"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      }
-    ]
-  },
-  {
-    "type": 1,
     "title": "Quassel IRC",
     "name": "quassel-core",
     "description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core -- much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
@@ -2863,6 +2649,29 @@
   },
   {
     "type": 1,
+    "title": "Reactive-Resume",
+    "name": "reactive-resume",
+    "description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/reactiveresume.png",
+    "image": "amruthpillai/reactive-resume:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/usr/src/app",
+        "bind": "/portainer/Files/AppData/Config/ReactiveResume"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Resilio Sync",
     "name": "resilio-sync",
     "description": "Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
@@ -2883,48 +2692,6 @@
       },
       {
         "container": "/sync"
-      },
-      {
-        "container": "/downloads",
-        "bind": "/portainer/Downloads"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "ruTorrent",
-    "name": "rutorrent",
-    "description": "Popular torrent client with a webui for ease of use.",
-    "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
-    "image": "linuxserver/rutorrent:latest",
-    "categories": [
-      "Downloaders"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "80/tcp",
-      "51413/tcp",
-      "6881/udp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/ruTorrent"
       },
       {
         "container": "/downloads",
@@ -3019,6 +2786,51 @@
       {
         "container": "/tv",
         "bind": "/portainer/TV"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "SickGear",
+    "name": "sickgear",
+    "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickgear-icon.png",
+    "image": "linuxserver/sickgear:latest",
+    "categories": [
+      "Downloaders",
+      "Video"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8081/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/SickGear"
+      },
+      {
+        "container": "/tv",
+        "bind": "/portainer/TV"
+      },
+      {
+        "container": "/downloads",
+        "bind": "/portainer/Downloads"
       }
     ],
     "env": [
@@ -3248,6 +3060,65 @@
   },
   {
     "type": 1,
+    "title": "TiddlyWiki",
+    "name": "tiddlywiki",
+    "description": "A unique, non-linear notebook wiki.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tiddlywiki.png",
+    "image": "mazzolino/tiddlywiki:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8080:8080/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/var/lib/tiddlywiki",
+        "bind": "/portainer/Files/AppData/Config/TiddlyWiki"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Tiny Tiny RSS",
+    "name": "tt-rss",
+    "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tt-rss-icon.png",
+    "image": "lunik1/tt-rss:latest",
+    "categories": [
+      "Other"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/tt-rss"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Transmission",
     "name": "transmission",
     "description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
@@ -3292,23 +3163,30 @@
   },
   {
     "type": 1,
-    "title": "Tiny Tiny RSS",
-    "name": "tt-rss",
-    "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tt-rss-icon.png",
-    "image": "lunik1/tt-rss:latest",
+    "title": "Transmission-OpenVPN",
+    "name": "transmission-openvpn",
+    "description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
+    "image": "haugene/transmission-openvpn:latest",
+    "note": "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
     "categories": [
-      "Other"
+      "Other",
+      "VPN",
+      "Tools"
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      "8080:8080/tcp"
     ],
     "volumes": [
       {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/tt-rss"
+        "container": "/data",
+        "bind": "/portainer/Downloads"
+      },
+      {
+        "container": "/etc/localtime",
+        "bind": "/etc/localtime"
       }
     ],
     "env": [
@@ -3323,6 +3201,27 @@
         "label": "PGID",
         "default": "100",
         "preset": true
+      },
+      {
+        "name": "OPENVPN_PROVIDER",
+        "label": "OPENVPN_PROVIDER",
+        "description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
+        "default": "MULLVAD"
+      },
+      {
+        "name": "OPENVPN_USERNAME",
+        "label": "OPENVPN_USERNAME",
+        "default": ""
+      },
+      {
+        "name": "OPENVPN_PASSWORD",
+        "label": "OPENVPN_PASSWORD",
+        "default": ""
+      },
+      {
+        "name": "LOCAL_NETWORK",
+        "label": "LOCAL_NETWORK",
+        "default": "192.168.0.0/24"
       }
     ]
   },
@@ -3461,6 +3360,28 @@
   },
   {
     "type": 1,
+    "title": "Watchtower",
+    "name": "watchtower",
+    "description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/watchtower.png",
+    "image": "containrrr/watchtower:latest",
+    "note": "It is recommended to manually update your containers but we're including this for those of you that don't care",
+    "categories": [
+      "Other",
+      "Tools",
+      "Maintenance"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "volumes": [
+      {
+        "container": "/var/run/docker.sock",
+        "bind": "/var/run/docker.sock"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "WebGrab+Plus",
     "name": "webgrabplus",
     "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's configuration.[br][br]\r\n\t\t[b]/data[/b] : This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
@@ -3493,6 +3414,95 @@
         "label": "PGID",
         "default": "100",
         "preset": true
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Whoogle",
+    "name": "whoogle",
+    "description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/whoogle.png",
+    "image": "benbusby/whoogle-search:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "5001:5000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Whoogle"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Wikijs",
+    "name": "Wikijs",
+    "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
+    "image": "linuxserver/wikijs:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "3100:3000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Wikijs"
+      },
+      {
+        "container": "/data",
+        "bind": "/portainer/Files/AppData/Config/Wikijs/data"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "YouTubeDL-Material",
+    "name": "youtubedl-material",
+    "description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ytdlm.png",
+    "image": "tzahi12345/youtubedl-material:latest",
+    "categories": [
+      "Other",
+      "Downloaders"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "17442:17442/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/app/appdata",
+        "bind": "/portainer/Files/AppData/Config/YTDLM"
+      },
+      {
+        "container": "/app/video",
+        "bind": "/portainer/Files/AppData/Youtube/Video"
+      },
+      {
+        "container": "/app/subscriptions",
+        "bind": "/portainer/Files/AppData/Youtube/Subscriptions"
+      },
+      {
+        "container": "/app/users",
+        "bind": "/portainer/Files/AppData/Youtube/Users"
+      },
+      {
+        "container": "/app/audio",
+        "bind": "/portainer/Files/AppData/Youtube/Audio"
       }
     ]
   },
@@ -3533,69 +3543,35 @@
     ]
   },
   {
-    "type": 3,
-    "title": "Bookstack",
-    "description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
+    "type": 1,
+    "title": "lidarr",
+    "name": "lidarr",
+    "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lidarr.png",
+    "image": "linuxserver/lidarr:latest",
     "categories": [
-      "Wiki"
+      "Downloaders",
+      "Music"
     ],
-    "note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
     "platform": "linux",
-    "repository": {
-      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/bookstack.yml"
-    },
-    "env": [
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8686/tcp"
+    ],
+    "volumes": [
       {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Lidarr"
       },
       {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
+        "container": "/downloads",
+        "bind": "/portainer/Downloads"
       },
       {
-        "name": "TZ",
-        "label": "TZ"
-      },
-      {
-        "name": "DATABASE_PASSWORD",
-        "label": "DATABASE_PASSWORD"
-      },
-      {
-        "name": "MYSQL_ROOT_PASSWORD",
-        "label": "MYSQL_ROOT_PASSWORD"
-      },
-      {
-        "name": "PORT",
-        "label": "PORT"
+        "container": "/music",
+        "bind": "/portainer/Music"
       }
-    ]
-  },
-  {
-    "type": 3,
-    "title": "Nextcloud",
-    "name" : "nextcloud",
-    "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
-    "categories": [
-      "Cloud",
-      "Productivity",
-      "Tools",
-      "Other",
-      "Web"
     ],
-    "note": "The database user is nextcloud and the database is nextcloud_db",
-    "platform": "linux",
-    "repository": {
-      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/nextcloud.yml"
-    },
     "env": [
       {
         "name": "PUID",
@@ -3608,49 +3584,72 @@
         "label": "PGID",
         "default": "100",
         "preset": true
-      },
-      {
-        "name": "TZ",
-        "label": "TZ"
-      },
-      {
-        "name": "DATABASE_PASSWORD",
-        "label": "DATABASE_PASSWORD"
-      },
-      {
-        "name": "MYSQL_ROOT_PASSWORD",
-        "label": "MYSQL_ROOT_PASSWORD"
-      },
-      {
-        "name": "PORT",
-        "label": "PORT"
       }
     ]
   },
   {
     "type": 1,
-    "title": "SickGear",
-    "name": "sickgear",
-    "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickgear-icon.png",
-    "image": "linuxserver/sickgear:latest",
+    "title": "qBittorrent",
+    "name": "qbittorrent",
+    "description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/qbittorrent-icon.png",
+    "image": "linuxserver/qbittorrent:latest",
     "categories": [
-      "Downloaders",
-      "Video"
+      "Downloaders"
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8081/tcp"
+      "6881/tcp",
+      "6881/udp",
+      "8080/tcp"
     ],
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/SickGear"
+        "bind": "/portainer/Files/AppData/Config/qBittorrent"
       },
       {
-        "container": "/tv",
-        "bind": "/portainer/TV"
+        "container": "/downloads",
+        "bind": "/portainer/Downloads"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "ruTorrent",
+    "name": "rutorrent",
+    "description": "Popular torrent client with a webui for ease of use.",
+    "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
+    "image": "linuxserver/rutorrent:latest",
+    "categories": [
+      "Downloaders"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp",
+      "51413/tcp",
+      "6881/udp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/ruTorrent"
       },
       {
         "container": "/downloads",
