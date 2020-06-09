@@ -1074,7 +1074,7 @@
     "title": "Grocy",
     "name": "grocy",
     "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utulity.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/grocy.png",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/grocy_logo.png",
     "image": "linuxserver/grocy:latest",
     "categories": [
       "Other",
