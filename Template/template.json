@@ -1502,7 +1502,7 @@
         "bind": "/portainer/Files/AppData/Config/Lychee"
       },
       {
-        "container": "/config",
+        "container": "/pictures",
         "bind": "/portainer/Pictures"
       }
     ],
