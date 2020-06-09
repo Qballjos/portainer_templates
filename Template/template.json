@@ -543,21 +543,16 @@
       },
       {
         "name": "PASSWORD",
-        "label": "PASSWORD",
-        "default": "1000",
-        "preset": true
+        "label": "PASSWORD"
       },
       {
         "name": "SUDO_PASSWORD",
-        "label": "SUDO_PASSWORD",
-        "default": "1000",
-        "preset": true
+        "label": "SUDO_PASSWORD"
       },
       {
         "name": "PROXY_DOMAIN",
         "label": "PROXY_DOMAIN",
-        "default": "example.my.domain",
-        "preset": true
+        "default": "example.my.domain"
       }
     ],
     "volumes": [
