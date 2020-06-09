@@ -3070,11 +3070,11 @@
   },
   {
     "type": 1,
-    "title": "sickrage",
-    "name": "sickrage",
+    "title": "sickchill",
+    "name": "sickchill",
     "description": "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickrage-icon.png",
-    "image": "linuxserver/sickrage:latest",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickchill-icon.png",
+    "image": "linuxserver/sickchill:latest",
     "categories": [
       "Downloaders",
       "Video"
@@ -3087,7 +3087,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/SickRage"
+        "bind": "/portainer/Files/AppData/Config/SickChill"
       },
       {
         "container": "/downloads",
