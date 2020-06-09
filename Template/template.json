@@ -28,7 +28,7 @@
     "title": "Wikijs",
     "name": "Wikijs",
     "description": "A clientless remote desktop gateway.",
-    "note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
+    "note": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS..",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
     "image": "linuxserver/wikijs:latest",
     "categories": [
@@ -46,8 +46,8 @@
         "bind": "/portainer/Files/AppData/Config/Wikijs"
       },
       {
-      "container": "/data",
-      "bind": "/portainer/Files/AppData/Config/Wikijs/data"
+        "container": "/data",
+        "bind": "/portainer/Files/AppData/Config/Wikijs/data"
       }
     ]
   },
@@ -80,6 +80,55 @@
       },
       {
         "container": "/data/movies",
+        "bind": "/portainer/Movies"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Bazarr",
+    "name": "Bazarr",
+    "description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bazarr.png",
+    "image": "linuxserver/bazarr:latest",
+    "categories": [
+      "Video",
+      "Music"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "6767:6767/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Bazarr"
+      },
+      {
+        "container": "/tv",
+        "bind": "/portainer/TV"
+      },
+      {
+        "container": "/movies",
         "bind": "/portainer/Movies"
       }
     ],
