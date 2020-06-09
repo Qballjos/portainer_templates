@@ -25,12 +25,12 @@
   },
   {
     "type": 1,
-    "title": "Homer",
-    "name": "homer",
-    "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
-    "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
-    "image": "b4bz/homer:latest",
+
+    "title": "Chowdown",
+    "name": "Chowdown",
+    "description": "ave recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/chowdown.png",
+    "image": "gregyankovoy/chowdown:latest",
     "categories": [
       "Other",
       "Tools"
@@ -38,16 +38,139 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8902:8080/tcp"
+      "4000:4000/tcp"
     ],
     "volumes": [
       {
-        "container": "/www/assets",
-        "bind": "/portainer/Files/AppData/Config/Homer/assets"
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Chowdown"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Wikijs",
+    "name": "Wikijs",
+    "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
+    "image": "linuxserver/wikijs:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "3100:3000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Wikijs"
       },
       {
-        "container": "/www/config.yml",
-        "bind": "/portainer/Files/AppData/Config/Homer"
+        "container": "/data",
+        "bind": "/portainer/Files/AppData/Config/Wikijs/data"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Emby",
+    "name": "Emby",
+    "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/emby.png",
+    "image": "linuxserver/emby:latest",
+    "categories": [
+      "Video",
+      "Music",
+      "Photos"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8096:8096/tcp",
+      "8920:8920/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Emby"
+      },
+      {
+        "container": "/data/tvshows",
+        "bind": "/portainer/TV"
+      },
+      {
+        "container": "/data/movies",
+        "bind": "/portainer/Movies"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Bazarr",
+    "name": "Bazarr",
+    "description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bazarr.png",
+    "image": "linuxserver/bazarr:latest",
+    "categories": [
+      "Video",
+      "Music"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "6767:6767/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Bazarr"
+      },
+      {
+        "container": "/tv",
+        "bind": "/portainer/TV"
+      },
+      {
+        "container": "/movies",
+        "bind": "/portainer/Movies"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
       }
     ]
   },
@@ -141,10 +264,10 @@
     "restart_policy": "unless-stopped",
     "ports": [
       "53:53/tcp",
-      "81:53/udp",
+      "53:53/udp",
       "67:67/udp",
-      "80:80/tcp",
-      "443:443/tcp"
+      "1010:80/tcp",
+      "4443:443/tcp"
     ],
     "volumes": [
       {
@@ -155,7 +278,8 @@
         "container": "/etc/dnsmasq.d",
         "bind": "/portainer/Files/AppData/Config/PiHole/DNS"
       }
-    ]
+    ],
+    "note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53."
   },
   {
     "type": 1,
@@ -402,7 +526,7 @@
     "name": "organizr-v2",
     "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/organizr-icon.png",
-    "image": "organizrtools/organizr-v2:latest",
+    "image": "organizrtools/organizr-v2:php-fpm",
     "categories": [
       "Other",
       "Tools"
@@ -625,6 +749,34 @@
       {
         "name": "TZ",
         "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Homer",
+    "name": "homer",
+    "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
+    "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
+    "image": "b4bz/homer:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8902:8080/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/www/assets",
+        "bind": "/portainer/Files/AppData/Config/Homer/assets"
+      },
+      {
+        "container": "/www/config.yml",
+        "bind": "/portainer/Files/AppData/Config/Homer"
       }
     ]
   },
@@ -1681,64 +1833,7 @@
   },
   {
     "type": 1,
-    "title": "libresonic",
-    "name": "libresonic",
-    "description": "Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.\r\n\r\n/music - Location of music.\r\n/media - Location of other media.\r\n/podcasts - Location of podcasts.\r\n/playlists - Location for playlists storage.\r\nCONTEXT_PATH for setting url-base in reverse proxy setups - (optional)\r\n\r\nDefault user/pass is admin/admin",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/libresonic.png",
-    "image": "linuxserver/libresonic:latest",
-    "categories": [
-      "Music"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "4040/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/music",
-        "bind": "/portainer/Music"
-      },
-      {
-        "container": "/playlists",
-        "bind": "/portainer/Files/AppData/Libresonic/Playlists"
-      },
-      {
-        "container": "/podcasts",
-        "bind": "/portainer/Podcasts"
-      },
-      {
-        "container": "/media",
-        "bind": "/portainer/Files/AppData/Libresonic/Media"
-      },
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Libresonic"
-      }
-    ],
-    "env": [
-      {
-        "name": "CONTEXT_PATH",
-        "label": "CONTEXT_PATH",
-        "set": ""
-      },
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "Lidarr",
+    "title": "lidarr",
     "name": "lidarr",
     "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lidarr.png",
@@ -2942,11 +3037,11 @@
   },
   {
     "type": 1,
-    "title": "SickRage",
-    "name": "sickrage",
+    "title": "SickChill",
+    "name": "sickchill",
     "description": "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickrage-icon.png",
-    "image": "linuxserver/sickrage:latest",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickchill-icon.png",
+    "image": "linuxserver/sickchill:latest",
     "categories": [
       "Downloaders",
       "Video"
@@ -2959,7 +3054,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/SickRage"
+        "bind": "/portainer/Files/AppData/Config/SickChill"
       },
       {
         "container": "/downloads",
@@ -3523,6 +3618,51 @@
       {
         "name": "PORT",
         "label": "PORT"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "SickGear",
+    "name": "sickgear",
+    "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickgear-icon.png",
+    "image": "linuxserver/sickgear:latest",
+    "categories": [
+      "Downloaders",
+      "Video"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8081/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/SickGear"
+      },
+      {
+        "container": "/tv",
+        "bind": "/portainer/TV"
+      },
+      {
+        "container": "/downloads",
+        "bind": "/portainer/Downloads"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
       }
     ]
   }
