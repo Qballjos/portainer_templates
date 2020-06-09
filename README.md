@@ -106,7 +106,7 @@ All templates are already configured to bind mount to various places on your dri
 - resilio-sync
 - rutorrent
 - sabnzbd
-- sickrage
+- sickchill
 - smokeping
 - sonarr
 - syncthing
