@@ -2,33 +2,30 @@
 version: "2"
 services:
   bookstack:
-    image: linuxserver/bookstack
-    container_name: bookstack
+    image: linuxserver/nextcloud
+    container_name: nextcloud
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
-      - DB_HOST=bookstack_db
-      - DB_USER=bookstack
-      - DB_PASS=${DATABASE_PASSWORD}
-      - DB_DATABASE=bookstackapp
+      - TZ=${TZ}
     volumes:
-      - /portainer/Files/AppData/Bookstack/Data:/config
+      - /srv/dev-disk-by-label-media/Files/AppData/Config/Nextcloud/Config:/config
     ports:
-      - ${PORT}:80
+      - ${PORT}:443
     restart: unless-stopped
     depends_on:
-      - bookstack_db
-  bookstack_db:
+      - nextcloud_db
+  nextcloud_db:
     image: linuxserver/mariadb
-    container_name: bookstack_db
+    container_name: nextcloud_db
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
       - TZ=${Timezone}
-      - MYSQL_DATABASE=bookstackapp
-      - MYSQL_USER=bookstack
+      - MYSQL_DATABASE=nextcloud_db
+      - MYSQL_USER=nextcloud
       - MYSQL_PASSWORD=${DATABASE_PASSWORD}
     volumes:
-      - /portainer/Files/AppData/Bookstack/DB:/config
+      - /srv/dev-disk-by-label-media/Files/AppData/Config/Nextcloud/DB:/config
     restart: unless-stopped
