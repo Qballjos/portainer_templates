@@ -1071,6 +1071,48 @@
   },
   {
     "type": 1,
+    "title": "Grocy",
+    "name": "grocy",
+    "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utulity.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/grocy.svg",
+    "image": "linuxserver/grocy:latest",
+    "categories": [
+      "Other",
+      "Tools",
+      "Finance"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Grocy"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "Timezone"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "HTPC Manager",
     "name": "htpcmanager",
     "description": "HTPC Manaager, a front end for many htpc related applications. Hellowlol version.",
