@@ -2244,50 +2244,6 @@
   },
   {
     "type": 1,
-    "title": "NextCloud",
-    "name": "nextcloud",
-    "description": "Nextcloud is an open source, self-hosted file sync and communication app platform. Access and sync your files, contacts, calendars and communicate and collaborate across your devices. You decide what happens with your data, where it is and who can access it!",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nextcloud-icon.png",
-    "image": "linuxserver/nextcloud:latest",
-    "categories": [
-      "Cloud",
-      "Productivity",
-      "Tools",
-      "Other",
-      "Web"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "443/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Nextcloud"
-      },
-      {
-        "container": "/data",
-        "bind": "/portainer/Files/Nextcloud-data"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      }
-    ]
-  },
-  {
-    "type": 1,
     "title": "Nginx",
     "name": "nginx",
     "description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
@@ -3589,6 +3545,56 @@
     "repository": {
       "url": "https://github.com/SelfhostedPro/selfhosted_templates",
       "stackfile": "Template/Stack/bookstack.yml"
+    },
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      },
+      {
+        "name": "DATABASE_PASSWORD",
+        "label": "DATABASE_PASSWORD"
+      },
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "MYSQL_ROOT_PASSWORD"
+      },
+      {
+        "name": "PORT",
+        "label": "PORT"
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "title": "Nextcloud",
+    "name" : "nextcloud",
+    "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
+    "categories": [
+      "Cloud",
+      "Productivity",
+      "Tools",
+      "Other",
+      "Web"
+    ],
+    "note": "The database user is nextcloud and the database is nextcloud_db",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "stackfile": "Template/Stack/nextcloud.yml"
     },
     "env": [
       {
