@@ -2787,6 +2787,29 @@
   },
   {
     "type": 1,
+    "title": "Shiori",
+    "name": "shiori",
+    "description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
+    "logo": "https://raw.githubusercontent.com/robocopAlpha/selfhosted_templates/master/Images/shiori-icon.png",
+    "image": "radhifadlillah/shiori:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8080/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/srv/shiori",
+        "bind": "/portainer/Files/AppData/Config/Shiori"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "SickChill",
     "name": "sickchill",
     "description": "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
