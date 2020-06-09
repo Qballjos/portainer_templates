@@ -2069,7 +2069,7 @@
       "Other",
       "Web"
     ],
-    "note": "The database user is nextcloud and the database is nextcloud_db",
+    "note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
     "platform": "linux",
     "repository": {
       "url": "https://github.com/SelfhostedPro/selfhosted_templates",
