@@ -513,7 +513,7 @@
     "title": "Code Server",
     "name": "code-server",
     "description": "Code-server is VS Code running on a remote server, accessible through the browser.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/chowdown.png",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/code-server.png",
     "image": "linuxserver/code-server:latest",
     "categories": [
       "Other",
