@@ -25,6 +25,29 @@
   },
   {
     "type": 1,
+    "title": "Chowdown",
+    "name": "Chowdown",
+    "description": "ave recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/chowdown.png",
+    "image": "gregyankovoy/chowdown:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "4000:4000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Chowdown"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Wikijs",
     "name": "Wikijs",
     "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
