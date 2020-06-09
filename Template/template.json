@@ -691,7 +691,7 @@
     "name": "deemix",
     "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
-    "image": "bocki/deemix:latest",
+    "image": "registry.gitlab.com/bockiii/deemix-docker",
     "categories": [
       "Other",
       "Music"
