@@ -25,12 +25,12 @@
   },
   {
     "type": 1,
-    "title": "Homer",
-    "name": "Homer",
-    "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
-    "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
-    "image": "b4bz/homer:latest",
+    "title": "Wikijs",
+    "name": "Wikijs",
+    "description": "A clientless remote desktop gateway.",
+    "note": "The default login will be guacadmin/guacadmin. It is common practice to add a new admin user and remove the default user for Guacamole.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
+    "image": "linuxserver/wikijs:latest",
     "categories": [
       "Other",
       "Tools"
@@ -38,16 +38,16 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8902:8080/tcp"
+      "3100:3000/tcp"
     ],
     "volumes": [
       {
-        "container": "/www/assets",
-        "bind": "/portainer/Files/AppData/Config/Homer/assets"
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Wikijs"
       },
       {
-        "container": "/www/config.yml",
-        "bind": "/portainer/Files/AppData/Config/Homer"
+      "container": "/data",
+      "bind": "/portainer/Files/AppData/Config/Wikijs/data"
       }
     ]
   },
@@ -182,7 +182,6 @@
     "title": "Pi-Hole",
     "name": "Pi-Hole",
     "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
-    "note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pihole.png",
     "image": "pihole/pihole:latest",
     "categories": [
@@ -207,7 +206,8 @@
         "container": "/etc/dnsmasq.d",
         "bind": "/portainer/Files/AppData/Config/PiHole/DNS"
       }
-    ]
+    ],
+    "note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53."
   },
   {
     "type": 1,
@@ -677,6 +677,34 @@
       {
         "name": "TZ",
         "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Homer",
+    "name": "Homer",
+    "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
+    "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
+    "image": "b4bz/homer:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8902:8080/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/www/assets",
+        "bind": "/portainer/Files/AppData/Config/Homer/assets"
+      },
+      {
+        "container": "/www/config.yml",
+        "bind": "/portainer/Files/AppData/Config/Homer"
       }
     ]
   },
