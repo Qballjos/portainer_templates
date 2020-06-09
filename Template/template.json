@@ -16,19 +16,25 @@
     ],
     "volumes": [
       {
-        "container": "/music"
+        "container": "/music",
+        "bind": "/portainer/Music"
+
       },
       {
-        "container": "/playlists"
+        "container": "/playlists",
+        "bind": "/portainer/Files/AppData/Airsonic/Playlists"
       },
       {
-        "container": "/podcasts"
+        "container": "/podcasts",
+        "bind": "/portainer/Podcasts"
       },
       {
-        "container": "/media"
+        "container": "/media",
+        "bind": "/portainer/Files/AppData/Airsonic/Media"
       },
       {
-        "container": "/config"
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Airsonic/"
       }
     ],
     "env": [
