@@ -1,7 +1,7 @@
 ---
 version: "2"
 services:
-  bookstack:
+  nextcloud:
     image: linuxserver/nextcloud
     container_name: nextcloud
     environment:
@@ -9,7 +9,7 @@ services:
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - /srv/dev-disk-by-label-media/Files/AppData/Config/Nextcloud/Config:/config
+      - /portainer/Files/AppData/Config/Nextcloud/Config:/config
     ports:
       - ${PORT}:443
     restart: unless-stopped
@@ -27,5 +27,5 @@ services:
       - MYSQL_USER=nextcloud
       - MYSQL_PASSWORD=${DATABASE_PASSWORD}
     volumes:
-      - /srv/dev-disk-by-label-media/Files/AppData/Config/Nextcloud/DB:/config
+      - /portainer/AppData/Config/Nextcloud/DB:/config
     restart: unless-stopped
