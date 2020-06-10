@@ -1267,6 +1267,53 @@
     ]
   },
   {
+    "type": 3,
+    "title": "Invoice Ninja",
+    "name": "invoice_ninja",
+    "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/invoice_ninja.png",
+    "categories": [
+      "Cloud",
+      "Productivity",
+      "Tools",
+      "Other",
+      "Web"
+    ],
+    "note": "The database user is invoice_ninja and the database is ninja_db. Please generate an app key following the documentation <a href='https://github.com/invoiceninja/dockerfiles'>here</a>. ",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "stackfile": "Template/Stack/invoice-ninja.yml"
+    },
+    "env": [
+      {
+        "name": "URL",
+        "label": "URL",
+        "default": "invoice.my.domain"
+      },
+      {
+        "name": "APP_KEY",
+        "label": "APP_KEY"
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      },
+      {
+        "name": "DATABASE_PASSWORD",
+        "label": "DATABASE_PASSWORD"
+      },
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "MYSQL_ROOT_PASSWORD"
+      },
+      {
+        "name": "PORT",
+        "label": "PORT"
+      }
+    ]
+  },
+  {
     "type": 1,
     "title": "Jackett",
     "name": "jackett",
