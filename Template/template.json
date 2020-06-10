@@ -1327,6 +1327,29 @@
     ]
   },
   {
+    "type": 1,
+    "title": "Huginn",
+    "name": "huginn",
+    "description": "Create agents that monitor and act on your behalf.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/huginn.png",
+    "image": "b4bz/homer:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "3000:3000/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/var/lib/mysql",
+        "bind": "/portainer/Files/AppData/Config/huginn"
+      }
+    ]
+  },
+  {
     "type": 3,
     "title": "Invoice Ninja",
     "name": "invoice_ninja",
