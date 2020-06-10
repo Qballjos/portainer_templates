@@ -62,6 +62,66 @@
   },
   {
     "type": 1,
+    "title": "EmbyStat",
+    "name": "EmbyStat",
+    "description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/embystat.png",
+    "image": "linuxserver/embystat:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "6555:6555/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/EmbyStat"
+      }
+    ],
+    "env": [
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ],
+    "note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services."
+  },
+  {
+    "type": 1,
+    "title": "Snibox",
+    "name": "Snibox",
+    "description": "Self-hosted snippet manager.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/snibox.png",
+    "image": "snowmean/snibox-sqlite:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "6555:6555/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/app/db/database",
+        "bind": "/portainer/Files/AppData/Config/Snibox"
+      }
+    ],
+    "env": [
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ],
+    "note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text."
+  },
+  {
+    "type": 1,
     "title": "Authelia",
     "name": "authelia",
     "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
