@@ -1320,7 +1320,7 @@
     "name": "huginn",
     "description": "Create agents that monitor and act on your behalf.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/huginn.png",
-    "image": "b4bz/homer:latest",
+    "image": "huginn/huginn:latest",
     "categories": [
       "Other",
       "Tools"
