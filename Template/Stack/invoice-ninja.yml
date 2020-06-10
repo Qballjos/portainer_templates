@@ -17,7 +17,7 @@ services:
       - /portainer/Files/AppData/Config/Invoice-Ninja/public:/var/app/public
       - /portainer/Files/AppData/Config/Invoice-Ninja/storage:/var/app/storage
     ports:
-      - ${PORT}:80
+      - ${PORT}:9000
     restart: unless-stopped
     depends_on:
       - ninja_db
