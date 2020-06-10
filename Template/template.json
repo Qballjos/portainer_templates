@@ -82,12 +82,6 @@
         "bind": "/portainer/Files/AppData/Config/EmbyStat"
       }
     ],
-    "env": [
-      {
-        "name": "TZ",
-        "label": "TZ"
-      }
-    ],
     "note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services."
   },
   {
@@ -104,18 +98,12 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "6555:6555/tcp"
+      "3010:3000/tcp"
     ],
     "volumes": [
       {
         "container": "/app/db/database",
         "bind": "/portainer/Files/AppData/Config/Snibox"
-      }
-    ],
-    "env": [
-      {
-        "name": "TZ",
-        "label": "TZ"
       }
     ],
     "note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text."
