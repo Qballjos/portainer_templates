@@ -1,0 +1,35 @@
+---
+version: "2"
+services:
+  invoice-ninja:
+    image: invoiceninja/invoiceninja:alpine-4
+    container_name: invoice-ninja
+    environment:
+      - APP_URL=${URL}
+      - APP_KEY=${APP_KEY}
+      - MULTI_DB_ENABLED=false
+      - DB_TYPE=mysql
+      - DB_HOST1=ninja_db
+      - DB_DATABASE=ninja_db
+      - DB_USERNAME=invoice_ninja
+      - DB_PASSWORD=${DATABASE_PASSWORD}
+    volumes:
+      - /portainer/Files/AppData/Config/Invoice-Ninja/public:/var/app/public
+      - /portainer/Files/AppData/Config/Invoice-Ninja/storage:/var/app/storage
+    ports:
+      - ${PORT}:9000
+    restart: unless-stopped
+    depends_on:
+      - ninja_db
+  ninja_db:
+    image: linuxserver/mariadb
+    container_name: ninja_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - TZ=${TZ}
+      - MYSQL_DATABASE=ninja_db
+      - MYSQL_USER=invoice_ninja
+      - MYSQL_PASSWORD=${DATABASE_PASSWORD}
+    volumes:
+      - /portainer/Files/AppData/Config/Invoice-Ninja/DB:/config
+    restart: unless-stopped
