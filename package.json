@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SelfhostedPro/selfhosted_templates.git"
+    "url": "git+https://github.com/Qballjos/portainer_templates.git"
   },
   "author": "Qballjos",
   "license": "GPLv3"
