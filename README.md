@@ -125,8 +125,8 @@ All templates are already configured to bind mount to various places on your dri
 If you wish to contribute make a pull request, create an issue, or email me.
 
 ## Authors
-* **NASHosted** - *Current Work* [NASHOSTED](https://github.com/nashosted)
-* **SelfhostedPro** - *Current Work* [SelfhostedPro](https://github.com/SelfhostedPro)
+* **NASHosted** - *Current Work* - [NASHOSTED](https://github.com/nashosted)
+* **SelfhostedPro** - *Current Work* - [SelfhostedPro](https://github.com/SelfhostedPro)
 * **Jos Visser** - *Initial work* - [Qballjos](https://github.com/Qballjos)
 
 See also the list of [contributors](https://github.com/Qballjos/portainer_templates/graphs/contributors) who participated in this project.
