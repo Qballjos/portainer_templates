@@ -311,7 +311,7 @@
     "note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
     "platform": "linux",
     "repository": {
-      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "url": "https://github.com/Qballjos/portainer_templates",
       "stackfile": "Template/Stack/bookstack.yml"
     },
     "env": [
@@ -1353,7 +1353,7 @@
     "note": "The database user is invoice_ninja and the database is ninja_db. Please generate an app key following the documentation <a href='https://github.com/invoiceninja/dockerfiles'>here</a>. ",
     "platform": "linux",
     "repository": {
-      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "url": "https://github.com/Qballjos/portainer_templates",
       "stackfile": "Template/Stack/invoice-ninja.yml"
     },
     "env": [
@@ -2162,7 +2162,7 @@
     "note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
     "platform": "linux",
     "repository": {
-      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "url": "https://github.com/Qballjos/portainer_templates",
       "stackfile": "Template/Stack/nextcloud.yml"
     },
     "env": [
