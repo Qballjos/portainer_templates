@@ -843,7 +843,7 @@
     "logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
     "image": "linuxserver/domoticz:latest",
     "categories": [
-      "HomeAutomation:",
+      "HomeAutomation",
       "Management"
     ],
     "platform": "linux",
@@ -916,7 +916,7 @@
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duplicati-icon.png",
     "image": "linuxserver/duplicati:latest",
     "categories": [
-      "Backup:",
+      "Backup",
       "Cloud",
       "Other",
       "Productivity",
