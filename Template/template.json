@@ -243,7 +243,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      ":80/tcp"
+      "80/tcp"
     ],
     "volumes": [
       {
