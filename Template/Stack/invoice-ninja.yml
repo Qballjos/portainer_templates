@@ -7,9 +7,8 @@ services:
     environment:
       - APP_URL=${URL}
       - APP_KEY=${APP_KEY}
-      - MULTI_DB_ENABLED=false
       - DB_TYPE=mysql
-      - DB_HOST1=ninja_db
+      - DB_HOST=ninja_db
       - DB_DATABASE=ninja_db
       - DB_USERNAME=invoice_ninja
       - DB_PASSWORD=${DATABASE_PASSWORD}
