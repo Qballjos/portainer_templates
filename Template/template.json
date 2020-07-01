@@ -3756,6 +3756,62 @@
   },
   {
     "type": 1,
+    "title": "UniFi Video",
+    "name": "UniFi Video",
+    "description": "UniFi Video is a powerful and flexible, integrated IP video management surveillance system designed to work with Ubiquiti’s UniFi Video Camera product line. UniFi Video has an intuitive, configurable, and feature‑packed user interface with advanced features such as motion detection, auto‑discovery, user‑level security, storage management, reporting, and mobile device support.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/UniFiVideo-logo.png",
+    "image": "pducharme/unifi-video-controller:latest",
+    "categories": [
+      "CCTV"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "1935:1935/tcp",
+      "7444:7444/tcp", 
+      "7447:7447/tcp",
+      "6666:6666/tcp", 
+      "7442:7442/tcp", 
+      "7080:7080/tcp", 
+      "7443:7443/tcp", 
+      "7445:7445/tcp", 
+      "7446:7446/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/recordings",
+        "bind": "/portainer/Files/AppData/Config/UnifFiVideo/Recordings/"
+      }
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/UniFiVideo/"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "99"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100"
+      },
+      {
+        "name": "UMASK",
+        "label": "UMASK",
+        "default": "002"
+      },
+      {
+        "name": "CONTEXT_PATH",
+        "label": "CONTEXT_PATH",
+        "set": "UniFi Video"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "ZNC",
     "name": "znc",
     "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
