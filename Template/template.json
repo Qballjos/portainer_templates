@@ -3781,7 +3781,7 @@
       {
         "container": "/recordings",
         "bind": "/portainer/Files/AppData/Config/UnifFiVideo/Recordings/"
-      }
+      },
       {
         "container": "/config",
         "bind": "/portainer/Files/AppData/Config/UniFiVideo/"
