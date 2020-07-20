@@ -1644,7 +1644,7 @@
     "type": 1,
     "title": "Chowdown",
     "name": "Chowdown",
-    "description": "ave recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
+    "description": "Save recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/chowdown.png",
     "image": "gregyankovoy/chowdown:latest",
     "categories": [
