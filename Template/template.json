@@ -2709,6 +2709,46 @@
     ]
   },
   {
+    "type": 3,
+    "title": "Pritunl",
+    "name": "pritunl",
+    "description": "Pritunl container built on Alpine Linux. Supports IPv6 and running behind a reverse proxy. This container requires an external Mongo DB and should be run via Docker Compose or other orchestration.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nextcloud-icon.png",
+    "categories": [
+      "VPN",
+      "Tools",
+      "Other",
+      "Web"
+    ],
+    "note": "Documentation on this containier can be found here: <a href=https://hub.docker.com/r/goofball222/pritunl>https://hub.docker.com/r/goofball222/pritunl</a>",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "stackfile": "Template/Stack/nextcloud.yml"
+    },
+    "env": [
+      {
+        "name": "REVERSE_PROXY",
+        "label": "REVERSE_PROXY",
+        "default": "false"
+      },
+      {
+        "name": "PRITUNL_OPTS",
+        "label": "PRITUNL_OPTS"
+      },
+      {
+        "name": "MONGODB_URI",
+        "label": "MONGODB_URI",
+        "default": "mongodb://mongo:27017/pritunl"
+      },
+      {
+        "name": "WIREGUARD",
+        "label": "WIREGUARD",
+        "default": "false"
+      }
+    ]
+  },
+  {
     "type": 1,
     "title": "Pydio",
     "name": "pydio",
