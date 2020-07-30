@@ -2723,7 +2723,7 @@
     "note": "Documentation on this containier can be found here: <a href=https://hub.docker.com/r/goofball222/pritunl>https://hub.docker.com/r/goofball222/pritunl</a>",
     "platform": "linux",
     "repository": {
-      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "url": "https://github.com/SelfhostedPro/selfhosted_templates/tree/pritunl",
       "stackfile": "Template/Stack/pritunl.yml"
     },
     "env": [
