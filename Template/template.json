@@ -2724,7 +2724,7 @@
     "platform": "linux",
     "repository": {
       "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/nextcloud.yml"
+      "stackfile": "Template/Stack/pritunl.yml"
     },
     "env": [
       {
