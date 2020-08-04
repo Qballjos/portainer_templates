@@ -80,7 +80,7 @@
     "volumes": [
       {
         "container": "/etc/authelia/",
-        "bind": "/portainer/Files/AppData/Config/Authelia"
+        "bind": "!config/Config/Authelia"
       }
     ],
     "env": [
