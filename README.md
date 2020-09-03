@@ -3,6 +3,10 @@
 
 This is a template focused on helping people spin up selfhosted services using Portainer.
 
+# Portainer V1 Templates for Selfhosted Projects/Homelabs has moved to 
+
+url: `https://raw.githubusercontent.com/Qballjos/portainer_templates/master/V1 Template/template.json`
+
 ### Prerequisites
 
 1. A server/NAS with docker installed
