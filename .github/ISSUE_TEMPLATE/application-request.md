@@ -20,64 +20,66 @@ assignees: ''
 
 ```json
 {
-    "type": 1,
-    "title": "Airsonic",
-    "name": "airsonic",
-    "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
-    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/airsonic-logo.png",
-    "image": "linuxserver/airsonic:latest",
-    "categories": [
-      "Music"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "4040:4040/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/music",
-        "bind": "/portainer/Music"
-
-      },
-      {
-        "container": "/playlists",
-        "bind": "/portainer/Files/AppData/Airsonic/Playlists"
-      },
-      {
-        "container": "/podcasts",
-        "bind": "/portainer/Podcasts"
-      },
-      {
-        "container": "/media",
-        "bind": "/portainer/Files/AppData/Airsonic/Media"
-      },
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Airsonic/"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000"
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100"
-      },
-      {
-        "name": "CONTEXT_PATH",
-        "label": "CONTEXT_PATH",
-        "set": "airsonic"
-      },
-      {
-        "name": "JAVA_OPTS",
-        "label": "JAVA_OPTS",
-        "set": "-Xms256m -Xmx512m"
-      }
-    ]
-  },
+  "version": "2",
+  "templates": [
+    {
+      "categories": [
+        "Music"
+      ],
+      "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "label": "CONTEXT_PATH",
+          "name": "CONTEXT_PATH",
+          "set": "airsonic"
+        },
+        {
+          "label": "JAVA_OPTS",
+          "name": "JAVA_OPTS",
+          "set": "-Xms256m -Xmx512m"
+        }
+      ],
+      "image": "linuxserver/airsonic:latest",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/airsonic-logo.png",
+      "name": "airsonic",
+      "platform": "linux",
+      "ports": [
+        "4040:4040/tcp"
+      ],
+      "restart_policy": "unless-stopped",
+      "title": "Airsonic",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/Music",
+          "container": "/music"
+        },
+        {
+          "bind": "/portainer/Files/AppData/Airsonic/Playlists",
+          "container": "/playlists"
+        },
+        {
+          "bind": "/portainer/Podcasts",
+          "container": "/podcasts"
+        },
+        {
+          "bind": "/portainer/Files/AppData/Airsonic/Media",
+          "container": "/media"
+        },
+        {
+          "bind": "/portainer/Files/AppData/Config/Airsonic/",
+          "container": "/config"
+        }
+      ]
+    },
 ```
