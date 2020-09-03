@@ -140,3 +140,4 @@ See also the list of [contributors](https://github.com/Qballjos/portainer_templa
 
 * LinuxServer.io for the old Template
 * Inspiration being too lazy to create each container template manualy
+* The team behind Portainer for there awesome product and support in the community
