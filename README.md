@@ -61,7 +61,6 @@ All templates are already configured to bind mount to various places on your dri
 - booksonic
 - bookstack
 - calibre-web
-- cardigann
 - Chevereto
 - codiad
 - cops
@@ -80,7 +79,7 @@ All templates are already configured to bind mount to various places on your dri
 - jackett
 - kodi-headless
 - lazylibrarian
-- letsencrypt
+- letsencrypt / SWAG
 - libresonic
 - lidarr
 - lychee

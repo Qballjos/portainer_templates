@@ -1566,14 +1566,14 @@
 			],
 			"image": "linuxserver/swag:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/letsencrypt.png",
-			"name": "letsencrypt",
+			"name": "letsencrypt / SWAG",
 			"platform": "linux",
 			"ports": [
 				"80/tcp",
 				"443/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Let's Encrypt",
+			"title": "Let's Encrypt / SWAG",
 			"type": 1,
 			"volumes": [
 				{
