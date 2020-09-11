@@ -6,6 +6,7 @@ This is a template focused on helping people spin up selfhosted services using P
 ### Portainer V1 Templates for Selfhosted Projects/Homelabs has moved to 
 
 url: `https://raw.githubusercontent.com/Qballjos/portainer_templates/master/V1 Template/template.json`
+!!!This template will no longer be maintained!!! 
 
 ### Prerequisites
 
