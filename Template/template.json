@@ -3808,13 +3808,13 @@
     "restart_policy": "unless-stopped",
     "ports": [
       "1935:1935/tcp",
-      "7444:7444/tcp", 
+      "7444:7444/tcp",
       "7447:7447/tcp",
-      "6666:6666/tcp", 
-      "7442:7442/tcp", 
-      "7080:7080/tcp", 
-      "7443:7443/tcp", 
-      "7445:7445/tcp", 
+      "6666:6666/tcp",
+      "7442:7442/tcp",
+      "7080:7080/tcp",
+      "7443:7443/tcp",
+      "7445:7445/tcp",
       "7446:7446/tcp"
     ],
     "volumes": [
@@ -3937,6 +3937,64 @@
         "name": "PGID",
         "label": "PGID",
         "default": "100"
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "title": "Seafile",
+    "name": "seafile",
+    "description": "Seafile is an open-source, cross-platform file-hosting software system. Files are stored on a central server and can be synchronized with personal computers and mobile devices through apps. Files on the Seafile server can also be accessed directly via the server's web interface.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/seafile.png",
+    "categories": [
+      "Cloud",
+      "Other"
+    ],
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "stackfile": "Template/Stack/seafile.yml"
+    },
+    "env": [
+      {
+        "name": "TIME_ZONE",
+        "label": "Time Zone",
+        "default": "Etc/UTC"
+      },
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "Database Password",
+        "default": "password"
+      },
+      {
+        "name": "ADMIN_EMAIL",
+        "label": "Administrator Email",
+        "default": "me@example.com"
+      },
+      {
+        "name": "ADMIN_PASSWORD",
+        "label": "Administrator Password",
+        "default": "asecret"
+      },
+      {
+        "name": "SERVER_HOSTNAME",
+        "label": "Domain Name",
+        "default": "docs.seafile.com"
+      },
+      {
+        "name": "ENABLE_HTTPS",
+        "label": "Enable HTTPS?",
+        "select": [
+          {
+            "text": "Yes",
+            "value": "true",
+            "default": true
+          },
+          {
+            "text": "No",
+            "value": "false"
+          }
+        ]
       }
     ]
   }
