@@ -3969,7 +3969,22 @@
 					"container": "/config"
 				}
 			]
-			
+		},
+		{
+			"categories": [
+				"Security"
+			],
+			"description": "Dradis Framework: Collaboration and reporting for IT Security teams http://dradisframework.org",
+			"image": "raesene/dradis:latest",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dradis-logo.png",
+			"name": "dradis",
+			"platform": "linux",
+			"ports": [
+				"3000:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Dradis",
+			"type": 1
 		}
 	]
 }
