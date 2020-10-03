@@ -18,7 +18,7 @@ This is a template focused on helping people spin up selfhosted services using P
 
 ### Installing
 
-1. Login to your portainer setup go to settings 
+1. Login to your portainer setup go to settings
 2. Enable Use external templates
 3. Add the url: `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/template.json` then go to app templates and hit refresh at the top.
 
@@ -112,6 +112,7 @@ All templates are already configured to bind mount to various places on your dri
 - resilio-sync
 - rutorrent
 - sabnzbd
+- Seafile
 - sickchill
 - smokeping
 - sonarr
