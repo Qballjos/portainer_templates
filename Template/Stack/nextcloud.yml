@@ -27,5 +27,5 @@ services:
       - MYSQL_USER=nextcloud
       - MYSQL_PASSWORD=${DATABASE_PASSWORD}
     volumes:
-      - /portainer/AppData/Config/Nextcloud/DB:/config
+      - /portainer/Files/AppData/Config/Nextcloud/DB:/config
     restart: unless-stopped
