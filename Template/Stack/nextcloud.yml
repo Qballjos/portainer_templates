@@ -22,10 +22,10 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - TZ=${Timezone}
+      - TZ=${TZ}
       - MYSQL_DATABASE=nextcloud_db
       - MYSQL_USER=nextcloud
       - MYSQL_PASSWORD=${DATABASE_PASSWORD}
     volumes:
-      - /portainer/AppData/Config/Nextcloud/DB:/config
+      - /portainer/Files/AppData/Config/Nextcloud/DB:/config
     restart: unless-stopped
