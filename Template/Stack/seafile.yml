@@ -8,7 +8,7 @@ services:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
       - MYSQL_LOG_CONSOLE=true
     volumes:
-      - /portainer/AppData/Seafile/db:/var/lib/mysql
+      - /portainer/Files/AppData/Seafile/db:/var/lib/mysql
     networks:
       - seafile-net
 
@@ -26,7 +26,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /portainer/AppData/Seafile/data:/shared
+      - /portainer/Files/AppData/Seafile/data:/shared
     environment:
       - DB_HOST=db
       - DB_ROOT_PASSWD=${MYSQL_ROOT_PASSWORD}
