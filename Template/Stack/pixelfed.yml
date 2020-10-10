@@ -30,11 +30,6 @@ services:
       - pixelfed_db
       - pixelfed_redis
       - pixelfed_app
-    healthcheck:
-      test: php artisan horizon:status | grep running
-      interval: 60s
-      timeout: 5s
-      retries: 1
 
   pixelfed_db:
     image: zknt/mariadb
