@@ -1,0 +1,53 @@
+---
+version: '2.1'
+services:
+  pixelfed_app:
+    image: zknt/pixelfed
+    restart: unless-stopped
+    env_file:
+      - /portainer/Files/AppData/Pixelfed/.env.docker
+    volumes:
+      - /portainer/Files/AppData/Pixelfed/Data:/var/www/storage
+      - ./env:/var/www/.env
+    depends_on:
+      - pixelfed_db
+      - pixelfed_redis
+    # The port statement makes Pixelfed run on Port 8080, no SSL.
+    # For a real instance you need a frontend proxy instead!
+    ports:
+      - ${PORT}:80
+
+  pixelfed_worker:
+    image: zknt/pixelfed
+    restart: unless-stopped
+    env_file:
+      - /portainer/Files/AppData/Pixelfed/.env.docker
+      - ./env:/var/www/.env
+    volumes:
+      - /portainer/Files/AppData/Pixelfed/Data:/var/www/storage
+    entrypoint: /worker-entrypoint.sh
+    depends_on:
+      - pixelfed_db
+      - pixelfed_redis
+      - pixelfed_app
+    healthcheck:
+      test: php artisan horizon:status | grep running
+      interval: 60s
+      timeout: 5s
+      retries: 1
+
+  pixelfed_db:
+    image: zknt/mariadb
+    restart: unless-stopped
+    env_file:
+      - /portainer/Files/AppData/Pixelfed/.env.docker
+    environment:
+      - MYSQL_ROOT_PASSWORD=changeMeForProduction
+    volumes:
+      - /portainer/Files/AppData/Pixelfed/DB:/var/lib/mysql
+
+  pixelfed_redis:
+    image: zknt/redis
+    restart: unless-stopped
+    volumes:
+      - /portainer/Files/AppData/Pixelfed/Redis:/data
