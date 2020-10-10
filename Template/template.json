@@ -3729,6 +3729,41 @@
 		},
 		{
 			"categories": [
+				"Photos"
+			],
+			"description": "A free and ethical photo sharing platform, powered by ActivityPub federation.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"label": "PORT",
+					"name": "PORT"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/pixelfed.png",
+			"note": "You stil need to creat a env file from https://github.com/pixelfed/pixelfed/blob/dev/.env.docker in the location /portainer/Files/AppData/Pixelfed/.env.docker;",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "Template/Stack/pixelfed.yml",
+				"url": "https://github.com/Qballjos/portainer_templates"
+			},
+			"title": "Pixelfed",
+			"type": 3
+		},
+		{
+			"categories": [
 				"Downloaders"
 			],
 			"description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
