@@ -4000,6 +4000,122 @@
   },
   {
     "type": 1,
+    "title": "Dozzle",
+    "name": "dozzle",
+    "description": "Dozzle is a simple, lightweight application that provides you with a web based interface to monitor your Docker container logs live. It doesn’t store log information, it is for live monitoring of your container logs only.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/dozzle.png",
+    "image": "amir20/dozzle:latest",
+    "categories": [
+      "Other",
+      "Tools",
+      "Maintenance"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8080:8080/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/var/run/docker.sock",
+        "bind": "/var/run/docker.sock"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Wallbag",
+    "name": "wallabag",
+    "description": "wallabag is a self hostable application for saving web pages: Save and classify articles. Read them later. Freely.",
+    "logo": "https://raw.githubusercontent.com/jake-walker/selfhosted_templates/wallabag/Images/wallabag.png",
+    "image": "wallabag/wallabag:latest",
+    "categories": [
+      "Tools",
+      "Productivity",
+      "Web",
+      "Other"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "volumes": [
+      {
+        "container": "/var/www/wallabag/data",
+        "bind": "/portainer/Files/AppData/Wallabag/data"
+      },
+      {
+        "container": "/var/www/wallabag/web/assets/images",
+        "bind": "/portainer/Files/AppData/Wallabag/images"
+      }
+    ],
+    "ports": [
+      "80:80/tcp"
+    ],
+    "env": [
+      {
+        "name": "SYMFONY__ENV__SECRET",
+        "label": "Secret",
+        "default": "ovmpmAWXRCabNlMgzlzFXDYmCFfzGv",
+        "description": "This should be set to a random string of characters."
+      },
+      {
+        "name": "SYMFONY__ENV__DOMAIN_NAME",
+        "label": "Domain Name",
+        "default": "https://wallabag.example.com"
+      },
+      {
+        "name": "SYMFONY__ENV__MAILER_HOST",
+        "label": "SMTP Host",
+        "default": "127.0.0.1"
+      },
+      {
+        "name": "SYMFONY__ENV__MAILER_USER",
+        "label": "SMTP Username",
+        "default": "~"
+      },
+      {
+        "name": "SYMFONY__ENV__MAILER_PASSWORD",
+        "label": "SMTP Password",
+        "default": "~"
+      },
+      {
+        "name": "SYMFONY__ENV__FROM_EMAIL",
+        "label": "SMTP From Email",
+        "default": "wallabag@example.com"
+      },
+      {
+        "name": "SYMFONY__ENV__FOSUSER_REGISTRATION",
+        "label": "Enable public user registration?",
+        "select": [
+          {
+            "text": "Yes",
+            "value": "true",
+            "default": true
+          },
+          {
+            "text": "No",
+            "value": "false"
+          }
+        ]
+      },
+      {
+        "name": "SYMFONY__ENV__FOSUSER_CONFIRMATION",
+        "label": "Require registration confirmation?",
+        "select": [
+          {
+            "text": "Yes",
+            "value": "true",
+            "default": true
+          },
+          {
+            "text": "No",
+            "value": "false"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "DDClient",
     "name": "ddclient",
     "description": "DDClient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.",
