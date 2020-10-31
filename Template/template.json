@@ -1,7 +1,7 @@
 {
 	"version": "2",
 	"templates": [
-			{   
+			{
 			"categories": [
 	            "Other"
 	        ],
@@ -109,6 +109,37 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/Airsonic/",
 					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools",
+				"Authentication"
+			],
+			"description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
+			"env": [
+				{
+					"label": "TZ",
+					"name": "TZ"
+				}
+			],
+			"image": "authelia/authelia:latest",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/authelia.png",
+			"name": "authelia",
+			"note": "Requires a configuration.yml file in order to work. Documentation is Available \u003ca href='https://docs.authelia.com/deployment/deployment-ha'\u003ehere\u003c/a\u003e.",
+			"platform": "linux",
+			"ports": [
+				"9091:9091/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Authelia",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Authelia",
+					"container": "/etc/authelia/"
 				}
 			]
 		},
@@ -3729,28 +3760,6 @@
 		},
 		{
 			"categories": [
-				"Photos"
-			],
-			"description": "A free and ethical photo sharing platform, powered by ActivityPub federation.",
-			"env": [
-				{
-					"default": "8080",
-					"label": "PORT",
-					"name": "PORT"
-				}
-			],
-			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/pixelfed.png",
-			"note": "!!!THIS IS STILL INDEVELOPMENT!!!",
-			"platform": "linux",
-			"repository": {
-				"stackfile": "Template/Stack/pixelfed.yml",
-				"url": "https://github.com/Qballjos/portainer_templates"
-			},
-			"title": "Pixelfed",
-			"type": 3
-		},
-		{
-			"categories": [
 				"Downloaders"
 			],
 			"description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
@@ -3786,6 +3795,33 @@
 				{
 					"bind": "/portainer/Downloads",
 					"container": "/downloads"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app store for servers that anyone can make packages for.",
+			"image": "selfhostedpro/yacht:latest",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
+			"name": "yacht",
+			"platform": "linux",
+			"ports": [
+				"8001:8000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Yacht",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "yacht",
+					"container": "/config"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
 				}
 			]
 		},
