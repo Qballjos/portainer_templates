@@ -1,7 +1,7 @@
 {
-  "name": "Portainer Templates",
+  "name": "selfhosted_templates",
   "version": "1.0.0",
-  "description": "Templates for Portainer CE",
+  "description": "Portainer Templates for Selfhosted Projects/Homelabs.",
   "private": true,
   "devDependencies": {
     "jsonlint": "^1.6.3",
