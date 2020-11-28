@@ -512,7 +512,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Jelllyfin"
+        "bind": "/portainer/Files/AppData/Config/Jellyfin"
       },
       {
         "container": "/data/tvshows",
