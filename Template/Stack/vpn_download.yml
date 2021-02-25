@@ -1,10 +1,71 @@
+---
 version: "3.7"
-
 services:
+  jackett:
+    container_name: jackett
+    depends_on:
+      - qbittorrent
+    environment:
+      - "PUID=${PUID}"
+      - "PGID=${PGID}"
+      - UMASK=002
+      - "TZ=${TZ}"
+    image: hotio/jackett
+    network_mode: "service:qbittorrent"
+    restart: unless-stopped
+    volumes:
+      - "${APPDATA}/jackett:/config"
+      - "${DOWNLOAD}:/data"
+  nzbget:
+    container_name: nzbget
+    depends_on:
+      - qbittorrent
+    environment:
+      - "PUID=${PUID}"
+      - "PGID=${PGID}"
+      - UMASK=002
+      - "TZ=${TZ}"
+    image: hotio/nzbget
+    network_mode: "service:qbittorrent"
+    restart: unless-stopped
+    volumes:
+      - "${APPDATA}/nzbget:/config"
+      - "${DOWNLOAD}:/data"
+  nzbhydra2:
+    container_name: nzbhydra2
+    depends_on:
+      - qbittorrent
+    environment:
+      - "PUID=${PUID}"
+      - "PGID=${PGID}"
+      - UMASK=002
+      - "TZ=${TZ}"
+    image: hotio/nzbhydra2
+    network_mode: "service:qbittorrent"
+    restart: unless-stopped
+    volumes:
+      - "${APPDATA}/nzbhydra2:/config"
   qbittorrent:
     container_name: qbittorrent
+    environment:
+      - "PUID=${PUID}"
+      - PGID=1000
+      - "UMASK=${PGID}"
+      - "TZ=${TZ}"
+      - "VPN_ENABLED=${VPN_ENABLED}"
+      - "VPN_USER=${VPN_USER}"
+      - "VPN_PASS=${VPN_PASS}"
+      - "VPN_PROV=${VPN_PROV}"
+      - "VPN_CLIENT=${VPN_CLIENT}"
+      - "VPN_OPTIONS=${VPN_OPTIONS}"
+      - "STRICT_PORT_FORWARD=${STRICT_PORT_FORWARD}"
+      - "ENABLE_PRIVOXY=${ENABLE_PRIVOXY}"
+      - "LAN_NETWORK=${LAN_NETWORK}"
+      - "NAME_SERVERS=${NAME_SERVERS}"
+      - "ADDITIONAL_PORTS=${ADDITIONAL_PORTS}"
+      - "DEBUG=${DEBUG}"
+      - "WEBUI_PORT=${QBITTORENTPORT}"
     image: binhex/arch-qbittorrentvpn
-    privileged: true
     ports:
       - "6881:6881"
       - "6881:6881/udp"
@@ -13,70 +74,9 @@ services:
       - "${NZBHYDRA2PORT}:5076"
       - "${JACKETTPORT}:9117"
       - "${NZBGETPORT}:6789"
-    environment:
-      - PUID=${PUID}
-      - PGID=1000
-      - UMASK=${PGID}
-      - TZ=${TZ}
-      - VPN_ENABLED=${VPN_ENABLED}
-      - VPN_USER=${VPN_USER}
-      - VPN_PASS=${VPN_PASS}
-      - VPN_PROV=${VPN_PROV}
-      - VPN_CLIENT=${VPN_CLIENT}
-      - VPN_OPTIONS=${VPN_OPTIONS}
-      - STRICT_PORT_FORWARD=${STRICT_PORT_FORWARD}
-      - ENABLE_PRIVOXY=${ENABLE_PRIVOXY}
-      - LAN_NETWORK=${LAN_NETWORK}
-      - NAME_SERVERS=${NAME_SERVERS}
-      - ADDITIONAL_PORTS=${ADDITIONAL_PORTS}
-      - DEBUG=${DEBUG}
-      - WEBUI_PORT=${QBITTORENTPORT}
-    volumes:
-      - ${APPDATA}/qbittorrent:/config
-      - ${DOWNLOAD}:/data
-      - /etc/localtime:/etc/localtime:ro
+    privileged: true
     restart: unless-stopped
-  nzbhydra2:
-    container_name: nzbhydra2
-    image: hotio/nzbhydra2
-    network_mode: "service:qbittorrent"
-    depends_on:
-      - qbittorrent
-    environment:
-      - PUID=${PUID}
-      - PGID=${PGID}
-      - UMASK=002
-      - TZ=${TZ}
     volumes:
-      - ${APPDATA}/nzbhydra2:/config
-    restart: unless-stopped
-  jackett:
-    container_name: jackett
-    image: hotio/jackett
-    network_mode: "service:qbittorrent"
-    depends_on:
-      - qbittorrent
-    environment:
-      - PUID=${PUID}
-      - PGID=${PGID}
-      - UMASK=002
-      - TZ=${TZ}
-    volumes:
-      - ${APPDATA}/jackett:/config
-      - ${DOWNLOAD}:/data
-    restart: unless-stopped
-  nzbget:
-    container_name: nzbget
-    image: hotio/nzbget
-    network_mode: "service:qbittorrent"
-    depends_on:
-      - qbittorrent
-    environment:
-      - PUID=${PUID}
-      - PGID=${PGID}
-      - UMASK=002
-      - TZ=${TZ}
-    volumes:
-      - ${APPDATA}/nzbget:/config
-      - ${DOWNLOAD}:/data
-    restart: unless-stopped
+      - "${APPDATA}/qbittorrent:/config"
+      - "${DOWNLOAD}:/data"
+      - "/etc/localtime:/etc/localtime:ro"

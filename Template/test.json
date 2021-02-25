@@ -25,7 +25,7 @@
 				"label": "qBittorrent port",
 				"name": "QBITTORENTPORT"
 			},
-      {
+			{
 				"default": "6789",
 				"label": "NZBget port",
 				"name": "NZBGETPORT"
@@ -46,11 +46,11 @@
 				"label": "Jackett port",
 				"name": "JACKETTPORT"
 			},
-      {
+			{
 				"default": "6789, 9117, 5076",
 				"label": "aditional ports",
 				"name": "ADDITIONAL_PORTS",
-        "description": "to pass through the vpn network"
+				"description": "to pass through the vpn network"
 			},
 			{
 				"label": "Enable VPN",
