@@ -22,38 +22,28 @@
 			},
 			{
 				"default": "8080",
-				"label": "WEBUI_PORT",
-				"name": "WEBUI_PORT",
-				"description": "port for webui of qBittorent"
-			},
-			{
-				"default": "8080",
-				"label": "QBITTORENTPORT",
-				"name": "QBITTORENTPORT",
-				"description": "qBittorent webui port"
+				"label": "qBittorrent webui port",
+				"name": "QBITTORENTPORT"
 			},
 			{
 				"default": "8118",
-				"label": "PRIVOXYPORT",
+				"label": "Privoxy port",
 				"name": "PRIVOXYPORT",
-				"description": "port for privoxy"
+				"description": "for use with vpn proxy service"
 			},
 			{
 				"default": "5076",
-				"label": "NZBHYDRA2PORT",
-				"name": "NZBHYDRA2PORT",
-				"description": "NZBhydra2 port"
+				"label": "NZBhydra2 port",
+				"name": "NZBHYDRA2PORT"
 			},
 			{
 				"default": "9117",
-				"label": "JACKETTPORT",
-				"name": "JACKETTPORT",
-				"description": "Jackett port"
+				"label": "Jackett port",
+				"name": "JACKETTPORT"
 			},
 			{
-				"label": "VPN_ENABLED",
-				"name": "Enable VPN",
-				"description": "VPN enabled yes/no",
+				"label": "Enable VPN",
+				"name": "VPN_ENABLED",
 				"select": [{
 						"text": "Yes",
 						"value": "yes",
@@ -66,54 +56,100 @@
 				]
 			},
 			{
-				"label": "VPN_USER",
-				"name": "VPN_USER",
-				"description": "VPN username"
+				"label": "VPN Username",
+				"name": "VPN_USER"
 			},
 			{
-				"label": "VPN_PASS",
-				"name": "VPN_PASS",
-				"description": "VPN password"
+				"label": "VPN password",
+				"name": "VPN_PASS"
 			},
 			{
-				"label": "VPN_PROV",
+				"label": "VPN provider",
 				"name": "VPN_PROV",
-				"description": "pia, airvpn or custom"
+				"select": [{
+						"text": "PIA",
+						"value": "pia"
+					},
+					{
+						"text": "Airvpn",
+						"value": "airvpn"
+					},
+					{
+						"text": "Custom",
+						"value": "custom",
+						"default": true
+					}
+				]
 			},
 			{
-				"label": "VPN_CLIENT",
+				"label": "VPN client",
 				"name": "VPN_CLIENT",
-				"description": "openvpn or wireguard"
+				"select": [{
+						"text": "OpenVPN",
+						"value": "openvpn"
+					},
+					{
+						"text": "Wireguard",
+						"value": "wireguard",
+						"default": true
+					}
+				]
 			},
 			{
-				"label": "VPN_OPTIONS",
-				"name": "VPN_OPTIONS",
-				"description": "additional openvpn cli options"
+				"label": "Extra VPN options",
+				"name": "VPN_OPTIONS"
 			},
 			{
-				"label": "STRICT_PORT_FORWARD",
+				"label": "Strict port fowarding",
 				"name": "STRICT_PORT_FORWARD",
-				"description": "yes or no"
+				"select": [{
+						"text": "Yes",
+						"value": "yes"
+					},
+					{
+						"text": "No",
+						"value": "no",
+						"default": true
+					}
+				]
 			},
 			{
-				"label": "ENABLE_PRIVOXY",
+				"label": "ENable Privoxy",
 				"name": "ENABLE_PRIVOXY",
-				"description": "yes or no"
+				"select": [{
+						"text": "Yes",
+						"value": "yes"
+					},
+					{
+						"text": "No",
+						"value": "no",
+						"default": true
+					}
+				]
 			},
 			{
-				"label": "LAN_NETWORK",
+				"label": "Local LAN network",
 				"name": "LAN_NETWORK",
 				"description": "lan ipv4 network>/<cidr notation"
 			},
 			{
-				"label": "NAME_SERVERS",
+				"label": "Name servers",
 				"name": "NAME_SERVERS",
-				"description": "name servers comma seperated"
+				"description": "209.222.18.222,84.200.69.80,37.235.1.174,1.1.1.1,209.222.18.218,37.235.1.177,84.200.70.40,1.0.0.1"
 			},
 			{
-				"label": "DEBUG",
+				"label": "Debug enabled",
 				"name": "DEBUG",
-				"description": "true or false"
+				"select": [{
+						"text": "True",
+						"value": "true"
+					},
+					{
+						"text": "False",
+						"value": "false",
+						"default": true
+					}
+				]
 			},
 			{
 				"label": "appdata folder",
@@ -124,11 +160,6 @@
 				"label": "download folder",
 				"name": "download folder",
 				"description": "location of your download folder"
-			},
-			{
-				"label": "DEBUG",
-				"name": "DEBUG",
-				"description": "true or false"
 			}
 		],
 		"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/openvpn-as-icon.png",
