@@ -38,7 +38,6 @@ services:
   nzbhydra2:
     container_name: nzbhydra2
     image: hotio/nzbhydra2
-    depends_on: qbittorrent
     network_mode: "container:[qbittorrent]"
     environment:
       - PUID=${PUID}
@@ -51,7 +50,6 @@ services:
   jackett:
     container_name: jackett
     image: hotio/jackett
-    depends_on: qbittorrent
     network_mode: "container:[qbittorrent]"
     environment:
       - PUID=${PUID}
@@ -65,7 +63,6 @@ services:
   nzbget:
     container_name: nzbget
     image: hotio/nzbget
-    depends_on: qbittorrent
     network_mode: "container:[qbittorrent]"
     environment:
       - PUID=${PUID}
