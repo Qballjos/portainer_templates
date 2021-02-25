@@ -7,6 +7,9 @@
 		],
 		"description": "A stack of dockers (qBittorent, NZBget, Jackett, NZBhydra2) to use with VPN service to shield your privacy",
 		"env": [{
+        "privileged": true
+      },
+      {
 				"default": "1000",
 				"label": "PUID",
 				"name": "PUID"
