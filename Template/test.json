@@ -22,8 +22,13 @@
 			},
 			{
 				"default": "8080",
-				"label": "qBittorrent webui port",
+				"label": "qBittorrent port",
 				"name": "QBITTORENTPORT"
+			},
+      {
+				"default": "6789",
+				"label": "NZBget port",
+				"name": "NZBGETPORT"
 			},
 			{
 				"default": "8118",
@@ -114,7 +119,7 @@
 				]
 			},
 			{
-				"label": "ENable Privoxy",
+				"label": "Enable Privoxy",
 				"name": "ENABLE_PRIVOXY",
 				"select": [{
 						"text": "Yes",
@@ -153,12 +158,12 @@
 			},
 			{
 				"label": "appdata folder",
-				"name": "appdata folder",
+				"name": "APPDATA",
 				"description": "location of your appdata root"
 			},
 			{
 				"label": "download folder",
-				"name": "download folder",
+				"name": "DOWNLOAD",
 				"description": "location of your download folder"
 			}
 		],

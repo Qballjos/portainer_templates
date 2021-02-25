@@ -31,8 +31,8 @@ services:
       - DEBUG=${DEBUG}
       - WEBUI_PORT=${QBITTORENTPORT}
     volumes:
-      - ${appdata folder}/qbittorrent:/config
-      - ${download folder}:/data
+      - ${APPDATA}/qbittorrent:/config
+      - ${DOWNLOAD}:/data
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
   nzbhydra2:
@@ -46,7 +46,7 @@ services:
       - UMASK=002
       - TZ=${TZ}
     volumes:
-      - ${appdata folder}/nzbhydra2:/config
+      - ${APPDATA}/nzbhydra2:/config
     restart: unless-stopped
   jackett:
     container_name: jackett
@@ -59,8 +59,8 @@ services:
       - UMASK=002
       - TZ=${TZ}
     volumes:
-      - ${appdata folder}/jackett:/config
-      - ${download folder}:/data
+      - ${APPDATA}/jackett:/config
+      - ${DOWNLOAD}:/data
     restart: unless-stopped
   nzbget:
     container_name: nzbget
@@ -73,6 +73,6 @@ services:
       - UMASK=002
       - TZ=${TZ}
     volumes:
-      - ${appdata folder}/nzbget:/config
-      - ${download folder}:/data
+      - ${APPDATA}/nzbget:/config
+      - ${DOWNLOAD}:/data
     restart: unless-stopped
