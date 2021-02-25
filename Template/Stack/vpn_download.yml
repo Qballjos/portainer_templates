@@ -4,6 +4,7 @@ services:
   qbittorrent:
     container_name: qbittorrent
     image: binhex/arch-qbittorrentvpn
+    privileged: true
     ports:
       - "6881:6881"
       - "6881:6881/udp"
@@ -38,6 +39,9 @@ services:
   nzbhydra2:
     container_name: nzbhydra2
     image: hotio/nzbhydra2
+    network_mode: "service:openvpn"
+    depends_on:
+      - qbittorrent
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -49,6 +53,9 @@ services:
   jackett:
     container_name: jackett
     image: hotio/jackett
+    network_mode: "service:openvpn"
+    depends_on:
+      - qbittorrent
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -61,6 +68,9 @@ services:
   nzbget:
     container_name: nzbget
     image: hotio/nzbget
+    network_mode: "service:openvpn"
+    depends_on:
+      - qbittorrent
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
