@@ -27,7 +27,7 @@ services:
       - ENABLE_PRIVOXY=${ENABLE_PRIVOXY}
       - LAN_NETWORK=${LAN_NETWORK}
       - NAME_SERVERS=${NAME_SERVERS}
-      - ADDITIONAL_PORTS=6789, 9117, 5076
+      - ADDITIONAL_PORTS=${ADDITIONAL_PORTS}
       - DEBUG=${DEBUG}
       - WEBUI_PORT=${QBITTORENTPORT}
     volumes:
@@ -38,7 +38,6 @@ services:
   nzbhydra2:
     container_name: nzbhydra2
     image: hotio/nzbhydra2
-    network_mode: "container:[qbittorrent]"
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -50,7 +49,6 @@ services:
   jackett:
     container_name: jackett
     image: hotio/jackett
-    network_mode: "container:[qbittorrent]"
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
@@ -63,7 +61,6 @@ services:
   nzbget:
     container_name: nzbget
     image: hotio/nzbget
-    network_mode: "container:[qbittorrent]"
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
