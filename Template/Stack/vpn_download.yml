@@ -29,7 +29,7 @@ services:
       - NAME_SERVERS=${NAME_SERVERS}
       - ADDITIONAL_PORTS=6789, 9117, 5076
       - DEBUG=${DEBUG}
-      - WEBUI_PORT=${port for webinterface}
+      - WEBUI_PORT=${QBITTORENTPORT}
     volumes:
       - ${appdata folder}/qbittorrent:/config
       - ${download folder}:/data
