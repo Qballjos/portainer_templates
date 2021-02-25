@@ -39,7 +39,7 @@ services:
   nzbhydra2:
     container_name: nzbhydra2
     image: hotio/nzbhydra2
-    network_mode: "service:openvpn"
+    network_mode: "service:qbittorrent"
     depends_on:
       - qbittorrent
     environment:
@@ -53,7 +53,7 @@ services:
   jackett:
     container_name: jackett
     image: hotio/jackett
-    network_mode: "service:openvpn"
+    network_mode: "service:qbittorrent"
     depends_on:
       - qbittorrent
     environment:
@@ -68,7 +68,7 @@ services:
   nzbget:
     container_name: nzbget
     image: hotio/nzbget
-    network_mode: "service:openvpn"
+    network_mode: "service:qbittorrent"
     depends_on:
       - qbittorrent
     environment:
