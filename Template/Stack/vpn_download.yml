@@ -1,0 +1,78 @@
+version: "3.7"
+
+services:
+  qbittorrent:
+    container_name: qbittorrent
+    image: binhex/arch-qbittorrentvpn
+    ports:
+      - "6881:6881"
+      - "6881:6881/udp"
+      - "${QBITTORENTPORT}:8080"
+      - "${PRIVOXYPORT}:8118"
+      - "${NZBHYDRA2PORT}:5076"
+      - "${JACKETTPORT}:9117"
+      - "${NZBGETPORT}:6789"
+    environment:
+      - PUID=${PUID}
+      - PGID=1000
+      - UMASK=${PGID}
+      - TZ=${TZ}
+      - VPN_ENABLED=${VPN_ENABLED}
+      - VPN_USER=${VPN_USER}
+      - VPN_PASS=${VPN_PASS}
+      - VPN_PROV=${VPN_PROV}
+      - VPN_CLIENT=${VPN_CLIENT}
+      - VPN_OPTIONS=${VPN_OPTIONS}
+      - STRICT_PORT_FORWARD=${STRICT_PORT_FORWARD}
+      - ENABLE_PRIVOXY=${ENABLE_PRIVOXY}
+      - LAN_NETWORK=${LAN_NETWORK}
+      - NAME_SERVERS=${NAME_SERVERS}
+      - ADDITIONAL_PORTS=6789, 9117, 5076
+      - DEBUG=${DEBUG}
+      - WEBUI_PORT=${port for webinterface}
+    volumes:
+      - ${appdata folder}/qbittorrent:/config
+      - ${download folder}:/data
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+  nzbhydra2:
+    container_name: nzbhydra2
+    image: hotio/nzbhydra2
+    depends_on: qbittorrent
+    network_mode: "container:[qbittorrent]"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - UMASK=002
+      - TZ=${TZ}
+    volumes:
+      - ${appdata folder}/nzbhydra2:/config
+    restart: unless-stopped
+  jackett:
+    container_name: jackett
+    image: hotio/jackett
+    depends_on: qbittorrent
+    network_mode: "container:[qbittorrent]"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - UMASK=002
+      - TZ=${TZ}
+    volumes:
+      - ${appdata folder}/jackett:/config
+      - ${download folder}:/data
+    restart: unless-stopped
+  nzbget:
+    container_name: nzbget
+    image: hotio/nzbget
+    depends_on: qbittorrent
+    network_mode: "container:[qbittorrent]"
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - UMASK=002
+      - TZ=${TZ}
+    volumes:
+      - ${appdata folder}/nzbget:/config
+      - ${download folder}:/data
+    restart: unless-stopped

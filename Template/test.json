@@ -1,0 +1,132 @@
+{
+	"version": "2",
+	"templates": [
+      {
+        "categories": [
+          "Download",
+          "VPN"
+        ],
+        "description": "A stack of dockers (qBittorent, NZBget, Jackett, NZBhydra2) to use with VPN service to shield your privacy",
+        "env": [
+          {
+            "default": "1000",
+            "label": "PUID",
+            "name": "PUID"
+          },
+          {
+            "default": "100",
+            "label": "PGID",
+            "name": "PGID"
+          },
+          {
+            "label": "TZ",
+            "name": "TZ"
+          },
+          {
+            "default": "8080",
+            "label": "WEBUI_PORT",
+            "name": "WEBUI_PORT",
+            "description": "port for webui of qBittorent"
+          },
+          {
+            "default": "8080",
+            "label": "QBITTORENTPORT",
+            "name": "QBITTORENTPORT",
+            "description": "qBittorent webui port"
+          },
+          {
+            "default": "8118",
+            "label": "PRIVOXYPORT",
+            "name": "PRIVOXYPORT",
+            "description": "port for privoxy"
+          },
+          {
+            "default": "5076",
+            "label": "NZBHYDRA2PORT",
+            "name": "NZBHYDRA2PORT",
+            "description": "NZBhydra2 port"
+          },
+          {
+            "label": "VPN_ENABLED",
+            "name": "VPN_ENABLED",
+            "description": "VPN enabled yes/no"
+          },
+          {
+            "label": "VPN_USER",
+            "name": "VPN_USER",
+            "description": "VPN username"
+          },
+          {
+            "label": "VPN_PASS",
+            "name": "VPN_PASS",
+            "description": "VPN password"
+          },
+          {
+            "label": "VPN_PROV",
+            "name": "VPN_PROV",
+            "description": "pia, airvpn or custom"
+          },
+          {
+            "label": "VPN_CLIENT",
+            "name": "VPN_CLIENT",
+            "description": "openvpn or wireguard"
+          },
+          {
+            "label": "VPN_OPTIONS",
+            "name": "VPN_OPTIONS",
+            "description": "additional openvpn cli options"
+          },
+          {
+            "label": "STRICT_PORT_FORWARD",
+            "name": "STRICT_PORT_FORWARD",
+            "description": "yes or no"
+          },
+          {
+            "label": "ENABLE_PRIVOXY",
+            "name": "ENABLE_PRIVOXY",
+            "description": "yes or no"
+          },
+          {
+            "label": "LAN_NETWORK",
+            "name": "LAN_NETWORK",
+            "description": "lan ipv4 network>/<cidr notation"
+          },
+          {
+            "label": "NAME_SERVERS",
+            "name": "NAME_SERVERS",
+            "description": "name servers comma seperated"
+          },
+          {
+            "label": "DEBUG",
+            "name": "DEBUG",
+            "description": "true or false"
+          },
+          {
+            "label": "appdata folder",
+            "name": "appdata folder",
+            "description": "location of your appdata root"
+          },
+          {
+            "label": "download folder",
+            "name": "download folder",
+            "description": "location of your download folder"
+          },
+          {
+            "label": "DEBUG",
+            "name": "DEBUG",
+            "description": "true or false"
+          }
+        ],
+        "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/openvpn-as-icon.png",
+        "name": "VPN Download",
+        "note": "A stack of dockers (qBittorent, NZBget, Jackett, NZBhydra2) to use with VPN service to shield your privacy.",
+        "platform": "linux",
+        "repository": {
+          "stackfile": "Template/Stack/vpn_download.yml",
+          "url": "https://github.com/Qballjos/portainer_templates"
+        },
+        "title": "VPN Download",
+        "type": 3
+        }
+      ]
+  }
