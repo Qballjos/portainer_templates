@@ -174,7 +174,7 @@
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/openvpn-as-icon.png",
-			"name": "Movie, TV, Music Download",
+			"name": "VPN Download",
 			"note": "A stack of dockers (qBittorent, NZBget, Jackett, NZBhydra2) to use with VPN service to shield your privacy.",
 			"platform": "linux",
 			"repository": {
