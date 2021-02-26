@@ -410,6 +410,20 @@
 				{
 					"label": "Organizr port",
 					"name": "OGANIZRPORT"
+				},
+        {
+					"label": "enable php",
+					"name": "FPM",
+					"select": [{
+							"text": "True",
+							"value": "true"
+						},
+						{
+							"text": "False",
+							"value": "flase",
+							"default": true
+						}
+					]
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/organizr-icon.png",
