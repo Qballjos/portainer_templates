@@ -202,6 +202,11 @@
 					"label": "PGID",
 					"name": "PGID"
 				},
+        {
+					"default": "002",
+					"label": "UMASK",
+					"name": "UMASK"
+				},
 				{
 					"label": "TZ",
 					"name": "TZ"
