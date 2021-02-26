@@ -365,7 +365,12 @@
           "label": "Your local network range",
           "name": "ALLOWEDNETWORKS",
           "description": "192.168.2.1/255.255.255.0"
-        }
+        },
+        {
+					"label": "Transcode folder",
+					"name": "TRANSCODE",
+					"description": "location of your transcode folder"
+				}
       ],
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/plex-icon.png",
       "name": "PLEX Media Server with request and monitor",
