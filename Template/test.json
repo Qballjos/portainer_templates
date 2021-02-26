@@ -367,7 +367,7 @@
 					"description": "192.168.2.1/255.255.255.0"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/plex.png",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/plex-icon.png",
 			"name": "PLEX Media Server with request and monitor",
 			"note": "A stack of dockers (Plex, Ombi and Tautulli).",
 			"platform": "linux",
