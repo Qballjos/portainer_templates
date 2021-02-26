@@ -382,6 +382,45 @@
       },
       "title": "Media Server",
       "type": 3
-    }
+    },
+    {
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				},
+        {
+					"label": "appdata folder",
+					"name": "APPDATA"
+				}
+			],
+			"image": "organizr/organizr:latest",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/organizr-icon.png",
+			"name": "organizr-v2",
+			"platform": "linux",
+			"ports": [
+				"80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Organizr",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "${APPDATA}/Organizr",
+					"container": "/config"
+				}
+			]
+		}
 	]
 }
