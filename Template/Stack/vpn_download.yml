@@ -49,8 +49,8 @@ services:
     container_name: qbittorrent
     environment:
       - "PUID=${PUID}"
-      - PGID=1000
-      - "UMASK=${PGID}"
+      - PGID=${PGID}
+      - "UMASK=002"
       - "TZ=${TZ}"
       - "VPN_ENABLED=${VPN_ENABLED}"
       - "VPN_USER=${VPN_USER}"
@@ -75,6 +75,8 @@ services:
       - "${JACKETTPORT}:9117"
       - "${NZBGETPORT}:6789"
     privileged: true
+    cap-add:
+      - "NET_ADMIN"
     restart: unless-stopped
     volumes:
       - "${APPDATA}/qbittorrent:/config"
