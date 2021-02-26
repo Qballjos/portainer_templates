@@ -75,8 +75,6 @@ services:
       - "${JACKETTPORT}:9117"
       - "${NZBGETPORT}:6789"
     privileged: true
-    cap-add:
-      - "NET_ADMIN"
     restart: unless-stopped
     volumes:
       - "${APPDATA}/qbittorrent:/config"
