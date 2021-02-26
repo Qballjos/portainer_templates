@@ -2,7 +2,7 @@
 version: "3.7"
 services:
   lidarr:
-    container_name: lidarr:nightly
+    container_name: lidarr
     environment:
       - "PUID=${PUID}"
       - "PGID=${PGID}"
@@ -38,7 +38,7 @@ services:
       - "PGID=${PGID}"
       - "UMASK=${UMASK}"
       - "TZ=${TZ}"
-    image: hotio/sonarr
+    image: hotio/sonarr:nightly
     privileged: true
     ports:
       - "${SONARRPORT}:8989"
