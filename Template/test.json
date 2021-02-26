@@ -236,7 +236,7 @@
 	"note": "A stack of dockers (Radarr, Sonarr and Lidarr).",
 	"platform": "linux",
 	"repository": {
-		"stackfile": "Template/Stack/mtm_download.yml",
+		"stackfile": "Template/Stack/rr_mtm.yml",
 		"url": "https://github.com/Qballjos/portainer_templates"
 	},
 	"title": "MTM Download",
