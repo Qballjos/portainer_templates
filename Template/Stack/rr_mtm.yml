@@ -9,6 +9,7 @@ services:
       - UMASK=002
       - "TZ=${TZ}"
     image: hotio/lidarr
+    privileged: true
     ports:
       - "${LIDARRPORT}:8686"
     volumes:
@@ -23,6 +24,7 @@ services:
       - UMASK=002
       - "TZ=${TZ}"
     image: hotio/radarr
+    privileged: true
     ports:
       - "${RADARRPORT}:7878"
     volumes:
@@ -37,6 +39,7 @@ services:
       - UMASK=002
       - "TZ=${TZ}"
     image: hotio/sonarr
+    privileged: true
     ports:
       - "${SONARRPORT}:8989"
     volumes:
