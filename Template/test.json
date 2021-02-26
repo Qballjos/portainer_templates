@@ -207,17 +207,17 @@
 					"name": "TZ"
 				},
 				{
-					"default": "8080",
+					"default": "7878",
 					"label": "Radarr port",
 					"name": "RADARRPORT"
 				},
 				{
-					"default": "6789",
+					"default": "8989",
 					"label": "Sonarr port",
 					"name": "SONARRPORT"
 				},
 				{
-					"default": "8118",
+					"default": "8686",
 					"label": "Lidarr port",
 					"name": "LIDARRPORT"
 				},
