@@ -174,7 +174,7 @@
 			}
 		],
 		"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/openvpn-as-icon.png",
-		"name": "VPN Download",
+		"name": "Movie, TV, Music Download",
 		"note": "A stack of dockers (qBittorent, NZBget, Jackett, NZBhydra2) to use with VPN service to shield your privacy.",
 		"platform": "linux",
 		"repository": {
@@ -183,5 +183,62 @@
 		},
 		"title": "VPN Download",
 		"type": 3
-	}]
+	}],
+	"categories": [
+		"Download",
+		"Movie",
+		"TV",
+		"Music"
+	],
+	"description": "A stack of dockers (Sonarr, Radarr and Lidarr).",
+	"env": [{
+			"default": "1000",
+			"label": "PUID",
+			"name": "PUID"
+		},
+		{
+			"default": "100",
+			"label": "PGID",
+			"name": "PGID"
+		},
+		{
+			"label": "TZ",
+			"name": "TZ"
+		},
+		{
+			"default": "7878",
+			"label": "Radarr port",
+			"name": "RADARRPORT"
+		},
+		{
+			"default": "8989",
+			"label": "Sonarr port",
+			"name": "SONARRPORT"
+		},
+		{
+			"default": "8686",
+			"label": "Lidarr port",
+			"name": "LIDARRPORT"
+		},
+		{
+			"label": "appdata folder",
+			"name": "APPDATA",
+			"description": "location of your appdata root"
+		},
+		{
+			"label": "download folder",
+			"name": "DOWNLOAD",
+			"description": "location of your download folder"
+		}
+	],
+	"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/radarr.png",
+	"name": "Movie, TV, Music Download",
+	"note": "A stack of dockers (Radarr, Sonarr and Lidarr).",
+	"platform": "linux",
+	"repository": {
+		"stackfile": "Template/Stack/mtm_download.yml",
+		"url": "https://github.com/Qballjos/portainer_templates"
+	},
+	"title": "MTM Download",
+	"type": 3
 }

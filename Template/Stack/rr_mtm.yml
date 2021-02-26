@@ -1,0 +1,42 @@
+---
+version: "3.7"
+services:
+  lidarr:
+    container_name: lidarr
+    environment:
+      - "PUID=${PUID}"
+      - "PGID=${PGID}"
+      - UMASK=002
+      - "TZ=${TZ}"
+    image: hotio/lidarr
+    ports:
+      - "${LIDARRPORT}:8686"
+    volumes:
+      - "${APPDATA}/lidarr:/config"
+      - "${DOWNLOAD}:/data"
+  radarr:
+    container_name: radarr
+    environment:
+      - "PUID=${PUID}"
+      - "PGID=${PGID}"
+      - UMASK=002
+      - "TZ=${TZ}"
+    image: hotio/radarr
+    ports:
+      - "${RADARRPORT}:7878"
+    volumes:
+      - "${APPDATA}/radarr:/config"
+      - "${DOWNLOAD}:/data"
+  sonarr:
+    container_name: sonarr
+    environment:
+      - "PUID=${PUID}"
+      - "PGID=${PGID}"
+      - UMASK=002
+      - "TZ=${TZ}"
+    image: hotio/sonarr
+    ports:
+      - "${SONARRPORT}:8989"
+    volumes:
+      - "${APPDATA}/sonarr:/config"
+      - "${DOWNLOAD}:/data"
