@@ -1,0 +1,47 @@
+---
+version: "3.7"
+services:
+  plex:
+    container_name: plex
+    image: hotio/plex
+    ports:
+      - "${PLEXPORT}:32400"
+    environment:
+      - PUID=$(PUID)
+      - PGID=${PGID}
+      - UMASK=${UMASK}
+      - TZ=${TZ}
+      - PLEX_CLAIM=${PLEXCLAIM}
+      - ADVERTISE_IP=${ADVERTISEIP}
+      - ALLOWED_NETWORKS=${ALLOWEDNETWORKS}
+      - PLEX_PASS=${PLEXPASS}
+    volumes:
+      - "${APPDATA}/plex:/config"
+      - "${TRANSCODE}:/transcode"
+      - "${MOVIES}:/movie"
+      - "${TV}:/tv"
+      - "${MUSIC}:/music"
+  tautulli:
+    container_name: tautulli
+    image: hotio/tautulli
+    ports:
+      - "${TAUTULLIPORT}:8181"
+    environment:
+      - PUID=$(PUID)
+      - PGID=${PGID}
+      - UMASK=${UMASK}
+      - TZ=${TZ}
+    volumes:
+      - "${APPDATA}/tautulli:/config"
+  ombi:
+    container_name: ombi
+    image: hotio/ombi
+    ports:
+      - "${OMBIPORT}:5000"
+    environment:
+      - PUID=$(PUID)
+      - PGID=${PGID}
+      - UMASK=${UMASK}
+      - TZ=${TZ}
+    volumes:
+      - "${APPDATA}/ombi:/config"
