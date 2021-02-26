@@ -14,6 +14,7 @@ services:
     volumes:
       - "${APPDATA}/lidarr:/config"
       - "${DOWNLOAD}:/data"
+      - "${MUSIC}:/music"
   radarr:
     container_name: radarr
     environment:
@@ -27,6 +28,7 @@ services:
     volumes:
       - "${APPDATA}/radarr:/config"
       - "${DOWNLOAD}:/data"
+      - "${MOVIES}:/movie"
   sonarr:
     container_name: sonarr
     environment:
@@ -40,3 +42,4 @@ services:
     volumes:
       - "${APPDATA}/sonarr:/config"
       - "${DOWNLOAD}:/data"
+      - "${TV}:/tv"
