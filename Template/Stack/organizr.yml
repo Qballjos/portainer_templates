@@ -1,5 +1,5 @@
 ---
-version: "2.1" 
+version: "2.1"
 services:
   organizr:
     container_name: organizr
@@ -7,7 +7,7 @@ services:
       - "PUID=${PUID}"
       - "PGID=${PGID}"
       - "TZ=${TZ}"
-    image: linuxserver/organizr
+    image: organizr/organizr
     ports:
       - "${OGANIZRPORT}:80"
     restart: unless-stopped
