@@ -409,7 +409,7 @@
 				},
 				{
 					"label": "Organizr port",
-					"name": "PORT"
+					"name": "OGANIZRPORT"
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/organizr-icon.png",
