@@ -9,6 +9,7 @@ services:
       - "UMASK=${UMASK}"
       - "TZ=${TZ}"
     image: hotio/lidarr:nightly
+    restart: unless-stopped
     privileged: true
     ports:
       - "${LIDARRPORT}:8686"
@@ -24,6 +25,7 @@ services:
       - "UMASK=${UMASK}"
       - "TZ=${TZ}"
     image: hotio/radarr:nightly
+    restart: unless-stopped
     privileged: true
     ports:
       - "${RADARRPORT}:7878"
@@ -39,6 +41,7 @@ services:
       - "UMASK=${UMASK}"
       - "TZ=${TZ}"
     image: hotio/sonarr:nightly
+    restart: unless-stopped
     privileged: true
     ports:
       - "${SONARRPORT}:8989"
