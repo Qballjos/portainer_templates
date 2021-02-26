@@ -248,8 +248,8 @@
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/radarr.png",
-			"name": "nextcloud",
-			"note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
+			"name": "RR MTM Download",
+			"note": "A stack of dockers (Radarr, Sonarr and Lidarr).",
 			"platform": "linux",
 			"repository": {
 				"stackfile": "Template/Stack/rr_mtm.yml",
