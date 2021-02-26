@@ -8,7 +8,7 @@ services:
       - "PGID=${PGID}"
       - "UMASK=${UMASK}"
       - "TZ=${TZ}"
-    image: hotio/lidarr
+    image: hotio/lidarr:nightly
     privileged: true
     ports:
       - "${LIDARRPORT}:8686"
@@ -23,7 +23,7 @@ services:
       - "PGID=${PGID}"
       - "UMASK=${UMASK}"
       - "TZ=${TZ}"
-    image: hotio/radarr
+    image: hotio/radarr:nightly
     privileged: true
     ports:
       - "${RADARRPORT}:7878"
@@ -38,7 +38,7 @@ services:
       - "PGID=${PGID}"
       - "UMASK=${UMASK}"
       - "TZ=${TZ}"
-    image: hotio/sonarr
+    image: hotio/sonarr:nightly
     privileged: true
     ports:
       - "${SONARRPORT}:8989"
