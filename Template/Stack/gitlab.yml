@@ -1,0 +1,23 @@
+--- 
+version: "3.6"
+services:
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    hostname: ${DOMAIN}
+    ports:
+      - "${GITLABSSHPORT}:22"
+      - "${GITLABPORT80}:80"
+      - "${GITLABPORT443}:443"
+    volumes:
+      - "${APPDATA}/gitlab/data:/var/opt/gitlab"
+      - "${APPDATA}/gitlab/logs:/var/log/gitlab"
+      - "${APPDATA}/gitlab/config:/etc/gitlab"
+    environment:
+    GITLAB_OMNIBUS_CONFIG: |
+      external_url '${EXTERNALURL}'
+      gitlab_rails['gitlab_shell_ssh_port'] = ${GITLABSSHPORT}
+  gitlab-runner:
+    image: gitlab/gitlab-runner:alpine
+    volumes:
+      - "${APPDATA}/gitlab/config-runner:/etc/gitlab-runner"
+      - "/var/run/docker.sock:/var/run/docker.sock"

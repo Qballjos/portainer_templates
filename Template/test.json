@@ -436,6 +436,48 @@
 			},
 			"title": "Organizr v2",
 			"type": 3
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "One application with endless possibilities. Organizations rely on GitLab’s source code management, CI/CD, security, and more to deliver software rapidly.",
+			"env": [{
+					"default": "22",
+					"label": "SSH port for gitlab",
+					"name": "GITLABSSHPORT"
+				},
+				{
+					"default": "80",
+					"label": "http port",
+					"name": "GITLABPORT80"
+				},
+				{
+					"default": "443",
+					"label": "https port",
+					"name": "GITLABPORT443"
+				},
+				{
+					"label": "Domain or subdomain",
+					"name": "DOMAIN"
+				},
+				{
+					"label": "External url",
+					"name": "EXTERNALURL",
+					"description": "https://gitlab.yourdomain.com"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/organizr-icon.png",
+			"name": "Gitlab",
+			"note": "Gitlab with runner.",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "Template/Stack/gitlab.yml",
+				"url": "https://github.com/Qballjos/portainer_templates"
+			},
+			"title": "Gitlab",
+			"type": 3
 		}
 	]
 }
