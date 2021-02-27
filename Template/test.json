@@ -459,6 +459,10 @@
 					"name": "GITLABPORT443"
 				},
 				{
+					"label": "appdata folder",
+					"name": "APPDATA"
+				},
+				{
 					"label": "Domain or subdomain",
 					"name": "DOMAIN"
 				},
@@ -468,7 +472,7 @@
 					"description": "https://gitlab.yourdomain.com"
 				}
 			],
-			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/organizr-icon.png",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/GitLab.png",
 			"name": "Gitlab",
 			"note": "Gitlab with runner.",
 			"platform": "linux",
