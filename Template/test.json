@@ -465,11 +465,6 @@
 				{
 					"label": "Domain or subdomain",
 					"name": "DOMAIN"
-				},
-				{
-					"label": "External url",
-					"name": "EXTERNALURL",
-					"description": "https://gitlab.yourdomain.com"
 				}
 			],
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/GitLab.png",
