@@ -816,8 +816,8 @@
           "default": "!PGID"
         },
         {
-          "name": "UMASK_SET",
-          "label": "UMASK_SET",
+          "name": "UMASK",
+          "label": "UMASK",
           "default": "000"
         }
       ]

@@ -2049,8 +2049,8 @@
 					"name": "PGID"
 				},
 				{
-					"label": "UMASK_SET",
-					"name": "UMASK_SET",
+					"label": "UMASK",
+					"name": "UMASK",
 					"set": "000"
 				}
 			],

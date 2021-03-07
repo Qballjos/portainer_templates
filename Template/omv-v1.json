@@ -781,8 +781,8 @@
           "default": "100"
         },
         {
-          "name": "UMASK_SET",
-          "label": "UMASK_SET",
+          "name": "UMASK",
+          "label": "UMASK",
           "set": "000"
         }
       ]
