@@ -1,26 +1,38 @@
 ### Notice:
 Currently most of my dev time is being spent on [Yacht](https://github.com/SelfhostedPro/Yacht/tree/vue) if you would like something added please consider making a pull request with your addition and I'll work on getting it added when I'm able to. Information about how to structure a block (for an app) is available [here](https://portainer.readthedocs.io/en/stable/templates.html)
 
-_portainer 2.0 templates are available [here](https://github.com/SelfhostedPro/selfhosted_templates/tree/portainer-2.0) in the portainer 2.0 branch. The Template URL is `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/portainer-2.0/Template/template.json`._
+_portainer 2.0 templates are available [here](https://github.com/SelfhostedPro/selfhosted_templates/tree/portainer-2.0) in the portainer 2.0 branch. The Template URL is `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/portainer-v2.json`._
+
 
 # Portainer Templates for Selfhosted Projects/Homelabs
 
-This is a template focused on helping people spin up selfhosted services using Portainer.
+This is a template focused on helping people spin up selfhosted services using Portainer and Yacht.
+## Versions
 
-*for the OMV5 version use the OMV5 branch*
+The following table shows the corresponding url to use for the application you're using.
+
+| Application  | URL |
+| ------------- | ------------- |
+| Yacht | https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/yacht.json |
+| Yacht (arm) | https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/yacht-arm.yml |
+| Portainer v1 (no OMV)  | https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/portainer-v1.json  |
+| Portainer v2 (no OMV)  | https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/portainer-v2.json  |
+| Portainer v1 OMV | https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/omv-v1.json |
+| Portainer v2 OMV | https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/omv-v2.json|
+
 
 ### Prerequisites
 
 1. A server/NAS with docker installed
-2. A Portainer setup.
+2. A Portainer/Yacht setup.
 
 *Want something we don't have? Make an issue and we'll work on adding it*
 
 ### Installing
 
-1. Login to your portainer setup go to settings
-2. Enable Use external templates
-3. Add the url: `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/template.json` then go to app templates and hit refresh at the top.
+1. Login to the Web-UI for the corresponding project.
+2. Navigate to the area where you add a template (in portainer you'll need to enable external templates)
+3. Add the template URL corresponding to the application you're using in the table above.
 
 ### Information
 All templates are already configured to bind mount to various places on your drive. This branch works without the need for OMV. The following folders are all created in /portainer/
