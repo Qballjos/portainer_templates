@@ -2291,7 +2291,7 @@
 				{
 					"label": "DB_SQLITE_FILE",
 					"name": "DB_SQLITE_FILE",
-					"set": "/data/database.sqlite"
+					"default": "/data/database.sqlite"
 				}
 			],
 			"ports": [
