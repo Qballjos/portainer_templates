@@ -1,8 +1,8 @@
 ### Notice:
-Currently most of my dev time is being spent on [Yacht](https://github.com/SelfhostedPro/Yacht/tree/vue) if you would like something added please consider making a pull request with your addition and I'll work on getting it added when I'm able to. Information about how to structure a block (for an app) is available [here](https://portainer.readthedocs.io/en/stable/templates.html)
 
-_portainer 2.0 templates are available [here](https://github.com/SelfhostedPro/selfhosted_templates/tree/portainer-2.0) in the portainer 2.0 branch. The Template URL is `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/portainer-v2.json`._
+**You can use this visual builder to create templates and submit PRs to this repo if they work: [Shipwright](https://shipwright.yacht.sh) it's currently pretty early in development but should be able to take portainer templates (that don't have type 2 or 3 templates) and import them for editing.**
 
+Currently most of my dev time is being spent on [Yacht](https://github.com/SelfhostedPro/Yacht/tree/vue) if you would like something added please consider making a pull request with your addition and I'll work on getting it added when I'm able to. Information about how to structure a block (for an app) is available [here](https://portainer.readthedocs.io/en/stable/templates.html) and there is a gui builder [here](https://shipwright.yacht.sh)
 
 # Portainer Templates for Selfhosted Projects/Homelabs
 
