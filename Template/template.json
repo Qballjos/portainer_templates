@@ -1876,7 +1876,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.",
+			"description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards. The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.",
 			"env": [
 				{
 					"default": "1000",
@@ -3460,7 +3460,7 @@
 				"VPN",
 				"Tools"
 			],
-			"description": "This container contains OpenVPN and Transmission with a configuration\nwhere Transmission is running only when OpenVPN has an active tunnel.\nIt bundles configuration files for many popular VPN providers to make the setup easier.",
+			"description": "This container contains OpenVPN and Transmission with a configuration where Transmission is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
 			"env": [
 				{
 					"default": "1000",
@@ -3606,7 +3606,7 @@
 				"Management",
 				"Tools"
 			],
-			"description": null,
+			"description": "The Unifi-controller Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
 			"env": [
 				{
 					"default": "1000",
