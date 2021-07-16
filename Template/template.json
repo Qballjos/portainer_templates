@@ -115,37 +115,6 @@
 		{
 			"categories": [
 				"Other",
-				"Tools",
-				"Authentication"
-			],
-			"description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
-			"env": [
-				{
-					"label": "TZ",
-					"name": "TZ"
-				}
-			],
-			"image": "authelia/authelia:latest",
-			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/authelia.png",
-			"name": "authelia",
-			"note": "Requires a configuration.yml file in order to work. Documentation is Available \u003ca href='https://docs.authelia.com/deployment/deployment-ha'\u003ehere\u003c/a\u003e.",
-			"platform": "linux",
-			"ports": [
-				"9091:9091/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Authelia",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Authelia",
-					"container": "/etc/authelia/"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
 				"Tools"
 			],
 			"description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
