@@ -115,54 +115,6 @@
 		{
 			"categories": [
 				"Other",
-				"Tools"
-			],
-			"description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
-			"image": "linuxserver/embystat:latest",
-			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/embystat.png",
-			"name": "EmbyStat",
-			"note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services.",
-			"platform": "linux",
-			"ports": [
-				"6555:6555/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "EmbyStat",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/EmbyStat",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "Self-hosted snippet manager.",
-			"image": "snowmean/snibox-sqlite:latest",
-			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/snibox.png",
-			"name": "Snibox",
-			"note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text.",
-			"platform": "linux",
-			"ports": [
-				"3010:3000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Snibox",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Snibox",
-					"container": "/app/db/database"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
 				"Tools",
 				"Authentication"
 			],
@@ -1025,6 +977,30 @@
 				"Other",
 				"Tools"
 			],
+			"description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
+			"image": "linuxserver/embystat:latest",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/embystat.png",
+			"name": "EmbyStat",
+			"note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services.",
+			"platform": "linux",
+			"ports": [
+				"6555:6555/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "EmbyStat",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/EmbyStat",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
 			"description": "Web File Browser which can be used as a middleware or standalone app.",
 			"image": "80x86/filebrowser:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/filebrowser.png",
@@ -1653,6 +1629,49 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/LibreSpeed",
 					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders",
+				"Music"
+			],
+			"description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/lidarr:latest",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lidarr.png",
+			"name": "lidarr",
+			"platform": "linux",
+			"ports": [
+				"8686:8686/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Lidarr",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Lidarr",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				},
+				{
+					"bind": "/portainer/Music",
+					"container": "/music"
 				}
 			]
 		},
@@ -2736,6 +2755,46 @@
 		},
 		{
 			"categories": [
+				"Downloaders"
+			],
+			"description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/qbittorrent:latest",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/qbittorrent-icon.png",
+			"name": "qbittorrent",
+			"platform": "linux",
+			"ports": [
+				"6881:6881/tcp",
+				"6881:6881/udp",
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "qBittorrent",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/qBittorrent",
+					"container": "/config"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Messenger"
 			],
 			"description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core -- much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
@@ -2868,6 +2927,46 @@
 				},
 				{
 					"container": "/sync"
+				},
+				{
+					"bind": "/portainer/Downloads",
+					"container": "/downloads"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Downloaders"
+			],
+			"description": "Popular torrent client with a webui for ease of use.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "linuxserver/rutorrent:latest",
+			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
+			"name": "rutorrent",
+			"platform": "linux",
+			"ports": [
+				"80/tcp",
+				"51413:51413/tcp",
+				"6881:6881/udp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "ruTorrent",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/ruTorrent",
+					"container": "/config"
 				},
 				{
 					"bind": "/portainer/Downloads",
@@ -3062,6 +3161,30 @@
 				{
 					"bind": "/portainer/Files/AppData/Smokeping",
 					"container": "/data"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Self-hosted snippet manager.",
+			"image": "snowmean/snibox-sqlite:latest",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/snibox.png",
+			"name": "Snibox",
+			"note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text.",
+			"platform": "linux",
+			"ports": [
+				"3010:3000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Snibox",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Snibox",
+					"container": "/app/db/database"
 				}
 			]
 		},
@@ -3625,6 +3748,33 @@
 		{
 			"categories": [
 				"Other",
+				"Tools"
+			],
+			"description": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app store for servers that anyone can make packages for.",
+			"image": "selfhostedpro/yacht:latest",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
+			"name": "yacht",
+			"platform": "linux",
+			"ports": [
+				"8001:8000/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Yacht",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "yacht",
+					"container": "/config"
+				},
+				{
+					"bind": "/var/run/docker.sock",
+					"container": "/var/run/docker.sock"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
 				"Downloaders"
 			],
 			"description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
@@ -3692,156 +3842,6 @@
 				{
 					"bind": "/portainer/Files/AppData/Config/ZNC",
 					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Downloaders",
-				"Music"
-			],
-			"description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "100",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/lidarr:latest",
-			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lidarr.png",
-			"name": "lidarr",
-			"platform": "linux",
-			"ports": [
-				"8686:8686/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "lidarr",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/Lidarr",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				},
-				{
-					"bind": "/portainer/Music",
-					"container": "/music"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Downloaders"
-			],
-			"description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "100",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/qbittorrent:latest",
-			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/qbittorrent-icon.png",
-			"name": "qbittorrent",
-			"platform": "linux",
-			"ports": [
-				"6881:6881/tcp",
-				"6881:6881/udp",
-				"8080:8080/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "qBittorrent",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/qBittorrent",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app store for servers that anyone can make packages for.",
-			"image": "selfhostedpro/yacht:latest",
-			"logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
-			"name": "yacht",
-			"platform": "linux",
-			"ports": [
-				"8001:8000/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Yacht",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "yacht",
-					"container": "/config"
-				},
-				{
-					"bind": "/var/run/docker.sock",
-					"container": "/var/run/docker.sock"
-				}
-			]
-		},
-		{
-			"categories": [
-				"Downloaders"
-			],
-			"description": "Popular torrent client with a webui for ease of use.",
-			"env": [
-				{
-					"default": "1000",
-					"label": "PUID",
-					"name": "PUID"
-				},
-				{
-					"default": "100",
-					"label": "PGID",
-					"name": "PGID"
-				}
-			],
-			"image": "linuxserver/rutorrent:latest",
-			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
-			"name": "rutorrent",
-			"platform": "linux",
-			"ports": [
-				"80/tcp",
-				"51413:51413/tcp",
-				"6881:6881/udp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "ruTorrent",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/portainer/Files/AppData/Config/ruTorrent",
-					"container": "/config"
-				},
-				{
-					"bind": "/portainer/Downloads",
-					"container": "/downloads"
 				}
 			]
 		}
