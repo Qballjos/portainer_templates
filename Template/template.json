@@ -128,7 +128,7 @@
 			"image": "authelia/authelia:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/authelia.png",
 			"name": "authelia",
-			"note": "Requires a configuration.yml file in order to work. Documentation is Available \u003ca href='https://docs.authelia.com/deployment/deployment-ha'\u003ehere\u003c/a\u003e.",
+			"note": "Requires a configuration.yml file in order to work. Documentation is available <a href='https://docs.authelia.com/deployment/deployment-ha'>here</a>.",
 			"platform": "linux",
 			"ports": [
 				"9091:9091/tcp"
@@ -237,7 +237,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
 			"image": "bitwardenrs/server:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/bitwarden.png",
 			"name": "bitwardenrs",
@@ -261,7 +261,7 @@
 				"Books",
 				"Other"
 			],
-			"description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
+			"description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic.",
 			"env": [
 				{
 					"default": "1000",
@@ -391,7 +391,7 @@
 				"Cloud",
 				"Books"
 			],
-			"description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
+			"description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.",
 			"env": [
 				{
 					"default": "1000",
@@ -407,6 +407,7 @@
 			"image": "linuxserver/calibre-web:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/calibre-web-icon.png",
 			"name": "calibre-web",
+			"note": "Configuration <ul><li><b>/config</b> - Where Calibre-web should store it's database</li><li><b>/books</b> - Path to your calibre library metadata.db file</li></ul>",
 			"platform": "linux",
 			"ports": [
 				"8083:8083/tcp"
@@ -431,7 +432,7 @@
 				"Tools",
 				"Photo"
 			],
-			"description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version..",
+			"description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version.",
 			"env": [
 				{
 					"default": "1000",
@@ -564,7 +565,7 @@
 			"categories": [
 				"Productivity"
 			],
-			"description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
+			"description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.",
 			"env": [
 				{
 					"default": "1000",
@@ -701,7 +702,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.\r\n\r\n/config : AppData Location\r\n/download : File Download Location",
+			"description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.",
 			"env": [
 				{
 					"default": "1000",
@@ -717,6 +718,7 @@
 			"image": "linuxserver/davos:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/davos.png",
 			"name": "davos",
+			"note": "Configuration <ul><li><b>/config</b> - AppData Location</li><li><b>/downloads</b> - File Download Location</li></ul>",
 			"platform": "linux",
 			"ports": [
 				"8080/tcp"
@@ -744,7 +746,7 @@
 			"image": "registry.gitlab.com/bockiii/deemix-docker",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/deemix.png",
 			"name": "deemix",
-			"note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to \u003ca href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'\u003ethis page\u003c/a\u003e for userToken details.",
+			"note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
 			"platform": "linux",
 			"ports": [
 				"9666:9666/tcp"
@@ -808,7 +810,7 @@
 				"HomeAutomation",
 				"Management"
 			],
-			"description": "Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device",
+			"description": "Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.",
 			"env": [
 				{
 					"default": "1000",
@@ -845,7 +847,7 @@
 				"DNS",
 				"Tools"
 			],
-			"description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
+			"description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
 			"env": [
 				{
 					"label": "SUBDOMAINS",
@@ -871,6 +873,7 @@
 			"image": "linuxserver/duckdns:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/duckdns.png",
 			"name": "duckdns",
+			"note": "<b>Configuration</b></br>First, go to duckdns site, register your subdomain and retrieve your token<br/>Then run the docker create command above with your subdomain(s) and token<br/>It will update your IP with the DuckDNS service every 5 minutes",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"title": "Duck DNS",
@@ -1028,7 +1031,7 @@
 			"categories": [
 				"Other"
 			],
-			"description": "A free, self-hostable rss aggregator…",
+			"description": "A free, self-hostable rss aggregator.",
 			"env": [
 				{
 					"default": "1000",
@@ -1064,7 +1067,7 @@
 				"Books",
 				"Tools"
 			],
-			"description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser",
+			"description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser.",
 			"env": [
 				{
 					"default": "1000",
@@ -1129,7 +1132,7 @@
 				"Tools",
 				"Finance"
 			],
-			"description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utulity.",
+			"description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utility.",
 			"env": [
 				{
 					"default": "1000",
@@ -1169,7 +1172,7 @@
 				"Music",
 				"Other"
 			],
-			"description": "HTPC Manaager, a front end for many htpc related applications. Hellowlol version.",
+			"description": "HTPC Manager, a front end for many htpc related applications. Uses the Hellowlol HTPC Manager fork.",
 			"env": [
 				{
 					"default": "1000",
@@ -1203,7 +1206,7 @@
 			"categories": [
 				"Music"
 			],
-			"description": null,
+			"description": "Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.",
 			"env": [
 				{
 					"default": "1000",
@@ -1367,7 +1370,7 @@
 			],
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/invoice_ninja.png",
 			"name": "invoice_ninja",
-			"note": "The database user is invoice_ninja and the database is ninja_db. Please generate an app key following the documentation \u003ca href='https://github.com/invoiceninja/dockerfiles'\u003ehere\u003c/a\u003e. ",
+			"note": "The database user is invoice_ninja and the database is ninja_db. Please generate an app key following the documentation <a href='https://github.com/invoiceninja/dockerfiles'>here</a>. ",
 			"platform": "linux",
 			"repository": {
 				"stackfile": "Template/Stack/invoice-ninja.yml",
@@ -1381,7 +1384,7 @@
 				"Downloaders",
 				"Tools"
 			],
-			"description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.[",
+			"description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.",
 			"env": [
 				{
 					"default": "1000",
@@ -1543,7 +1546,7 @@
 				"Tools",
 				"Web"
 			],
-			"description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd \u0026lt;username\u0026gt;",
+			"description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.",
 			"env": [
 				{
 					"label": "EMAIL",
@@ -1594,6 +1597,7 @@
 			"image": "linuxserver/swag:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/letsencrypt.png",
 			"name": "letsencrypt / SWAG",
+			"note": "Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.<ul><li>- Port 443 on the internet side of the router should be forwarded to this container's port 443.</li><li>- If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains can be www,ftp,cloud</li><li>- The container detects changes to url and subdomains, revokes existing certs and generates new ones during start.</li><li>- It also detects changes to the DHLEVEL parameter and replaces the dhparams file.</li><li>- If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file <code>docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd \u0026lt;username\u0026gt;</code>",
 			"platform": "linux",
 			"ports": [
 				"80/tcp",
@@ -1721,7 +1725,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "An Enhanced drop in replacement for Mysql",
+			"description": "An Enhanced drop in replacement for Mysql.",
 			"env": [
 				{
 					"default": "1000",
@@ -1872,7 +1876,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.\n  ",
+			"description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.",
 			"env": [
 				{
 					"default": "1000",
@@ -1903,7 +1907,7 @@
 				"Other",
 				"Music"
 			],
-			"description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
+			"description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
 			"image": "linuxserver/mstream:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mstream.png",
 			"name": "mstream",
@@ -1984,7 +1988,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
+			"description": "MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
 			"env": [
 				{
 					"label": "BRAINZCODE",
@@ -2107,7 +2111,7 @@
 			"categories": [
 				"Downloaders"
 			],
-			"description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players",
+			"description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players.",
 			"env": [
 				{
 					"default": "1000",
@@ -2305,7 +2309,7 @@
 			"categories": [
 				"Other"
 			],
-			"description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
+			"description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module (CAM). The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
 			"env": [
 				{
 					"default": "1000",
@@ -2343,7 +2347,7 @@
 				"Video",
 				"Tools"
 			],
-			"description": "Ombi allows you to host your own Plex Request and user management system. ",
+			"description": "Ombi allows you to host your own Plex Request and user management system.",
 			"env": [
 				{
 					"default": "1000",
@@ -2453,7 +2457,7 @@
 			"categories": [
 				"Photos"
 			],
-			"description": "A simple, easy way to turn a photo album into a webgallery",
+			"description": "A simple, easy way to turn a photo album into a webgallery.",
 			"env": [
 				{
 					"default": "1000",
@@ -2500,7 +2504,7 @@
 			"image": "pihole/pihole:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/pihole.png",
 			"name": "pihole",
-			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article \u003ca href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'\u003ehere\u003c/a\u003e if you run into issues binding to port 53.",
+			"note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53.",
 			"platform": "linux",
 			"ports": [
 				"53:53/tcp",
@@ -2653,7 +2657,7 @@
 				"Tools",
 				"Other"
 			],
-			"description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  ",
+			"description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files.",
 			"env": [
 				{
 					"default": "1000",
@@ -2698,7 +2702,7 @@
 			"image": "shenxn/protonmail-bridge:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/protonmail-bridge.png",
 			"name": "protonmail-bridge",
-			"note": "Please refer to the documentation \u003ca href='https://hub.docker.com/r/shenxn/protonmail-bridge'/\u003ehere\u003c/a\u003e to set this up.",
+			"note": "Please refer to the documentation <a href='https://hub.docker.com/r/shenxn/protonmail-bridge'/>here</a> to set this up.",
 			"platform": "linux",
 			"ports": [
 				"143/tcp",
@@ -2797,7 +2801,7 @@
 			"categories": [
 				"Messenger"
 			],
-			"description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core -- much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
+			"description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core - much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
 			"env": [
 				{
 					"default": "1000",
@@ -3130,7 +3134,7 @@
 			"categories": [
 				"Management"
 			],
-			"description": null,
+			"description": "SmokePing is a latency logging and graphing and alerting system. It consists of a daemon process which organizes the latency measurements and a CGI which presents the graphs.",
 			"env": [
 				{
 					"default": "1000",
@@ -3242,7 +3246,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": null,
+			"description": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes.",
 			"env": [
 				{
 					"default": "1000",
@@ -3282,7 +3286,7 @@
 				"Other",
 				"Tools"
 			],
-			"description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.[br][br]\r\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\r\n  [b]8181[/b] The webui for Tautulli's webui [br]\r\n  [b]/config[/b] Storing Configuration and the Tautulli database[br]\r\n[b]/logs[/b] Map to you plex logs (required for IP logging)[br]\r\n\r\n",
+			"description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.",
 			"env": [
 				{
 					"default": "1000",
@@ -3298,6 +3302,7 @@
 			"image": "linuxserver/tautulli:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/tautulli-icon.png",
 			"name": "tautulli",
+			"note": "<b>Port 8181</b> The webui for Tautulli's webui<br/></br>Configuration <ul><li><b>/config</b> - Storing Configuration and the Tautulli database</li><li><b>/logs</b> - Map to you plex logs (required for IP logging)</li></ul>",
 			"platform": "linux",
 			"ports": [
 				"8181:8181/tcp"
@@ -3492,7 +3497,7 @@
 			"image": "haugene/transmission-openvpn:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/transmission-icon.png",
 			"name": "transmission-openvpn",
-			"note": "List of supported providers available \u003ca href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/\u003ehere\u003c/a\u003e.",
+			"note": "List of supported providers available <a href='https://haugene.github.io/docker-transmission-openvpn/supported-providers'/>here</a>.",
 			"platform": "linux",
 			"ports": [
 				"9091:9091/tcp"
@@ -3516,7 +3521,7 @@
 				"Video",
 				"Other"
 			],
-			"description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT\u0026gt;IP and HDHomeRun as input sources.\r\nTvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT\u0026gt;IP streaming.\r\nMultiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
+			"description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT\u0026gt;IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT\u0026gt;IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
 			"env": [
 				{
 					"default": "1000",
@@ -3664,7 +3669,7 @@
 			"categories": [
 				"Downloaders"
 			],
-			"description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's configuration.[br][br]\r\n\t\t[b]/data[/b] : This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
+			"description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.",
 			"env": [
 				{
 					"default": "1000",
@@ -3680,6 +3685,7 @@
 			"image": "linuxserver/webgrabplus:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/webgrabplus.png",
 			"name": "webgrabplus",
+			"note": "Configuration <ul><li><b>/config</b> - This is where WebGrab+Plus will store it's configuration</li><li><b>/data</b> - This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.</li></ul>",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"title": "WebGrab+Plus",
