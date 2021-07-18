@@ -2287,9 +2287,9 @@
 				}
 			],
 			"ports": [
-				"80:8080/tcp",
-				"81:8181/tcp",
-				"443:4443/tcp"
+				"80:80/tcp",
+				"81:81/tcp",
+				"443:443/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Nginx Proxy Manager",
@@ -3325,7 +3325,7 @@
 			"categories": [
 				"Messenger"
 			],
-			"description": "A self-hosted web IRC client",
+			"description": "A self-hosted web IRC client.",
 			"env": [
 				{
 					"default": "1000",
