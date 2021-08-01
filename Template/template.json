@@ -2741,7 +2741,7 @@
 			"name": "prowlarr",
 			"platform": "linux",
 			"ports": [
-				"8989:8989/tcp"
+				"9696:9696/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "Prowlarr",
