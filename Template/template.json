@@ -3245,7 +3245,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": hotio/sonarr:release",
+			"image": "hotio/sonarr:release",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sonarr-icon.png",
 			"name": "sonarr",
 			"platform": "linux",
