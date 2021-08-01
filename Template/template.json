@@ -2490,6 +2490,42 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Petio is a third party companion app available to Plex server owners to allow their users to request, review and discover content.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				},
+				{
+					"label": "TZ",
+					"name": "TZ"
+				},
+				{
+					"label": "PORT",
+					"name": "PORT"
+				}
+			],
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/petio-icon.png",
+			"name": "Petio",
+			"platform": "linux",
+			"repository": {
+				"stackfile": "Template/Stack/petio.yml",
+				"url": "https://github.com/Qballjos/portainer_templates"
+			},
+			"title": "Petio",
+			"type": 3
+		},
+		{
+			"categories": [
 				"Photos"
 			],
 			"description": "A simple, easy way to turn a photo album into a webgallery.",
