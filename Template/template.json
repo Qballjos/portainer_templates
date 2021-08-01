@@ -2455,6 +2455,41 @@
 		},
 		{
 			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "Overseerr is a free and open source software application for managing requests for your media library.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "hotio/overseerr:release",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/overseerr-icon.png",
+			"name": "Overseerr",
+			"platform": "linux",
+			"ports": [
+				"5055:5055/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Overseerr",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Overseerr",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
 				"Photos"
 			],
 			"description": "A simple, easy way to turn a photo album into a webgallery.",
@@ -2737,7 +2772,7 @@
 				}
 			],
 			"image": "ghcr.io/linuxserver/prowlarr:develop",
-			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/prowlarr-icon.png",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/prowlarr.png",
 			"name": "prowlarr",
 			"platform": "linux",
 			"ports": [
