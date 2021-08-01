@@ -165,7 +165,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "linuxserver/bazarr:latest",
+			"image": "hotio/bazarr:release",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/bazarr.png",
 			"name": "Bazarr",
 			"platform": "linux",
@@ -1654,7 +1654,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/lidarr:latest",
+			"image": "hotio/lidarr:release",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/lidarr.png",
 			"name": "lidarr",
 			"platform": "linux",
@@ -2884,7 +2884,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/radarr:latest",
+			"image": "hotio/radarr:release",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/radarr.png",
 			"name": "radarr",
 			"platform": "linux",
@@ -3245,7 +3245,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/sonarr:latest",
+			"image": hotio/sonarr:release",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sonarr-icon.png",
 			"name": "sonarr",
 			"platform": "linux",
