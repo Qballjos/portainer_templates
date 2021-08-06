@@ -238,20 +238,20 @@
 				"Tools"
 			],
 			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
-			"image": "bitwardenrs/server:latest",
+			"image": "vaultwarden/server:latest",
 			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/bitwarden.png",
-			"name": "bitwardenrs",
+			"name": "vaultwarden",
 			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
 			"platform": "linux",
 			"ports": [
 				":80/tcp"
 			],
 			"restart_policy": "unless-stopped",
-			"title": "Bitwarden RS",
+			"title": "Vaultwarden",
 			"type": 1,
 			"volumes": [
 				{
-					"bind": "/portainer/Files/AppData/Config/Bitwarden-rs",
+					"bind": "/portainer/Files/AppData/Config/Vaultwarden",
 					"container": "/config"
 				}
 			]
