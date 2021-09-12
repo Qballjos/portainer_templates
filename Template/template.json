@@ -749,7 +749,7 @@
 			"note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
 			"platform": "linux",
 			"ports": [
-				"9666:9666/tcp"
+				"6595:6595/tcp"
 			],
 			"restart_policy": "unless-stopped",
 			"title": "DeeMix",
