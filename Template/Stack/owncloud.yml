@@ -20,7 +20,7 @@ services:
       - OWNCLOUD_REDIS_ENABLED=true
       - OWNCLOUD_REDIS_HOST=owncloudredis
     volumes:
-      - /portainer/Files/AppData/Config/Owncloud/persistantdata:/var/www/html
+      - /portainer/Files/AppData/Config/Owncloud/data:/mnt/data
     ports:
       - ${PORT}:8080
     restart: unless-stopped
@@ -33,8 +33,7 @@ services:
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - TZ=${Timezone}
+      - TZ=${TZ}
       - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
       - MYSQL_USER=owncloud
       - MYSQL_PASSWORD=${DB_PASSWORD}
@@ -42,7 +41,7 @@ services:
     volumes:
       - /portainer/AppData/Config/Owncloud/DB:/var/lib/mysql
     restart: unless-stopped
-      owncloudredis:
+  owncloudredis:
     image: redis:6
     container_name: owncloudredis
     volumes:
