@@ -39,11 +39,11 @@ services:
       - MYSQL_PASSWORD=${DB_PASSWORD}
       - MYSQL_DATABASE=owncloud
     volumes:
-      - /portainer/AppData/Config/Owncloud/DB:/var/lib/mysql
+      - /portainer/Files/AppData/Config/Owncloud/DB:/var/lib/mysql
     restart: unless-stopped
   owncloudredis:
     image: redis:6
     container_name: owncloudredis
     volumes:
-      - /portainer/AppData/Config/Owncloud/redis:/data
+      - /portainer/Files/AppData/Config/Owncloud/redis:/data
     restart: unless-stopped
