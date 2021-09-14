@@ -2,7 +2,7 @@
 version: "2"
 services:
   nextcloud:
-    image: linuxserver/owncloud:latest
+    image: owncloud/server:latest
     container_name: owncloud
     environment:
       - PUID=${PUID}
