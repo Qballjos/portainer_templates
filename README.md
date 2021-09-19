@@ -36,109 +36,109 @@ All templates are already configured to bind mount to various places on your dri
 * **Podcasts** - Where podcasts are stored/moved to after downloaded.
 ## App List
 
-   Adguard 
-   Airsonic 
-   Authelia 
-   Bazarr 
-   Beets 
-   Vaultwarden 
-   Booksonic 
-   Cops 
-   Calibre-web 
-   Chevereto 
-   Chowdown 
-   Code-server 
-   Codiad 
-   Couchpotato 
-   Daapd 
-   Dashmachine 
-   Davos 
-   Deemix 
-   Domoticz 
-   Duckdns 
-   Duplicati 
-   Emby 
-   EmbyStat 
-   Filebrowser 
-   Freshrss 
-   Gazee 
-   Guacamole 
-   Grocy 
-   Htpcmanager 
-   Headphones 
-   Heimdall 
-   Homer 
-   Huginn 
-   Invoice_ninja 
-   Jackett 
-   Jellyfin 
-   kodi-headless 
-   Lazylibrarian 
-   Letsencrypt / SWAG 
-   Librespeed 
-   Lidarr 
-   Lychee
-   Mariadb 
-   Mcmyadmin2 
-   Medusa 
-   Minetest 
-   Minisatip 
-   Mstream 
-   Murmur 
-   Musicbrainz 
-   Muximux 
-   Mylar 
-   Nzbget 
-   Nzbhydra2 
-   Nextcloud 
-   Nginx 
-   Nginx-proxy-manager 
-   Oscam 
-   Ombi 
-   Openvpn-as 
-   Organizr-v2 
-   Overseerr 
-   Owncloud 
-   Petio 
-   Photoshow 
-   Pihole 
-   Piwigo 
-   Plex 
-   Plexrequests 
-   Projectsend 
-   Protonmail-bridge 
-   Prowlarr 
-   Pydio 
-   Qbittorrent 
-   Quassel-core 
-   Radarr 
-   Reactive-resume 
-   Resilio-sync 
-   Rutorrent 
-   Sabnzbd 
-   Shiori 
-   Sickchill 
-   Sickgear 
-   Smokeping 
-   Snibox 
-   Sonarr 
-   Syncthing 
-   Tautulli 
-   Thelounge 
-   Tiddlywiki 
-   Tt-rss 
-   Transmission 
-   Transmission-openvpn 
-   Tvheadend 
-   Ubooquity 
-   Unifi-controller 
-   Watchtower 
-   Webgrabplus 
-   Whoogle 
-   Wikijs 
-   Yacht 
-   Youtubedl-material 
-   Znc 
+  - Adguard 
+  - Airsonic 
+  - Authelia 
+  - Bazarr 
+  - Beets 
+  - Vaultwarden 
+  - Booksonic 
+  - Cops 
+  - Calibre-web 
+  - Chevereto 
+  - Chowdown 
+  - Code-server 
+  - Codiad 
+  - Couchpotato 
+  - Daapd 
+  - Dashmachine 
+  - Davos 
+  - Deemix 
+  - Domoticz 
+  - Duckdns 
+  - Duplicati 
+  - Emby 
+  - EmbyStat 
+  - Filebrowser 
+  - Freshrss 
+  - Gazee 
+  - Guacamole 
+  - Grocy 
+  - Htpcmanager 
+  - Headphones 
+  - Heimdall 
+  - Homer 
+  - Huginn 
+  - Invoice_ninja 
+  - Jackett 
+  - Jellyfin 
+  - kodi-headless 
+  - Lazylibrarian 
+  - Letsencrypt / SWAG 
+  - Librespeed 
+  - Lidarr 
+  - Lychee
+  - Mariadb 
+  - Mcmyadmin2 
+  - Medusa 
+  - Minetest 
+  - Minisatip 
+  - Mstream 
+  - Murmur 
+  - Musicbrainz 
+  - Muximux 
+  - Mylar 
+  - Nzbget 
+  - Nzbhydra2 
+  - Nextcloud 
+  - Nginx 
+  - Nginx-proxy-manager 
+  - Oscam 
+  - Ombi 
+  - Openvpn-as 
+  - Organizr-v2 
+  - Overseerr 
+  - Owncloud 
+  - Petio 
+  - Photoshow 
+  - Pihole 
+  - Piwigo 
+  - Plex 
+  - Plexrequests 
+  - Projectsend 
+  - Protonmail-bridge 
+  - Prowlarr 
+  - Pydio 
+  - Qbittorrent 
+  - Quassel-core 
+  - Radarr 
+  - Reactive-resume 
+  - Resilio-sync 
+  - Rutorrent 
+  - Sabnzbd 
+  - Shiori 
+  - Sickchill 
+  - Sickgear 
+  - Smokeping 
+  - Snibox 
+  - Sonarr 
+  - Syncthing 
+  - Tautulli 
+  - Thelounge 
+  - Tiddlywiki 
+  - Tt-rss 
+  - Transmission 
+  - Transmission-openvpn 
+  - Tvheadend 
+  - Ubooquity 
+  - Unifi-controller 
+  - Watchtower 
+  - Webgrabplus 
+  - Whoogle 
+  - Wikijs 
+  - Yacht 
+  - Youtubedl-material 
+  - Znc 
 
 
 ## Contributing
