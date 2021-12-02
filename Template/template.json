@@ -1164,6 +1164,38 @@
       ]
     },
     {
+      "categories": ["Social", "Messenger"],
+      "description": "The IndiView mobile app attaches to your node hosted in this container. With IndiView you can connect with other to share photos, videos, and chat while retaining full control of your data.",
+      "env": [ ],
+      "image": "coredb/indiview:latest",
+      "logo": "https://raw.githubusercontent.com/rolandosborne/IndiView/main/docs/photos/ivicon.png",
+      "name": "IndiView",
+      "note": "Mobile App: https://github.com/rolandosborne/IndiView",
+      "platform": "linux",
+      "ports": ["8096:8080/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "IndiView",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/coredb-asset",
+          "container": "/data/asset"
+        },
+        {
+          "bind": "/portainer/coredb-keystore",
+          "container": "/data/keystore"
+        },
+        {
+          "bind": "/portainer/coredb-config",
+          "container": "/data/config"
+        },
+        {
+          "bind": "/portainer/coredb-db",
+          "container": "/var/lib/mysql"
+        }
+      ]
+    },
+    {
       "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
       "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
       "env": [
