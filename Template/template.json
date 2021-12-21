@@ -701,7 +701,7 @@
       ],
       "image": "linuxserver/deluge:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/deluge-icon.png",
-      "namme": "deluge",
+      "name": "deluge",
       "platform": "linux",
       "restart_policy": "unless-stopped",
       "title": "Deluge",
@@ -1267,7 +1267,7 @@
       "type": 1,
       "volumes": [
         {
-          "bind": "/portainer/Files/AppData/Config/Jelllyfin",
+          "bind": "/portainer/Files/AppData/Config/Jellyfin",
           "container": "/config"
         },
         {
