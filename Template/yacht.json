@@ -58,6 +58,32 @@
     },
     {
       "type": 1,
+      "title": "Vaultwarden",
+      "name": "vaultwarden",
+      "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+      "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
+      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
+      "image": "vaultwarden/server:latest",
+      "categories": [
+        "Other",
+        "Tools"
+      ],
+      "platform": "linux",
+      "restart_policy": "unless-stopped",
+      "ports": [
+        {
+          "WebUI": ":80/tcp"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config",
+          "bind": "!config/Vaultwarden"
+        }
+      ]
+    },
+    {
+      "type": 1,
       "title": "EmbyStat",
       "name": "EmbyStat",
       "description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
@@ -231,32 +257,6 @@
           "name": "PGID",
           "label": "PGID",
           "default": "!PGID"
-        }
-      ]
-    },
-    {
-      "type": 1,
-      "title": "Bitwarden RS",
-      "name": "bitwardenrs",
-      "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
-      "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
-      "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
-      "image": "bitwardenrs/server:latest",
-      "categories": [
-        "Other",
-        "Tools"
-      ],
-      "platform": "linux",
-      "restart_policy": "unless-stopped",
-      "ports": [
-        {
-          "WebUI": ":80/tcp"
-        }
-      ],
-      "volumes": [
-        {
-          "container": "/config",
-          "bind": "!config/Bitwarden-rs"
         }
       ]
     },
