@@ -132,12 +132,12 @@
       default: "!PGID"
 
 - type: 1
-  title: "Bitwarden RS"
-  name: bitwardenrs
+  title: "Vaultwarden"
+  name: vaultwarden
   description: "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.."
   note: "This project is not associated with the Bitwarden project nor 8bit Solutions LLC."
   logo: "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png"
-  image: "bitwardenrs/server:latest"
+  image: "vaultwarden/server:latest"
   categories:
     - Other
     - Tools
@@ -147,7 +147,7 @@
     - WebUI: ":80/tcp"
   volumes:
     - container: /config
-      bind: "!config/Bitwarden-rs"
+      bind: "!config/Vaultwarden"
 
 - type: 1
   title: Booksonic

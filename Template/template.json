@@ -181,30 +181,6 @@
   },
   {
     "type": 1,
-    "title": "Bitwarden RS",
-    "name": "bitwardenrs",
-    "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
-    "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
-    "image": "bitwardenrs/server:latest",
-    "categories": [
-      "Other",
-      "Tools"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "80/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Bitwarden-rs"
-      }
-    ]
-  },
-  {
-    "type": 1,
     "title": "Booksonic",
     "name": "booksonic",
     "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
@@ -3557,6 +3533,30 @@
         "name": "PGID",
         "label": "PGID",
         "default": "100"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Vaultwarden",
+    "name": "Vaultwarden",
+    "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+    "note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
+    "image": "vaultwarden/server:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Vaultwarden"
       }
     ]
   },
