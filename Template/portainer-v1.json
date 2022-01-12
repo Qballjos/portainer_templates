@@ -5,7 +5,7 @@
       "name": "airsonic",
       "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/airsonic-logo.png",
-      "image": "linuxserver/airsonic:latest",
+      "image": "lscr.io/linuxserver/airsonic:latest",
       "categories": [
         "Music"
       ],
@@ -96,7 +96,7 @@
       "name": "bazarr",
       "description": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bazarr.png",
-      "image": "linuxserver/bazarr:latest",
+      "image": "lscr.io/linuxserver/bazarr:latest",
       "categories": [
         "Video",
         "Music"
@@ -143,7 +143,7 @@
       "name": "beets",
       "description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the MusicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/beets-icon.png",
-      "image": "linuxserver/beets:latest",
+      "image": "lscr.io/linuxserver/beets:latest",
       "categories": [
         "Music"
       ],
@@ -209,7 +209,7 @@
       "name": "booksonic",
       "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/booksonic.png",
-      "image": "linuxserver/booksonic:latest",
+      "image": "lscr.io/linuxserver/booksonic:latest",
       "categories": [
         "Books",
         "Other"
@@ -257,7 +257,7 @@
       "name": "embystat",
       "description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/embystat.png",
-      "image": "linuxserver/embystat:latest",
+      "image": "lscr.io/linuxserver/embystat:latest",
       "categories": [
         "Other",
         "Tools"
@@ -281,7 +281,7 @@
       "name": "headphones",
       "description": null,
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/headphones-icon.png",
-      "image": "linuxserver/headphones:latest",
+      "image": "lscr.io/linuxserver/headphones:latest",
       "categories": [
         "Music"
       ],
@@ -323,7 +323,7 @@
       "name": "heimdall",
       "description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/heimdall-icon.png",
-      "image": "linuxserver/heimdall:latest",
+      "image": "lscr.io/linuxserver/heimdall:latest",
       "categories": [
         "Tools",
         "Web",
@@ -458,7 +458,7 @@
       "name": "jackett",
       "description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.[",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jacket-icon.png",
-      "image": "linuxserver/jackett:latest",
+      "image": "lscr.io/linuxserver/jackett:latest",
       "categories": [
         "Downloaders",
         "Tools"
@@ -497,7 +497,7 @@
       "name": "jellyfin",
       "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jellyfin.png",
-      "image": "linuxserver/jellyfin:latest",
+      "image": "lscr.io/linuxserver/jellyfin:latest",
       "categories": [
         "Video",
         "Music",
@@ -546,7 +546,7 @@
       "name": "kodi-headless",
       "description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/kodi-icon.png",
-      "image": "linuxserver/kodi-headless:latest",
+      "image": "lscr.io/linuxserver/kodi-headless:latest",
       "categories": [
         "Video"
       ],
@@ -581,7 +581,7 @@
       "name": "lazylibrarian",
       "description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lazylibrarian-icon.png",
-      "image": "linuxserver/lazylibrarian:latest",
+      "image": "lscr.io/linuxserver/lazylibrarian:latest",
       "categories": [
         "Books"
       ],
@@ -620,7 +620,7 @@
       "name": "letsencrypt",
       "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.\r\n  \r\n  Before running this container, make sure that the url and subdomains are properly forwarded to this container's host.\r\n  \r\n  - Port 443 on the internet side of the router should be forwarded to this container's port 443.\r\n  - If you need a dynamic dns provider, you can use the free provider duckdns.org where the url will be yoursubdomain.duckdns.org and the subdomains    can be www,ftp,cloud\r\n  - The container detects changes to url and subdomains, revokes existing certs and generates new ones during start. \r\n  - It also detects changes to the DHLEVEL parameter and replaces the dhparams file.\r\n  \r\n  - If you'd like to password protect your sites, you can use htpasswd. Run the following command on your host to generate the htpasswd file docker exec -it letsencrypt htpasswd -c /config/nginx/.htpasswd &lt;username&gt;",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/letsencrypt.png",
-      "image": "linuxserver/letsencrypt:latest",
+      "image": "lscr.io/linuxserver/letsencrypt:latest",
       "categories": [
         "Tools",
         "Web"
@@ -691,7 +691,7 @@
       "name": "librespeed",
       "description": "A Free and Open Source Speedtest for HTML5 and more.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
-      "image": "linuxserver/librespeed:latest",
+      "image": "lscr.io/linuxserver/librespeed:latest",
       "categories": [
         "Other",
         "Tools"
@@ -714,7 +714,7 @@
       "name": "lychee",
       "description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lychee-icon.png",
-      "image": "linuxserver/lychee:latest",
+      "image": "lscr.io/linuxserver/lychee:latest",
       "categories": [
         "Cloud",
         "Web",
@@ -755,7 +755,7 @@
       "name": "mariadb",
       "description": "An Enhanced drop in replacement for Mysql",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mariadb-icon.png",
-      "image": "linuxserver/mariadb:latest",
+      "image": "lscr.io/linuxserver/mariadb:latest",
       "categories": [
         "Other",
         "Tools"
@@ -795,7 +795,7 @@
       "name": "mcmyadmin2",
       "description": "McMyAdmin 2 is the leading web control panel and administration console for Minecraft servers.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mcmyadmin-icon.png",
-      "image": "linuxserver/mcmyadmin2:latest",
+      "image": "lscr.io/linuxserver/mcmyadmin2:latest",
       "categories": [
         "Other"
       ],
@@ -829,7 +829,7 @@
       "name": "medusa",
       "description": "Medusa, automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/medusa-icon.png",
-      "image": "linuxserver/medusa:latest",
+      "image": "lscr.io/linuxserver/medusa:latest",
       "categories": [
         "Downloaders",
         "Video"
@@ -872,7 +872,7 @@
       "name": "minetest",
       "description": "Server version of minetest, a free, open source alternative to minecraft.",
       "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
-      "image": "linuxserver/minetest:latest",
+      "image": "lscr.io/linuxserver/minetest:latest",
       "categories": [
         "Other"
       ],
@@ -905,7 +905,7 @@
       "name": "minisatip",
       "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards.\n\n  The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.\n  ",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/minisatip-icon.png",
-      "image": "linuxserver/minisatip:latest",
+      "image": "lscr.io/linuxserver/minisatip:latest",
       "categories": [
         "Video",
         "Other",
@@ -937,7 +937,7 @@
       "name": "mstream",
       "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
-      "image": "linuxserver/mstream:latest",
+      "image": "lscr.io/linuxserver/mstream:latest",
       "categories": [
         "Other",
         "Music"
@@ -1017,7 +1017,7 @@
       "name": "musicbrainz",
       "description": " MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/musicbrainz-icon.png",
-      "image": "linuxserver/musicbrainz:latest",
+      "image": "lscr.io/linuxserver/musicbrainz:latest",
       "categories": [
         "Music",
         "Other",
@@ -1062,7 +1062,7 @@
       "name": "muximux",
       "description": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/muximux-icon.png",
-      "image": "linuxserver/muximux:latest",
+      "image": "lscr.io/linuxserver/muximux:latest",
       "categories": [
         "Web",
         "Proxy",
@@ -1099,7 +1099,7 @@
       "name": "mylar",
       "description": "An automated Comic Book downloader (cbr/cbz) for use with SABnzbd, NZBGet and torrents.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mylar-icon.png",
-      "image": "linuxserver/mylar:latest",
+      "image": "lscr.io/linuxserver/mylar:latest",
       "categories": [
         "Downloaders",
         "Books"
@@ -1190,7 +1190,7 @@
       "name": "nginx",
       "description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nginx-icon.png",
-      "image": "linuxserver/nginx:latest",
+      "image": "lscr.io/linuxserver/nginx:latest",
       "categories": [
         "Web",
         "Proxy"
@@ -1251,7 +1251,7 @@
       "name": "nzbget",
       "description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nzbget-icon.png",
-      "image": "linuxserver/nzbget:latest",
+      "image": "lscr.io/linuxserver/nzbget:latest",
       "categories": [
         "Downloaders"
       ],
@@ -1289,7 +1289,7 @@
       "name": "nzbhydra2",
       "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/hydra-icon.png",
-      "image": "linuxserver/nzbhydra2:latest",
+      "image": "lscr.io/linuxserver/nzbhydra2:latest",
       "categories": [
         "Downloaders",
         "Other",
@@ -1329,7 +1329,7 @@
       "name": "ombi",
       "description": "Ombi allows you to host your own Plex Request and user management system. ",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ombi.png",
-      "image": "linuxserver/ombi:latest",
+      "image": "lscr.io/linuxserver/ombi:latest",
       "categories": [
         "Downloaders",
         "Other",
@@ -1366,7 +1366,7 @@
       "name": "openvpn-as",
       "description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/openvpn-as-icon.png",
-      "image": "linuxserver/openvpn-as:latest",
+      "image": "lscr.io/linuxserver/openvpn-as:latest",
       "categories": [
         "Other"
       ],
@@ -1442,7 +1442,7 @@
       "name": "oscam",
       "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module\n  (CAM). OScam is, compared with other softcams (CCcam, mgcamd, etc.), open source. Hence, the name Open Source Conditional Access Module (OScam). OScam is based on the\n  not so well known softcam MpCS. The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
       "logo": "http://i.imgur.com/8LadrLg.png",
-      "image": "linuxserver/oscam:latest",
+      "image": "lscr.io/linuxserver/oscam:latest",
       "categories": [
         "Other"
       ],
@@ -1477,7 +1477,7 @@
       "name": "photoshow",
       "description": "A simple, easy way to turn a photo album into a webgallery",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/photoshow-icon.png",
-      "image": "linuxserver/photoshow:latest",
+      "image": "lscr.io/linuxserver/photoshow:latest",
       "categories": [
         "Photos"
       ],
@@ -1669,7 +1669,7 @@
       "name": "calibre-web",
       "description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.\n\n  [br][br]\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\n  [b]/config[/b] Where Calibre-web should store it's database[br]\n  [b]/books[/b] Path to your calibre library metadata.db file[br]",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/calibre-web-icon.png",
-      "image": "linuxserver/calibre-web:latest",
+      "image": "lscr.io/linuxserver/calibre-web:latest",
       "categories": [
         "Cloud",
         "Books"
@@ -1708,7 +1708,7 @@
       "name": "cardigann",
       "description": "Cardigann, a server for adding extra indexers to Sonarr, SickRage and CouchPotato via Torznab and TorrentPotato proxies. Behind the scenes Cardigann logs in and runs searches and then transforms the results into a compatible format.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cardigann.png",
-      "image": "linuxserver/cardigann:latest",
+      "image": "lscr.io/linuxserver/cardigann:latest",
       "categories": [
         "Downloaders"
       ],
@@ -1742,7 +1742,7 @@
       "name": "code-server",
       "description": "Code-server is VS Code running on a remote server, accessible through the browser.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/code-server.png",
-      "image": "linuxserver/code-server:latest",
+      "image": "lscr.io/linuxserver/code-server:latest",
       "categories": [
         "Other",
         "Tools"
@@ -1794,7 +1794,7 @@
       "name": "codiad",
       "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.\n  ",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/codiad-icon.png",
-      "image": "linuxserver/codiad:latest",
+      "image": "lscr.io/linuxserver/codiad:latest",
       "categories": [
         "Productivity"
       ],
@@ -1828,7 +1828,7 @@
       "name": "cops",
       "description": "COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cops-icon.png",
-      "image": "linuxserver/cops:latest",
+      "image": "lscr.io/linuxserver/cops:latest",
       "categories": [
         "Cloud",
         "Books"
@@ -1867,7 +1867,7 @@
       "name": "couchpotato",
       "description": "CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a \"movies I want\"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/couchpotato-icon.png",
-      "image": "linuxserver/couchpotato:latest",
+      "image": "lscr.io/linuxserver/couchpotato:latest",
       "categories": [
         "Downloaders",
         "Video"
@@ -1910,7 +1910,7 @@
       "name": "daapd",
       "description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
       "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
-      "image": "linuxserver/daapd:latest",
+      "image": "lscr.io/linuxserver/daapd:latest",
       "categories": [
         "Music"
       ],
@@ -1968,7 +1968,7 @@
       "name": "davos",
       "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.\r\n\r\n/config : AppData Location\r\n/download : File Download Location",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/davos.png",
-      "image": "linuxserver/davos:latest",
+      "image": "lscr.io/linuxserver/davos:latest",
       "categories": [
         "FTP",
         "Other",
@@ -2036,7 +2036,7 @@
       "namme": "deluge",
       "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deluge-icon.png",
-      "image": "linuxserver/deluge:latest",
+      "image": "lscr.io/linuxserver/deluge:latest",
       "categories": [
         "Downloaders"
       ],
@@ -2076,7 +2076,7 @@
       "name": "domoticz",
       "description": "Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device",
       "logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
-      "image": "linuxserver/domoticz:latest",
+      "image": "lscr.io/linuxserver/domoticz:latest",
       "categories": [
         "HomeAutomation",
         "Management"
@@ -2113,7 +2113,7 @@
       "name": "duckdns",
       "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.\r\n\r\nFirst, go to duckdns site, register your subdomain and retrieve your token\r\nThen run the docker create command above with your subdomain(s) and token\r\nIt will update your IP with the DuckDNS service every 5 minutes\r\n\r\n",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duckdns.png",
-      "image": "linuxserver/duckdns:latest",
+      "image": "lscr.io/linuxserver/duckdns:latest",
       "categories": [
         "DNS",
         "Tools"
@@ -2149,7 +2149,7 @@
       "name": "duplicati",
       "description": "Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duplicati-icon.png",
-      "image": "linuxserver/duplicati:latest",
+      "image": "lscr.io/linuxserver/duplicati:latest",
       "categories": [
         "Backup",
         "Cloud",
@@ -2196,7 +2196,7 @@
       "name": "emby",
       "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/emby.png",
-      "image": "linuxserver/emby:latest",
+      "image": "lscr.io/linuxserver/emby:latest",
       "categories": [
         "Video",
         "Music",
@@ -2273,7 +2273,7 @@
       "name": "freshrss",
       "description": "A free, self-hostable rss aggregator…",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/freshrss-icon.png",
-      "image": "linuxserver/freshrss:latest",
+      "image": "lscr.io/linuxserver/freshrss:latest",
       "categories": [
         "Other"
       ],
@@ -2307,7 +2307,7 @@
       "name": "gazee",
       "description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/gazee-logo.png",
-      "image": "linuxserver/gazee:latest",
+      "image": "lscr.io/linuxserver/gazee:latest",
       "categories": [
         "Web",
         "Books",
@@ -2348,7 +2348,7 @@
       "name": "grocy",
       "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utulity.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/grocy_logo.png",
-      "image": "linuxserver/grocy:latest",
+      "image": "lscr.io/linuxserver/grocy:latest",
       "categories": [
         "Other",
         "Tools",
@@ -2412,7 +2412,7 @@
       "name": "htpcmanager",
       "description": "HTPC Manaager, a front end for many htpc related applications. Hellowlol version.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/htpcmanager-icon.png",
-      "image": "linuxserver/htpcmanager:latest",
+      "image": "lscr.io/linuxserver/htpcmanager:latest",
       "categories": [
         "Video",
         "Music",
@@ -2448,7 +2448,7 @@
       "name": "lidarr",
       "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lidarr.png",
-      "image": "linuxserver/lidarr:latest",
+      "image": "lscr.io/linuxserver/lidarr:latest",
       "categories": [
         "Downloaders",
         "Music"
@@ -2523,7 +2523,7 @@
       "name": "piwigo",
       "description": "Piwigo is photo gallery software for the web, built by an active community of users and developers.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/piwigo-icon.png",
-      "image": "linuxserver/piwigo:latest",
+      "image": "lscr.io/linuxserver/piwigo:latest",
       "categories": [
         "Photos"
       ],
@@ -2557,7 +2557,7 @@
       "name": "plex",
       "description": "Your favorite movies, TV, music, web shows, podcasts, and more, all streamed to your favorite screens.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/plex-icon.png",
-      "image": "linuxserver/plex:latest",
+      "image": "lscr.io/linuxserver/plex:latest",
       "categories": [
         "Video",
         "Music",
@@ -2604,7 +2604,7 @@
       "name": "plexrequests",
       "description": "Simple automated way for users to request new content for Plex.",
       "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
-      "image": "linuxserver/plexrequests:latest",
+      "image": "lscr.io/linuxserver/plexrequests:latest",
       "categories": [
         "Downloaders",
         "Other",
@@ -2646,7 +2646,7 @@
       "name": "projectsend",
       "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files!\n  ",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/projectsend-logo.png",
-      "image": "linuxserver/projectsend:latest",
+      "image": "lscr.io/linuxserver/projectsend:latest",
       "categories": [
         "Cloud",
         "Productivity",
@@ -2754,7 +2754,7 @@
       "name": "pydio",
       "description": "Pydio (formerly AjaXplorer) is a mature open source software solution for file sharing and synchronization. With intuitive user interfaces (web / mobile / desktop), Pydio provides enterprise-grade features to gain back control and privacy of your data: user directory connectors, legacy filesystems drivers, comprehensive admin interface, and much more.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pydio-icon.png",
-      "image": "linuxserver/pydio:latest",
+      "image": "lscr.io/linuxserver/pydio:latest",
       "categories": [
         "Cloud",
         "Other"
@@ -2793,7 +2793,7 @@
       "name": "qbittorrent",
       "description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/qbittorrent-icon.png",
-      "image": "linuxserver/qbittorrent:latest",
+      "image": "lscr.io/linuxserver/qbittorrent:latest",
       "categories": [
         "Downloaders"
       ],
@@ -2833,7 +2833,7 @@
       "name": "quassel-core",
       "description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core -- much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/quassel-core-icon.png",
-      "image": "linuxserver/quassel-core:latest",
+      "image": "lscr.io/linuxserver/quassel-core:latest",
       "categories": [
         "Messenger"
       ],
@@ -2867,7 +2867,7 @@
       "name": "radarr",
       "description": "Radarr - A fork of Sonarr to work with movies à la Couchpotato.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/radarr.png",
-      "image": "linuxserver/radarr:latest",
+      "image": "lscr.io/linuxserver/radarr:latest",
       "categories": [
         "Downloaders",
         "Video"
@@ -2933,7 +2933,7 @@
       "name": "resilio-sync",
       "description": "Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/resilio.png",
-      "image": "linuxserver/resilio-sync:latest",
+      "image": "lscr.io/linuxserver/resilio-sync:latest",
       "categories": [
         "Backup",
         "Cloud",
@@ -2974,7 +2974,7 @@
       "name": "rutorrent",
       "description": "Popular torrent client with a webui for ease of use.",
       "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
-      "image": "linuxserver/rutorrent:latest",
+      "image": "lscr.io/linuxserver/rutorrent:latest",
       "categories": [
         "Downloaders"
       ],
@@ -3014,7 +3014,7 @@
       "name": "sabnzbd",
       "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sabnzbd-icon.png",
-      "image": "linuxserver/sabnzbd:latest",
+      "image": "lscr.io/linuxserver/sabnzbd:latest",
       "categories": [
         "Downloaders"
       ],
@@ -3080,7 +3080,7 @@
       "name": "sickchill",
       "description": "Automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickchill-icon.png",
-      "image": "linuxserver/sickchill:latest",
+      "image": "lscr.io/linuxserver/sickchill:latest",
       "categories": [
         "Downloaders",
         "Video"
@@ -3123,7 +3123,7 @@
       "name": "sickgear",
       "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickgear-icon.png",
-      "image": "linuxserver/sickgear:latest",
+      "image": "lscr.io/linuxserver/sickgear:latest",
       "categories": [
         "Downloaders",
         "Video"
@@ -3166,7 +3166,7 @@
       "name": "smokeping",
       "description": null,
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/smokeping-icon.png",
-      "image": "linuxserver/smokeping:latest",
+      "image": "lscr.io/linuxserver/smokeping:latest",
       "categories": [
         "Management"
       ],
@@ -3204,7 +3204,7 @@
       "name": "sonarr",
       "description": "Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sonarr-icon.png",
-      "image": "linuxserver/sonarr:latest",
+      "image": "lscr.io/linuxserver/sonarr:latest",
       "categories": [
         "Downloaders",
         "Video"
@@ -3251,7 +3251,7 @@
       "name": "syncthing",
       "description": null,
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/syncthing-icon.png",
-      "image": "linuxserver/syncthing:latest",
+      "image": "lscr.io/linuxserver/syncthing:latest",
       "categories": [
         "Backup",
         "Cloud",
@@ -3293,7 +3293,7 @@
       "name": "tautulli",
       "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.[br][br]\r\n  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]\r\n  [b]8181[/b] The webui for Tautulli's webui [br]\r\n  [b]/config[/b] Storing Configuration and the Tautulli database[br]\r\n[b]/logs[/b] Map to you plex logs (required for IP logging)[br]\r\n\r\n",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tautulli-icon.png",
-      "image": "linuxserver/tautulli:latest",
+      "image": "lscr.io/linuxserver/tautulli:latest",
       "categories": [
         "Other",
         "Tools"
@@ -3332,7 +3332,7 @@
       "name": "thelounge",
       "description": "A self-hosted web IRC client",
       "logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
-      "image": "linuxserver/thelounge:latest",
+      "image": "lscr.io/linuxserver/thelounge:latest",
       "categories": [
         "Messenger"
       ],
@@ -3389,7 +3389,7 @@
       "name": "transmission",
       "description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
-      "image": "linuxserver/transmission:latest",
+      "image": "lscr.io/linuxserver/transmission:latest",
       "categories": [
         "Downloaders"
       ],
@@ -3527,7 +3527,7 @@
       "name": "tvheadend",
       "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT&gt;IP and HDHomeRun as input sources.\r\nTvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT&gt;IP streaming.\r\nMultiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
       "logo": "http://i.imgur.com/zGSUAT4.png",
-      "image": "linuxserver/tvheadend:latest",
+      "image": "lscr.io/linuxserver/tvheadend:latest",
       "categories": [
         "Video",
         "Other"
@@ -3566,7 +3566,7 @@
       "name": "ubooquity",
       "description": "Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ubooquity-icon.png",
-      "image": "linuxserver/ubooquity:latest",
+      "image": "lscr.io/linuxserver/ubooquity:latest",
       "categories": [
         "Cloud",
         "Books"
@@ -3612,7 +3612,7 @@
       "name": "unifi-controller",
       "description": null,
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/unifi-icon.png",
-      "image": "linuxserver/unifi-controller:latest",
+      "image": "lscr.io/linuxserver/unifi-controller:latest",
       "categories": [
         "Management",
         "Tools"
@@ -3676,7 +3676,7 @@
       "name": "webgrabplus",
       "description": "WebGrab+Plus is a multi-site incremental xmltv epg grabber. It collects tv-program guide data from selected tvguide sites for your favourite channels.[br]\r\n\t\tOptional postprocessors to add IMDb data or to customize your xmltv listing.[br]\r\n\t\thttp://www.webgrabplus.com/[br]\r\n\t\t[b][span style='color: #E80000;']Directions:[/span][/b][br]\r\n\t\t[b]/config[/b] : This is where WebGrab+Plus will store it's configuration.[br][br]\r\n\t\t[b]/data[/b] : This is where tv_grab_wg script in the Tvheadend container looks for the guide.xml file.[br][br]",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/webgrabplus.png",
-      "image": "linuxserver/webgrabplus:latest",
+      "image": "lscr.io/linuxserver/webgrabplus:latest",
       "categories": [
         "Downloaders"
       ],
@@ -3734,7 +3734,7 @@
       "name": "wikijs",
       "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
-      "image": "linuxserver/wikijs:latest",
+      "image": "lscr.io/linuxserver/wikijs:latest",
       "categories": [
         "Other",
         "Tools"
@@ -3883,7 +3883,7 @@
       "name": "znc",
       "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/znc-icon.png",
-      "image": "linuxserver/znc:latest",
+      "image": "lscr.io/linuxserver/znc:latest",
       "categories": [
         "Messenger"
       ],
@@ -4120,7 +4120,7 @@
       "name": "ddclient",
       "description": "DDClient is a Perl client used to update dynamic DNS entries for accounts on Dynamic DNS Network Service Provider. It was originally written by Paul Burry and is now mostly by wimpunk. It has the capability to update more than just dyndns and it can fetch your WAN-ipaddress in a few different ways.",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ddclient.png",
-      "image": "linuxserver/ddclient:latest",
+      "image": "lscr.io/linuxserver/ddclient:latest",
       "categories": [
         "Other",
         "Utilities"
