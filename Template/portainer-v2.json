@@ -28,7 +28,7 @@
 					"set": "-Xms256m -Xmx512m"
 				}
 			],
-			"image": "linuxserver/airsonic:latest",
+			"image": "lscr.io/linuxserver/airsonic:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/airsonic-logo.png",
 			"name": "airsonic",
 			"platform": "linux",
@@ -114,7 +114,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "linuxserver/bazarr:latest",
+			"image": "lscr.io/linuxserver/bazarr:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bazarr.png",
 			"name": "bazarr",
 			"platform": "linux",
@@ -156,7 +156,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/beets:latest",
+			"image": "lscr.io/linuxserver/beets:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/beets-icon.png",
 			"name": "beets",
 			"platform": "linux",
@@ -228,7 +228,7 @@
 					"name": "CONTEXT_PATH"
 				}
 			],
-			"image": "linuxserver/booksonic:latest",
+			"image": "lscr.io/linuxserver/booksonic:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/booksonic.png",
 			"name": "booksonic",
 			"platform": "linux",
@@ -259,7 +259,7 @@
 				"Tools"
 			],
 			"description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
-			"image": "linuxserver/embystat:latest",
+			"image": "lscr.io/linuxserver/embystat:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/embystat.png",
 			"name": "embystat",
 			"note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services.",
@@ -294,7 +294,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/headphones:latest",
+			"image": "lscr.io/linuxserver/headphones:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/headphones-icon.png",
 			"name": "headphones",
 			"platform": "linux",
@@ -338,7 +338,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/heimdall:latest",
+			"image": "lscr.io/linuxserver/heimdall:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/heimdall-icon.png",
 			"name": "heimdall",
 			"platform": "linux",
@@ -472,7 +472,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/jackett:latest",
+			"image": "lscr.io/linuxserver/jackett:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jacket-icon.png",
 			"name": "jackett",
 			"platform": "linux",
@@ -516,7 +516,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "linuxserver/jellyfin:latest",
+			"image": "lscr.io/linuxserver/jellyfin:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/jellyfin.png",
 			"name": "jellyfin",
 			"platform": "linux",
@@ -559,7 +559,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/kodi-headless:latest",
+			"image": "lscr.io/linuxserver/kodi-headless:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/kodi-icon.png",
 			"name": "kodi-headless",
 			"platform": "linux",
@@ -594,7 +594,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/lazylibrarian:latest",
+			"image": "lscr.io/linuxserver/lazylibrarian:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lazylibrarian-icon.png",
 			"name": "lazylibrarian",
 			"platform": "linux",
@@ -669,7 +669,7 @@
 					"set": "http"
 				}
 			],
-			"image": "linuxserver/letsencrypt:latest",
+			"image": "lscr.io/linuxserver/letsencrypt:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/letsencrypt.png",
 			"name": "letsencrypt",
 			"platform": "linux",
@@ -693,7 +693,7 @@
 				"Tools"
 			],
 			"description": "A Free and Open Source Speedtest for HTML5 and more.",
-			"image": "linuxserver/librespeed:latest",
+			"image": "lscr.io/linuxserver/librespeed:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
 			"name": "librespeed",
 			"platform": "linux",
@@ -730,7 +730,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/lychee:latest",
+			"image": "lscr.io/linuxserver/lychee:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lychee-icon.png",
 			"name": "lychee",
 			"platform": "linux",
@@ -774,7 +774,7 @@
 					"set": ""
 				}
 			],
-			"image": "linuxserver/mariadb:latest",
+			"image": "lscr.io/linuxserver/mariadb:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mariadb-icon.png",
 			"name": "mariadb",
 			"platform": "linux",
@@ -808,7 +808,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/mcmyadmin2:latest",
+			"image": "lscr.io/linuxserver/mcmyadmin2:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mcmyadmin-icon.png",
 			"name": "mcmyadmin2",
 			"platform": "linux",
@@ -843,7 +843,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/medusa:latest",
+			"image": "lscr.io/linuxserver/medusa:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/medusa-icon.png",
 			"name": "medusa",
 			"platform": "linux",
@@ -885,7 +885,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/minetest:latest",
+			"image": "lscr.io/linuxserver/minetest:latest",
 			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
 			"name": "minetest",
 			"platform": "linux",
@@ -920,7 +920,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/minisatip:latest",
+			"image": "lscr.io/linuxserver/minisatip:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/minisatip-icon.png",
 			"name": "minisatip",
 			"platform": "linux",
@@ -939,7 +939,7 @@
 				"Music"
 			],
 			"description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone..",
-			"image": "linuxserver/mstream:latest",
+			"image": "lscr.io/linuxserver/mstream:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mstream.png",
 			"name": "mstream",
 			"platform": "linux",
@@ -1037,7 +1037,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/musicbrainz:latest",
+			"image": "lscr.io/linuxserver/musicbrainz:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/musicbrainz-icon.png",
 			"name": "musicbrainz",
 			"platform": "linux",
@@ -1078,7 +1078,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/muximux:latest",
+			"image": "lscr.io/linuxserver/muximux:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/muximux-icon.png",
 			"name": "muximux",
 			"platform": "linux",
@@ -1113,7 +1113,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/mylar:latest",
+			"image": "lscr.io/linuxserver/mylar:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/mylar-icon.png",
 			"name": "mylar",
 			"platform": "linux",
@@ -1204,7 +1204,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/nginx:latest",
+			"image": "lscr.io/linuxserver/nginx:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nginx-icon.png",
 			"name": "nginx",
 			"platform": "linux",
@@ -1264,7 +1264,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/nzbget:latest",
+			"image": "lscr.io/linuxserver/nzbget:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nzbget-icon.png",
 			"name": "nzbget",
 			"platform": "linux",
@@ -1304,7 +1304,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/nzbhydra2:latest",
+			"image": "lscr.io/linuxserver/nzbhydra2:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/hydra-icon.png",
 			"name": "nzbhydra2",
 			"platform": "linux",
@@ -1345,7 +1345,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/ombi:latest",
+			"image": "lscr.io/linuxserver/ombi:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ombi.png",
 			"name": "ombi",
 			"platform": "linux",
@@ -1384,7 +1384,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/openvpn-as:latest",
+			"image": "lscr.io/linuxserver/openvpn-as:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/openvpn-as-icon.png",
 			"name": "openvpn-as",
 			"platform": "linux",
@@ -1455,7 +1455,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/oscam:latest",
+			"image": "lscr.io/linuxserver/oscam:latest",
 			"logo": "http://i.imgur.com/8LadrLg.png",
 			"name": "oscam",
 			"platform": "linux",
@@ -1490,7 +1490,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/photoshow:latest",
+			"image": "lscr.io/linuxserver/photoshow:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/photoshow-icon.png",
 			"name": "photoshow",
 			"platform": "linux",
@@ -1683,7 +1683,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/calibre-web:latest",
+			"image": "lscr.io/linuxserver/calibre-web:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/calibre-web-icon.png",
 			"name": "calibre-web",
 			"platform": "linux",
@@ -1721,7 +1721,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/cardigann:latest",
+			"image": "lscr.io/linuxserver/cardigann:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cardigann.png",
 			"name": "cardigann",
 			"platform": "linux",
@@ -1773,7 +1773,7 @@
 					"name": "PROXY_DOMAIN"
 				}
 			],
-			"image": "linuxserver/code-server:latest",
+			"image": "lscr.io/linuxserver/code-server:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/code-server.png",
 			"name": "code-server",
 			"platform": "linux",
@@ -1807,7 +1807,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/codiad:latest",
+			"image": "lscr.io/linuxserver/codiad:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/codiad-icon.png",
 			"name": "codiad",
 			"platform": "linux",
@@ -1842,7 +1842,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/cops:latest",
+			"image": "lscr.io/linuxserver/cops:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cops-icon.png",
 			"name": "cops",
 			"platform": "linux",
@@ -1881,7 +1881,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/couchpotato:latest",
+			"image": "lscr.io/linuxserver/couchpotato:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/couchpotato-icon.png",
 			"name": "couchpotato",
 			"platform": "linux",
@@ -1923,7 +1923,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/daapd:latest",
+			"image": "lscr.io/linuxserver/daapd:latest",
 			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/daapd-icon.png",
 			"name": "daapd",
 			"platform": "linux",
@@ -1983,7 +1983,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/davos:latest",
+			"image": "lscr.io/linuxserver/davos:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/davos.png",
 			"name": "davos",
 			"platform": "linux",
@@ -2054,7 +2054,7 @@
 					"set": "000"
 				}
 			],
-			"image": "linuxserver/deluge:latest",
+			"image": "lscr.io/linuxserver/deluge:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deluge-icon.png",
 			"namme": "deluge",
 			"platform": "linux",
@@ -2090,7 +2090,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/domoticz:latest",
+			"image": "lscr.io/linuxserver/domoticz:latest",
 			"logo": "https://github.com/domoticz/domoticz/raw/master/www/images/logo.png",
 			"name": "domoticz",
 			"platform": "linux",
@@ -2137,7 +2137,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/duckdns:latest",
+			"image": "lscr.io/linuxserver/duckdns:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duckdns.png",
 			"name": "duckdns",
 			"platform": "linux",
@@ -2166,7 +2166,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/duplicati:latest",
+			"image": "lscr.io/linuxserver/duplicati:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/duplicati-icon.png",
 			"name": "duplicati",
 			"platform": "linux",
@@ -2215,7 +2215,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "linuxserver/emby:latest",
+			"image": "lscr.io/linuxserver/emby:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/emby.png",
 			"name": "emby",
 			"platform": "linux",
@@ -2286,7 +2286,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/freshrss:latest",
+			"image": "lscr.io/linuxserver/freshrss:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/freshrss-icon.png",
 			"name": "freshrss",
 			"platform": "linux",
@@ -2322,7 +2322,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/gazee:latest",
+			"image": "lscr.io/linuxserver/gazee:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/gazee-logo.png",
 			"name": "gazee",
 			"platform": "linux",
@@ -2367,7 +2367,7 @@
 					"name": "TZ"
 				}
 			],
-			"image": "linuxserver/grocy:latest",
+			"image": "lscr.io/linuxserver/grocy:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/grocy_logo.png",
 			"name": "grocy",
 			"platform": "linux",
@@ -2427,7 +2427,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/htpcmanager:latest",
+			"image": "lscr.io/linuxserver/htpcmanager:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/htpcmanager-icon.png",
 			"name": "htpcmanager",
 			"platform": "linux",
@@ -2462,7 +2462,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/lidarr:latest",
+			"image": "lscr.io/linuxserver/lidarr:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/lidarr.png",
 			"name": "lidarr",
 			"platform": "linux",
@@ -2536,7 +2536,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/piwigo:latest",
+			"image": "lscr.io/linuxserver/piwigo:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/piwigo-icon.png",
 			"name": "piwigo",
 			"platform": "linux",
@@ -2577,7 +2577,7 @@
 					"set": "latest"
 				}
 			],
-			"image": "linuxserver/plex:latest",
+			"image": "lscr.io/linuxserver/plex:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/plex-icon.png",
 			"name": "plex",
 			"network": "host",
@@ -2625,7 +2625,7 @@
 					"set": ""
 				}
 			],
-			"image": "linuxserver/plexrequests:latest",
+			"image": "lscr.io/linuxserver/plexrequests:latest",
 			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
 			"name": "plexrequests",
 			"platform": "linux",
@@ -2662,7 +2662,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/projectsend:latest",
+			"image": "lscr.io/linuxserver/projectsend:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/projectsend-logo.png",
 			"name": "projectsend",
 			"platform": "linux",
@@ -2768,7 +2768,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/pydio:latest",
+			"image": "lscr.io/linuxserver/pydio:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/pydio-icon.png",
 			"name": "pydio",
 			"platform": "linux",
@@ -2806,7 +2806,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/qbittorrent:latest",
+			"image": "lscr.io/linuxserver/qbittorrent:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/qbittorrent-icon.png",
 			"name": "qbittorrent",
 			"platform": "linux",
@@ -2846,7 +2846,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/quassel-core:latest",
+			"image": "lscr.io/linuxserver/quassel-core:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/quassel-core-icon.png",
 			"name": "quassel-core",
 			"platform": "linux",
@@ -2881,7 +2881,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/radarr:latest",
+			"image": "lscr.io/linuxserver/radarr:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/radarr.png",
 			"name": "radarr",
 			"platform": "linux",
@@ -2949,7 +2949,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/resilio-sync:latest",
+			"image": "lscr.io/linuxserver/resilio-sync:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/resilio.png",
 			"name": "resilio-sync",
 			"platform": "linux",
@@ -2987,7 +2987,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/rutorrent:latest",
+			"image": "lscr.io/linuxserver/rutorrent:latest",
 			"logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/rutorrent-icon.png",
 			"name": "rutorrent",
 			"platform": "linux",
@@ -3027,7 +3027,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/sabnzbd:latest",
+			"image": "lscr.io/linuxserver/sabnzbd:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sabnzbd-icon.png",
 			"name": "sabnzbd",
 			"platform": "linux",
@@ -3094,7 +3094,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/sickchill:latest",
+			"image": "lscr.io/linuxserver/sickchill:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickchill-icon.png",
 			"name": "sickchill",
 			"platform": "linux",
@@ -3137,7 +3137,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/sickgear:latest",
+			"image": "lscr.io/linuxserver/sickgear:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sickgear-icon.png",
 			"name": "sickgear",
 			"platform": "linux",
@@ -3179,7 +3179,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/smokeping:latest",
+			"image": "lscr.io/linuxserver/smokeping:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/smokeping-icon.png",
 			"name": "smokeping",
 			"platform": "linux",
@@ -3218,7 +3218,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/sonarr:latest",
+			"image": "lscr.io/linuxserver/sonarr:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/sonarr-icon.png",
 			"name": "sonarr",
 			"platform": "linux",
@@ -3267,7 +3267,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/syncthing:latest",
+			"image": "lscr.io/linuxserver/syncthing:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/syncthing-icon.png",
 			"name": "syncthing",
 			"platform": "linux",
@@ -3307,7 +3307,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/tautulli:latest",
+			"image": "lscr.io/linuxserver/tautulli:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tautulli-icon.png",
 			"name": "tautulli",
 			"platform": "linux",
@@ -3345,7 +3345,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/thelounge:latest",
+			"image": "lscr.io/linuxserver/thelounge:latest",
 			"logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
 			"name": "thelounge",
 			"platform": "linux",
@@ -3402,7 +3402,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/transmission:latest",
+			"image": "lscr.io/linuxserver/transmission:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/transmission-icon.png",
 			"name": "transmission",
 			"platform": "linux",
@@ -3541,7 +3541,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/tvheadend:latest",
+			"image": "lscr.io/linuxserver/tvheadend:latest",
 			"logo": "http://i.imgur.com/zGSUAT4.png",
 			"name": "tvheadend",
 			"platform": "linux",
@@ -3585,7 +3585,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/ubooquity:latest",
+			"image": "lscr.io/linuxserver/ubooquity:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/ubooquity-icon.png",
 			"name": "ubooquity",
 			"platform": "linux",
@@ -3626,7 +3626,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/unifi-controller:latest",
+			"image": "lscr.io/linuxserver/unifi-controller:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/unifi-icon.png",
 			"name": "unifi-controller",
 			"platform": "linux",
@@ -3689,7 +3689,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/webgrabplus:latest",
+			"image": "lscr.io/linuxserver/webgrabplus:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/webgrabplus.png",
 			"name": "webgrabplus",
 			"platform": "linux",
@@ -3736,7 +3736,7 @@
 				"Tools"
 			],
 			"description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
-			"image": "linuxserver/wikijs:latest",
+			"image": "lscr.io/linuxserver/wikijs:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wikijs.png",
 			"name": "wikijs",
 			"platform": "linux",
@@ -3896,7 +3896,7 @@
 					"name": "PGID"
 				}
 			],
-			"image": "linuxserver/znc:latest",
+			"image": "lscr.io/linuxserver/znc:latest",
 			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/znc-icon.png",
 			"name": "znc",
 			"platform": "linux",
