@@ -748,7 +748,7 @@
       ]
     },
     {
-      "categories": ["DNS", "Tools"],
+      "categories": ["DNS"],
       "description": "Duck DNS is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.",
       "env": [
         {
@@ -882,7 +882,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Management"],
       "description": "Web File Browser which can be used as a middleware or standalone app.",
       "image": "80x86/filebrowser:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/filebrowser.png",
@@ -1162,47 +1162,6 @@
           "container": "/var/lib/mysql"
         }
       ]
-    },
-    {
-      "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
-      "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
-      "env": [
-        {
-          "default": "invoice.my.domain",
-          "label": "URL",
-          "name": "URL"
-        },
-        {
-          "label": "APP_KEY",
-          "name": "APP_KEY"
-        },
-        {
-          "label": "TZ",
-          "name": "TZ"
-        },
-        {
-          "label": "DATABASE_PASSWORD",
-          "name": "DATABASE_PASSWORD"
-        },
-        {
-          "label": "MYSQL_ROOT_PASSWORD",
-          "name": "MYSQL_ROOT_PASSWORD"
-        },
-        {
-          "label": "PORT",
-          "name": "PORT"
-        }
-      ],
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/invoice_ninja.png",
-      "name": "invoice_ninja",
-      "note": "The database user is invoice_ninja and the database is ninja_db. Please generate an app key following the documentation <a href='https://github.com/invoiceninja/dockerfiles'>here</a>. ",
-      "platform": "linux",
-      "repository": {
-        "stackfile": "Template/Stack/invoice-ninja.yml",
-        "url": "https://github.com/Qballjos/portainer_templates"
-      },
-      "title": "Invoice Ninja",
-      "type": 3
     },
     {
       "categories": ["Proxy Server"],
@@ -1537,35 +1496,6 @@
       ]
     },
     {
-      "categories": ["Other"],
-      "description": "McMyAdmin 2 is the leading web control panel and administration console for Minecraft servers.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/mcmyadmin2:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mcmyadmin-icon.png",
-      "name": "mcmyadmin2",
-      "platform": "linux",
-      "ports": ["8080:8080/tcp", "25565:25565/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "McMyAdmin 2",
-      "type": 1,
-      "volumes": [
-        {
-          "container": "/minecraft"
-        }
-      ]
-    },
-    {
       "categories": ["Downloaders", "Video"],
       "description": "Medusa, automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
       "env": [
@@ -1602,59 +1532,6 @@
           "container": "/downloads"
         }
       ]
-    },
-    {
-      "categories": ["Other"],
-      "description": "Server version of minetest, a free, open source alternative to minecraft.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/minetest:latest",
-      "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/minetest-icon.png",
-      "name": "minetest",
-      "platform": "linux",
-      "ports": ["30000:30000/udp"],
-      "restart_policy": "unless-stopped",
-      "title": "Minetest",
-      "type": 1,
-      "volumes": [
-        {
-          "container": "/config/.minetest"
-        }
-      ]
-    },
-    {
-      "categories": ["Video", "Other", "Tools"],
-      "description": "Minisatip is a multi-threaded satip server version 1.2 that runs under Linux and it was tested with DVB-S, DVB-S2, DVB-T, DVB-T2, DVB-C, DVB-C2, ATSC and ISDB-T cards. The application is designed to stream the requested data to multiple clients (even with one dvb card) at the same time while opening different pids.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/minisatip:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/minisatip-icon.png",
-      "name": "minisatip",
-      "platform": "linux",
-      "ports": ["8875:8875/tcp", "554:554/tcp", "1900:1900/udp"],
-      "restart_policy": "unless-stopped",
-      "title": "Minisatip",
-      "type": 1
     },
     {
       "categories": ["Media Server"],
@@ -1997,36 +1874,6 @@
         {
           "bind": "/portainer/Files/AppData/Config/Nginx-Proxy/letsencrypt",
           "container": "/etc/letsencrypt"
-        }
-      ]
-    },
-    {
-      "categories": ["Other"],
-      "description": "OScam is a softcam, software to be used to decrypt digital television channels on a settopbox (receiver), as an alternative for a conditional access module (CAM). The main features of OSCam are next to its softcam capabilities, that it is able to function as a cardserver.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/oscam:latest",
-      "logo": "http://i.imgur.com/8LadrLg.png",
-      "name": "oscam",
-      "platform": "linux",
-      "ports": ["8888:8888/tcp", "10000:10000/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "OScam",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/OScam",
-          "container": "/config"
         }
       ]
     },
@@ -2414,40 +2261,6 @@
       ]
     },
     {
-      "categories": ["Cloud", "Productivity", "Tools", "Other"],
-      "description": "ProjectSend is a self-hosted application that lets you upload files and assign them to specific clients that you create yourself! Secure, private and easy. No more depending on external services or e-mail to send those files.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/projectsend:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/projectsend-logo.png",
-      "name": "projectsend",
-      "platform": "linux",
-      "ports": ["80/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "ProjectSend",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/ProjectSend",
-          "container": "/data"
-        },
-        {
-          "bind": "/portainer/Files/AppData/Config/ProjectSend",
-          "container": "/config"
-        }
-      ]
-    },
-    {
       "categories": ["Email"],
       "description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
       "image": "shenxn/protonmail-bridge:latest",
@@ -2463,70 +2276,6 @@
         {
           "bind": "/portainer/Files/AppData/ProtonMail-Bridge",
           "container": "/root"
-        }
-      ]
-    },
-    {
-      "categories": ["Downloaders", "Video"],
-      "description": "Prowlarr is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required (we do it all).",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "ghcr.io/linuxserver/prowlarr:develop",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/prowlarr.png",
-      "name": "prowlarr",
-      "platform": "linux",
-      "ports": ["9696:9696/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "Prowlarr",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/Prowlarr",
-          "container": "/config"
-        }
-      ]
-    },
-    {
-      "categories": ["Cloud", "Other"],
-      "description": "Pydio (formerly AjaXplorer) is a mature open source software solution for file sharing and synchronization. With intuitive user interfaces (web / mobile / desktop), Pydio provides enterprise-grade features to gain back control and privacy of your data: user directory connectors, legacy filesystems drivers, comprehensive admin interface, and much more.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/pydio:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/pydio-icon.png",
-      "name": "pydio",
-      "platform": "linux",
-      "ports": ["443/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "Pydio",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/Pydio",
-          "container": "/config"
-        },
-        {
-          "bind": "/portainer/Files/AppData/Pydio",
-          "container": "/data"
         }
       ]
     },
@@ -2561,36 +2310,6 @@
         {
           "bind": "/portainer/Downloads",
           "container": "/downloads"
-        }
-      ]
-    },
-    {
-      "categories": ["Messenger"],
-      "description": "Quassel IRC is a modern, cross-platform, distributed IRC client, meaning that one (or multiple) client(s) can attach to and detach from a central core - much like the popular combination of screen and a text-based IRC client such as WeeChat, but graphical. Blowfish support and optional web-ui included.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/quassel-core:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/quassel-core-icon.png",
-      "name": "quassel-core",
-      "platform": "linux",
-      "ports": ["4242:4242/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "Quassel IRC",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/Quassel-core",
-          "container": "/config"
         }
       ]
     },
@@ -2633,25 +2352,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
-      "description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
-      "image": "amruthpillai/reactive-resume:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/reactiveresume.png",
-      "name": "reactive-resume",
-      "platform": "linux",
-      "ports": ["80/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "Reactive-Resume",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/ReactiveResume",
-          "container": "/usr/src/app"
-        }
-      ]
-    },
-    {
-      "categories": ["Backup", "Cloud", "Other", "Tools"],
+      "categories": ["Maintenance"],
       "description": "Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
       "env": [
         {
@@ -2815,44 +2516,6 @@
       ]
     },
     {
-      "categories": ["Downloaders", "Video"],
-      "description": "SickGear provides management of TV shows and/or Anime, it detects new episodes, links downloader apps, and more.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/sickgear:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sickgear-icon.png",
-      "name": "sickgear",
-      "platform": "linux",
-      "ports": ["8081:8081/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "SickGear",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/SickGear",
-          "container": "/config"
-        },
-        {
-          "bind": "/portainer/TV",
-          "container": "/tv"
-        },
-        {
-          "bind": "/portainer/Downloads",
-          "container": "/downloads"
-        }
-      ]
-    },
-    {
       "categories": ["Management"],
       "description": "SmokePing is a latency logging and graphing and alerting system. It consists of a daemon process which organizes the latency measurements and a CGI which presents the graphs.",
       "env": [
@@ -2948,7 +2611,7 @@
       ]
     },
     {
-      "categories": ["Backup", "Cloud", "Other", "Tools"],
+      "categories": ["Maintenance"],
       "description": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes.",
       "env": [
         {
@@ -3011,36 +2674,6 @@
         },
         {
           "bind": "/portainer/Files/AppData/Config/Tautulli",
-          "container": "/config"
-        }
-      ]
-    },
-    {
-      "categories": ["Messenger"],
-      "description": "A self-hosted web IRC client.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/thelounge:latest",
-      "logo": "https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png",
-      "name": "thelounge",
-      "platform": "linux",
-      "ports": ["9000:9000/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "TheLounge",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/TheLounge",
           "container": "/config"
         }
       ]
@@ -3183,39 +2816,6 @@
         {
           "bind": "/etc/localtime",
           "container": "/etc/localtime"
-        }
-      ]
-    },
-    {
-      "categories": ["Video", "Other"],
-      "description": "Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT\u0026gt;IP and HDHomeRun as input sources. Tvheadend offers the HTTP (VLC, MPlayer), HTSP (Kodi, Movian) and SAT\u0026gt;IP streaming. Multiple EPG sources are supported (over-the-air DVB and ATSC including OpenTV DVB extensions, XMLTV, PyXML).",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/tvheadend:latest",
-      "logo": "http://i.imgur.com/zGSUAT4.png",
-      "name": "tvheadend",
-      "platform": "linux",
-      "ports": ["9981:9981/tcp", "9982:9982/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "Tvheadend",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/TVHeadend",
-          "container": "/config"
-        },
-        {
-          "container": "/recordings"
         }
       ]
     },
@@ -3413,7 +3013,7 @@
       ]
     },
     {
-      "categories": ["Other", "Downloaders"],
+      "categories": ["Downloaders"],
       "description": "YoutubeDL-Material is a Material Design frontend for youtube-dl. It's coded using Angular 9 for the frontend, and Node.js on the backend.",
       "image": "tzahi12345/youtubedl-material:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ytdlm.png",
@@ -3447,7 +3047,7 @@
       ]
     },
     {
-      "categories": ["Messenger"],
+      "categories": ["Other"],
       "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
       "env": [
         {
