@@ -2967,6 +2967,7 @@
     },
 	{
     "type": 1,
+    "categories": ["Tools"],
     "title": "Audacity",
     "name": "Audacity",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/audacity/config</p>",
@@ -3007,6 +3008,7 @@
 },
 {
     "type": 1,
+    "categories": ["Library Server"],
     "title": "Booksonic-air",
     "name": "Booksonic-air",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/booksonic-air/config<br>mkdir -p /volume1/docker/booksonic-air/audiobooks<br>mkdir -p /volume1/docker/booksonic-air/podcasts<br>mkdir -p /volume1/docker/booksonic-air/othermedia</p>",
@@ -3068,6 +3070,7 @@
 },
 {
     "type": 1,
+    "categories": ["Code Server"],
     "title": "Cloud9",
     "name": "Cloud9",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/cloud9/config<br>mkdir -p /volume1/docker/cloud9/code<br></p>",
@@ -3137,6 +3140,7 @@
 },
 {
     "type": 1,
+    "categories": ["Notes Server"],
     "title": "Dokuwiki",
     "name": "Dokuwiki",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/dokuwiki/config</p>",
@@ -3181,6 +3185,7 @@
 },
 {
     "type": 1,
+    "categories": ["Gaming Server"],
     "title": "Emulatorjs",
     "name": "Emulatorjs",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/emulatorjs/config<br>mkdir -p /volume1/docker/emulatorjs/data</p>",
@@ -3233,6 +3238,7 @@
 },
 {
     "type": 1,
+    "categories": ["Tools"],
     "title": "Endlessh",
     "name": "Endlessh",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/endlessh/config</p>",
@@ -3303,6 +3309,7 @@
 },
 {
     "type": 1,
+    "categories": ["Media Server"],
     "title": "Ffmpeg",
     "name": "Ffmpeg",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/ffmpeg/config</p>",
@@ -3343,6 +3350,7 @@
 },
 {
     "type": 1,
+    "categories": ["FTP Server"],
     "title": "Filezilla",
     "name": "Filezilla",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/filezilla/config</p>",
@@ -3383,6 +3391,7 @@
 },
 {
     "type": 1,
+    "categories": ["Tools"],
     "title": "Healthchecks",
     "name": "Healthchecks",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/healthchecks/config</p>",
@@ -3507,6 +3516,7 @@
 },
 {
     "type": 1,
+    "categories": ["Smart Home"],
     "title": "Homeassistant",
     "name": "Homeassistant",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/homeassistant/config</p>",
@@ -3551,6 +3561,7 @@
 },
 {
     "type": 1,
+    "categories": ["Media Server"],
     "title": "Kanzi",
     "name": "Kanzi",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/kanzi/config</p>",
@@ -3603,6 +3614,7 @@
 },
 {
     "type": 1,
+    "categories": ["Proxy Server"],
     "title": "Ldap-auth",
     "name": "Ldap-auth",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
@@ -3644,6 +3656,7 @@
 },
 {
     "type": 1,
+    "categories": ["Family App Server"],
     "title": "Libreoffice",
     "name": "Libreoffice",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/libreoffice/config</p>",
@@ -3687,6 +3700,7 @@
 },
 {
     "type": 1,
+    "categories": ["Code Server"],
     "title": "Limnoria",
     "name": "Limnoria",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/limnoria/config</p>",
@@ -3727,6 +3741,7 @@
 },
 {
     "type": 1,
+    "categories": ["Tools"],
     "title": "Nano",
     "name": "Nano",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/nano/config</p>",
@@ -3811,6 +3826,7 @@
 },
 {
     "type": 1,
+    "categories": ["Tools"],
     "title": "Nano-wallet",
     "name": "Nano-wallet",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p>",
@@ -3825,6 +3841,7 @@
 },
 {
     "type": 1,
+    "categories": ["Tools"],
     "title": "Netbox",
     "name": "Netbox",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/netbox/config</p>",
@@ -3985,6 +4002,7 @@
 },
 {
     "type": 1,
+    "categories": ["Tools"],
     "title": "Openssh-server",
     "name": "Openssh-server",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/openssh-server/config</p>",
@@ -4079,6 +4097,7 @@
 },
 {
     "type": 1,
+    "categories": ["Family App Server"],
     "title": "Paperless-ng",
     "name": "Paperless-ng",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/paperless-ng/config<br>mkdir -p /volume1/docker/paperless-ng/data</p>",
@@ -4129,6 +4148,7 @@
 },
 {
     "type": 1,
+    "categories": ["Family App Server"],
     "title": "Papermerge",
     "name": "Papermerge",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/papermerge/config<br>mkdir -p /volume1/docker/papermerge/data</p>",
@@ -4179,6 +4199,7 @@
 },
 {
     "type": 1,
+    "categories": ["Chat Server"],
     "title": "Pidgin",
     "name": "Pidgin",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/pidgin/config</p>",
@@ -4219,6 +4240,7 @@
 },
 {
     "type": 1,
+    "categories": ["Tools"],
     "title": "Rdesktop",
     "name": "Rdesktop",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p><br>mkdir -p /volume1/docker/rdesktop/config</p>",
@@ -4264,6 +4286,7 @@
 },
 {
     "type": 1,
+    "categories": ["Tools"],
     "title": "Rsnapshot",
     "name": "Rsnapshot",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/rsnapshot/config<br>mkdir -p /volume1/docker/rsnapshot/.snapshots<br>mkdir -p /volume1/docker/rsnapshot/data</p>",
@@ -4312,6 +4335,7 @@
 },
 {
     "type": 1,
+    "categories": ["Family App Server"],
     "title": "Snapdrop",
     "name": "Snapdrop",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/snapdrop/config</p>",
@@ -4353,6 +4377,7 @@
 },
 {
     "type": 1,
+    "categories": ["Tools"],
     "title": "Webtop",
     "name": "Webtop",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/webtop/config<br></p>",
@@ -4404,7 +4429,8 @@
     }
     ],
     "restart_policy": "unless-stopped"
-},	{
+},	
+{
     "type": 1,
     "categories": ["VPN Server"],
     "title": "Wireguard",
