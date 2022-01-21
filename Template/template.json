@@ -1478,7 +1478,7 @@
       ]
     },
     {
-      "categories": ["Media Server"],
+      "categories": ["Music Server"],
       "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
       "image": "linuxserver/mstream:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mstream.png",
@@ -1546,7 +1546,7 @@
       ]
     },
     {
-      "categories": ["Media Server"],
+      "categories": ["Music Server"],
       "description": "MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
       "env": [
         {
@@ -2296,7 +2296,7 @@
       ]
     },
     {
-      "categories": ["Maintenance"],
+      "categories": ["Backup Server"],
       "description": "Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
       "env": [
         {
@@ -2422,7 +2422,7 @@
       ]
     },
     {
-      "categories": ["Management"],
+      "categories": ["Utilities"],
       "description": "SmokePing is a latency logging and graphing and alerting system. It consists of a daemon process which organizes the latency measurements and a CGI which presents the graphs.",
       "env": [
         {
@@ -2517,7 +2517,7 @@
       ]
     },
     {
-      "categories": ["Maintenance"],
+      "categories": ["Backup Server"],
       "description": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes.",
       "env": [
         {
