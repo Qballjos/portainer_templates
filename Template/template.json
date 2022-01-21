@@ -174,7 +174,7 @@
       ]
     },
     {
-      "categories": ["Music"],
+      "categories": ["Media Server"],
       "description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the MusicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
       "env": [
         {
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "categories": ["Books", "Other"],
+      "categories": ["Library Server"],
       "description": "Booksonic is a server and an app for streaming your audiobooks to any pc or android phone. Most of the functionality is also availiable on other platforms that have apps for subsonic.",
       "env": [
         {
@@ -315,7 +315,7 @@
       "type": 3
     },
     {
-      "categories": ["Cloud", "Books"],
+      "categories": ["Library Server"],
       "description": "COPS links to your Calibre library database and allows downloading and emailing of books directly from a web browser and provides a OPDS feed to connect to your devices.",
       "env": [
         {
@@ -349,7 +349,7 @@
       ]
     },
     {
-      "categories": ["Cloud", "Books"],
+      "categories": ["Library Server"],
       "description": "Calibre Web is a web app providing a clean interface for browsing, reading and downloading eBooks using an existing Calibre database.",
       "env": [
         {
@@ -533,7 +533,7 @@
       ]
     },
     {
-      "categories": ["Downloaders", "Video"],
+      "categories": ["Usenet Server],
       "description": "CouchPotato (CP) is an automatic NZB and torrent downloader. You can keep a \"movies I want\"-list and it will search for NZBs/torrents of these movies every X hours. Once a movie is found, it will send it to SABnzbd or download the torrent to a specified directory.",
       "env": [
         {
@@ -571,7 +571,7 @@
       ]
     },
     {
-      "categories": ["Music"],
+      "categories": ["Media Server"],
       "description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
       "env": [
         {
@@ -604,7 +604,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Dashboard Server"],
       "description": "Another application bookmark dashboard, with fun features.",
       "image": "rmountjoy/dashmachine:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/dashmachine_logo.png",
@@ -680,7 +680,7 @@
       ]
     },
     {
-      "categories": ["Downloaders"],
+      "categories": ["Torrent Server"],
       "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
       "env": [
         {
@@ -718,7 +718,7 @@
       ]
     },
     {
-      "categories": ["HomeAutomation", "Management"],
+      "categories": ["Smart Home"],
       "description": "Domoticz is a Home Automation System that lets you monitor and configure various devices like: Lights, Switches, various sensors/meters like Temperature, Rain, Wind, UV, Electra, Gas, Water and much more. Notifications/Alerts can be sent to any mobile device.",
       "env": [
         {
@@ -821,7 +821,7 @@
       ]
     },
     {
-      "categories": ["Video", "Music", "Photos"],
+      "categories": ["Media Server"],
       "description": "Emby organizes video, music, live TV, and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone emby Media Server.",
       "env": [
         {
@@ -863,7 +863,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Media Server"],
       "description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
       "image": "linuxserver/embystat:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/embystat.png",
@@ -935,7 +935,7 @@
       ]
     },
     {
-      "categories": ["Web", "Books", "Tools"],
+      "categories": ["Library Server"],
       "description": "A WebApp Comic Reader for your favorite digital comics. Reach and read your comic library from any web connected device with a modern web browser.",
       "env": [
         {
@@ -1055,7 +1055,7 @@
       ]
     },
     {
-      "categories": ["Music"],
+      "categories": ["Usenet Server"],
       "description": "Headphones is an automated music downloader for NZB and Torrent, written in Python. It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.",
       "env": [
         {
@@ -1093,7 +1093,7 @@
       ]
     },
     {
-      "categories": ["Tools", "Web", "Other"],
+      "categories": ["Dashboard Server"],
       "description": "Heimdall is a way to organise all those links to your most used web sites and web applications in a simple way.",
       "env": [
         {
@@ -1123,7 +1123,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Dashboard Server"],
       "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
       "image": "b4bz/homer:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/homer.png",
@@ -1205,7 +1205,7 @@
       "type": 3
     },
     {
-      "categories": ["Downloaders", "Tools"],
+      "categories": ["Proxy Server"],
       "description": "Jackett works as a proxy server it translates queries from apps like Sonarr etc into tracker-site-specific http queries and parses the html response sending results back to the requesting software.",
       "env": [
         {
@@ -1239,7 +1239,7 @@
       ]
     },
     {
-      "categories": ["Video", "Music", "Photos"],
+      "categories": ["Media Server"],
       "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
       "env": [
         {
@@ -1281,7 +1281,7 @@
       ]
     },
     {
-      "categories": ["Video"],
+      "categories": ["Media Server"],
       "description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
       "env": [
         {
@@ -1311,7 +1311,7 @@
       ]
     },
     {
-      "categories": ["Books"],
+      "categories": ["Library Server"],
       "description": "LazyLibrarian is a program to follow authors and grab metadata for all your digital reading needs.",
       "env": [
         {
@@ -1346,7 +1346,7 @@
       ]
     },
     {
-      "categories": ["Tools", "Web"],
+      "categories": ["Proxy Server"],
       "description": "This container sets up an Nginx webserver and reverse proxy with php support and a built-in letsencrypt client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.",
       "env": [
         {
@@ -1430,7 +1430,7 @@
       ]
     },
     {
-      "categories": ["Downloaders", "Music"],
+      "categories": ["Usenet Server"],
       "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
       "env": [
         {
@@ -1657,7 +1657,7 @@
       "type": 1
     },
     {
-      "categories": ["Other", "Music"],
+      "categories": ["Media Server"],
       "description": "Mstream is a personal music streaming server. You can use mStream to stream your music from your home computer to any device, anywhere. There are mobile apps available for both Android and iPhone.",
       "image": "linuxserver/mstream:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mstream.png",
@@ -1725,7 +1725,7 @@
       ]
     },
     {
-      "categories": ["Music", "Other", "Tools"],
+      "categories": ["Media Server"],
       "description": "MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.",
       "env": [
         {
@@ -1764,7 +1764,7 @@
       ]
     },
     {
-      "categories": ["Web", "Proxy", "Other", "Tools"],
+      "categories": ["Dashboard Server"],
       "description": "A lightweight portal to view, manage your HTPC apps without having to run anything more than a PHP enabled webserver. With Muximux you don't need to keep multiple tabs open, or bookmark the URL to all of your apps.",
       "env": [
         {
@@ -1794,7 +1794,7 @@
       ]
     },
     {
-      "categories": ["Downloaders", "Books"],
+      "categories": ["Usenet Server"],
       "description": "An automated Comic Book downloader (cbr/cbz) for use with SABnzbd, NZBGet and torrents.",
       "env": [
         {
@@ -1832,7 +1832,7 @@
       ]
     },
     {
-      "categories": ["Downloaders"],
+      "categories": ["Usenet Server"],
       "description": "NZBGet is a usenet downloader, written in C++ and designed with performance in mind to achieve maximum download speed by using very little system resources. It supports all platforms including Windows, Mac, Linux and works on all devices including PC, NAS, WLAN routers and media players.",
       "env": [
         {
@@ -1866,7 +1866,7 @@
       ]
     },
     {
-      "categories": ["Downloaders", "Other", "Tools"],
+      "categories": ["Proxy Server"],
       "description": "NZBHydra is a meta search for NZB indexers and the \"spiritual successor\" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers.",
       "env": [
         {
@@ -1942,7 +1942,7 @@
       "type": 3
     },
     {
-      "categories": ["Web", "Proxy"],
+      "categories": ["Proxy Server"],
       "description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
       "env": [
         {
@@ -1972,7 +1972,7 @@
       ]
     },
     {
-      "categories": ["Proxy", "Tools"],
+      "categories": ["Proxy Server"],
       "description": "Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.",
       "image": "jc21/nginx-proxy-manager",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/proxy_mgr.png",
@@ -2031,7 +2031,7 @@
       ]
     },
     {
-      "categories": ["Downloaders", "Other", "Video", "Tools"],
+      "categories": ["Media Server"],
       "description": "Ombi allows you to host your own Plex Request and user management system.",
       "env": [
         {
@@ -2096,7 +2096,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Dashboard Server"],
       "description": "Organizr allows you to setup Tabs that will be loaded all in one webpage. You can then work on your server with ease.",
       "env": [
         {
@@ -2126,7 +2126,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Media Server"],
       "description": "Overseerr is a free and open source software application for managing requests for your media library.",
       "env": [
         {
@@ -2206,7 +2206,7 @@
       "type": 3
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Media Server"],
       "description": "Petio is a third party companion app available to Plex server owners to allow their users to request, review and discover content.",
       "env": [
         {
@@ -2336,7 +2336,7 @@
       ]
     },
     {
-      "categories": ["Video", "Music", "Photos"],
+      "categories": ["Media Server"],
       "description": "Your favorite movies, TV, music, web shows, podcasts, and more, all streamed to your favorite screens.",
       "env": [
         {
@@ -2379,7 +2379,7 @@
       ]
     },
     {
-      "categories": ["Downloaders", "Other", "Video", "Tools"],
+      "categories": ["Media Server"],
       "description": "Simple automated way for users to request new content for Plex.",
       "env": [
         {
@@ -2531,7 +2531,7 @@
       ]
     },
     {
-      "categories": ["Downloaders"],
+      "categories": ["Torrent Server"],
       "description": "The qBittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
       "env": [
         {
@@ -2595,7 +2595,7 @@
       ]
     },
     {
-      "categories": ["Downloaders", "Video"],
+      "categories": ["Usenet Server"],
       "description": "Radarr - A fork of Sonarr to work with movies à la Couchpotato.",
       "env": [
         {
@@ -2687,7 +2687,7 @@
       ]
     },
     {
-      "categories": ["Downloaders"],
+      "categories": ["Torrent Server"],
       "description": "Popular torrent client with a webui for ease of use.",
       "env": [
         {
@@ -2721,7 +2721,7 @@
       ]
     },
     {
-      "categories": ["Downloaders"],
+      "categories": ["Usenet Server"],
       "description": "SABnzbd makes Usenet as simple and streamlined as possible by automating everything we can. All you have to do is add an .nzb. SABnzbd takes over from there, where it will be automatically downloaded, verified, repaired, extracted and filed away with zero human interaction.",
       "env": [
         {
@@ -2906,7 +2906,7 @@
       ]
     },
     {
-      "categories": ["Downloaders", "Video"],
+      "categories": ["Usenet Server"],
       "description": "Sonarr (formerly NZBdrone) is a PVR for usenet and bittorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
       "env": [
         {
@@ -2981,7 +2981,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Media Server"],
       "description": "Tautulli is a 3rd party application that you can run along side your Plex Media Server to monitor activity and track various statistics. Most importantly, these statistics include what has been watched, who watched it, when and where they watched it, and how it was watched. All statistics are presented in a nice and clean interface with many tables and graphs, which makes it easy to brag about your server to everyone else.",
       "env": [
         {
@@ -3094,7 +3094,7 @@
       ]
     },
     {
-      "categories": ["Downloaders"],
+      "categories": ["Torrent Server"],
       "description": "Transmission is designed for easy, powerful use. Transmission has the features you want from a BitTorrent client: encryption, a web interface, peer exchange, magnet links, DHT, µTP, UPnP and NAT-PMP port forwarding, webseed support, watch directories, tracker editing, global and per-torrent speed limits, and more.",
       "env": [
         {
@@ -3131,7 +3131,7 @@
       ]
     },
     {
-      "categories": ["Other", "VPN", "Tools"],
+      "categories": ["Torrent Server"],
       "description": "This container contains OpenVPN and Transmission with a configuration where Transmission is running only when OpenVPN has an active tunnel. It bundles configuration files for many popular VPN providers to make the setup easier.",
       "env": [
         {
@@ -3220,7 +3220,7 @@
       ]
     },
     {
-      "categories": ["Cloud", "Books"],
+      "categories": ["Library Server"],
       "description": "Ubooquity is a free, lightweight and easy-to-use home server for your comics and ebooks. Use it to access your files from anywhere, with a tablet, an e-reader, a phone or a computer.",
       "env": [
         {
