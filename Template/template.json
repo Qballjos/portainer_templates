@@ -1,57 +1,9 @@
 {
   "version": "2",
   "templates": [
-    {
-      "categories": ["Tools"],
-      "description": "AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it’ll cover ALL your home devices, and you don’t need any client-side software for that. With the rise of Internet-Of-Things and connected devices, it becomes more and more important to be able to control your whole network.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        },
-        {
-          "label": "CONTEXT_PATH",
-          "name": "CONTEXT_PATH",
-          "set": "adguard home"
-        }
-      ],
-      "image": "adguard/adguardhome:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/adguard.png",
-      "name": "adguard",
-      "platform": "linux",
-      "ports": [
-        "53:53/tcp",
-        "53:53/udp",
-        "67:67/udp",
-        "68:68/tcp",
-        "68:68/udp",
-        "80:80/tcp",
-        "443:443/tcp",
-        "853:853/tcp",
-        "3000:3000/tcp"
-      ],
-      "restart_policy": "unless-stopped",
-      "title": "Adguard",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Adguard/Workdir",
-          "container": "/opt/adguardhome/work"
-        },
-        {
-          "bind": "/portainer/Files/AppData/Adguard/Conf",
-          "container": "/opt/adguardhome/conf"
-        }
-      ]
-    },
  		{
 			"type": 1,
+			"categories": ["Utilities"],
 			"title": "Firefox",
 			"name": "Firefox",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/firefox/config</p>",
@@ -92,6 +44,7 @@
 		},   
 	  		{
 			"type": 1,
+			"categories": ["Tools"],
 			"title": "Foldingathome",
 			"name": "Foldingathome",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/foldingathome/config</p>",
@@ -133,7 +86,7 @@
 		},
     
     {
-      "categories": ["Media Server"],
+      "categories": ["Music Server"],
       "description": "Airsonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
       "env": [
         {
@@ -256,7 +209,7 @@
       ]
     },
     {
-      "categories": ["Media Server"],
+      "categories": ["Music Server"],
       "description": "The purpose of beets is to get your music collection right once and for all. It catalogs your collection, automatically improving its metadata as it goes using the MusicBrainz database. Then it provides a bouquet of tools for manipulating and accessing your music.",
       "env": [
         {
@@ -653,7 +606,7 @@
       ]
     },
     {
-      "categories": ["Media Server"],
+      "categories": ["Music Server"],
       "description": "DAAP (iTunes) media server with support for AirPlay devices, Apple Remote (and compatibles), MPD and internet radio.",
       "env": [
         {
@@ -841,7 +794,7 @@
       "type": 1
     },
     {
-      "categories": ["Maintenance"],
+      "categories": ["Backup Server"],
       "description": "Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
       "env": [
         {
@@ -941,7 +894,7 @@
       ]
     },
     {
-      "categories": ["Management"],
+      "categories": ["Utilities"],
       "description": "Web File Browser which can be used as a middleware or standalone app.",
       "image": "80x86/filebrowser:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/filebrowser.png",
@@ -1031,7 +984,7 @@
       ]
     },
     {
-      "categories": ["Tools"],
+      "categories": ["Utilities"],
       "description": "A clientless remote desktop gateway.",
       "image": "oznu/guacamole:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/guacamole.png",
@@ -4496,7 +4449,7 @@
     "restart_policy": "unless-stopped"
 },
 {
-    "categories": ["Tools"],
+    "categories": ["Utilities"],
     "type": 1,
     "title": "Wireshark",
     "name": "Wireshark",
