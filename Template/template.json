@@ -90,6 +90,47 @@
 			],
 			"restart_policy": "unless-stopped"
 		},   
+	  		{
+			"type": 1,
+			"title": "Foldingathome",
+			"name": "Foldingathome",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/foldingathome/config</p>",
+			"description": "[Folding@home](https://foldingathome.org/) is a distributed computing project for simulating protein dynamics, including the process of protein folding and the movements of proteins implicated in a variety of diseases. It brings together citizen scientists who volunteer to run simulations of protein dynamics on their personal computers. Insights from this data are helping scientists to better understand biology, and providing new opportunities for developing therapeutics.",
+			"platform": "linux",
+			"logo": "https://foldingathome.org/wp-content/uploads/2016/09/folding-at-home-logo.png",
+			"image": "linuxserver/foldingathome:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for GroupID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for UserID"
+				},
+				{
+					"name": "TZ",
+					"label": "TZ",
+					"default": "Europe/Amsterdam",
+					"description": "Specify a timezone to use for example Europe/Amsterdam"
+				}
+			],
+			"ports": [
+				"7396:7396/tcp",
+				"36330:36330/tcp"
+			],
+			"volumes": [
+			{
+				"container": "/config",
+				"bind": "/volume1/docker/foldingathome/config"
+			}
+			],
+			"restart_policy": "unless-stopped"
+		},
     
     {
       "categories": ["Media Server"],
