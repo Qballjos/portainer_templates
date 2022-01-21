@@ -107,7 +107,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools", "Authentication"],
+      "categories": ["Authentication"],
       "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
       "env": [
         {
@@ -657,29 +657,6 @@
       ]
     },
     {
-      "categories": ["Other", "Music"],
-      "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
-      "image": "registry.gitlab.com/bockiii/deemix-docker",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/deemix.png",
-      "name": "deemix",
-      "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details.",
-      "platform": "linux",
-      "ports": ["6595:6595/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "DeeMix",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/DeeMix",
-          "container": "/config"
-        },
-        {
-          "bind": "/portainer/Downloads",
-          "container": "/downloads"
-        }
-      ]
-    },
-    {
       "categories": ["Torrent Server"],
       "description": "Deluge is a lightweight, Free Software, cross-platform BitTorrent client providing: Full Encryption, WebUI, Plugin System, Much more...",
       "env": [
@@ -782,7 +759,7 @@
       "type": 1
     },
     {
-      "categories": ["Backup", "Cloud", "Other", "Productivity", "Tools"],
+      "categories": ["Maintenance"],
       "description": "Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
       "env": [
         {
@@ -972,7 +949,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Tools"],
       "description": "A clientless remote desktop gateway.",
       "image": "oznu/guacamole:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/guacamole.png",
@@ -1020,36 +997,6 @@
       "volumes": [
         {
           "bind": "/portainer/Files/AppData/Config/Grocy",
-          "container": "/config"
-        }
-      ]
-    },
-    {
-      "categories": ["Video", "Music", "Other"],
-      "description": "HTPC Manager, a front end for many htpc related applications. Uses the Hellowlol HTPC Manager fork.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/htpcmanager:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/htpcmanager-icon.png",
-      "name": "htpcmanager",
-      "platform": "linux",
-      "ports": ["8085:8085/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "HTPC Manager",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/HTPCmanager",
           "container": "/config"
         }
       ]
@@ -1146,7 +1093,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Tools"],
       "description": "Create agents that monitor and act on your behalf.",
       "image": "huginn/huginn:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/huginn.png",
@@ -1371,7 +1318,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Tools"],
       "description": "A Free and Open Source Speedtest for HTML5 and more.",
       "image": "linuxserver/librespeed:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/speedtest.png",
@@ -1461,7 +1408,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Tools"],
       "description": "An Enhanced drop in replacement for Mysql.",
       "env": [
         {
@@ -1492,44 +1439,6 @@
         {
           "bind": "/portainer/Files/AppData/Config/Mariadb",
           "container": "/config"
-        }
-      ]
-    },
-    {
-      "categories": ["Downloaders", "Video"],
-      "description": "Medusa, automatic Video Library Manager for TV Shows. It watches for new episodes of your favorite shows, and when they are posted it does its magic.",
-      "env": [
-        {
-          "default": "1000",
-          "label": "PUID",
-          "name": "PUID"
-        },
-        {
-          "default": "100",
-          "label": "PGID",
-          "name": "PGID"
-        }
-      ],
-      "image": "linuxserver/medusa:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/medusa-icon.png",
-      "name": "medusa",
-      "platform": "linux",
-      "ports": ["8081:8081/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "Medusa",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/Medusa",
-          "container": "/config"
-        },
-        {
-          "bind": "/portainer/TV",
-          "container": "/tv"
-        },
-        {
-          "bind": "/portainer/Downloads",
-          "container": "/downloads"
         }
       ]
     },
