@@ -212,7 +212,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Password Server"],
       "description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
       "image": "vaultwarden/server:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/bitwarden.png",
@@ -274,7 +274,7 @@
       ]
     },
     {
-      "categories": ["Wiki"],
+      "categories": ["Notes Server"],
       "description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
       "env": [
         {
@@ -384,7 +384,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools", "Photo"],
+      "categories": ["Photos"],
       "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version.",
       "env": [
         {
@@ -438,7 +438,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Family App Server"],
       "description": "ave recipes in seconds with plain text formatting and create beatiful recipe pages with automated ease.",
       "image": "gregyankovoy/chowdown:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/chowdown.png",
@@ -456,7 +456,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Code Server"],
       "description": "Code-server is VS Code running on a remote server, accessible through the browser.",
       "env": [
         {
@@ -503,7 +503,7 @@
       ]
     },
     {
-      "categories": ["Productivity"],
+      "categories": ["Code Server"],
       "description": "Codiad is a web-based IDE framework with a small footprint and minimal requirements.",
       "env": [
         {
@@ -622,7 +622,7 @@
       ]
     },
     {
-      "categories": ["FTP", "Other", "Tools"],
+      "categories": ["FTP Server"],
       "description": "davos is an FTP automation tool that periodically scans given host locations for new files. It can be configured for various purposes, including listening for specific files to appear in the host location, ready for it to download and then move, if required. It also supports completion notifications as well as downstream API calls, to further the workflow.",
       "env": [
         {
@@ -905,7 +905,7 @@
       ]
     },
     {
-      "categories": ["Other"],
+      "categories": ["Smart Home"],
       "description": "A free, self-hostable rss aggregator.",
       "env": [
         {
@@ -991,7 +991,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools", "Finance"],
+      "categories": ["Family App Server"],
       "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utility.",
       "env": [
         {
@@ -1468,7 +1468,7 @@
       ]
     },
     {
-      "categories": ["Cloud", "Web", "Management", "Photos"],
+      "categories": ["Photos"],
       "description": "Lychee is a free photo-management tool, which runs on your server or web-space. Installing is a matter of seconds. Upload, manage and share photos like from a native application. Lychee comes with everything you need and all your photos are stored securely.",
       "env": [
         {
@@ -1679,7 +1679,7 @@
       ]
     },
     {
-      "categories": ["Other", "Voice", "Chat"],
+      "categories": ["Chat Server"],
       "description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
       "env": [
         {
@@ -1900,7 +1900,7 @@
       ]
     },
     {
-      "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
+      "categories": ["Family App Server"],
       "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
       "env": [
         {
@@ -2061,7 +2061,7 @@
       ]
     },
     {
-      "categories": ["Other"],
+      "categories": ["VPN Server"],
       "description": "OpenVPN Access Server is a full featured secure network tunneling VPN software solution that integrates OpenVPN server capabilities, enterprise management capabilities, simplified OpenVPN Connect UI, and OpenVPN Client software packages that accommodate Windows, MAC, Linux, Android, and iOS environments.",
       "env": [
         {
@@ -2156,7 +2156,7 @@
       ]
     },
     {
-      "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
+      "categories": ["Family App Server"],
       "description": "ownCloud is a self-hosted file sync and share server. It provides access to your data through a web interface, sync clients or WebDAV while providing a platform to view, sync and share across devices easily—all under your control. ownCloud’s open architecture is extensible via a simple but powerful API for applications and plugins and it works with any storage.",
       "env": [
         {
@@ -2448,7 +2448,7 @@
       ]
     },
     {
-      "categories": ["Email", "Productivity", "Tools", "Other"],
+      "categories": ["Email"],
       "description": "This is an unofficial Docker container of the ProtonMail Bridge. Some of the scripts are based on Hendrik Meyer's work.",
       "image": "shenxn/protonmail-bridge:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/protonmail-bridge.png",
@@ -2759,7 +2759,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Family App Server"],
       "description": "Shiori is a simple bookmarks manager written in Go language. Intended as a simple clone of Pocket. You can use it as command line application or as web application.",
       "image": "radhifadlillah/shiori:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/shiori-icon.png",
@@ -2887,7 +2887,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Code Server"],
       "description": "Self-hosted snippet manager.",
       "image": "snowmean/snibox-sqlite:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/snibox.png",
@@ -3046,7 +3046,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Notes Server"],
       "description": "A unique, non-linear notebook wiki.",
       "image": "mazzolino/tiddlywiki:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/tiddlywiki.png",
@@ -3064,7 +3064,7 @@
       ]
     },
     {
-      "categories": ["Other"],
+      "categories": ["Smart Home"],
       "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
       "env": [
         {
@@ -3260,7 +3260,7 @@
       ]
     },
     {
-      "categories": ["Management", "Tools"],
+      "categories": ["Smart Home"],
       "description": "The Unifi-controller Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
       "env": [
         {
@@ -3299,7 +3299,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools", "Maintenance"],
+      "categories": ["Maintenance"],
       "description": "With watchtower you can update the running version of your containerized app simply by pushing a new image to the Docker Hub or your own image registry. Watchtower will pull down your new image, gracefully shut down your existing container and restart it with the same options that were used when it was deployed initially.",
       "image": "containrrr/watchtower:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/watchtower.png",
@@ -3351,7 +3351,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Family App Server"],
       "description": "Self-hosted, ad-free, privacy-respecting Google metasearch engine.",
       "image": "benbusby/whoogle-search:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/whoogle.png",
@@ -3369,7 +3369,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Notes Server"],
       "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
       "image": "linuxserver/wikijs:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/wikijs.png",
@@ -3391,7 +3391,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Dashboard Server"],
       "description": "A web interface for managing docker containers with an emphasis on templating to provide 1 click deployments. Think of it like a decentralized app store for servers that anyone can make packages for.",
       "image": "selfhostedpro/yacht:latest",
       "logo": "https://raw.githubusercontent.com/SelfhostedPro/Yacht/master/readme_media/Yacht_logo_1_dark.png",
