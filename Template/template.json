@@ -143,7 +143,42 @@
 				}
 			],
 			"restart_policy": "unless-stopped"
-		},  
+		},
+	      {
+      "categories": ["Dashboard Server"],
+      "description": "MagicMirror2 Test.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        }
+      ],
+      "image": "karsten13/magicmirror:latest",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ubooquity-icon.png",
+      "name": "MagicMirror2",
+      "platform": "linux",
+      "ports": ["8080:8080/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "MagicMirror2",
+      "type": 1,
+      "volumes": [
+        {
+          "container": "/opt/magic_mirror/config"
+        },
+        {
+          "container": "/opt/magic_mirror/modules"
+        },
+        {
+          "container": "/opt/magic_mirror/modules"
+        }
+      ]
+    },
 	      {
       "categories": ["Library Server"],
       "description": "Kavita Test.",
