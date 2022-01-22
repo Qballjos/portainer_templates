@@ -58,7 +58,82 @@
 			"title": "draw.io",
 			"type": 1
 		},
-	  
+	     {
+      "categories": ["Dashboard Server"],
+      "description": "Helps you organize your self-hosted services by making them accessible from a single place.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "1000",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "label": "PORT",
+          "name": "PORT"
+        }
+      ],
+      "logo": "https://dashy.to/img/dashy.png",
+      "name": "Dashy",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "Template/Stack/dashy.yml",
+        "url": "https://github.com/xneo1/portainer_templates"
+      },
+      "title": "Dashy",
+      "type": 3
+    },  
+    {
+      "categories": ["Music Server"],
+      "description": "Navidrome is an open source web-based music collection server and streamer. It gives you freedom to listen to your music collection from any browser or mobile device. It's like your personal Spotify!",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "1000",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "label": "PORT",
+          "name": "PORT"
+        }
+      ],
+      "logo": "https://github.com/navidrome/navidrome/raw/master/resources/logo-192x192.png",
+      "name": "Navidrome",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "Template/Stack/navidrome.yml",
+        "url": "https://github.com/xneo1/portainer_templates"
+      },
+      "title": "Navidrome",
+      "type": 3
+    },    
+    {
+      "categories": ["Dashboard Server"],
+      "description": "Flame is self-hosted startpage for your server. Its design is inspired (heavily) by SUI. Flame is very easy to setup and use. With built-in editors, it allows you to setup your very own application hub in no time - no file editing necessary.",
+      "image": "pawelmalak/flame",
+      "logo": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Images/flame.png",
+      "name": "flame-dashboard",
+      "platform": "linux",
+      "ports": ["5005:5005/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "Flame-Dashboard",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/Files/AppData/Config/flame-dashboard",
+          "container": "/app/data"
+        }
+      ]
+    },	  
 	  		{
 			"type": 1,
 			"categories": ["Tools"],
