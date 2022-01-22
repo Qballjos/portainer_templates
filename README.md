@@ -56,10 +56,10 @@ In the Browser Setup:
   Do initial Portainer registration 
 
   Configure Endpoint Setting so that the IP is set to that of the Host (basically, set the IP to the same thing you used to connect) 
-    * (Click Endpoints, then click the name of your VM/Server, and adjust the IP in the noted space)
+    (Click Endpoints, then click the name of your VM/Server, and adjust the IP in the noted space)
 
   Adjust your app template list to: https://raw.githubusercontent.com/mycroftwilde/portainer_templates/master/Template/template.json
-    * (Click Settings, then adjust the App Template URL, and Apply the Changes.) 
+    (Click Settings, then adjust the App Template URL, and Apply the Changes.) 
 
 
 
