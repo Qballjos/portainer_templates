@@ -42,6 +42,23 @@
 			],
 			"restart_policy": "unless-stopped"
 		},   
+	  {
+			"categories": [
+				"Utilities"
+			],
+			"description": "draw.io (formerly Diagramly) is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more. draw.io can import .vsdx, Gliffy™ and Lucidchart™ files.",
+			"image": "jgraph/drawio:latest",
+			"logo": "https://raw.githubusercontent.com/qwerty00007/portainer_templates/master/Images/draw.io.png",
+			"name": "draw.io",
+			"platform": "linux",
+			"ports": [
+				"8080:8080/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "draw.io",
+			"type": 1
+		},
+	  
 	  		{
 			"type": 1,
 			"categories": ["Tools"],
