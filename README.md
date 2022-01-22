@@ -19,11 +19,12 @@ MagicMirror2 (added)
 
 
 
-Commands to prep your system:
+* Commands to prep your system:
 
 Update the system:
 
-sudo apt update 
+sudo apt update
+
 sudo apt upgrade
 
 If you want to Install Glances: 
@@ -33,8 +34,11 @@ sudo glances -w
 Install and test Docker:
 
 sudo apt install docker.io
+
 sudo systemctl enable docker
+
 sudo systemctl start docker
+
 sudo systemctl status docker
 
 Setup Portainer: 
@@ -45,7 +49,7 @@ sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -
 
 
 
-In the Browser Setup: 
+* In the Browser Setup: 
 
 You Should now be able to navigate to the IP of the VM or Ubuntu Machine, going to the portainer port 9000  http://IPADress:9000
 
