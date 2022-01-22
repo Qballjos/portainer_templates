@@ -57,7 +57,7 @@
             "name": "PGID"
           }
         ],
-        "image": "cr.hotio.dev/hotio/readarr",
+        "image": "hotio/readarr:nightly",
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/couchpotato-icon.png",
         "name": "Readerr",
         "platform": "linux",
