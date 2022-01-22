@@ -58,7 +58,7 @@
           }
         ],
         "image": "hotio/readarr:nightly",
-        "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/couchpotato-icon.png",
+        "logo": "https://raw.githubusercontent.com/Readarr/Readarr/develop/Logo/128.png",
         "name": "Readerr",
         "platform": "linux",
         "ports": ["8787:8787/tcp"],
