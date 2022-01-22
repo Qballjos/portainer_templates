@@ -42,6 +42,79 @@
 			],
 			"restart_policy": "unless-stopped"
 		},
+	  
+	  	{
+			"type": 1,
+			"categories": ["Code Server"],
+			"title": "Snipe-it",
+			"name": "Snipe-it",
+			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/snipe-it/config</p>",
+			"description": "Snipe-it makes asset management easy. It was built by people solving real-world IT and asset management problems, and a solid UX has always been a top priority. Straightforward design and bulk actions mean getting things done faster.",
+			"platform": "linux",
+			"logo": "https://s3-us-west-2.amazonaws.com/linuxserver-docs/images/snipe-it-logo500x500.png",
+			"image": "linuxserver/snipe-it:latest",
+			"env": [
+				{
+					"name": "PUID",
+					"label": "PUID",
+					"default": "1024",
+					"description": "for GroupID"
+				},
+				{
+					"name": "PGID",
+					"label": "PGID",
+					"default": "100",
+					"description": "for UserID"
+				},
+				{
+					"name": "APP_URL",
+					"label": "APP_URL",
+					"default": "<hostname or ip>",
+					"description": "Hostname or IP and port if applicable IE <ip or hostname>:8080"
+				},
+				{
+					"name": "MYSQL_PORT_3306_TCP_ADDR",
+					"label": "MYSQL_PORT_3306_TCP_ADDR",
+					"default": "<mysql host>",
+					"description": "Mysql hostname or IP to use"
+				},
+				{
+					"name": "MYSQL_PORT_3306_TCP_PORT",
+					"label": "MYSQL_PORT_3306_TCP_PORT",
+					"default": "<mysql port>",
+					"description": "Mysql port to use"
+				},
+				{
+					"name": "MYSQL_DATABASE",
+					"label": "MYSQL_DATABASE",
+					"default": "<mysql database>",
+					"description": "Mysql database to use"
+				},
+				{
+					"name": "MYSQL_USER",
+					"label": "MYSQL_USER",
+					"default": "<mysql pass>",
+					"description": "Mysql user to use"
+				},
+				{
+					"name": "MYSQL_PASSWORD",
+					"label": "MYSQL_PASSWORD",
+					"default": "changeme",
+					"description": "Mysql password to use"
+				}
+			],
+			"ports": [
+				"8080:80/tcp"
+			],
+			"volumes": [
+				{
+					"container": "/config",
+					"bind": "/volume1/docker/snipe-it/config"
+				}
+			],
+			"restart_policy": "unless-stopped"
+		},
+	  
 	      {
       "categories": ["Utilities"],
       "description": "It is a self-hosted monitoring tool like Uptime Robot",
