@@ -1,5 +1,17 @@
 # ** Working on Templates after Forking from Qballjos **
 
+Added more items from various other portainer templates, after searching the forks from Qbalijos
+
+I would also like to eventually add the following container templates in the future 
+
+Vikunja
+Rocket.Chat
+Kavita 
+Koomga
+MagicMirror2
+
+
+
 Below is from Fork
 
 # Portainer V2 Templates for Selfhosted Projects/Homelabs
