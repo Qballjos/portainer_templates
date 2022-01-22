@@ -146,7 +146,7 @@
 		},  
 	  	{
 			"type": 1,
-			"categories": ["Code Server"],
+			"categories": ["Utilities"],
 			"title": "Snipe-it",
 			"name": "Snipe-it",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/snipe-it/config</p>",
