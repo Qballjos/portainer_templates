@@ -16,6 +16,7 @@ I would also like to eventually add the following container templates in the fut
 
  - Readarr (added)
 
+  Further to the above, Catagory Placement work will be on-going...
 
 # New Ubuntu Server Setup Instructions - Prep
 
