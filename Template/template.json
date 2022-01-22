@@ -4445,7 +4445,7 @@
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/paperless-ng/config<br>mkdir -p /volume1/docker/paperless-ng/data</p>",
     "description": "[Paperless-ng](https://github.com/jonaswinkler/paperless-ng) is an application by Daniel Quinn and contributors that indexes your scanned documents and allows you to easily search for documents and store metadata alongside your documents.'",
     "platform": "linux",
-    "logo": "https://github.com/jonaswinkler/paperless-ng/blob/master/resources/logo/web/png/White%20logo%20-%20no%20background.png?raw=true",
+    "logo": "https://raw.githubusercontent.com/jonaswinkler/paperless-ng/master/resources/logo/web/png/Color%20logo%20with%20background.png",
     "image": "linuxserver/paperless-ng:latest",
     "env": [
         {
@@ -4496,7 +4496,7 @@
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/papermerge/config<br>mkdir -p /volume1/docker/papermerge/data</p>",
     "description": "[Papermerge](https://www.papermerge.com/) is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. Instead of having piles of paper documents all over your desk, office or drawers - you can quickly scan them and configure your scanner to directly upload to Papermerge DMS.'",
     "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/jonaswinkler/paperless-ng/master/resources/logo/web/png/Color%20logo%20with%20background.png",
+    "logo": "https://raw.githubusercontent.com/ciur/papermerge/master/artwork/logo.png",
     "image": "linuxserver/papermerge:latest",
     "env": [
         {
