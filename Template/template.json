@@ -41,7 +41,71 @@
 			}
 			],
 			"restart_policy": "unless-stopped"
-		},   
+		},
+	      {
+      "categories": ["Utilities"],
+      "description": "It is a self-hosted monitoring tool like Uptime Robot",
+      "image": "louislam/uptime-kuma:latest",
+      "logo": "https://images.opencollective.com/uptime-kuma/29c5113/logo/256.png",
+      "name": "uptime-kuma",
+      "platform": "linux",
+      "ports": ["3001:3001/tcp"],
+      "restart_policy": "always",
+      "title": "Uptime Kuma",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/Files/AppData/Config/UptimeKuma",
+          "container": "/app/data"
+        }
+      ]
+    },
+	  {
+			"type": 1,
+			"title": "Grafana",
+			"description": "Metrics Graphing Tool",
+			"logo": "https://github.com/grafana/grafana/blob/master/docs/logo-swirl.svg",
+			"platform": "linux",
+			"restart_policy": "unless-stopped",
+			"categories": [
+				"Dashboard Server"
+			],
+			"image": "grafana/grafana:latest",
+			"ports": [
+				"3000/tcp"
+			],
+			"network": "bridge",
+			"volumes": [
+				{
+					"container": "/etc/grafana/grafana.ini"
+				},
+				{
+					"container": "/var/lib/grafana"
+				},
+				{
+					"container": "/var/log/grafana"
+				}
+			]
+		},
+	  
+	     {
+      "categories": ["Smart Home"],
+      "description": "Node-RED provides a browser-based flow editor that makes it easy to wire together flows using the wide range of nodes in the palette.",
+      "image": "nodered/node-red",
+      "logo": "https://raw.githubusercontent.com/xneo1/portainer_templates/master/Images/node-red-icon.svg",
+      "name": "nodered",
+      "platform": "linux",
+      "ports": ["1880:1880/tcp"],
+      "restart_policy": "always",
+      "title": "Nodered",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/Files/AppData/Config/Nodered",
+          "container": "/data"
+        }
+      ]
+    }, 
 	  {
 			"categories": [
 				"Utilities"
