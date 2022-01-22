@@ -84,6 +84,7 @@ In the Browser Setup:
 
 
 
+** From the Forked Authors Notes ** 
 
 ## Previous Authors
 * **NASHosted** - *Current Work* - [NASHOSTED](https://github.com/nashosted)
@@ -94,12 +95,9 @@ In the Browser Setup:
 
 See also the list of [contributors](https://github.com/Qballjos/portainer_templates/graphs/contributors) who participated in this project.
 
-## Acknowledgments, and other Templates that items were discovered/pulled from will be added when time allows. A various list of other templates have been noted below where some items have been sourced.
+## My Notes - other Templates that items were discovered/pulled from will be added when time allows. A various list of other templates have been noted below where some items have been sourced. #
 
 [technorabilia](https://raw.githubusercontent.com/technorabilia/portainer-templates/main/lsio/templates/templates-2.0.json)
 
 [mikestraney](https://raw.githubusercontent.com/mikestraney/portainer-templates/master/templates.json)
 
-* LinuxServer.io for the old Template
-* Inspiration being too lazy to create each container template manualy
-* The team behind Portainer for there awesome product and support in the community
