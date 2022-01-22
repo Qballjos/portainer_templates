@@ -52,7 +52,7 @@ Commands to prep your system:
 
 
 
-Further Ubuntu Setup items to be Added at a Later Time: 
+** Further Ubuntu Setup items to be Added at a Later Time: **
 
    1. Adding a public SSH Key to your Server 
 
