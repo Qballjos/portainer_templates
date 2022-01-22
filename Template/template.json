@@ -196,7 +196,7 @@
         }
       ],
       "image": "kizaing/kavita:latest",
-      "logo": "https://raw.githubusercontent.com/Kareadita/Kavita/develop/Logo/kavita.svg",
+      "logo": "https://github.com/Kareadita/Kavita/raw/main/UI/Web/src/assets/images/logo.png",
       "name": "Kavita",
       "platform": "linux",
       "ports": ["5000:5000/tcp"],
