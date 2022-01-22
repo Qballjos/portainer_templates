@@ -160,7 +160,7 @@
         }
       ],
       "image": "karsten13/magicmirror:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ubooquity-icon.png",
+      "logo": "https://github.com/MichMich/MagicMirror/raw/master/.github/header.png",
       "name": "MagicMirror2",
       "platform": "linux",
       "ports": ["8080:8080/tcp"],
