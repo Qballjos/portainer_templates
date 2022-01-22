@@ -21,7 +21,7 @@ I would also like to eventually add the following container templates in the fut
 
 
 
-Commands to prep your system:
+## Commands to prep your system:
 
   Update the system:
 
@@ -62,7 +62,7 @@ Commands to prep your system:
 
 
 
-In the Browser Setup: 
+## In the Browser Setup: 
 
   You Should now be able to navigate to the IP of the VM or Ubuntu Machine, going to the portainer port 9000  http://IPADress:9000
 
@@ -95,7 +95,7 @@ In the Browser Setup:
 
 
 
-## ** From the Forked Authors Notes ** 
+### ** From the Forked Authors Notes ** 
 
 Previous Authors
 * **NASHosted** - *Current Work* - [NASHOSTED](https://github.com/nashosted)
