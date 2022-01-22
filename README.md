@@ -2,21 +2,21 @@
 
 Added more items from various other portainer templates, after searching the forks from Qbalijos
 
-I would also like to eventually add the following container templates in the future 
+I would also like to eventually add the following container templates in the future:
 
  - Vikunja
 
  - Rocket.Chat
 
- - Kavita (added)
+ - Kavita (Added Config, after reviewing docker setup notes)
 
- - Koomga (added)
+ - Koomga (Added Config, after reviewing docker setup notes)
 
- - MagicMirror2 (added)
+ - MagicMirror2 (Added Config, after reviewing docker setup notes)
 
- - Readarr (added)
+ - Readarr (Added Config, after reviewing docker setup notes)
 
-  Further to the above, Catagory Placement work will be on-going...
+  Further to the above, Catagory Placement work will be on-going...Some images will also be updated.
 
 # New Ubuntu Server Setup Instructions - Prep
 
