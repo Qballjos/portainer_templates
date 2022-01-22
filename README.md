@@ -4,9 +4,9 @@ Added more items from various other portainer templates, after searching the for
 
 I would also like to eventually add the following container templates in the future 
 
-Vikunja
+ - Vikunja
 
-Rocket.Chat
+ - Rocket.Chat
 
  - Kavita (added)
 
