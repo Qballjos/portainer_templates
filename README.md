@@ -21,9 +21,9 @@ MagicMirror2 (added)
 
 * Commands to prep your system:
 
-  * Update the system:
+  Update the system:
 
-*** sudo apt update
+  * sudo apt update
 
 *** sudo apt upgrade
 
