@@ -146,7 +146,7 @@
 		},
 	      {
       "categories": ["Dashboard Server"],
-      "description": "MagicMirror2 Test.",
+      "description": "MagicMirror2 Server",
       "env": [
         {
           "default": "1000",
@@ -182,7 +182,7 @@
     },
 	      {
       "categories": ["Library Server"],
-      "description": "Kavita Test.",
+      "description": "Kavita Manga and E-Book Server",
       "env": [
         {
           "default": "1000",
