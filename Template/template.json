@@ -196,7 +196,7 @@
         }
       ],
       "image": "kizaing/kavita:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ubooquity-icon.png",
+      "logo": "https://raw.githubusercontent.com/Kareadita/Kavita/develop/Logo/kavita.svg",
       "name": "Kavita",
       "platform": "linux",
       "ports": ["5000:5000/tcp"],
