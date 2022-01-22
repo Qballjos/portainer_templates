@@ -218,6 +218,48 @@
         }
       ]
     },
+
+		      {
+      "categories": ["Library Server"],
+      "description": "Koomga Manga, Comic and E-Book Server",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        }
+      ],
+      "image": "gotson/komga:latest",
+      "logo": "https://raw.githubusercontent.com/komga/master/.github/readme-images/app-icon.png",
+      "name": "Komga",
+      "platform": "linux",
+      "ports": ["8080:8080/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "Komga",
+      "type": 1,
+      "volumes": [
+        {
+          "container": "/books"
+        },
+        {
+          "container": "/comics"
+        },
+        {
+          "container": "/manga"
+        },
+	{
+          "/etc/timezone": "/etc/timezone"
+        },     
+        {
+          "container": "/config"
+        }
+      ]
+    },
 	      {
       "categories": ["Library Server"],
       "description": "Kavita Manga and E-Book Server",
