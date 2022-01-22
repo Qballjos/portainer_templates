@@ -144,6 +144,44 @@
 			],
 			"restart_policy": "unless-stopped"
 		},  
+	      {
+      "categories": ["Library Server"],
+      "description": "Kavita Test.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        }
+      ],
+      "image": "kizaing/kavita:latest",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ubooquity-icon.png",
+      "name": "Kavita",
+      "platform": "linux",
+      "ports": ["5000:5000/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "Kavita",
+      "type": 1,
+      "volumes": [
+        {
+          "container": "/books"
+        },
+        {
+          "container": "/comics"
+        },
+        {
+          "container": "/manga"
+        },
+        {
+          "container": "/config"
+        }
+      ]
+    },
 	  	{
 			"type": 1,
 			"categories": ["Utilities"],
