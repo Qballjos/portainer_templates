@@ -42,6 +42,44 @@
 			],
 			"restart_policy": "unless-stopped"
 		},
+	        {
+        "categories": ["Usenet Server"],
+        "description": "Readarr Test",
+        "env": [
+          {
+            "default": "1000",
+            "label": "PUID",
+            "name": "PUID"
+          },
+          {
+            "default": "1000",
+            "label": "PGID",
+            "name": "PGID"
+          }
+        ],
+        "image": "hotio/readarr:latest",
+        "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/couchpotato-icon.png",
+        "name": "Readerr",
+        "platform": "linux",
+        "ports": ["5050:5050/tcp"],
+        "restart_policy": "unless-stopped",
+        "title": "Readarr",
+        "type": 1,
+        "volumes": [
+          {
+            "bind": "/portainer/Files/AppData/Config/Readarr",
+            "container": "/config"
+          },
+          {
+            "bind": "/portainer/Downloads",
+            "container": "/downloads"
+          },
+          {
+            "bind": "/portainer/books",
+            "container": "/books"
+          }
+        ]
+      },
 	 	{
 			"type": 1,
 			"categories": ["Library Server"],
