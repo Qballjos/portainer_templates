@@ -8,13 +8,13 @@ Vikunja
 
 Rocket.Chat
 
-Kavita (added)
+ - Kavita (added)
 
-Koomga (added)
+ - Koomga (added)
 
-MagicMirror2 (added)
+ - MagicMirror2 (added)
 
-Readarr (added)
+ - Readarr (added)
 
 
 # New Ubuntu Server Setup Instructions - Prep
