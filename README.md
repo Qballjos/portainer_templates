@@ -84,9 +84,9 @@ In the Browser Setup:
 
 
 
-** From the Forked Authors Notes ** 
+## ** From the Forked Authors Notes ** 
 
-## Previous Authors
+Previous Authors
 * **NASHosted** - *Current Work* - [NASHOSTED](https://github.com/nashosted)
 * **SelfhostedPro** - *Current Work* - [SelfhostedPro](https://github.com/SelfhostedPro)
 * **Jos Visser** - *Initial work* - [Qballjos](https://github.com/Qballjos)
@@ -95,7 +95,8 @@ In the Browser Setup:
 
 See also the list of [contributors](https://github.com/Qballjos/portainer_templates/graphs/contributors) who participated in this project.
 
-## My Notes - other Templates that items were discovered/pulled from will be added when time allows. A various list of other templates have been noted below where some items have been sourced. #
+## My Notes 
+Other Templates that items were discovered/pulled from will be added when time allows. A various list of other templates have been noted below where some items have been sourced. 
 
 [technorabilia](https://raw.githubusercontent.com/technorabilia/portainer-templates/main/lsio/templates/templates-2.0.json)
 
