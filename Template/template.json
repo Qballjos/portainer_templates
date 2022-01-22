@@ -235,7 +235,7 @@
         }
       ],
       "image": "gotson/komga:latest",
-      "logo": "https://raw.githubusercontent.com/komga/master/.github/readme-images/app-icon.png",
+      "logo": "https://raw.githubusercontent.com/gotson/komga/master/.github/readme-images/app-icon.png",
       "name": "Komga",
       "platform": "linux",
       "ports": ["8080:8080/tcp"],
@@ -252,9 +252,6 @@
         {
           "container": "/manga"
         },
-	{
-          "/etc/timezone": "/etc/timezone"
-        },     
         {
           "container": "/config"
         }
