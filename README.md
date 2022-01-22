@@ -5,10 +5,14 @@ Added more items from various other portainer templates, after searching the for
 I would also like to eventually add the following container templates in the future 
 
 Vikunja
+
 Rocket.Chat
-Kavita 
+
+Kavita (added)
+
 Koomga
-MagicMirror2
+
+MagicMirror2 (added)
 
 
 
