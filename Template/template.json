@@ -4189,7 +4189,7 @@
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/netbox/config</p>",
     "description": "[Netbox](https://github.com/netbox-community/netbox) is an IP address management (IPAM) and data center infrastructure management (DCIM) tool. Initially conceived by the network engineering team at DigitalOcean, NetBox was developed specifically to address the needs of network and infrastructure engineers. It is intended to function as a domain-specific source of truth for network operations.",
     "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/netbox-community/netbox/develop/docs/netbox_logo.svg",
+    "logo": "https://raw.githubusercontent.com/netbox-community/netbox/develop/docs/netbox_logo.png",
     "image": "linuxserver/netbox:latest",
     "env": [
         {
