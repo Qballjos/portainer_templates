@@ -165,6 +165,7 @@
       "platform": "linux",
       "ports": ["8080:8080/tcp"],
       "restart_policy": "unless-stopped",
+      "command": "/bin/bash -c \"npm run server\" && exit 777",
       "title": "MagicMirror2",
       "type": 1,
       "volumes": [
