@@ -175,7 +175,7 @@
           "container": "/opt/magic_mirror/modules"
         },
         {
-          "container": "/opt/magic_mirror/modules"
+          "container": "/opt/magic_mirror/css"
         }
       ]
     },
