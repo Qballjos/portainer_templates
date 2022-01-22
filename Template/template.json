@@ -312,7 +312,7 @@
 			"type": 1,
 			"title": "Grafana",
 			"description": "Metrics Graphing Tool",
-			"logo": "https://github.com/grafana/grafana/blob/master/docs/logo-horizontal.png",
+			"logo": "https://github.com/grafana/grafana/blob/main/docs/logo-horizontal.png",
 			"platform": "linux",
 			"restart_policy": "unless-stopped",
 			"categories": [
