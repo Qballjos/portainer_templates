@@ -52,11 +52,11 @@ Commands to prep your system:
 
     Further Ubuntu Setup items to be Added at a Later Time: 
 
-    * Adding a public SSH Key to your Server 
+    1. Adding a public SSH Key to your Server 
 
-    * Mapping a Network Share for Container Access (Media/Library Files on a NAS, Backup Locations, etc)
+    2. Mapping a Network Share for Container Access (Media/Library Files on a NAS, Backup Locations, etc)
 
-    * Remapping a Share at Server Boot
+    3. Remapping a Share at Server Boot
 
 
 
