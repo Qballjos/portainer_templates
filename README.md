@@ -10,9 +10,11 @@ Rocket.Chat
 
 Kavita (added)
 
-Koomga
+Koomga (added)
 
 MagicMirror2 (added)
+
+Readarr (added)
 
 
 # New Ubuntu Server Setup Instructions - Prep
