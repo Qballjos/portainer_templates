@@ -16,7 +16,7 @@ I would also like to eventually add the following container templates in the fut
 
  - Readarr (Added Config, after reviewing docker setup notes)
 
-  Further to the above, Catagory Placement work will be on-going...Some images will also be updated.
+  Further to the above, Catagory Placement work will be on-going...Some images will also be updated, and the code formatting will be adjusted for cleanliness... I feel tired already... hahaha 
 
 # New Ubuntu Server Setup Instructions - Prep
 
