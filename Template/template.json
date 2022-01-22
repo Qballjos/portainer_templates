@@ -259,7 +259,7 @@
     },
 	      {
       "categories": ["Library Server"],
-      "description": "Kavita Manga and E-Book Server",
+      "description": "Kavita Manga, Comic and E-Book Server",
       "env": [
         {
           "default": "1000",
