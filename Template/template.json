@@ -57,11 +57,11 @@
             "name": "PGID"
           }
         ],
-        "image": "hotio/readarr:latest",
+        "image": "cr.hotio.dev/hotio/readarr",
         "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/couchpotato-icon.png",
         "name": "Readerr",
         "platform": "linux",
-        "ports": ["5050:5050/tcp"],
+        "ports": ["8787:8787/tcp"],
         "restart_policy": "unless-stopped",
         "title": "Readarr",
         "type": 1,
