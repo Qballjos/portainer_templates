@@ -61,7 +61,7 @@ In the Browser Setup:
       - Click Endpoints, then click the name of your VM/Server, and adjust the IP in the noted space
 
   Adjust your app template list to: https://raw.githubusercontent.com/mycroftwilde/portainer_templates/master/Template/template.json
-      - Click Settings, then adjust the App Template URL, and Apply the Changes.
+      - Click Settings, then adjust the App Template URL, and Apply the Changes. Afterword, navigate back to the app templates and the list should refesh to be pulling from this repository
 
 
 
