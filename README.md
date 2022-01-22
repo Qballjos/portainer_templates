@@ -21,45 +21,45 @@ MagicMirror2 (added)
 
 * Commands to prep your system:
 
-Update the system:
+** Update the system:
 
-sudo apt update
+*** sudo apt update
 
-sudo apt upgrade
+*** sudo apt upgrade
 
-If you want to Install Glances: 
+** If you want to Install Glances: 
 
-sudo glances -w
+*** sudo glances -w
 
-Install and test Docker:
+** Install and test Docker:
 
-sudo apt install docker.io
+*** sudo apt install docker.io
 
-sudo systemctl enable docker
+*** sudo systemctl enable docker
 
-sudo systemctl start docker
+*** sudo systemctl start docker
 
-sudo systemctl status docker
+*** sudo systemctl status docker
 
-Setup Portainer: 
+** Setup Portainer: 
 
-sudo docker volume create portainer_data
+*** sudo docker volume create portainer_data
 
-sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+*** sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 
 
 
 * In the Browser Setup: 
 
-You Should now be able to navigate to the IP of the VM or Ubuntu Machine, going to the portainer port 9000  http://IPADress:9000
+** You Should now be able to navigate to the IP of the VM or Ubuntu Machine, going to the portainer port 9000  http://IPADress:9000
 
-Do initial Portainer registration 
+** Do initial Portainer registration 
 
-Configure Endpoint Setting so that the IP is set to that of the Host (basically, set the IP to the same thing you used to connect) 
-   (Click Endpoints, then click the name of your VM/Server, and adjust the IP in the noted space)
+** Configure Endpoint Setting so that the IP is set to that of the Host (basically, set the IP to the same thing you used to connect) 
+   *** (Click Endpoints, then click the name of your VM/Server, and adjust the IP in the noted space)
 
-Adjust your app template list to: https://raw.githubusercontent.com/mycroftwilde/portainer_templates/master/Template/template.json
-   (Click Settings, then adjust the App Template URL, and Apply the Changes.) 
+** Adjust your app template list to: https://raw.githubusercontent.com/mycroftwilde/portainer_templates/master/Template/template.json
+   *** (Click Settings, then adjust the App Template URL, and Apply the Changes.) 
 
 
 
