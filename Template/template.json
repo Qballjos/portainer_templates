@@ -57,7 +57,7 @@
         "name": "PGID"
       }
     ],
-    "image": "ghcr.io/linuxserver/readarr",
+    "image": "ghcr.io/linuxserver/readarr:nightly",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mylar-icon.png",
     "name": "Readarr",
     "platform": "linux",
