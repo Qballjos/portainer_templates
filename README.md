@@ -104,7 +104,7 @@ I would also like to eventually add the following container templates in the fut
    * 208.67.222.222
    * 208.67.220.220
 
-   ### Supplimental Setup Notes
+   ## Supplimental Setup Notes
    
    1. Commands for Mapping a Network Share (after installing the CFIS Utilities)
 
