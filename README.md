@@ -18,7 +18,7 @@ I would also like to eventually add the following container templates in the fut
 
   Further to the above, Catagory Placement work will be on-going...Some images will also be updated, and the code formatting will be adjusted for cleanliness... I feel tired already... hahaha 
 
-# New Ubuntu Server Setup Instructions - Prep
+## New Ubuntu Server Setup Instructions - Prep
 
 
 
@@ -52,7 +52,7 @@ I would also like to eventually add the following container templates in the fut
 
 ** Further Ubuntu Setup items to be Added at a Later Time: **
 
-   # Supplemental steps for a PiHole Container, Ubtuntu Server
+   ## Supplemental steps for a PiHole Container, Ubtuntu Server
    
    After pulling the container image, and it failing to start, make the following adjustments: 
 
