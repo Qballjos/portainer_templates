@@ -41,9 +41,9 @@ I would also like to eventually add the following container templates in the fut
 
 ### Where to get the OS image:
 
-[Ubuntu Desktop](https://ubuntu.com/download/desktop)
+* [Ubuntu Desktop](https://ubuntu.com/download/desktop)
 
-[Ubuntu Server](https://ubuntu.com/download/server)
+* [Ubuntu Server](https://ubuntu.com/download/server)
 
 
 ### Commands to prep your system:
