@@ -19,9 +19,7 @@ I would also like to eventually add the following container templates in the fut
   Further to the above, Catagory Placement work will be on-going...Some images will also be updated, and the code formatting will be adjusted for cleanliness... I feel tired already... hahaha 
  
  
- AS a side note, not related, I'm a large advocate of Mental Health. If you are having a rough time right now, please see my Mental Health Youtube Playlist:
- 
- [Mental Health Youtube Playlist](https://youtube.com/playlist?list=PLGk2on7ccZONCobYxwGdvwMcF43gIKmqk)
+
   
   
   
@@ -167,3 +165,8 @@ Other Templates that items were discovered/pulled from will be added when time a
 
 [mikestraney](https://raw.githubusercontent.com/mikestraney/portainer-templates/master/templates.json)
 
+## ** Mental Health **
+
+ AS a side note, not related, I'm a large advocate of Mental Health. If you are having a rough time right now, please see my Mental Health Youtube Playlist:
+ 
+ [Mental Health Youtube Playlist](https://youtube.com/playlist?list=PLGk2on7ccZONCobYxwGdvwMcF43gIKmqk)
