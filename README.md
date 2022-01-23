@@ -43,6 +43,10 @@ I would also like to eventually add the following container templates in the fut
 
 ### Commands to prep your system:
 
+[Ubuntu Desktop](https://ubuntu.com/download/desktop)
+
+[Ubuntu Server](https://ubuntu.com/download/server)
+
   Update the system:
 
   * sudo apt update
