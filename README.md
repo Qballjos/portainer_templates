@@ -39,13 +39,14 @@ I would also like to eventually add the following container templates in the fut
 
 ## New Ubuntu Server/VM Setup Instructions - Prep
 
-
-
-### Commands to prep your system:
+### Where to get the OS image:
 
 [Ubuntu Desktop](https://ubuntu.com/download/desktop)
 
 [Ubuntu Server](https://ubuntu.com/download/server)
+
+
+### Commands to prep your system:
 
   Update the system:
 
