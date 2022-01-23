@@ -126,7 +126,21 @@ I would also like to eventually add the following container templates in the fut
       - Click Settings, then adjust the App Template URL, and Apply the Changes. Afterword, navigate back to the app templates and the list should refesh to be pulling from this repository
 
 
+ ## ** Helpful Links and URLs for Self-Hosting **
+ 
+  * [LinuxServer.io](https://www.linuxserver.io/)
 
+  * [Porkbun](https://porkbun.com)
+
+  * [Cloudflare](https://www.cloudflare.com/)
+
+  * [SiteGrounds](https://www.siteground.com/)
+
+  * [Hotio.Dev](https://hotio.dev/)
+
+  * [PfSense](https://www.pfsense.org/download/)
+
+  * [Awesome Self-Hosted's Git Page](https://github.com/awesome-selfhosted/awesome-selfhosted)
 
 
 
@@ -185,18 +199,4 @@ Other Templates that items were discovered/pulled from will be added when time a
   
   Note: any supplimental setup notes can be placed in the description -> Habitica, I'm thinking, would probably need this.
 
- ## ** Helpful Links and URLs for Self-Hosting **
- 
-  * [LinuxServer.io](https://www.linuxserver.io/)
 
-  * [Porkbun](https://porkbun.com)
-
-  * [Cloudflare](https://www.cloudflare.com/)
-
-  * [SiteGrounds](https://www.siteground.com/)
-
-  * [Hotio.Dev](https://hotio.dev/)
-
-  * [PfSense](https://www.pfsense.org/download/)
-
-  * [Awesome Self-Hosted's Git Page](https://github.com/awesome-selfhosted/awesome-selfhosted)
