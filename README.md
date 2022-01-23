@@ -70,7 +70,7 @@ I would also like to eventually add the following container templates in the fut
    * 208.67.220.220
 
 
-** Further Ubuntu Setup items to be Added at a Later Time: **
+   # Further Ubuntu Setup items to be Added at a Later Time:
 
    1. Adding a public SSH Key to your Server 
 
