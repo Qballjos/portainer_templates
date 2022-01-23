@@ -46,7 +46,7 @@ I would also like to eventually add the following container templates in the fut
 * [Ubuntu Server](https://ubuntu.com/download/server)
 
 
-### Commands to prep your system:
+### Commands to prep your system, after Install:
 
   Update the system:
 
