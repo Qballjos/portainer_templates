@@ -44,7 +44,7 @@
 		},
 	        {
         "categories": ["Usenet Server"],
-        "description": "Readarr Test",
+        "description": "Readarr usent server",
         "env": [
           {
             "default": "1000",
