@@ -1,4 +1,4 @@
-# WIP - Working on Portiner V2 Template after Forking from Qballjos - WIP
+# WiP - Working on Portiner V2 Template after Forking from Qballjos - WiP
 
 Added more items from various other portainer templates, after searching the forks from Qballjos
 
