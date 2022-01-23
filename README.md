@@ -34,7 +34,7 @@ I would also like to eventually add the following container templates in the fut
   
     * https://IPAddress:8006/  
 
-## New Ubuntu Server Setup Instructions - Prep
+## New Ubuntu Server/VM Setup Instructions - Prep
 
 
 
