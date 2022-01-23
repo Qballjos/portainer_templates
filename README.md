@@ -52,7 +52,7 @@ I would also like to eventually add the following container templates in the fut
 
 ** Further Ubuntu Setup items to be Added at a Later Time: **
 
-   1. Supplemental steps for a PiHole Container, Ubtuntu Server
+   # Supplemental steps for a PiHole Container, Ubtuntu Server
    
    After pulling the container image, and it failing to start, make the following adjustments: 
 
