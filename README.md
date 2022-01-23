@@ -50,7 +50,24 @@ I would also like to eventually add the following container templates in the fut
 
   * sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 
+** Further Ubuntu Setup items to be Added at a Later Time: **
 
+   1. Supplemental steps for a PiHole Container, Ubtuntu Server
+   
+   After pulling the container image, and it failing to start, make the following adjustments: 
+
+   * sudo systemctl stop systemd-resolved.service
+
+   * sudo systemctl disable systemd-resolved.service
+
+   Next, run the below and edit the name server:
+
+   * sudo nano /etc/resolv.conf
+
+   You can change the name server to OpenDNS normally
+
+   * 208.67.222.222
+   * 208.67.220.220
 
 
 ** Further Ubuntu Setup items to be Added at a Later Time: **
@@ -60,6 +77,8 @@ I would also like to eventually add the following container templates in the fut
    2. Mapping a Network Share for Container Access (Media/Library Files on a NAS, Backup Locations, etc)
 
    3. Remapping a Share at Server Boot
+
+   4. Securing your Servers
 
 
 
