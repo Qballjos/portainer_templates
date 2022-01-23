@@ -1275,7 +1275,7 @@
       "type": 1
     },
     {
-      "categories": ["Backup Server"],
+      "categories": ["Backup and Sync Server"],
       "description": "Free backup software to store encrypted backups online, Duplicati works with standard protocols like FTP, SSH, WebDAV as well as popular services like Microsoft OneDrive, Amazon Cloud Drive and S3, Google Drive, box.com, Mega, hubiC and many others.",
       "env": [
         {
@@ -2777,7 +2777,7 @@
       ]
     },
     {
-      "categories": ["Backup Server"],
+      "categories": ["Backup and Sync Server"],
       "description": "Resilio Sync (formerly BitTorrent Sync) uses the BitTorrent protocol to sync files and folders between all of your devices. There are both free and paid versions, this container supports both.",
       "env": [
         {
@@ -2998,7 +2998,7 @@
       ]
     },
     {
-      "categories": ["Backup Server"],
+      "categories": ["Backup and Sync Server"],
       "description": "Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes.",
       "env": [
         {
@@ -4705,7 +4705,7 @@
 },
 {
     "type": 1,
-    "categories": ["Backup Server"],
+    "categories": ["Backup and Sync Server"],
     "title": "Rsnapshot",
     "name": "Rsnapshot",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/rsnapshot/config<br>mkdir -p /volume1/docker/rsnapshot/.snapshots<br>mkdir -p /volume1/docker/rsnapshot/data</p>",
