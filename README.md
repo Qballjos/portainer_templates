@@ -184,3 +184,19 @@ Other Templates that items were discovered/pulled from will be added when time a
   If you'd like to assist with the above, please get into contact and I'll see about adding the applicable code to expand the list 
   
   Note: any supplimental setup notes can be placed in the description -> Habitica, I'm thinking, would probably need this.
+
+ ## ** Helpful Links and URLs for Self-Hosting **
+ 
+  * [LinuxServer.io](https://www.linuxserver.io/)
+
+  * [Porkbun](https://porkbun.com)
+
+  * [Cloudflare](https://www.cloudflare.com/)
+
+  * [SiteGrounds](https://www.siteground.com/)
+
+  * [Hotio.Dev](https://hotio.dev/)
+
+  * [PfSense](https://www.pfsense.org/download/)
+
+  * [Awesome Self-Hosted's Git Page](https://github.com/awesome-selfhosted/awesome-selfhosted)
