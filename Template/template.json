@@ -1609,7 +1609,7 @@
       ]
     },
     {
-      "categories": ["Tools"],
+      "categories": ["Task Server"],
       "description": "Create agents that monitor and act on your behalf.",
       "image": "huginn/huginn:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/huginn.png",
@@ -1924,7 +1924,7 @@
       ]
     },
     {
-      "categories": ["Tools"],
+      "categories": ["Database Server"],
       "description": "An Enhanced drop in replacement for Mysql.",
       "env": [
         {
