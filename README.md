@@ -109,13 +109,9 @@ I would also like to eventually add the following container templates in the fut
    1. Commands for Mapping a Network Share (after installing the CFIS Utilities)
 
    * sudo mkdir /mnt/*Folder Name on your Ubuntu System*
-   
    * sudo chown -R nobody:nogroup /mnt/*Folder Name on your Ubuntu System*
-   
    * sudo chmod -R 0755 /mnt/*Folder Name on your Ubuntu System*
-   
    * sudo mount.cifs //*IPAddressofNetworkShare*/*ShareName* /mnt/*Folder Name on your Ubuntu System* -o user=*UbuntuUser*,uid=1000
-      
       * Enter Applicable Passwords  
 
    ### Further Ubuntu Setup items to be Added at a Later Time:
