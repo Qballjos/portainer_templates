@@ -53,6 +53,10 @@ I would also like to eventually add the following container templates in the fut
 
   * sudo glances -w
 
+  If you want to Install CFIS Utilities to Map Network Shares: 
+
+  * sudo apt-get install cifs-utils
+
   Install and test Docker:
 
   * sudo apt install docker.io
@@ -100,6 +104,19 @@ I would also like to eventually add the following container templates in the fut
    * 208.67.222.222
    * 208.67.220.220
 
+   ### Supplimental Setup Notes
+   
+   1. Commands for Mapping a Network Share (after installing the CFIS Utilities)
+
+   * sudo mkdir /mnt/*Folder Name on your Ubuntu System*
+   
+   * sudo chown -R nobody:nogroup /mnt/*Folder Name on your Ubuntu System*
+   
+   * sudo chmod -R 0755 /mnt/*Folder Name on your Ubuntu System*
+   
+   * sudo mount.cifs //*IPAddressofNetworkShare*/*ShareName* /mnt/*Folder Name on your Ubuntu System* -o user=*UbuntuUser*,uid=1000
+      
+      * Enter Applicable Passwords  
 
    ### Further Ubuntu Setup items to be Added at a Later Time:
 
