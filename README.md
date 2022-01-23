@@ -170,3 +170,17 @@ Other Templates that items were discovered/pulled from will be added when time a
  AS a side note, not related, I'm a large advocate of Mental Health. If you are having a rough time right now, please see my Mental Health Youtube Playlist:
  
  [Mental Health Youtube Playlist](https://youtube.com/playlist?list=PLGk2on7ccZONCobYxwGdvwMcF43gIKmqk)
+ 
+ ## ** Adding Further Containers: What I'm currently looking for **
+ 
+ I'm currently wanting to add the following containers 
+ 
+ * Rocket.Chat
+
+ * Habitica
+
+ * Vikunja
+
+  If you'd like to assist with the above, please get into contact and I'll see about adding the applicable code to expand the list 
+  
+  Note: any supplimental setup notes can be placed in the description -> Habitica, I'm thinking, would probably need this.
