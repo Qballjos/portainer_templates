@@ -19,7 +19,12 @@ I would also like to eventually add the following container templates in the fut
   Further to the above, Catagory Placement work will be on-going...Some images will also be updated, and the code formatting will be adjusted for cleanliness... I feel tired already... hahaha 
  
  
+### Useful Supplimental Software Links: 
 
+* [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
+* [7zip](https://www.7-zip.org/download.html)
+* [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)
+* [Draw.io](https://www.draw.io)
   
   
   
@@ -45,13 +50,6 @@ I would also like to eventually add the following container templates in the fut
 
 * [Ubuntu Server](https://ubuntu.com/download/server)
 
-
-### Useful Supplimental Software Links: 
-
-* [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
-* [7zip](https://www.7-zip.org/download.html)
-* [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)
-* [Draw.io](https://www.draw.io)
 
 ### Commands to prep your system, after Install:
 
