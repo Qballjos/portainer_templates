@@ -1,4 +1,4 @@
-# WiP - Portiner V2 Template after Forking from Qballjos - WiP - And, Self Hosting CookBook - WiP
+# WiP - Portiner V2 Template after Forking from Qballjos - WiP
 
 Added more items from various other portainer templates, and catagorized based on my own needs, after searching the forks from Qballjos. 
 
