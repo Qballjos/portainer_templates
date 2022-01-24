@@ -165,21 +165,11 @@ I would also like to eventually add the following container templates in the fut
 
   * [Awesome Self-Hosted's Git Page](https://github.com/awesome-selfhosted/awesome-selfhosted)
 
- ## ** A Note about Dashboard Servers **
+ ## A Note about Dashboard Servers
 
-Often you can create a server version of something you'd like to display on a wall display at home, and then use a raspberry pi to connect to that webpage on boot automatically. You can use this set of instructions, and just substitute out the dakboard specific instructions, and use it to setup a raspberry pi to connect automatically to one of your running dashboard containers. [Instructions](https://blog.dakboard.com/diy-wall-display/)
+Often you can create a server version of something you'd like to display on a wall display at home, and then use a raspberry pi to connect to that webpage on boot automatically. You can use this set of instructions, and just substitute out the dakboard specific instructions, and use it to setup a raspberry pi to connect automatically to one of your running dashboard containers' URL. 
 
-
-
-
-
-
-
-
-
-
-
-
+[Instructions](https://blog.dakboard.com/diy-wall-display/)
 
 
 
