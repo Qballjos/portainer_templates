@@ -165,7 +165,7 @@ I would also like to eventually add the following container templates in the fut
   * [PfSense](https://www.pfsense.org/download/)
 
   * [Awesome Self-Hosted's Git Page](https://github.com/awesome-selfhosted/awesome-selfhosted)
-  * 
+  
   * [New Proxmox Host and Home Assistant Setup, Document and Video Guide - By JaunMTech](https://www.juanmtech.com/install-proxmox-and-virtualize-home-assistant/)
 
 
