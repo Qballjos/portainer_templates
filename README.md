@@ -42,11 +42,6 @@ I would also like to eventually add the following container templates in the fut
   
     * https://IPAddress:8006/  
 
-### New Proxmox Host and Home Assistant Setup, Document and Video Guide - By JaunMTech
-
-[Jaun M Tech's Guide](https://www.juanmtech.com/install-proxmox-and-virtualize-home-assistant/)
-
-[Jaun's Github Repo](https://github.com/JuanMTech)
 
 ## New Ubuntu Server/VM Setup Instructions - Prep
 
@@ -170,6 +165,9 @@ I would also like to eventually add the following container templates in the fut
   * [PfSense](https://www.pfsense.org/download/)
 
   * [Awesome Self-Hosted's Git Page](https://github.com/awesome-selfhosted/awesome-selfhosted)
+  * 
+  * [New Proxmox Host and Home Assistant Setup, Document and Video Guide - By JaunMTech](https://www.juanmtech.com/install-proxmox-and-virtualize-home-assistant/)
+
 
  ## A Note about Dashboard Servers
 
