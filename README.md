@@ -25,7 +25,8 @@ I would also like to eventually add the following container templates in the fut
 * [7zip](https://www.7-zip.org/download.html)
 * [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)
 * [Draw.io](https://www.draw.io)
-  
+* [BalenaEther](https://www.balena.io/etcher/)
+* [Rufus](http://rufus.ie/en/)
   
   
 ## New Proxmox Host - Prep
