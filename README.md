@@ -185,7 +185,7 @@ Often you can create a server version of something you'd like to display on a wa
   
   Note: any supplimental setup notes can be placed in the description -> Habitica, I'm thinking, would probably need this.
 
-## ** From the Forked Authors Notes ** 
+# ** From the Forked Authors Notes ** 
 
 Previous Authors
 * **NASHosted** - *Current Work* - [NASHOSTED](https://github.com/nashosted)
