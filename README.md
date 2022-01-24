@@ -1,6 +1,6 @@
 # WiP - Portiner V2 Template after Forking from Qballjos - WiP
 
-Added more items from various other portainer templates, after searching the forks from Qballjos
+Added more items from various other portainer templates, and catagorized based on my own needs, after searching the forks from Qballjos. 
 
 I would also like to eventually add the following container templates in the future:
 
