@@ -131,7 +131,7 @@ I would also like to eventually add the following container templates in the fut
    * sudo mkdir /mnt/*FolderNameonyourUbuntuSystem*
    * sudo chown -R nobody:nogroup /mnt/*FolderNameonyourUbuntuSystem*
    * sudo chmod -R 0755 /mnt/*FolderNameonyourUbuntuSystem*
-   * sudo mount.cifs //*IPAddressofNetworkShare*/*ShareName* /mnt/*FolderNameonyourUbuntuSystem* -o user=*User*,uid=1000
+   * sudo mount.cifs //*IPAddressofNetworkShare*/*ShareName* /mnt/*FolderNameonyourUbuntuSystem* -o user=*Username*,uid=1000
       * Enter Applicable Passwords  
 
    ### Further Ubuntu Setup items to be Added at a Later Time:
