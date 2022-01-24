@@ -205,7 +205,7 @@ Other Templates that items were discovered/pulled from will be added when time a
 [mikestraney](https://raw.githubusercontent.com/mikestraney/portainer-templates/master/templates.json)
 
 
-# ** Mental Health **
+# * Mental Health *
 
  AS a side note, not related, I'm a large advocate of Mental Health. If you are having a rough time right now, please see my Mental Health Youtube Playlist:
  
