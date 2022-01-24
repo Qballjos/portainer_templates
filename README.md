@@ -118,6 +118,7 @@ I would also like to eventually add the following container templates in the fut
    ## Supplimental Setup Notes
    
    Commands for Mapping a Network Share, after installing the CFIS Utilities
+   
    (Please note: This is from some old notes of mine, and it will probably need to be reviewed to be sure it's within best practices)
 
    * sudo mkdir /mnt/*Folder Name on your Ubuntu System*
