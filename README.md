@@ -171,7 +171,19 @@ Often you can create a server version of something you'd like to display on a wa
 
 [Instructions](https://blog.dakboard.com/diy-wall-display/)
 
+ # Adding Further Containers: What I'm currently looking for
+ 
+ I'm currently wanting to add the following containers 
+ 
+ * Rocket.Chat
 
+ * Habitica
+
+ * Vikunja
+
+  If you'd like to assist with the above, please get into contact and I'll see about adding the applicable code to expand the list 
+  
+  Note: any supplimental setup notes can be placed in the description -> Habitica, I'm thinking, would probably need this.
 
 ## ** From the Forked Authors Notes ** 
 
@@ -191,20 +203,6 @@ Other Templates that items were discovered/pulled from will be added when time a
 [technorabilia](https://raw.githubusercontent.com/technorabilia/portainer-templates/main/lsio/templates/templates-2.0.json)
 
 [mikestraney](https://raw.githubusercontent.com/mikestraney/portainer-templates/master/templates.json)
-
- # Adding Further Containers: What I'm currently looking for
- 
- I'm currently wanting to add the following containers 
- 
- * Rocket.Chat
-
- * Habitica
-
- * Vikunja
-
-  If you'd like to assist with the above, please get into contact and I'll see about adding the applicable code to expand the list 
-  
-  Note: any supplimental setup notes can be placed in the description -> Habitica, I'm thinking, would probably need this.
 
 
 ## ** Mental Health **
