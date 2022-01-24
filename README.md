@@ -184,7 +184,7 @@ Previous Authors
 
 See also the list of [contributors](https://github.com/Qballjos/portainer_templates/graphs/contributors) who participated in this project.
 
-## My Notes
+# My Notes
 
 Other Templates that items were discovered/pulled from will be added when time allows. A various list of other templates have been noted below where some items have been sourced. 
 
@@ -192,7 +192,7 @@ Other Templates that items were discovered/pulled from will be added when time a
 
 [mikestraney](https://raw.githubusercontent.com/mikestraney/portainer-templates/master/templates.json)
 
- ## Adding Further Containers: What I'm currently looking for
+ # Adding Further Containers: What I'm currently looking for
  
  I'm currently wanting to add the following containers 
  
