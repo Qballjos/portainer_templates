@@ -194,6 +194,10 @@ Often you can create a server version of something you'd like to display on a wa
 
  * Vikunja
 
+ * Traefik
+
+ * Joplin
+
   If you'd like to assist with the above, please get into contact and I'll see about adding the applicable code to expand the list 
   
   Note: any supplimental setup notes can be placed in the description -> Habitica, I'm thinking, would probably need this.
