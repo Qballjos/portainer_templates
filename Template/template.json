@@ -4971,6 +4971,318 @@
     ],
     "restart_policy": "unless-stopped"
 },
+    {
+    "type": 1,
+    "title": "Airsonic-advanced",
+    "name": "Airsonic-advanced",
+    "categories": ["Music Server"],
+    "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/airsonic-advanced/config<br>mkdir -p /volume1/docker/airsonic-advanced/music<br>mkdir -p /volume1/docker/airsonic-advanced/playlists<br>mkdir -p /volume1/docker/airsonic-advanced/podcasts<br>mkdir -p /volume1/docker/airsonic-advanced/media</p>",
+    "description": "[Airsonic-advanced](https://github.com/airsonic-advanced/airsonic-advanced) is a free, web-based media streamer, providing ubiquitious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.",
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/airsonic-banner.png",
+    "image": "linuxserver/airsonic-advanced:latest",
+    "env": [
+        {
+            "name": "PUID",
+            "label": "PUID",
+            "default": "1024",
+            "description": "for GroupID"
+        },
+        {
+            "name": "PGID",
+            "label": "PGID",
+            "default": "100",
+            "description": "for UserID"
+        },
+        {
+            "name": "TZ",
+            "label": "TZ",
+            "default": "Europe/Amsterdam",
+            "description": "Specify a timezone to use for example Europe/Amsterdam"
+        },
+        {
+            "name": "CONTEXT_PATH",
+            "label": "CONTEXT_PATH",
+            "default": "<URL_BASE>",
+            "description": "For setting url-base in reverse proxy setups."
+        },
+        {
+            "name": "JAVA_OPTS",
+            "label": "JAVA_OPTS",
+            "default": "<options>",
+            "description": "For passing additional java options."
+        }
+    ],
+    "ports": [
+        "4040:4040/tcp"
+    ],
+    "volumes": [
+    {
+        "container": "/config",
+        "bind": "/volume1/docker/airsonic-advanced/config"
+    },
+    {
+        "container": "/music",
+        "bind": "/volume1/docker/airsonic-advanced/music"
+    },
+    {
+        "container": "/playlists",
+        "bind": "/volume1/docker/airsonic-advanced/playlists"
+    },
+    {
+        "container": "/podcasts",
+        "bind": "/volume1/docker/airsonic-advanced/podcasts"
+    },
+    {
+        "container": "/media",
+        "bind": "/volume1/docker/airsonic-advanced/media"
+    }
+    ],
+    "restart_policy": "unless-stopped"
+},
+{
+    "type": 1,
+    "title": "Phpmyadmin",
+    "name": "Phpmyadmin",
+    "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/phpmyadmin/config</p>",
+    "description": "[Phpmyadmin](https://github.com/phpmyadmin/phpmyadmin/) is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.",
+    "categories": [
+        "Database Server"
+    ],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png",
+    "image": "linuxserver/phpmyadmin:latest",
+    "env": [
+        {
+            "name": "PUID",
+            "label": "PUID",
+            "default": "1024",
+            "description": "for GroupID"
+        },
+        {
+            "name": "PGID",
+            "label": "PGID",
+            "default": "100",
+            "description": "for UserID"
+        },
+        {
+            "name": "TZ",
+            "label": "TZ",
+            "default": "Europe/Amsterdam",
+            "description": "Specify a timezone to use for example Europe/Amsterdam"
+        },
+        {
+            "name": "PMA_ARBITRARY",
+            "label": "PMA_ARBITRARY",
+            "default": "1",
+            "description": "Set to `1` to allow you to connect to any server. Setting to `0` will only allow you to connect to specified hosts (See Application Setup)"
+        },
+        {
+            "name": "PMA_ABSOLUTE_URI",
+            "label": "PMA_ABSOLUTE_URI",
+            "default": "https://phpmyadmin.example.com",
+            "description": "Set the URL you will use to access the web frontend"
+        }
+    ],
+    "ports": [
+        "80:80/tcp"
+    ],
+    "volumes": [
+    {
+        "container": "/config",
+        "bind": "/volume1/docker/phpmyadmin/config"
+    }
+    ],
+    "restart_policy": "unless-stopped"
+},
+{
+    "type": 1,
+    "title": "Pixapop",
+    "name": "Pixapop",
+    "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/pixapop/config<br>mkdir -p /volume1/docker/pixapop/photos</p>",
+    "description": "[Pixapop](https://github.com/bierdok/pixapop) is an open-source single page application to view your photos in the easiest way possible.",
+    "categories": [
+        "Photos"
+    ],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop.png",
+    "image": "linuxserver/pixapop:latest",
+    "env": [
+        {
+            "name": "PUID",
+            "label": "PUID",
+            "default": "1024",
+            "description": "for GroupID"
+        },
+        {
+            "name": "PGID",
+            "label": "PGID",
+            "default": "100",
+            "description": "for UserID"
+        },
+        {
+            "name": "TZ",
+            "label": "TZ",
+            "default": "Europe/Amsterdam",
+            "description": "Specify a timezone to use for example Europe/Amsterdam"
+        },
+        {
+            "name": "APP_USERNAME",
+            "label": "APP_USERNAME",
+            "default": "admin",
+            "description": "Specify a username to enable authentication."
+        },
+        {
+            "name": "APP_PASSWORD",
+            "label": "APP_PASSWORD",
+            "default": "admin",
+            "description": "Specify a password to enable authentication."
+        }
+    ],
+    "ports": [
+        "80:80/tcp"
+    ],
+    "volumes": [
+    {
+        "container": "/config",
+        "bind": "/volume1/docker/pixapop/config"
+    },
+    {
+        "container": "/photos",
+        "bind": "/volume1/docker/pixapop/photos"
+    }
+    ],
+    "restart_policy": "unless-stopped"
+},
+{
+    "type": 1,
+    "title": "Syslog-ng",
+    "name": "Syslog-ng",
+    "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/syslog-ng/config<br></p>",
+    "description": "[syslog-ng](https://www.syslog-ng.com/products/open-source-log-management/) allows you to flexibly collect, parse, classify, rewrite and correlate logs from across your infrastructure and store or route them to log analysis tools.",
+    "categories": [
+        "Task Server"
+    ],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/syslog-ng-logo.png",
+    "image": "linuxserver/syslog-ng:latest",
+    "env": [
+        {
+            "name": "PUID",
+            "label": "PUID",
+            "default": "1024",
+            "description": "for GroupID"
+        },
+        {
+            "name": "PGID",
+            "label": "PGID",
+            "default": "100",
+            "description": "for UserID"
+        },
+        {
+            "name": "TZ",
+            "label": "TZ",
+            "default": "Europe/Amsterdam",
+            "description": "Specify a timezone to use for example Europe/Amsterdam"
+        }
+    ],
+    "ports": [
+        "514:5514/udp",
+        "601:6601/tcp",
+        "6514:6514/tcp"
+    ],
+    "volumes": [
+    {
+        "container": "/config",
+        "bind": "/volume1/docker/syslog-ng/config"
+    },
+    {
+        "container": "/var/log",
+        "bind": "/var/log"
+    }
+    ],
+    "restart_policy": "unless-stopped"
+},
+{
+    "type": 1,
+    "title": "Wowza",
+    "description": "Streaming media server",
+    "categories": [
+            "Media Server"
+    ],
+    "platform": "linux",
+    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wowza.png",
+    "image": "sameersbn/wowza:4.1.2-8",
+    "env": [{
+                    "name": "WOWZA_ACCEPT_LICENSE",
+                    "label": "Agree to Wowza EULA",
+                    "set": "yes"
+            },
+            {
+                    "name": "WOWZA_KEY",
+                    "label": "License key"
+            }
+    ],
+    "ports": [
+            "1935/tcp",
+            "8086/tcp",
+            "8087/tcp",
+            "8088/tcp"
+    ],
+    "volumes": [{
+            "container": "/var/lib/wowza"
+    }]
+},
+{
+    "type": 1,
+    "title": "MySQL",
+    "description": "The most popular open-source database",
+    "categories": [
+            "Database Server"
+    ],
+    "platform": "linux",
+    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/mysql.png",
+    "image": "mysql:latest",
+    "env": [{
+            "name": "MYSQL_ROOT_PASSWORD",
+            "label": "Root password"
+    }],
+    "ports": [
+            "3306/tcp"
+    ],
+    "volumes": [{
+            "container": "/var/lib/mysql"
+    }]
+},
+
+{
+    "type": 1,
+    "title": "Gitlab CE",
+    "description": "Open-source end-to-end software development platform",
+    "note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/omnibus/docker/README.html#after-starting-a-container\" target=\"_blank\">Gitlab documentation</a> to get started.",
+    "categories": [
+            "Code Server"
+    ],
+    "platform": "linux",
+    "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/gitlab_ce.png",
+    "image": "gitlab/gitlab-ce:latest",
+    "ports": [
+            "80/tcp",
+            "443/tcp",
+            "22/tcp"
+    ],
+    "volumes": [{
+                    "container": "/etc/gitlab"
+            },
+            {
+                    "container": "/var/log/gitlab"
+            },
+            {
+                    "container": "/var/opt/gitlab"
+            }
+    ]
+},
+
 
     {
       "categories": ["Downloaders"],
