@@ -3,7 +3,7 @@
   "templates": [
  		{
 			"type": 1,
-			"categories": ["Utilities"],
+			"categories": ["Family App Server"],
 			"title": "Firefox",
 			"name": "Firefox",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/firefox/config</p>",
@@ -297,7 +297,7 @@
     },
 	  	{
 			"type": 1,
-			"categories": ["Utilities"],
+			"categories": ["Management Utility Server"],
 			"title": "Snipe-it",
 			"name": "Snipe-it",
 			"note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/snipe-it/config</p>",
@@ -368,7 +368,7 @@
 		},
 	  
 	      {
-      "categories": ["Utilities"],
+      "categories": ["Task Server"],
       "description": "It is a self-hosted monitoring tool like Uptime Robot",
       "image": "louislam/uptime-kuma:latest",
       "logo": "https://images.opencollective.com/uptime-kuma/29c5113/logo/256.png",
@@ -433,7 +433,7 @@
     }, 
 	  {
 			"categories": [
-				"Utilities"
+				"Management Utility Server"
 			],
 			"description": "draw.io (formerly Diagramly) is free online diagram software. You can use it as a flowchart maker, network diagram software, to create UML online, as an ER diagram tool, to design database schema, to build BPMN online, as a circuit diagram maker, and more. draw.io can import .vsdx, Gliffy™ and Lucidchart™ files.",
 			"image": "jgraph/drawio:latest",
@@ -1375,7 +1375,7 @@
       ]
     },
     {
-      "categories": ["Utilities"],
+      "categories": ["Management Utility Server"],
       "description": "Web File Browser which can be used as a middleware or standalone app.",
       "image": "80x86/filebrowser:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/filebrowser.png",
@@ -1465,7 +1465,7 @@
       ]
     },
     {
-      "categories": ["Utilities"],
+      "categories": ["Management Utility Server"],
       "description": "A clientless remote desktop gateway.",
       "image": "oznu/guacamole:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/guacamole.png",
@@ -1834,7 +1834,7 @@
       ]
     },
     {
-      "categories": ["Tools"],
+      "categories": ["Task Server"],
       "description": "A Free and Open Source Speedtest for HTML5 and more.",
       "image": "linuxserver/librespeed:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/speedtest.png",
@@ -2903,7 +2903,7 @@
       ]
     },
     {
-      "categories": ["Utilities"],
+      "categories": ["Task Server"],
       "description": "SmokePing is a latency logging and graphing and alerting system. It consists of a daemon process which organizes the latency measurements and a CGI which presents the graphs.",
       "env": [
         {
@@ -4260,7 +4260,7 @@
 },
 {
     "type": 1,
-    "categories": ["Utilities"],
+    "categories": ["Management Utility Server"],
     "title": "Netbox",
     "name": "Netbox",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/netbox/config</p>",
@@ -4421,7 +4421,7 @@
 },
 {
     "type": 1,
-    "categories": ["Tools"],
+    "categories": ["Management Utility Server"],
     "title": "Openssh-server",
     "name": "Openssh-server",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/openssh-server/config</p>",
@@ -4659,7 +4659,7 @@
 },
 {
     "type": 1,
-    "categories": ["Utilities"],
+    "categories": ["Management Utility Server"],
     "title": "Rdesktop",
     "name": "Rdesktop",
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p><br>mkdir -p /volume1/docker/rdesktop/config</p>",
@@ -4801,7 +4801,7 @@
     "note": "Portainer App Templates by <a href='https://www.technorabilia.com' target='_blank'>Technorabilia</a> based on data provided by <a href='https://www.linuxserver.io' target='_blank'>LinuxServer.io</a>.</p><p>Don't forget to create the volume directories on the host file system.</p><p>mkdir -p /volume1/docker/webtop/config<br></p>",
     "description": "[Webtop](https://github.com/linuxserver/docker-webtop) - Alpine, Ubuntu, Fedora, and Arch based containers containing full desktop environments in officially supported flavors accessible via any modern web browser.",
     "categories": [
-        "Utilities"
+        "Management Utility Server"
     ],
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png",
@@ -4930,7 +4930,7 @@
     "restart_policy": "unless-stopped"
 },
 {
-    "categories": ["Utilities"],
+    "categories": ["Management Utility Server"],
     "type": 1,
     "title": "Wireshark",
     "name": "Wireshark",
