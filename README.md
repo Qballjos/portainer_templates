@@ -42,6 +42,11 @@ I would also like to eventually add the following container templates in the fut
   
     * https://IPAddress:8006/  
 
+# Link to New Proxmox Host and Home Assistant Setup, Document and Video Guide - By JaunMTech
+
+[Jaun M Tech's Guide](https://www.juanmtech.com/install-proxmox-and-virtualize-home-assistant/)
+[Jaun's Github Repo](https://github.com/JuanMTech)
+
 ## New Ubuntu Server/VM Setup Instructions - Prep
 
 ### Where to get the OS image:
