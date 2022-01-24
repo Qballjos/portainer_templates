@@ -15,6 +15,12 @@ I would also like to eventually add the following container templates in the fut
  - MagicMirror2 (Added Config, after reviewing docker setup notes)
 
  - Readarr (Added Config, after reviewing docker setup notes)
+ 
+ - Joplin 
+ 
+ - Habitica
+ 
+ - Traefik
 
   Further to the above, Catagory Placement work will be on-going...Some images will also be updated, and the code formatting will be adjusted for cleanliness... I feel tired already... hahaha 
  
