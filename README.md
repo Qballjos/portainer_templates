@@ -177,6 +177,8 @@ I would also like to eventually add the following container templates in the fut
   
   * [New Proxmox Host and Home Assistant Setup, Document and Video Guide - By JaunMTech](https://www.juanmtech.com/install-proxmox-and-virtualize-home-assistant/)
 
+  * [Open Source Meadia Center](https://github.com/osmc/osmc) (Media Center OS Image for a Raspberry Pi, etc)
+
 
  ## A Note about Dashboard Servers
 
