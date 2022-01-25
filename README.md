@@ -196,7 +196,7 @@ Often you can create a server version of something you'd like to display on a wa
  
  <img width="760" alt="1" src="https://user-images.githubusercontent.com/84437811/150927161-57b22f78-0139-4c43-a805-b643f20385c3.png">
  
- One of the cool things about nesting dashboards this way isn tahat you can have a menu at both the top and left hand side of the browser. I've used Muxmix for the top, and Organizr for the side bar that is specifically within the usenet server menu. (You can also add authentication to this submenu, if you wanted to have an administration section to your dashboard.)
+ One of the cool things about nesting dashboards this way is that you can have a menu at both the top and left hand side of the browser. I've used Muxmix for the top, and Organizr for the side bar that is specifically within the usenet server menu. (You can also add authentication to this submenu, if you wanted to have an administration section to your dashboard.)
  
  <img width="173" alt="2" src="https://user-images.githubusercontent.com/84437811/150927172-b9306459-48d0-49c0-a06c-3144fe03be85.png">
 
