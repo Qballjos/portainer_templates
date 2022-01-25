@@ -186,13 +186,13 @@ Often you can create a server version of something you'd like to display on a wa
 
 [Instructions](https://blog.dakboard.com/diy-wall-display/)
 
- # An Idea Regarding your Parsonal Dashboard
+ # An Idea Regarding Personal Dashboards
  
- I've found, that when it comes to building a main personal web dashboard that none of the options did everything I wanted. So, I started nesting dashboards together. 
+ I've found, when it comes to building a main personal web dashboard, that none of the options did everything I wanted it to. So, I started nesting dashboards together. 
  
  For the below setup example, I've nested both Organizr and Flame, inside of Muximux. 
  
- So, when I load the initial page Muximux loads, and then has the default set as the flame dashboad. The Flame dashboard has all the links that will open in a new window. This way, I never close my dashboard. Items that I want accessable for the whole family, or easy access for myself, are located at the top bar of Muximux, and will open in an iFrame. 
+ I've set the default page to the Flame Dashboard, and to bypass the splash screen, So when I load the Muximux Dashboard the Flame Dashboard is naturally nested.  The Flame dashboard has all the links that will open in a new window. This way, I never close my dashboard. Items that I want accessable for the whole family, or easy access for myself, are located at the top bar of Muximux, and will open in an iFrame. 
  
  <img width="760" alt="1" src="https://user-images.githubusercontent.com/84437811/150927161-57b22f78-0139-4c43-a805-b643f20385c3.png">
  
