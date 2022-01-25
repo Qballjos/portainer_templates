@@ -177,7 +177,11 @@ I would also like to eventually add the following container templates in the fut
   
   * [New Proxmox Host and Home Assistant Setup, Document and Video Guide - By JaunMTech](https://www.juanmtech.com/install-proxmox-and-virtualize-home-assistant/)
 
-  * [Open Source Meadia Center](https://github.com/osmc/osmc) (An Open Source Media Center OS for a Raspberry Pi, etc)
+  * [Open Source Media Center](https://github.com/osmc/osmc) (An Open Source Media Center OS for a Raspberry Pi, etc)
+
+  * [OpenMediaVault](https://www.openmediavault.org/) (An Open Source NAS OS)
+
+  * [Local Habitica Docker Sever Setup Instructions](https://habitica.fandom.com/wiki/Setting_up_Habitica_Locally_on_Docker)
 
 
  ## A Note about Dashboard Servers
