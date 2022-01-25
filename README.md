@@ -138,13 +138,11 @@ I would also like to eventually add the following container templates in the fut
 
    1. Adding a public SSH Key to your Server 
 
-   2. Mapping a Network Share for Container Access (Media/Library Files on a NAS, Backup Locations, etc)
+   2. Remapping a Share at Server Boot
 
-   3. Remapping a Share at Server Boot
+   3. Securing your Servers
 
-   4. Securing your Servers
-
-
+   4. General Linux/Ubuntu Commands
 
 ## In the Browser Setup: 
 
@@ -182,6 +180,8 @@ I would also like to eventually add the following container templates in the fut
   * [OpenMediaVault](https://www.openmediavault.org/)
   
   * [TrueNAS Core](https://www.truenas.com/)
+  
+  * [Raspberry Pi OS/Imager](https://www.raspberrypi.com/software/)
 
   * [Local Habitica Docker Sever Setup Instructions](https://habitica.fandom.com/wiki/Setting_up_Habitica_Locally_on_Docker)
 
