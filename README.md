@@ -190,7 +190,7 @@ Often you can create a server version of something you'd like to display on a wa
 
 [Instructions](https://blog.dakboard.com/diy-wall-display/)
 
- # An Idea Regarding Personal Dashboards
+ ## An Idea Regarding Personal Dashboards
  
  I've found, when it comes to building a main personal web dashboard, that none of the options did everything I wanted it to. So, I started nesting dashboards together. 
  
