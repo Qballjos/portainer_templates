@@ -192,15 +192,15 @@ Often you can create a server version of something you'd like to display on a wa
  
  For the below setup example, I've nested both Organizr and Flame, inside of Muximux. 
  
- I've set the default page to the Flame Dashboard, and to bypass the splash screen, So when I load the Muximux Dashboard the Flame Dashboard is naturally nested.  The Flame dashboard has all the links that will open in a new window. This way, I never close my dashboard. Items that I want accessable for the whole family, or easy access for myself, are located at the top bar of Muximux, and will open in an iFrame. 
+ I've set the default page to the Flame Dashboard, and to bypass the splash screen, so that when I load the Muximux Dashboard the Flame Dashboard is naturally nested.  The Flame dashboard has all of the links that will open in a new window. This way, I never close my dashboard. Items that I want accessable for the whole family, or easy access for myself, are located at the top bar of Muximux, and will open in an iFrame. 
  
  <img width="760" alt="1" src="https://user-images.githubusercontent.com/84437811/150927161-57b22f78-0139-4c43-a805-b643f20385c3.png">
  
- One of the cool things about nesting dashboards this way is you can have a menu at both the top and left hand side of the browser. I've used Muxmix for the top, and Organizr for the side bar that is specific within the usenet server menu. (You can also add authentication to this submenu, if you wanted to have an administration section to your dashboard.  
+ One of the cool things about nesting dashboards this way isn tahat you can have a menu at both the top and left hand side of the browser. I've used Muxmix for the top, and Organizr for the side bar that is specifically within the usenet server menu. (You can also add authentication to this submenu, if you wanted to have an administration section to your dashboard.)
  
  <img width="173" alt="2" src="https://user-images.githubusercontent.com/84437811/150927172-b9306459-48d0-49c0-a06c-3144fe03be85.png">
 
-Here is an example, if one of the other menu items open with the Dashboard. 
+Here is an example of one of the other menu items open within the Dashboard. 
 
  <img width="940" alt="3" src="https://user-images.githubusercontent.com/84437811/150927181-d4403a26-b626-4f16-b029-ec7dd38983a3.png">
 
