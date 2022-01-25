@@ -156,6 +156,8 @@ I would also like to eventually add the following container templates in the fut
   Adjust your app template list to: https://raw.githubusercontent.com/mycroftwilde/portainer_templates/master/Template/template.json
       - Click Settings, then adjust the App Template URL, and Apply the Changes. Afterword, navigate back to the app templates and the list should refesh to be pulling from this repository
 
+<img width="725" alt="4" src="https://user-images.githubusercontent.com/84437811/150959906-96752d7c-f49f-4d45-88e0-cfe9e99c8269.png">
+
 
  ## ** Helpful Links and URLs for Self-Hosting **
  
