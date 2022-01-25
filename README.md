@@ -142,7 +142,7 @@ I would also like to eventually add the following container templates in the fut
 
    3. Securing your Servers
 
-   4. General Linux/Ubuntu Commands
+   4. Quick access list of general Linux/Ubuntu Commands
 
 ## In the Browser Setup: 
 
