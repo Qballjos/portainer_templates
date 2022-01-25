@@ -221,6 +221,8 @@ Other Templates that items were discovered/pulled from will be added when time a
 
 [mikestraney](https://raw.githubusercontent.com/mikestraney/portainer-templates/master/templates.json)
 
+[donPabloNow](https://raw.githubusercontent.com/donPabloNow/selfhosted-saas/master/Template/portainer-v2.json)
+
 
 # * Mental Health *
 
