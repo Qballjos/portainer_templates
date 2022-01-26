@@ -40,6 +40,8 @@ I would also like to eventually add the following container templates in the fut
 Below is a YouTube playlist on various subjects around selfhosting. Some items, like the Proxmox install, have various videos on the same general subject. This has been done in case one presenter is preferable over another, and so things can be compared, if needed.  
 
 [YouTube Playlist](https://youtube.com/playlist?list=PLGk2on7ccZOMMdaljjX8jeDpWhJGPzrcs)
+
+In addition to this, here is LearnLinuxTV's full Proxmox VE Video Course on YouTube [Course](https://youtube.com/playlist?list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo)
   
 ## New Proxmox Host - Prep
 
