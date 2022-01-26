@@ -35,7 +35,7 @@ I would also like to eventually add the following container templates in the fut
 * [BalenaEther](https://www.balena.io/etcher/)
 * [Rufus](http://rufus.ie/en/)
  
-### Supplimental YouTube Playlist:
+### Supplimental YouTube Videos:
 
 Below is a YouTube playlist on various subjects around selfhosting. Some items, like the Proxmox install, have various videos on the same general subject. This has been done in case one presenter is preferable over another, and so things can be compared, if needed.  
 
