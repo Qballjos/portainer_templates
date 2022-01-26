@@ -34,7 +34,12 @@ I would also like to eventually add the following container templates in the fut
 * [Draw.io](https://www.draw.io)
 * [BalenaEther](https://www.balena.io/etcher/)
 * [Rufus](http://rufus.ie/en/)
-  
+ 
+### Supplimental Youtube Playlist
+
+Below is a youtube playlist on various subjects around selfhosting. Some items, like the Proxmox install, have various videos on the same subjects, in case one is preferable over another, and so things can be compared. 
+
+[YouTube Playlist](https://youtube.com/playlist?list=PLGk2on7ccZOMMdaljjX8jeDpWhJGPzrcs)
   
 ## New Proxmox Host - Prep
 
