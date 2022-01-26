@@ -41,7 +41,9 @@ Below is a YouTube playlist on various subjects around selfhosting. Some items, 
 
 [YouTube Playlist](https://youtube.com/playlist?list=PLGk2on7ccZOMMdaljjX8jeDpWhJGPzrcs)
 
-In addition to this, here is LearnLinuxTV's full Proxmox VE Video Course on YouTube [Course](https://youtube.com/playlist?list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo)
+In addition to this, here is LearnLinuxTV's full Proxmox VE Video Course on YouTube: 
+
+[Course](https://youtube.com/playlist?list=PLT98CRl2KxKHnlbYhtABg6cF50bYa8Ulo)
   
 ## New Proxmox Host - Prep
 
