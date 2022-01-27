@@ -267,6 +267,8 @@ Other Templates that items were discovered/pulled from will be added when time a
 
 [donPabloNow](https://raw.githubusercontent.com/donPabloNow/selfhosted-saas/master/Template/portainer-v2.json)
 
+[xneo1](https://raw.githubusercontent.com/xneo1/portainer_templates/master/Template/template.json)
+
 
 # * Mental Health *
 
