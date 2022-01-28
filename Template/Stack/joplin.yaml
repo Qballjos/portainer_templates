@@ -1,0 +1,28 @@
+---
+version: '3'
+services:
+    app:
+        environment:
+            - APP_BASE_URL=http://joplin.yourdomain.tld:22300
+            - APP_PORT=22300
+            - POSTGRES_PASSWORD=joplin
+            - POSTGRES_DATABASE=joplin
+            - POSTGRES_USER=joplin 
+            - POSTGRES_PORT=5432 
+            - POSTGRES_HOST=db
+            - DB_CLIENT=pg
+        restart: unless-stopped
+        image: florider89/joplin-server:latest
+        ports:
+            - "22300:22300"
+    db:
+        restart: unless-stopped
+        image: postgres:13.1
+        ports:
+            - "5432:5432"
+        volumes:
+            - /foo/bar/joplin-data:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_PASSWORD=joplin
+            - POSTGRES_USER=joplin
+            - POSTGRES_DB=joplin
