@@ -20,7 +20,7 @@ I would also like to eventually add the following container templates in the fut
 
  - Readarr (Added Config, after reviewing docker setup notes)
 
- - Rocket.Chat
+ - Rocket.Chat (*Added Config and Stack Yaml File. It seems to be working. I will add variables at a later time, as it's set to stack defaults for now (from the official stack documentation))
  
  - Habitica
  
