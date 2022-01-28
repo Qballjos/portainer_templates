@@ -70,7 +70,7 @@
     "type": 3
   },
 		 {
-    "categories": ["Family App Server"],
+    "categories": ["Chat Server"],
     "description": "Rocket.Chat Server",
     "logo": "https://raw.githubusercontent.com/portapps/rocketchat-portable/master/res/papp.png",
     "note": "Rocket.Chat Server Container",
