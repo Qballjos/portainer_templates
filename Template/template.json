@@ -42,6 +42,35 @@
 			],
 			"restart_policy": "unless-stopped"
 		},
+	  {
+    "categories": ["Family App Server"],
+    "description": "Test Container for Vikunja",
+    "env": [
+      {
+        "default": "1000",
+        "label": "IP",
+        "name": "IP"
+      },
+      {
+        "default": "80",
+        "label": "PORT",
+        "name": "PORT"
+      }
+    ],
+    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/bookstack2.png",
+    "note": "This is a test of a new Container",
+    "platform": "linux",
+    "repository": {
+      "stackfile": "Template/Stack/vikunja.yml",
+      "url": "https://github.com/mycroftwilde/portainer_templates"
+    },
+    "title": "Vikunja",
+    "type": 3
+  },
+	  
+	  
+	  
+	  
 	        {
         "categories": ["Usenet Server"],
         "description": "Readarr usent server",
