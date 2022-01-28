@@ -3,7 +3,7 @@ version: '3'
 services:
     app:
         environment:
-            - APP_BASE_URL=http://joplin.yourdomain.tld:22300
+            - APP_BASE_URL=${URL}
             - APP_PORT=22300
             - POSTGRES_PASSWORD=joplin
             - POSTGRES_DATABASE=joplin
