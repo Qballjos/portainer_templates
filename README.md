@@ -4,7 +4,7 @@ Added more items from various other portainer templates, and catagorized based o
 
 I would also like to eventually add the following container templates in the future:
 
- - Vikunja
+ - Vikunja (*Added Config and Stack Yaml File, with IP and Port configuration. It seems to be working. I will add DB, etc, variables at a later time, as it's set to stack defaults for now (from the official stack documentation) )
 
  - Rocket.Chat
 
