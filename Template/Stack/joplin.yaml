@@ -14,12 +14,12 @@ services:
         restart: unless-stopped
         image: florider89/joplin-server:latest
         ports:
-            - "22300:22300"
+            - 22300:${PORT}
     db:
         restart: unless-stopped
         image: postgres:13.1
         ports:
-            - "5432:5432"
+            - 5432:5432
         volumes:
             - /foo/bar/joplin-data:/var/lib/postgresql/data
         environment:
