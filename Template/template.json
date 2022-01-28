@@ -67,7 +67,26 @@
     "title": "Vikunja",
     "type": 3
   },
-	  
+		  {
+    "categories": ["Family App Server"],
+    "description": "Test Container for Vikunja",
+    "env": [
+      {
+        "default": "22300",
+        "label": "PORT",
+        "name": "PORT"
+      }
+    ],
+    "logo": "https://raw.githubusercontent.com/go-vikunja/frontend/main/public/images/icons/android-chrome-192x192.png",
+    "note": "This is a test of a new Container",
+    "platform": "linux",
+    "repository": {
+      "stackfile": "Template/Stack/joplin.yml",
+      "url": "https://github.com/mycroftwilde/portainer_templates"
+    },
+    "title": "Vikunja",
+    "type": 3
+  },  
 	  
 	  
 	  
