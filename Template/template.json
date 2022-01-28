@@ -75,7 +75,17 @@
         "default": "22300",
         "label": "PORT",
         "name": "PORT"
+      },
+	       {
+        "default": "http://joplin.yourdomain.tld:22300",
+        "label": "URL",
+        "name": "URL"
       }
+	    
+	    
+	    
+	    
+	    
     ],
     "logo": "https://raw.githubusercontent.com/go-vikunja/frontend/main/public/images/icons/android-chrome-192x192.png",
     "note": "This is a test of a new Container",
