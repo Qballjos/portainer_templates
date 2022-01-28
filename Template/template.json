@@ -42,19 +42,7 @@
 			],
 			"restart_policy": "unless-stopped"
 		},
-	 {
-    "categories": ["Family App Server"],
-    "description": "Rocket.Chat Server",
-    "logo": "https://raw.githubusercontent.com/portapps/rocketchat-portable/master/res/papp.png",
-    "note": "Rocket.Chat Server Container",
-    "platform": "linux",
-    "repository": {
-      "stackfile": "Template/Stack/rocketchat.yml",
-      "url": "https://github.com/mycroftwilde/portainer_templates"
-    },
-    "title": "Rocket Chat",
-    "type": 3
-  },
+
 	  
 	  {
     "categories": ["Family App Server"],
@@ -81,6 +69,19 @@
     "title": "Vikunja",
     "type": 3
   },
+		 {
+    "categories": ["Family App Server"],
+    "description": "Rocket.Chat Server",
+    "logo": "https://raw.githubusercontent.com/portapps/rocketchat-portable/master/res/papp.png",
+    "note": "Rocket.Chat Server Container",
+    "platform": "linux",
+    "repository": {
+      "stackfile": "Template/Stack/rocketchat.yml",
+      "url": "https://github.com/mycroftwilde/portainer_templates"
+    },
+    "title": "Rocket Chat",
+    "type": 3
+  },  
 		  {
     "categories": ["Notes Server"],
     "description": "Joplin is an open-source note-taking app",
