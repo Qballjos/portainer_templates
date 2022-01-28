@@ -42,7 +42,7 @@
 			],
 			"restart_policy": "unless-stopped"
 		},
-	  {
+	 {
     "categories": ["Family App Server"],
     "description": "Test Container for Rocket.Chat",
     "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/bookstack2.png",
