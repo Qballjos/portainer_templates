@@ -31,7 +31,7 @@ services:
   frontend:
     image: vikunja/frontend
     ports:
-      - 80:${Port}
+      - 80:${PORT}
     environment:
       VIKUNJA_API_URL: http://${IP}:3456/api/v1
     restart: unless-stopped
