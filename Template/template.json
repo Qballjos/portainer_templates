@@ -69,7 +69,7 @@
   },
 		  {
     "categories": ["Family App Server"],
-    "description": "Test Container for Vikunja",
+    "description": "Test Container for Joplin",
     "env": [
       {
         "default": "22300",
@@ -84,7 +84,7 @@
       "stackfile": "Template/Stack/joplin.yml",
       "url": "https://github.com/mycroftwilde/portainer_templates"
     },
-    "title": "Vikunja",
+    "title": "Joplin",
     "type": 3
   },  
 	  
