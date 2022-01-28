@@ -44,9 +44,9 @@
 		},
 	 {
     "categories": ["Family App Server"],
-    "description": "Test Container for Rocket.Chat",
+    "description": "Rocket.Chat Server",
     "logo": "https://raw.githubusercontent.com/portapps/rocketchat-portable/master/res/papp.png",
-    "note": "This is a test of a new Container",
+    "note": "Rocket.Chat Server Container",
     "platform": "linux",
     "repository": {
       "stackfile": "Template/Stack/rocketchat.yml",
