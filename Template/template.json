@@ -87,7 +87,7 @@
 	    
 	    
     ],
-    "logo": "https://raw.githubusercontent.com/go-vikunja/frontend/main/public/images/icons/android-chrome-192x192.png",
+    "logo": "https://raw.githubusercontent.com/laurent22/joplin/master/Assets/SquareIcon512.png",
     "note": "This is a test of a new Container",
     "platform": "linux",
     "repository": {
