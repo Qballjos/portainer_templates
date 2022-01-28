@@ -16,7 +16,7 @@ I would also like to eventually add the following container templates in the fut
 
  - Readarr (Added Config, after reviewing docker setup notes)
  
- - Joplin 
+ - Joplin (*Added Config and Stack Yaml File, with IURL and Port configuration. It seems to be working. I will add DB, etc, variables at a later time, as it's set to stack defaults for now (from the official stack documentation) )
  
  - Habitica
  
