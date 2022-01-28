@@ -45,7 +45,7 @@
 	 {
     "categories": ["Family App Server"],
     "description": "Test Container for Rocket.Chat",
-    "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/bookstack2.png",
+    "logo": "https://github.com/portapps/rocketchat-portable/blob/master/res/papp.png",
     "note": "This is a test of a new Container",
     "platform": "linux",
     "repository": {
