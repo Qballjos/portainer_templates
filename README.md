@@ -235,16 +235,8 @@ Here is an example of one of the other menu items open within the Dashboard.
  # Adding Further Containers: What I'm currently looking for
  
  I'm currently wanting to add the following containers 
- 
- * Rocket.Chat
 
  * Habitica
-
- * Vikunja
-
- * Traefik
-
- * Joplin
 
   If you'd like to assist with the above, please get into contact and I'll see about adding the applicable code to expand the list 
   
