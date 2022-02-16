@@ -107,7 +107,7 @@
       ]
     },
     {
-      "categories": ["Other"],
+      "categories": ["Other", "Tools"],
       "description": "C# application with primary purpose of farming Steam cards from multiple accounts simultaneously.",
       "env": [
         {
