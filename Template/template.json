@@ -3447,6 +3447,39 @@
       ]
     },
     {
+            "categories": ["Web"],
+            "description": "Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.",
+            "image": "pawelmalak/flame",
+            "logo": "https://github.com/pawelmalak/flame/blob/master/client/public/icons/apple-touch-icon-180x180.png?raw=true",
+            "name": "flame",
+            "platform": "linux",
+            "ports": [
+                "80:5005/tcp",
+                "80:5005/udp"
+            ],
+            "restart_policy": "unless-stopped",
+            "title": "Flame",
+            "type": 1,
+            "volumes": [
+                {
+                    "container": "/app/data",
+                    "bind": "/portainer/Files/AppData/Config/Flame"
+                },
+                {
+                    "container": "/var/run/docker.sock",
+                    "bind": "/var/run/docker.sock"
+                }
+            ],
+            "env": [
+                {
+                    "name": "PASSWORD",
+                    "default": "your_password",
+                    "label": "Admin Password"
+                }
+            ],
+            "network_mode": "bridge"
+    },
+    {
       "categories": ["Messenger"],
       "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
       "env": [
