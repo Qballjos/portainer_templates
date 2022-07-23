@@ -3752,6 +3752,92 @@
     ]
   },
   {
+    "title": "Valheim Server",
+    "name": "valheim-server",
+    "image": "lloesche/valheim-server",
+    "description": "Valheim dedicated gameserver with automatic update, World backup, BepInEx and ValheimPlus support.",
+    "categories": [
+      "Games"
+    ],
+    "platform": "linux",
+    "note": "See additional environment variables for server settings <a>here</a href=\"https://hub.docker.com/r/lloesche/valheim-server\">",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "2456:2456/udp",
+      "2457:2457/udp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Valheim/config"
+      },
+      {
+        "container": "/opt/valheim",
+        "bind": "/portainer/Files/AppData/Config/Valheim/data"
+      }
+    ],
+    "env": [
+      {
+        "name": "SERVER_NAME",
+        "default": "My Server",
+        "label": "Server Name"
+      },
+      {
+        "name": "WORLD_NAME",
+        "default": "world",
+        "label": "World Name"
+      },
+      {
+        "name": "SERVER_PASS",
+        "default": "secret",
+        "label": "Server Password"
+      }
+    ],
+    "command": [
+      "--stop-timeout 120"
+    ],
+    "cap_add": [
+      "SYS_NICE"
+    ],
+    "logo": "https://citadelservers.com/sites/default/files/icon-valheim-256.png",
+    "type": 1
+  },
+  {
+    "title": "Flame",
+    "name": "flame",
+    "image": "pawelmalak/flame",
+    "description": "Flame is self-hosted startpage for your server. Easily manage your apps and bookmarks with built-in editors.",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "80:5005/tcp",
+      "80:5005/udp"
+    ],
+    "volumes": [
+      {
+        "container": "/app/data",
+        "bind": "/portainer/Files/AppData/Config/Flame"
+      },
+      {
+        "container": "/var/run/docker.sock",
+        "bind": "/var/run/docker.sock"
+      }
+    ],
+    "env": [
+      {
+        "name": "PASSWORD",
+        "default": "your_password",
+        "label": "Admin Password"
+      }
+    ],
+    "logo": "https://github.com/pawelmalak/flame/blob/master/client/public/icons/apple-touch-icon-180x180.png?raw=true",
+    "network_mode": "bridge",
+    "type": 1
+  },
+  {
     "type": 1,
     "title": "ruTorrent",
     "name": "rutorrent",
