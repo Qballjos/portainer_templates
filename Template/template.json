@@ -3480,6 +3480,57 @@
             "network_mode": "bridge"
     },
     {
+            "title": "Valheim Server",
+            "name": "valheim-server",
+            "image": "lloesche/valheim-server",
+            "description": "Valheim dedicated gameserver with automatic update, World backup, BepInEx and ValheimPlus support.",
+            "categories": [
+                "Games"
+            ],
+            "platform": "linux",
+            "note": "See additional environment variables for server settings <a>here</a href=\"https://hub.docker.com/r/lloesche/valheim-server\">",
+            "restart_policy": "unless-stopped",
+            "ports": [
+                "2456:2456/udp",
+                "2457:2457/udp"
+            ],
+            "volumes": [
+                {
+                    "container": "/config",
+                    "bind": "/portainer/Files/AppData/Config/Valheim/config"
+                },
+                {
+                    "container": "/opt/valheim",
+                    "bind": "/portainer/Files/AppData/Config/Valheim/data"
+                }
+            ],
+            "env": [
+                {
+                    "name": "SERVER_NAME",
+                    "default": "My Server",
+                    "label": "Server Name"
+                },
+                {
+                    "name": "WORLD_NAME",
+                    "default": "world",
+                    "label": "World Name"
+                },
+                {
+                    "name": "SERVER_PASS",
+                    "default": "secret",
+                    "label": "Server Password"
+                }
+            ],
+            "command": [
+                "--stop-timeout 120"
+            ],
+            "cap_add": [
+                "SYS_NICE"
+            ],
+            "logo": "https://citadelservers.com/sites/default/files/icon-valheim-256.png",
+            "type": 1
+    },
+    {
       "categories": ["Messenger"],
       "description": "ZNC is an IRC network bouncer or BNC. It can detach the client from the actual IRC server, and also from selected channels. Multiple clients from different locations can connect to a single ZNC account simultaneously and therefore appear under the same nickname on IRC.",
       "env": [
