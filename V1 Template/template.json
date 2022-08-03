@@ -3861,7 +3861,7 @@
       {
         "name": "EULA",
         "default": "TRUE",
-        "label": ""
+        "label": "EULA"
       },
       {
         "name": "VERSION",
