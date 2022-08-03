@@ -3480,6 +3480,50 @@
             "network_mode": "bridge"
     },
     {
+            "title": "Minecraft Server",
+            "name": "minecraft-server",
+            "image": "itzg/minecraft-server",
+            "description": "This docker image provides a Minecraft Server that will automatically download the latest stable version at startup. You can also run/upgrade to any specific version or the latest snapshot.",
+            "categories": [
+                "Games"
+            ],
+            "platform": "linux",
+            "restart_policy": "unless-stopped",
+            "ports": [
+                "25565:25565/tcp",
+                "25565:25565/udp"
+            ],
+            "volumes": [
+                {
+                    "container": "/data",
+                    "bind": "/portainer/Files/AppData/Config/Minecraft"
+                }
+            ],
+            "env": [
+                {
+                    "name": "EULA",
+                    "default": "TRUE",
+                    "label": ""
+                },
+                {
+                    "name": "VERSION",
+                    "default": "LATEST",
+                    "label": "Version"
+                }
+            ],
+            "sysctls": [
+                {
+                    " stdin_open": "true"
+                },
+                {
+                    "tty": "true"
+                }
+            ],
+            "logo": "https://orig00.deviantart.net/4ad2/f/2017/243/9/a/minecraft_grass_block_vector_by_astrorious-dblzbbl.png",
+            "network_mode": "bridge",
+            "type": 1
+        },
+    {
             "title": "Valheim Server",
             "name": "valheim-server",
             "image": "lloesche/valheim-server",
