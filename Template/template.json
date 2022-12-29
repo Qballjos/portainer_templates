@@ -384,7 +384,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools", "Photo"],
+      "categories": ["Other", "Tools", "Photos"],
       "description": "Chevereto is a powerful and fast image hosting script that allows you to create your very own full featured image hosting website in just minutes. Please note that this offers only the free Chevereto version.",
       "env": [
         {
@@ -3046,7 +3046,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Other", "Tools", "Wiki"],
       "description": "A unique, non-linear notebook wiki.",
       "image": "mazzolino/tiddlywiki:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/tiddlywiki.png",
@@ -3369,7 +3369,7 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
+      "categories": ["Other", "Tools", "Wiki"],
       "description": "Wikijs A modern, lightweight and powerful wiki app built on NodeJS.",
       "image": "linuxserver/wikijs:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/wikijs.png",
