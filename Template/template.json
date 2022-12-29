@@ -2140,7 +2140,7 @@
           "name": "PGID"
         }
       ],
-      "image": "hotio/overseerr:release",
+      "image": "hotio/overseerr:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/overseerr-icon.png",
       "name": "Overseerr",
       "platform": "linux",
