@@ -1123,28 +1123,40 @@
       ]
     },
     {
-      "categories": ["Other", "Tools"],
-      "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
-      "image": "b4bz/homer:latest",
-      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/homer.png",
-      "name": "homer",
-      "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
-      "platform": "linux",
-      "ports": ["8902:8080/tcp"],
-      "restart_policy": "unless-stopped",
-      "title": "Homer",
-      "type": 1,
-      "volumes": [
-        {
-          "bind": "/portainer/Files/AppData/Config/Homer/assets",
-          "container": "/www/assets"
-        },
-        {
-          "bind": "/portainer/Files/AppData/Config/Homer",
-          "container": "/www/config.yml"
-        }
-      ]
-    },
+			"categories": ["Other", "Tools"],
+			"description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
+			"env": [
+				{
+					"default": "1000",
+					"label": "PUID",
+					"name": "PUID"
+				},
+				{
+					"default": "100",
+					"label": "PGID",
+					"name": "PGID"
+				}
+			],
+			"image": "b4bz/homer:latest",
+			"logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/homer.png",
+			"name": "homer",
+			"note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
+			"platform": "linux",
+			"ports": ["8902:8080/tcp"],
+			"restart_policy": "unless-stopped",
+			"title": "Homer",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/portainer/Files/AppData/Config/Homer/assets",
+					"container": "/www/assets"
+				},
+				{
+					"bind": "/portainer/Files/AppData/Config/Homer",
+					"container": "/www/config.yml"
+				}
+			]
+		},
     {
       "categories": ["Other", "Tools"],
       "description": "Create agents that monitor and act on your behalf.",
