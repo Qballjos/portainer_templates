@@ -3272,6 +3272,28 @@
       ]
     },
     {
+      "categories": [
+        "Task Server"
+      ],
+      "description": "It is a self-hosted monitoring tool like Uptime Robot",
+      "image": "louislam/uptime-kuma:latest",
+      "logo": "https://images.opencollective.com/uptime-kuma/29c5113/logo/256.png",
+      "name": "uptime-kuma",
+      "platform": "linux",
+      "ports": [
+        "3001:3001/tcp"
+      ],
+      "restart_policy": "always",
+      "title": "Uptime Kuma",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/Files/AppData/Config/UptimeKuma",
+          "container": "/app/data"
+        }
+      ]
+    },
+    {
       "categories": ["Management", "Tools"],
       "description": "The Unifi-controller Controller software is a powerful, enterprise wireless software engine ideal for high-density client deployments requiring low latency and high uptime performance.",
       "env": [
