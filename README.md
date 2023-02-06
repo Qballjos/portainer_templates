@@ -132,6 +132,7 @@ All templates are already configured to bind mount to various places on your dri
   - Tvheadend 
   - Ubooquity 
   - Unifi-controller 
+  - Uptime Kuma
   - Watchtower 
   - Webgrabplus 
   - Whoogle 
