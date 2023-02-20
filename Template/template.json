@@ -703,6 +703,11 @@
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/deluge-icon.png",
       "name": "deluge",
       "platform": "linux",
+      "ports": [
+        "8112:8112/tcp",
+        "6881:6881/tcp",
+        "6881:6881/udp"
+      ],
       "restart_policy": "unless-stopped",
       "title": "Deluge",
       "type": 1,
