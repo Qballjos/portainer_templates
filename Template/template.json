@@ -715,7 +715,8 @@
           "bind": "/portainer/Downloads",
           "container": "/downloads"
         }
-      ]
+      ],
+      "ports": ["8112:8112/tcp", "6881:6881/tcp", "6881:6881/udp"]
     },
     {
       "categories": ["HomeAutomation", "Management"],
