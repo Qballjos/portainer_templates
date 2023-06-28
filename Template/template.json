@@ -2220,6 +2220,48 @@
     },
     {
       "categories": ["Other", "Tools"],
+      "description": "Passky is a simple, modern, lightweight, open-source and secure password manager.",
+      "image": "rabbitcompany/passky-client:latest",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/passky-icon.png",
+      "name": "passky-client",
+      "platform": "linux",
+      "ports": ["8081:80/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "Passky Client",
+      "type": 1
+    },
+    {
+      "categories": ["Other", "Tools"],
+      "description": "Passky is a simple, modern, lightweight, open-source and secure password manager.",
+      "env": [
+        {
+          "default": "admin",
+          "label": "ADMIN_USERNAME",
+          "name": "ADMIN_USERNAME"
+        },
+        {
+          "label": "ADMIN_PASSWORD",
+          "name": "ADMIN_PASSWORD"
+        }
+      ],
+      "image": "rabbitcompany/passky-server:latest",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/passky-icon.png",
+      "name": "passky-server",
+      "note": "Do not forget to perform regular backups, especially before each update.",
+      "platform": "linux",
+      "ports": ["8080:80/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "Passky Server",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/Files/AppData/Passky-Server",
+          "container": "/var/www/html/databases"
+        }
+      ]
+    },
+    {
+      "categories": ["Other", "Tools"],
       "description": "Petio is a third party companion app available to Plex server owners to allow their users to request, review and discover content.",
       "env": [
         {
