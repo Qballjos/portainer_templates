@@ -226,7 +226,7 @@
       "volumes": [
         {
           "bind": "/portainer/Files/AppData/Config/Vaultwarden",
-          "container": "/config"
+          "container": "/data"
         }
       ]
     },
