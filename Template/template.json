@@ -1294,6 +1294,36 @@
       ]
     },
     {
+      "categories": ["Other", "Tools"],
+      "description": "Jellyseer is a free and open source software application for managing requests for your media library.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        }
+      ],
+      "image": "fallenbagel/jellyseerr",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/jellyseerr.png",
+      "name": "Jellyseerr",
+      "platform": "linux",
+      "ports": ["5055:5055/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "Jellyseerr",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/Files/AppData/Config/Jellyseerr",
+          "container": "/config"
+        }
+      ]
+    },
+    {
       "categories": ["Video"],
       "description": "Headless installation of Kodi™ (formerly known as XBMC™), to enable library updates.",
       "env": [
