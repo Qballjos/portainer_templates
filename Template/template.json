@@ -1319,7 +1319,7 @@
       "volumes": [
         {
           "bind": "/portainer/Files/AppData/Config/Jellyseerr",
-          "container": "/config"
+          "container": "/app/config"
         }
       ]
     },
