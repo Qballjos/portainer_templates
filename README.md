@@ -71,7 +71,8 @@ All templates are already configured to bind mount to various places on your dri
   - Huginn 
   - Invoice_ninja 
   - Jackett 
-  - Jellyfin 
+  - Jellyfin
+  - Jellyseerr
   - kodi-headless 
   - Lazylibrarian 
   - Letsencrypt / SWAG 
