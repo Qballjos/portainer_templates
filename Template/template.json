@@ -1308,7 +1308,7 @@
           "name": "PGID"
         }
       ],
-      "image": "fallenbagel/jellyseerr",
+      "image": "fallenbagel/jellyseerr:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/jellyseerr.png",
       "name": "Jellyseerr",
       "platform": "linux",
