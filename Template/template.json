@@ -107,6 +107,45 @@
       ]
     },
     {
+      "categories": ["Other", "Tools"],
+      "description": "C# application with primary purpose of farming Steam cards from multiple accounts simultaneously.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "100",
+          "label": "PGID",
+          "name": "PGID"
+        }
+      ],
+      "image": "justarchi/archisteamfarm:latest",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/ASF.png",
+      "name": "ArchiSteamFarm",
+      "note": "Requires an ASF.json with headless enabled, IPCPassword set and an IPC.config described by the wiki in order to work. Please generate the former <a href='https://justarchinet.github.io/ASF-WebConfigGenerator'>here</a> and copy the latter from <a href='https://github.com/JustArchiNET/ArchiSteamFarm/wiki/Docker#ipc'>here</a>.",
+      "platform": "linux",
+      "ports": ["1242:1242/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "ArchiSteamFarm",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/Files/AppData/Config/ArchiSteamFarm/Config",
+          "container": "/app/config"
+        },
+        {
+          "bind": "/portainer/Files/AppData/Config/ArchiSteamFarm/Plugins",
+          "container": "/app/plugins/customplugins"
+        },
+        {
+          "bind": "/portainer/Files/AppData/Config/ArchiSteamFarm/Logs",
+          "container": "/app/logs"
+        }
+      ]
+    },
+    {
       "categories": ["Other", "Tools", "Authentication"],
       "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
       "env": [
