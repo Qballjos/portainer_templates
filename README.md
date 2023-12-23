@@ -38,6 +38,7 @@ All templates are already configured to bind mount to various places on your dri
 
   - Adguard 
   - Airsonic 
+  - ArchiSteamFarm
   - Authelia 
   - ArchiSteamFarm
   - Bazarr 
@@ -63,6 +64,7 @@ All templates are already configured to bind mount to various places on your dri
   - Filebrowser 
   - Freshrss 
   - Gazee 
+  - Gitea
   - Guacamole 
   - Grocy 
   - Htpcmanager 
