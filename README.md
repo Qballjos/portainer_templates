@@ -136,6 +136,7 @@ All templates are already configured to bind mount to various places on your dri
   - Transmission 
   - Transmission-openvpn 
   - Tvheadend 
+  - Twitch Points Miner
   - Ubooquity 
   - Unifi-controller 
   - Uptime Kuma
