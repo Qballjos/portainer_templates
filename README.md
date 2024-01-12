@@ -34,6 +34,14 @@ All templates are already configured to bind mount to various places on your dri
 * **Books** - Where books are stored/moved to after downloaded.
 * **Comics** - Where comics are stored/moved to after downloaded.
 * **Podcasts** - Where podcasts are stored/moved to after downloaded.
+
+### Testing your template changes
+```sh
+docker compose up -d
+```
+You can manually review the JSON in the web browser at http://192.168.1.171:8426/templates.json.
+But the real benefit is pointing your Portainer Template URL to the local address.
+
 ## App List
 
   - Adguard 
@@ -71,6 +79,7 @@ All templates are already configured to bind mount to various places on your dri
   - Heimdall 
   - Homer 
   - Huginn 
+  - Immich
   - Invoice_ninja 
   - Jackett 
   - Jellyfin
@@ -147,6 +156,39 @@ All templates are already configured to bind mount to various places on your dri
   - Youtubedl-material 
   - Znc 
 
+## Category List
+<!--
+Acquired by pasting the template JSON into browser DevTools, then running:
+```js
+Array.from(new Set(window.json.templates.flatMap((t) => t.categories))).sort()
+```
+-->
+  - Authentication
+  - Backup
+  - Books
+  - Chat
+  - Cloud
+  - DNS
+  - Downloaders
+  - Email
+  - FTP
+  - Finance
+  - HomeAutomation
+  - Maintenance
+  - Management
+  - Messenger
+  - Music
+  - Other
+  - Photos
+  - Productivity
+  - Proxy
+  - Task Server
+  - Tools
+  - VPN
+  - Video
+  - Voice
+  - Web
+  - Wiki
 
 ## Contributing
 

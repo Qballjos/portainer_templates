@@ -1255,6 +1255,49 @@
       ]
     },
     {
+      "categories": ["Photos"],
+      "description": "Self-hosted backup solution for photos and videos on mobile device.",
+      "env": [
+        {
+          "default": "1000",
+          "label": "PUID",
+          "name": "PUID"
+        },
+        {
+          "default": "1000",
+          "label": "PGID",
+          "name": "PGID"
+        },
+        {
+          "label": "Database username",
+          "name": "DB_USERNAME"
+        },
+        {
+          "label": "Database password",
+          "name": "DB_PASSWORD"
+        },
+        {
+          "label": "Database name",
+          "name": "DB_DATABASE_NAME"
+        },
+        {
+          "default": "2283",
+          "label": "Http Port",
+          "name": "PORT"
+        }
+      ],
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/immich-logo.svg",
+      "note": "<a target='_blank' href='https://immich.app'>Application documentation 🗗</a>",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "Template/Stack/immich.yml",
+        "url": "https://github.com/Qballjos/portainer_templates"
+      },
+      "title": "Immich",
+      "name": "Immich",
+      "type": 3
+    },
+    {
       "categories": ["Cloud", "Productivity", "Tools", "Other", "Web"],
       "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
       "env": [
