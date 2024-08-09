@@ -3693,6 +3693,640 @@
           "container": "/config"
         }
       ]
+    },
+    {
+      "categories": ["Tools", "Photos"],
+      "description": "Imgproxy is a fast and secure standalone server for resizing, processing, and converting images. The guiding principles behind imgproxy are security, speed, and simplicity.",
+      "env": [
+        {
+          "label": "IMGPROXY_NETWORK",
+          "name": "IMGPROXY_NETWORK",
+          "default": "tcp"
+        },
+        {
+          "label": "IMGPROXY_BIND",
+          "name": "IMGPROXY_BIND",
+          "default": ":8080"
+        },
+        {
+          "label": "IMGPROXY_LOCAL_FILESYSTEM_ROOT",
+          "name": "IMGPROXY_LOCAL_FILESYSTEM_ROOT",
+          "default": "/home"
+        },
+        {
+          "label": "IMGPROXY_LOG_LEVEL",
+          "name": "IMGPROXY_LOG_LEVEL",
+          "default": "warn"
+        },
+        {
+          "label": "IMGPROXY_LOG_FORMAT",
+          "name": "IMGPROXY_LOG_FORMAT",
+          "default": "pretty"
+        },
+        {
+          "label": "IMGPROXY_DEVELOPMENT_ERRORS_MODE",
+          "name": "IMGPROXY_DEVELOPMENT_ERRORS_MODE",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_ENABLE_DEBUG_HEADERS",
+          "name": "IMGPROXY_ENABLE_DEBUG_HEADERS",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_REPORT_DOWNLOADING_ERRORS",
+          "name": "IMGPROXY_REPORT_DOWNLOADING_ERRORS",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_READ_REQUEST_TIMEOUT",
+          "name": "IMGPROXY_READ_REQUEST_TIMEOUT",
+          "default": 10
+        },
+        {
+          "label": "IMGPROXY_TIMEOUT",
+          "name": "IMGPROXY_TIMEOUT",
+          "default": 10
+        },
+        {
+          "label": "IMGPROXY_KEEP_ALIVE_TIMEOUT",
+          "name": "IMGPROXY_KEEP_ALIVE_TIMEOUT",
+          "default": 10
+        },
+        {
+          "label": "IMGPROXY_CLIENT_KEEP_ALIVE_TIMEOUT",
+          "name": "IMGPROXY_CLIENT_KEEP_ALIVE_TIMEOUT",
+          "default": 90
+        },
+        {
+          "label": "IMGPROXY_DOWNLOAD_TIMEOUT",
+          "name": "IMGPROXY_DOWNLOAD_TIMEOUT",
+          "default": 10
+        },
+        {
+          "label": "IMGPROXY_BASE_URL",
+          "name": "IMGPROXY_BASE_URL",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_CACHE_CONTROL_PASSTHROUGH",
+          "name": "IMGPROXY_CACHE_CONTROL_PASSTHROUGH",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_ETAG_BUSTER",
+          "name": "IMGPROXY_ETAG_BUSTER",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_HEALTH_CHECK_PATH",
+          "name": "IMGPROXY_HEALTH_CHECK_PATH",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_IGNORE_SSL_VERIFICATION",
+          "name": "IMGPROXY_IGNORE_SSL_VERIFICATION",
+          "default": true
+        },
+        {
+          "label": "IMGPROXY_MAX_CLIENTS",
+          "name": "IMGPROXY_MAX_CLIENTS",
+          "default": 2048
+        },
+        {
+          "label": "IMGPROXY_MAX_REDIRECTS",
+          "name": "IMGPROXY_MAX_REDIRECTS",
+          "default": 10
+        },
+        {
+          "label": "IMGPROXY_PATH_PREFIX",
+          "name": "IMGPROXY_PATH_PREFIX",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_REQUESTS_QUEUE_SIZE",
+          "name": "IMGPROXY_REQUESTS_QUEUE_SIZE",
+          "default": 0
+        },
+        {
+          "label": "IMGPROXY_SET_CANONICAL_HEADER",
+          "name": "IMGPROXY_SET_CANONICAL_HEADER",
+          "default": true
+        },
+        {
+          "label": "IMGPROXY_SO_REUSEPORT",
+          "name": "IMGPROXY_SO_REUSEPORT",
+          "default": true
+        },
+        {
+          "label": "IMGPROXY_TTL",
+          "name": "IMGPROXY_TTL",
+          "default": 31536000
+        },
+        {
+          "label": "IMGPROXY_USE_ETAG",
+          "name": "IMGPROXY_USE_ETAG",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_USE_LAST_MODIFIED",
+          "name": "IMGPROXY_USE_LAST_MODIFIED",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_FREE_MEMORY_INTERVAL",
+          "name": "IMGPROXY_FREE_MEMORY_INTERVAL",
+          "default": 10
+        },
+        {
+          "label": "IMGPROXY_DOWNLOAD_BUFFER_SIZE",
+          "name": "IMGPROXY_DOWNLOAD_BUFFER_SIZE",
+          "default": 0
+        },
+        {
+          "label": "IMGPROXY_BUFFER_POOL_CALIBRATION_THRESHOLD",
+          "name": "IMGPROXY_BUFFER_POOL_CALIBRATION_THRESHOLD",
+          "default": 1024
+        },
+        {
+          "label": "IMGPROXY_SALT",
+          "name": "IMGPROXY_SALT",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_KEY",
+          "name": "IMGPROXY_KEY",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_SECRET",
+          "name": "IMGPROXY_SECRET",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_SOURCE_URL_ENCRYPTION_KEY",
+          "name": "IMGPROXY_SOURCE_URL_ENCRYPTION_KEY",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_SIGNATURE_SIZE",
+          "name": "IMGPROXY_SIGNATURE_SIZE",
+          "default": 32
+        },
+        {
+          "label": "IMGPROXY_ALLOW_ORIGIN",
+          "name": "IMGPROXY_ALLOW_ORIGIN",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_ALLOWED_SOURCES",
+          "name": "IMGPROXY_ALLOWED_SOURCES",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_ALLOW_LINK_LOCAL_SOURCE_ADDRESSES",
+          "name": "IMGPROXY_ALLOW_LINK_LOCAL_SOURCE_ADDRESSES",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_ALLOW_LOOPBACK_SOURCE_ADDRESSES",
+          "name": "IMGPROXY_ALLOW_LOOPBACK_SOURCE_ADDRESSES",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_ALLOW_PRIVATE_SOURCE_ADDRESSES",
+          "name": "IMGPROXY_ALLOW_PRIVATE_SOURCE_ADDRESSES",
+          "default": true
+        },
+        {
+          "label": "IMGPROXY_ALLOW_SECURITY_OPTIONS",
+          "name": "IMGPROXY_ALLOW_SECURITY_OPTIONS",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_MAX_ANIMATION_FRAME_RESOLUTION",
+          "name": "IMGPROXY_MAX_ANIMATION_FRAME_RESOLUTION",
+          "default": 0
+        },
+        {
+          "label": "IMGPROXY_MAX_ANIMATION_FRAMES",
+          "name": "IMGPROXY_MAX_ANIMATION_FRAMES",
+          "default": 64
+        },
+        {
+          "label": "IMGPROXY_MAX_SRC_FILE_SIZE",
+          "name": "IMGPROXY_MAX_SRC_FILE_SIZE",
+          "default": 0
+        },
+        {
+          "label": "IMGPROXY_MAX_SRC_RESOLUTION",
+          "name": "IMGPROXY_MAX_SRC_RESOLUTION",
+          "default": 50
+        },
+        {
+          "label": "IMGPROXY_MAX_SVG_CHECK_BYTES",
+          "name": "IMGPROXY_MAX_SVG_CHECK_BYTES",
+          "default": 32768
+        },
+        {
+          "label": "IMGPROXY_COOKIE_PASSTHROUGH",
+          "name": "IMGPROXY_COOKIE_PASSTHROUGH",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_COOKIE_BASE_URL",
+          "name": "IMGPROXY_COOKIE_BASE_URL",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_QUALITY",
+          "name": "IMGPROXY_QUALITY",
+          "default": 80
+        },
+        {
+          "label": "IMGPROXY_FORMAT_QUALITY",
+          "name": "IMGPROXY_FORMAT_QUALITY",
+          "default": "jpeg=80,webp=70,avif=50"
+        },
+        {
+          "label": "IMGPROXY_JPEG_PROGRESSIVE",
+          "name": "IMGPROXY_JPEG_PROGRESSIVE",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_PNG_INTERLACED",
+          "name": "IMGPROXY_PNG_INTERLACED",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_PNG_QUANTIZATION_COLORS",
+          "name": "IMGPROXY_PNG_QUANTIZATION_COLORS",
+          "default": 256
+        },
+        {
+          "label": "IMGPROXY_PNG_QUANTIZE",
+          "name": "IMGPROXY_PNG_QUANTIZE",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_AVIF_SPEED",
+          "name": "IMGPROXY_AVIF_SPEED",
+          "default": 9
+        },
+        {
+          "label": "IMGPROXY_ENABLE_AVIF_DETECTION",
+          "name": "IMGPROXY_ENABLE_AVIF_DETECTION",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_ENFORCE_AVIF",
+          "name": "IMGPROXY_ENFORCE_AVIF",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_ENABLE_WEBP_DETECTION",
+          "name": "IMGPROXY_ENABLE_WEBP_DETECTION",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_ENFORCE_WEBP",
+          "name": "IMGPROXY_ENFORCE_WEBP",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_PREFERRED_FORMATS",
+          "name": "IMGPROXY_PREFERRED_FORMATS",
+          "default": "jpeg,png,gif"
+        },
+        {
+          "label": "IMGPROXY_SKIP_PROCESSING_FORMATS",
+          "name": "IMGPROXY_SKIP_PROCESSING_FORMATS",
+          "default": "svg,webp,avif"
+        },
+        {
+          "label": "IMGPROXY_ENABLE_CLIENT_HINTS",
+          "name": "IMGPROXY_ENABLE_CLIENT_HINTS",
+          "default": true
+        },
+        {
+          "label": "IMGPROXY_WATERMARK_OPACITY",
+          "name": "IMGPROXY_WATERMARK_OPACITY",
+          "default": 1
+        },
+        {
+          "label": "IMGPROXY_WATERMARK_PATH",
+          "name": "IMGPROXY_WATERMARK_PATH",
+          "default": "/home/watermark.jpg"
+        },
+        {
+          "label": "IMGPROXY_WATERMARK_DATA",
+          "name": "IMGPROXY_WATERMARK_DATA",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_WATERMARK_URL",
+          "name": "IMGPROXY_WATERMARK_URL",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_FALLBACK_IMAGE_TTL",
+          "name": "IMGPROXY_FALLBACK_IMAGE_TTL",
+          "default": 0
+        },
+        {
+          "label": "IMGPROXY_FALLBACK_IMAGE_HTTP_CODE",
+          "name": "IMGPROXY_FALLBACK_IMAGE_HTTP_CODE",
+          "default": 404
+        },
+        {
+          "label": "IMGPROXY_FALLBACK_IMAGE_PATH",
+          "name": "IMGPROXY_FALLBACK_IMAGE_PATH",
+          "default": "/home/noimage.jpg"
+        },
+        {
+          "label": "IMGPROXY_FALLBACK_IMAGE_DATA",
+          "name": "IMGPROXY_FALLBACK_IMAGE_DATA",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_FALLBACK_IMAGE_URL",
+          "name": "IMGPROXY_FALLBACK_IMAGE_URL",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_PRESETS",
+          "name": "IMGPROXY_PRESETS",
+          "default": "default=resizing_type:fit/gravity:sm,logo=watermark:0.8:soea:20:20:0.15,repeated_logo=watermark:0.25:re:0:0:0.2"
+        },
+        {
+          "label": "IMGPROXY_ONLY_PRESETS",
+          "name": "IMGPROXY_ONLY_PRESETS",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_AUTO_ROTATE",
+          "name": "IMGPROXY_AUTO_ROTATE",
+          "default": true
+        },
+        {
+          "label": "IMGPROXY_DISABLE_SHRINK_ON_LOAD",
+          "name": "IMGPROXY_DISABLE_SHRINK_ON_LOAD",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_ENFORCE_THUMBNAIL",
+          "name": "IMGPROXY_ENFORCE_THUMBNAIL",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_KEEP_COPYRIGHT",
+          "name": "IMGPROXY_KEEP_COPYRIGHT",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_RETURN_ATTACHMENT",
+          "name": "IMGPROXY_RETURN_ATTACHMENT",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_SANITIZE_SVG",
+          "name": "IMGPROXY_SANITIZE_SVG",
+          "default": true
+        },
+        {
+          "label": "IMGPROXY_STRIP_COLOR_PROFILE",
+          "name": "IMGPROXY_STRIP_COLOR_PROFILE",
+          "default": true
+        },
+        {
+          "label": "IMGPROXY_STRIP_METADATA",
+          "name": "IMGPROXY_STRIP_METADATA",
+          "default": true
+        },
+        {
+          "label": "IMGPROXY_SVG_FIX_UNSUPPORTED",
+          "name": "IMGPROXY_SVG_FIX_UNSUPPORTED",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_USE_LINEAR_COLORSPACE",
+          "name": "IMGPROXY_USE_LINEAR_COLORSPACE",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_USE_S3",
+          "name": "IMGPROXY_USE_S3",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_S3_REGION",
+          "name": "IMGPROXY_S3_REGION",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_S3_ENDPOINT",
+          "name": "IMGPROXY_S3_ENDPOINT",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_S3_MULTI_REGION",
+          "name": "IMGPROXY_S3_MULTI_REGION",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_USE_GCS",
+          "name": "IMGPROXY_USE_GCS",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_GCS_KEY",
+          "name": "IMGPROXY_GCS_KEY",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_USE_ABS",
+          "name": "IMGPROXY_USE_ABS",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_ABS_NAME",
+          "name": "IMGPROXY_ABS_NAME",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_ABS_KEY",
+          "name": "IMGPROXY_ABS_KEY",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_ABS_ENDPOINT",
+          "name": "IMGPROXY_ABS_ENDPOINT",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_USE_SWIFT",
+          "name": "IMGPROXY_USE_SWIFT",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_SWIFT_USERNAME",
+          "name": "IMGPROXY_SWIFT_USERNAME",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_SWIFT_API_KEY",
+          "name": "IMGPROXY_SWIFT_API_KEY",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_SWIFT_AUTH_URL",
+          "name": "IMGPROXY_SWIFT_AUTH_URL",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_SWIFT_AUTH_VERSION",
+          "name": "IMGPROXY_SWIFT_AUTH_VERSION",
+          "default": 0
+        },
+        {
+          "label": "IMGPROXY_SWIFT_TENANT",
+          "name": "IMGPROXY_SWIFT_TENANT",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_SWIFT_DOMAIN",
+          "name": "IMGPROXY_SWIFT_DOMAIN",
+          "default": ""
+        },
+        {
+          "label": "IMGRPOXY_SWIFT_CONNECT_TIMEOUT_SECONDS",
+          "name": "IMGRPOXY_SWIFT_CONNECT_TIMEOUT_SECONDS",
+          "default": 10
+        },
+        {
+          "label": "IMGRPOXY_SWIFT_TIMEOUT_SECONDS",
+          "name": "IMGRPOXY_SWIFT_TIMEOUT_SECONDS",
+          "default": 60
+        },
+        {
+          "label": "IMGPROXY_NEW_RELIC_APP_NAME",
+          "name": "IMGPROXY_NEW_RELIC_APP_NAME",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_NEW_RELIC_KEY",
+          "name": "IMGPROXY_NEW_RELIC_KEY",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_PROMETHEUS_BIND",
+          "name": "IMGPROXY_PROMETHEUS_BIND",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_PROMETHEUS_NAMESPACE",
+          "name": "IMGPROXY_PROMETHEUS_NAMESPACE",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_OPEN_TELEMETRY_ENABLE_METRICS",
+          "name": "IMGPROXY_OPEN_TELEMETRY_ENABLE_METRICS",
+          "default": false
+        },
+        {
+          "label": "IMGPROXY_OPEN_TELEMETRY_SERVER_CERT",
+          "name": "IMGPROXY_OPEN_TELEMETRY_SERVER_CERT",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_OPEN_TELEMETRY_CLIENT_CERT",
+          "name": "IMGPROXY_OPEN_TELEMETRY_CLIENT_CERT",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_OPEN_TELEMETRY_CLIENT_KEY",
+          "name": "IMGPROXY_OPEN_TELEMETRY_CLIENT_KEY",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_OPEN_TELEMETRY_TRACE_ID_GENERATOR",
+          "name": "IMGPROXY_OPEN_TELEMETRY_TRACE_ID_GENERATOR",
+          "default": "xray"
+        },
+        {
+          "label": "IMGPROXY_CLOUD_WATCH_SERVICE_NAME",
+          "name": "IMGPROXY_CLOUD_WATCH_SERVICE_NAME",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_CLOUD_WATCH_NAMESPACE",
+          "name": "IMGPROXY_CLOUD_WATCH_NAMESPACE",
+          "default": "imgproxy"
+        },
+        {
+          "label": "IMGPROXY_CLOUD_WATCH_REGION",
+          "name": "IMGPROXY_CLOUD_WATCH_REGION",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_BUGSNAG_KEY",
+          "name": "IMGPROXY_BUGSNAG_KEY",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_BUGSNAG_STAGE",
+          "name": "IMGPROXY_BUGSNAG_STAGE",
+          "default": "production"
+        },
+        {
+          "label": "IMGPROXY_HONEYBADGER_KEY",
+          "name": "IMGPROXY_HONEYBADGER_KEY",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_HONEYBADGER_ENV",
+          "name": "IMGPROXY_HONEYBADGER_ENV",
+          "default": "production"
+        },
+        {
+          "label": "IMGPROXY_SENTRY_DSN",
+          "name": "IMGPROXY_SENTRY_DSN",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_SENTRY_ENVIRONMENT",
+          "name": "IMGPROXY_SENTRY_ENVIRONMENT",
+          "default": "production"
+        },
+        {
+          "label": "IMGPROXY_AIRBRAKE_PROJECT_ID",
+          "name": "IMGPROXY_AIRBRAKE_PROJECT_ID",
+          "default": 0
+        },
+        {
+          "label": "IMGPROXY_AIRBRAKE_PROJECT_KEY",
+          "name": "IMGPROXY_AIRBRAKE_PROJECT_KEY",
+          "default": ""
+        },
+        {
+          "label": "IMGPROXY_AIRBRAKE_ENVIRONMENT",
+          "name": "IMGPROXY_AIRBRAKE_ENVIRONMENT",
+          "default": "production"
+        }
+      ],
+      "image": "darthsim/imgproxy:latest",
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/imgproxy.png",
+      "platform": "linux",
+      "ports": ["8080:8080/tcp"],
+      "restart_policy": "unless-stopped",
+      "title": "Imgproxy",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/portainer/Files/AppData/Imgproxy/home",
+          "container": "/home"
+        }
+      ]
     }
   ]
 }

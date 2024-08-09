@@ -72,6 +72,7 @@ All templates are already configured to bind mount to various places on your dri
   - Homer 
   - Huginn 
   - Invoice_ninja 
+  - Imgproxy
   - Jackett 
   - Jellyfin
   - Jellyseerr
