@@ -3693,6 +3693,55 @@
           "container": "/config"
         }
       ]
+    },
+    {
+      "categories": ["Network", "Monitoring", "Tools"],
+      "description": "MyNeS discovers, identifies and monitors every device on your home network, including the ones an IP scan cannot see. Beyond ARP and port scanning it speaks mDNS/Bonjour, SSDP/UPnP, Matter, Bluetooth LE and MQTT, so Zigbee bulbs behind Zigbee2MQTT and Z-Wave sensors behind Z-Wave JS appear next to your servers and phones. Vendor lookup over a 1000+ entry OUI database, automatic device-type classification, topology and graph views, scan history, rule-based alerts by Web Push / webhook / e-mail, and two-way Home Assistant integration. No cloud, no account, no telemetry.",
+      "env": [
+        {
+          "default": "5883",
+          "label": "MYNES_PORT",
+          "name": "MYNES_PORT"
+        },
+        {
+          "default": "UTC",
+          "label": "TZ",
+          "name": "TZ"
+        },
+        {
+          "label": "MYNES_PASSWORD",
+          "name": "MYNES_PASSWORD"
+        },
+        {
+          "label": "MYNES_MQTT_HOST",
+          "name": "MYNES_MQTT_HOST"
+        },
+        {
+          "label": "MYNES_MQTT_USERNAME",
+          "name": "MYNES_MQTT_USERNAME"
+        },
+        {
+          "label": "MYNES_MQTT_PASSWORD",
+          "name": "MYNES_MQTT_PASSWORD"
+        },
+        {
+          "label": "MYNES_HA_URL",
+          "name": "MYNES_HA_URL"
+        },
+        {
+          "label": "MYNES_HA_TOKEN",
+          "name": "MYNES_HA_TOKEN"
+        }
+      ],
+      "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/mynes.png",
+      "note": "Deployed as a stack because it needs host networking plus NET_ADMIN/NET_RAW - raw ARP frames and mDNS/SSDP multicast do not cross a bridge network. It does not run as root (uid 1000) and is not privileged; without those capabilities it degrades to a ping sweep rather than failing. Open http://&lt;host-ip&gt;:5883 after deploy. Every environment variable is optional. Only scan networks you own.",
+      "platform": "linux",
+      "repository": {
+        "stackfile": "Template/Stack/mynes.yml",
+        "url": "https://github.com/Qballjos/portainer_templates"
+      },
+      "title": "MyNeS - My Network Scanner",
+      "type": 3
     }
   ]
 }
