@@ -27,7 +27,8 @@ services:
       - mynes-data:/app/data
       - mynes-config:/app/config
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:5883/api/version"]
+      # No curl in the image; /api/version is behind the login gate. /api/health is auth-exempt.
+      test: ["CMD", "python", "-c", "import http.client as h; c=h.HTTPConnection('localhost',5883,timeout=5); c.request('GET','/api/health'); exit(0 if c.getresponse().status < 500 else 1)"]
       interval: 30s
       timeout: 10s
       retries: 3
