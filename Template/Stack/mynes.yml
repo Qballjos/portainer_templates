@@ -1,0 +1,39 @@
+# Stack file for the Portainer App Template (type 3). No `build:` here on purpose -
+# Portainer must pull the published image, not try to build it.
+services:
+  mynes:
+    image: fxerkan/my_network_scanner:1.8.2
+    container_name: mynes
+    # Host networking is what makes ARP/mDNS/SSDP discovery see the LAN at all.
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    restart: unless-stopped
+    environment:
+      MYNES_PORT: ${MYNES_PORT:-5883}
+      TZ: ${TZ:-UTC}
+      MYNES_PASSWORD: ${MYNES_PASSWORD:-}
+      # Set MYNES_AUTH_ENABLED=true with a username+password to require sign-in.
+      MYNES_AUTH_ENABLED: ${MYNES_AUTH_ENABLED:-false}
+      MYNES_AUTH_USERNAME: ${MYNES_AUTH_USERNAME:-}
+      MYNES_AUTH_PASSWORD: ${MYNES_AUTH_PASSWORD:-}
+      MYNES_MQTT_HOST: ${MYNES_MQTT_HOST:-}
+      MYNES_MQTT_USERNAME: ${MYNES_MQTT_USERNAME:-}
+      MYNES_MQTT_PASSWORD: ${MYNES_MQTT_PASSWORD:-}
+      MYNES_HA_URL: ${MYNES_HA_URL:-}
+      MYNES_HA_TOKEN: ${MYNES_HA_TOKEN:-}
+    volumes:
+      - mynes-data:/app/data
+      - mynes-config:/app/config
+    healthcheck:
+      # No curl in the image; /api/version is behind the login gate. /api/health is auth-exempt.
+      test: ["CMD", "python", "-c", "import http.client as h; c=h.HTTPConnection('localhost',5883,timeout=5); c.request('GET','/api/health'); exit(0 if c.getresponse().status < 500 else 1)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  mynes-data:
+  mynes-config:
