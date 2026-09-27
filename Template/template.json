@@ -3713,6 +3713,20 @@
           "name": "MYNES_PASSWORD"
         },
         {
+          "default": "false",
+          "description": "Set to true to require sign-in (needs a username and password).",
+          "label": "MYNES_AUTH_ENABLED",
+          "name": "MYNES_AUTH_ENABLED"
+        },
+        {
+          "label": "MYNES_AUTH_USERNAME",
+          "name": "MYNES_AUTH_USERNAME"
+        },
+        {
+          "label": "MYNES_AUTH_PASSWORD",
+          "name": "MYNES_AUTH_PASSWORD"
+        },
+        {
           "label": "MYNES_MQTT_HOST",
           "name": "MYNES_MQTT_HOST"
         },

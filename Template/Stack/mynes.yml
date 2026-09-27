@@ -2,7 +2,7 @@
 # Portainer must pull the published image, not try to build it.
 services:
   mynes:
-    image: fxerkan/my_network_scanner:1.3.0
+    image: fxerkan/my_network_scanner:1.8.2
     container_name: mynes
     # Host networking is what makes ARP/mDNS/SSDP discovery see the LAN at all.
     network_mode: host
@@ -14,6 +14,10 @@ services:
       MYNES_PORT: ${MYNES_PORT:-5883}
       TZ: ${TZ:-UTC}
       MYNES_PASSWORD: ${MYNES_PASSWORD:-}
+      # Set MYNES_AUTH_ENABLED=true with a username+password to require sign-in.
+      MYNES_AUTH_ENABLED: ${MYNES_AUTH_ENABLED:-false}
+      MYNES_AUTH_USERNAME: ${MYNES_AUTH_USERNAME:-}
+      MYNES_AUTH_PASSWORD: ${MYNES_AUTH_PASSWORD:-}
       MYNES_MQTT_HOST: ${MYNES_MQTT_HOST:-}
       MYNES_MQTT_USERNAME: ${MYNES_MQTT_USERNAME:-}
       MYNES_MQTT_PASSWORD: ${MYNES_MQTT_PASSWORD:-}
